@@ -7,8 +7,10 @@ library(mgm)
 library(bnlearn)
 library(gRapHD)
 library(qgraph)
+library(Rgraphviz)
 
 Asteroids <- read_excel("Dataset/Asteroids_REF.xlsx")
+whitelist <- read_excel("Whitelist.xlsx")
 Asteroids[sapply(Asteroids, is.character)]  <- lapply(Asteroids[sapply(Asteroids, is.character)], as.factor)
 Asteroids[2:8] <- lapply(Asteroids[2:8], as.numeric)
 
@@ -53,9 +55,12 @@ qgraph::qgraph(fit_mgm$pairwise$wadj,
                layout = "spring", repulsion = 1.3,
                edge.color = fit_mgm$pairwise$edgecolor,
                nodeNames = colnames(Asteroids[1:2267,2:11] ),
-               color = c("purple",rep("lightblue",13)),
+               color = c(rep("lightblue",9),"purple"),
                legend.mode="style2", legend.cex=.4,
                vsize = 3.5, esize = 15)
 
-dag = hc(Asteroids[2:14])
-fit = bn.fit(dag, Asteroids[2:14])
+wl = matrix(c("Mean_Motion", "Hazardous"), ncol = 2, byrow = TRUE)
+
+dag = mmhc(Asteroids[1:4000,2:11],whitelist = wl)
+plot(as(amat(dag),"graphNEL"),)
+graphviz.plot(dag, shape = "ellipse")
