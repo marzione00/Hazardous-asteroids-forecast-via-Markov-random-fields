@@ -11,6 +11,9 @@ library(igraph)
 library(gRbase)
 library(RBGL)
 library(caret)
+library(pROC)
+library(ROCR)
+library(ggplot2)
 
 Asteroids <- read_excel("Dataset/Asteroids_REF.xlsx")
 Asteroids2 <- read_excel("Dataset/Asteroids2.xlsx")
@@ -93,6 +96,21 @@ peppo<-confusionMatrix(conf$Hazardous,conf$PRED)
 fourfoldplot(peppo$table)
 
 peppo
+
+pred_svm<-prediction(as.numeric(conf$PRED),as.numeric(conf$Hazardous))
+
+roc_svm.perf <- performance(pred_svm, measure = "tpr", x.measure = "fpr")
+
+phi_svm<-performance(pred_svm, "mi")
+
+phi_svm@y.values
+
+
+plot(roc_svm.perf,cex.lab=1.5,yaxis.cex.axis=1.5,xaxis.cex.axis=1.5)
+abline(a=0, b= 1)
+
+ggplot:autoplot(roc_svm.perf)+theme_bw()
+
 
 
 Asteroids[2:13] <- lapply(Asteroids[2:13], as.numeric)
