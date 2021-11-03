@@ -1,5 +1,4 @@
 library(readxl)
-library(gRim)
 library(PerformanceAnalytics)
 library(corrplot)
 library(ggcorrplot)
@@ -8,21 +7,26 @@ library(bnlearn)
 library(gRapHD)
 library(qgraph)
 library(Rgraphviz)
+library(igraph)
+library(gRbase)
+library(RBGL)
 
 Asteroids <- read_excel("Dataset/Asteroids_REF.xlsx")
+Asteroids2 <- read_excel("Dataset/Asteroids2.xlsx")
 whitelist <- read_excel("Whitelist.xlsx")
-Asteroids[sapply(Asteroids, is.character)]  <- lapply(Asteroids[sapply(Asteroids, is.character)], as.factor)
-Asteroids[2:8] <- lapply(Asteroids[2:8], as.numeric)
 
-SS <- CGstats(Asteroids,varnames =c("Min_DIA","Max_DIA","Speed","MISS_DIST","Eccentricity","Semi_Major_Axis","Inclination","Orbital_Period","Perihelion_Distance","Aphelion_Dist","Perihelion_Time","Mean_motion","Hazardous"))
+Asteroids_double<-as.data.frame(lapply(Asteroids[,2:11], as.double))
 
+Asteroids_double["Hazardous"] <- as.factor(Asteroids_double[,10])
 
-SS <- CGstats(Asteroids,varnames =c("Min_DIA","Speed","Eccentricity","Inclination","Orbital_Period","Hazardous"))
+Asteroids2_double<-as.data.frame(lapply(Asteroids2[,2:23], as.double))
 
-bF <- minForest(Asteroids)
+Asteroids2_double["Hazardous"] <- as.factor(Asteroids2_double[,22])
 
-M_cov <- cov(Asteroids[,2:14])
-M_cor <- cor(Asteroids[,2:14])
+SS <- CGstats(Asteroids_double)
+
+M_cov <- cov(Asteroids_double[,2:9])
+M_cor <- cor(Asteroids_double[,2:9])
 
 chart.Correlation(Asteroids[,2:13] , histogram=TRUE, pch=19)
 #corrplot(Asteroids[,2:13])
@@ -32,20 +36,37 @@ ggcorrplot(M_cor)
 cc<-apply(SS$center,1,sd) /apply(SS$center,1,mean)
 
 
-msx<-dmod(~.^.,data=Asteroids[1:30,2:7])
-msx2<-stepwise(msx,crit="test", alpha=0.15,details = 2)
-plot(msx2)
+msx<-cmod(~.^1.,data=Asteroids_double[,-10])
+msx2<-stepwise(msx,direction="forward",k=log(nrow(Asteroids_double[,-10])),details=1)
+plot(msx2,"neato")
 
+msx<-cmod(~.^.,data=Asteroids_double[,-10])
+msx2<-stepwise(msx,details=1,"test")
+plot(msx2,"neato")
+qgraph(msx2)
+
+
+Asteroids2_double<-na.omit(Asteroids2_double)
+
+msx<-cmod(~.^1.,data=Asteroids2_double[,-c(18,22)])
+msx2<-stepwise(msx,direction="forward",k=log(nrow(Asteroids2_double[,1:15])),details=1)
+plot.igraph(as(msx2,'igraph'),layout=layout.fruchterman.reingold(as(msx2,'igraph'), niter=300000), vertex.color="red")
+
+igraph.from.graphNEL(msx2)
 
 fit_mgm <- mgm(data = Asteroids[1:4000,2:11],type = c(rep("g",9),"c"),levels = c(rep(1,9),2),k=2,lambdaSel = "CV",lambdaFolds= 10,ruleReg="AND",overparameterize = T)
 
-dfnum = bnlearn.df2onehot(Asteroids[2:14])
-plot(res)
+Asteroids2<-na.omit(Asteroids2)
+
+fit_mgm <- mgm(data = Asteroids2[2:23],type = c(rep("g",21),"c"),levels = c(rep(1,21),2),k=2,lambdaSel = "CV",lambdaFolds= 10,ruleReg="AND",overparameterize = T)
 
 
 
 qgraph(fit_mgm$pairwise$wadj,edge.color = fit_mgm $pairwise$edgecolor,layout = "spring",labels =  Asteroids$colnames)
 pred_obj <- predict(fit_mgm, Asteroids[1:2267,2:11])
+pred_obj[["errors"]]
+
+pred_obj <- predict(fit_mgm, Asteroids2[,2:23])
 pred_obj[["errors"]]
 
 Asteroids[2:13] <- lapply(Asteroids[2:13], as.numeric)
@@ -58,6 +79,17 @@ qgraph::qgraph(fit_mgm$pairwise$wadj,
                color = c(rep("lightblue",9),"purple"),
                legend.mode="style2", legend.cex=.4,
                vsize = 3.5, esize = 15)
+
+
+qgraph::qgraph(fit_mgm$pairwise$wadj,
+               layout = "spring", repulsion = 1.3,
+               edge.color = fit_mgm$pairwise$edgecolor,
+               nodeNames = colnames(Asteroids2[2:23] ),
+               color = c(rep("lightblue",21),"purple"),
+               legend.mode="style2", legend.cex=.4,
+               vsize = 3.5, esize = 15)
+
+plot.igraph(as(msx2,'igraph'),layout=layout.fruchterman.reingold(as(msx2,'igraph'), niter=3000000), vertex.color="green")
 
 wl = matrix(c("Mean_Motion", "Hazardous"), ncol = 2, byrow = TRUE)
 
