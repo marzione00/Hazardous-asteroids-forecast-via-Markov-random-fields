@@ -10,6 +10,7 @@ library(Rgraphviz)
 library(igraph)
 library(gRbase)
 library(RBGL)
+library(caret)
 
 Asteroids <- read_excel("Dataset/Asteroids_REF.xlsx")
 Asteroids2 <- read_excel("Dataset/Asteroids2.xlsx")
@@ -58,16 +59,41 @@ fit_mgm <- mgm(data = Asteroids[1:4000,2:11],type = c(rep("g",9),"c"),levels = c
 
 Asteroids2<-na.omit(Asteroids2)
 
-fit_mgm <- mgm(data = Asteroids2[2:23],type = c(rep("g",21),"c"),levels = c(rep(1,21),2),k=2,lambdaSel = "CV",lambdaFolds= 10,ruleReg="AND",overparameterize = T)
+fit_mgm <- mgm(data = Asteroids2[1:3500,2:23],type = c(rep("g",21),"c"),levels = c(rep(1,21),2),k=2,lambdaSel = "CV",lambdaFolds= 10,ruleReg="AND",overparameterize = T)
 
 
 
 qgraph(fit_mgm$pairwise$wadj,edge.color = fit_mgm $pairwise$edgecolor,layout = "spring",labels =  Asteroids$colnames)
-pred_obj <- predict(fit_mgm, Asteroids[1:2267,2:11])
+pred_obj <- predict(fit_mgm, Asteroids[1:3500,2:11])
 pred_obj[["errors"]]
 
 pred_obj <- predict(fit_mgm, Asteroids2[,2:23])
 pred_obj[["errors"]]
+
+ciccio<-as.data.frame(pred_obj[["predicted"]][,22])
+
+ciccio<-as.data.frame(as.factor(ciccio$`pred_obj[["predicted"]][, 22]`))
+
+colnames(ciccio)<-c("PRED")
+
+levels(ciccio$PRED) <- c('FALSE', 'TRUE')
+
+ciccio
+
+conf<-data.frame(lapply(Asteroids2[,23], as.factor),ciccio)
+
+
+
+
+
+
+
+peppo<-confusionMatrix(conf$Hazardous,conf$PRED)
+
+fourfoldplot(peppo$table)
+
+peppo
+
 
 Asteroids[2:13] <- lapply(Asteroids[2:13], as.numeric)
 
