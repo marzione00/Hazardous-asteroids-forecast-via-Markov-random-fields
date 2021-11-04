@@ -3,6 +3,7 @@ library(PerformanceAnalytics)
 library(corrplot)
 library(ggcorrplot)
 library(mgm)
+library(gRim)
 library(bnlearn)
 library(gRapHD)
 library(qgraph)
@@ -14,129 +15,141 @@ library(caret)
 library(pROC)
 library(ROCR)
 library(ggplot2)
+library(FactoMineR)
+library(factoextra)
+library(ggplot2)
+library(ggpubr)
 
-Asteroids <- read_excel("Dataset/Asteroids_REF.xlsx")
+#Data Loading
+
 Asteroids2 <- read_excel("Dataset/Asteroids2.xlsx")
-whitelist <- read_excel("Whitelist.xlsx")
-
-Asteroids_double<-as.data.frame(lapply(Asteroids[,2:11], as.double))
-
-Asteroids_double["Hazardous"] <- as.factor(Asteroids_double[,10])
-
-Asteroids2_double<-as.data.frame(lapply(Asteroids2[,2:23], as.double))
-
-Asteroids2_double["Hazardous"] <- as.factor(Asteroids2_double[,22])
-
-SS <- CGstats(Asteroids_double)
-
-M_cov <- cov(Asteroids_double[,2:9])
-M_cor <- cor(Asteroids_double[,2:9])
-
-chart.Correlation(Asteroids[,2:13] , histogram=TRUE, pch=19)
-#corrplot(Asteroids[,2:13])
-heatmap(x=M_cor)
-ggcorrplot(M_cor)
-
-cc<-apply(SS$center,1,sd) /apply(SS$center,1,mean)
-
-
-msx<-cmod(~.^1.,data=Asteroids_double[,-10])
-msx2<-stepwise(msx,direction="forward",k=log(nrow(Asteroids_double[,-10])),details=1)
-plot(msx2,"neato")
-
-msx<-cmod(~.^.,data=Asteroids_double[,-10])
-msx2<-stepwise(msx,details=1,"test")
-plot(msx2,"neato")
-qgraph(msx2)
-
-
-Asteroids2_double<-na.omit(Asteroids2_double)
-
-msx<-cmod(~.^1.,data=Asteroids2_double[,-c(18,22)])
-msx2<-stepwise(msx,direction="forward",k=log(nrow(Asteroids2_double[,1:15])),details=1)
-plot.igraph(as(msx2,'igraph'),layout=layout.fruchterman.reingold(as(msx2,'igraph'), niter=300000), vertex.color="red")
-
-igraph.from.graphNEL(msx2)
-
-fit_mgm <- mgm(data = Asteroids[1:4000,2:11],type = c(rep("g",9),"c"),levels = c(rep(1,9),2),k=2,lambdaSel = "CV",lambdaFolds= 10,ruleReg="AND",overparameterize = T)
-
 Asteroids2<-na.omit(Asteroids2)
 
-fit_mgm <- mgm(data = Asteroids2[1:3500,2:23],type = c(rep("g",21),"c"),levels = c(rep(1,21),2),k=2,lambdaSel = "CV",lambdaFolds= 10,ruleReg="AND",overparameterize = T)
-
-
-
-qgraph(fit_mgm$pairwise$wadj,edge.color = fit_mgm $pairwise$edgecolor,layout = "spring",labels =  Asteroids$colnames)
-pred_obj <- predict(fit_mgm, Asteroids[1:3500,2:11])
-pred_obj[["errors"]]
-
-pred_obj <- predict(fit_mgm, Asteroids2[,2:23])
-pred_obj[["errors"]]
-
-ciccio<-as.data.frame(pred_obj[["predicted"]][,22])
-
-ciccio<-as.data.frame(as.factor(ciccio$`pred_obj[["predicted"]][, 22]`))
-
-colnames(ciccio)<-c("PRED")
-
-levels(ciccio$PRED) <- c('FALSE', 'TRUE')
-
-ciccio
-
-conf<-data.frame(lapply(Asteroids2[,23], as.factor),ciccio)
 
 
 
 
+#Asteroids2_h<-subset(Asteroids2,Hazardous==TRUE)
+#Asteroids2_n<-subset(Asteroids2,Hazardous==FALSE)
+
+#Asteroids_NH<- sample(3878,2800)
+
+#Asteroids2_n<-Asteroids2[Asteroids_NH,]
+
+#Asteroids_NH_frame<-Asteroids2[Asteroids_NH,]
+
+#Asteroids_FINAL<-rbind(Asteroids2_h,Asteroids2_n)
+
+#save(Asteroids_FINAL,file="Asteroids_FINAL.rda")
+
+load("Asteroids_FINAL.rda")
+
+Asteroids_FINAL[,2:21]<-scale(Asteroids_FINAL[,2:21])
+
+Asteroids_FINAL_double<-as.data.frame(lapply(Asteroids_FINAL[,2:22], as.double))
+Asteroids_FINAL_double["Hazardous"] <- as.factor(Asteroids_FINAL_double[,21])
 
 
 
-peppo<-confusionMatrix(conf$Hazardous,conf$PRED)
+#preliminary analysis
 
-fourfoldplot(peppo$table)
 
-peppo
+SS <- CGstats(Asteroids_FINAL_double)
+SS
+cc<-apply(SS$center,1,sd) /apply(SS$center,1,mean)
+cc
 
-pred_svm<-prediction(as.numeric(conf$PRED),as.numeric(conf$Hazardous))
+M_cov <- cov(Asteroids_FINAL_double[,-21])
+M_cor <- cor(Asteroids_FINAL_double[,-21])
 
-roc_svm.perf <- performance(pred_svm, measure = "tpr", x.measure = "fpr")
+chart.Correlation(Asteroids_FINAL_double , histogram=TRUE, pch=19)
+testRes = cor.mtest(M_cor, conf.level = 0.95)
+corrplot(M_cor , p.mat = testRes$p, method = 'color', diag = FALSE, type = 'upper',
+         sig.level = c(0.001, 0.01, 0.05), pch.cex = 0.9, 
+         insig = 'label_sig', pch.col = 'grey20', order = 'AOE')
 
-phi_svm<-performance(pred_svm, "mi")
 
-phi_svm@y.values
 
+res.famd <- FAMD(Asteroids_FINAL_double)
+fviz_famd_var(res.famd, "quanti.var", col.var = "contrib", 
+              gradient.cols = c("#00AFBB", "#E7B800", "#FC4E07"),
+              repel = TRUE)
+fviz_famd_var(res.famd, "quali.var", col.var = "contrib", 
+              gradient.cols = c("#00AFBB", "#E7B800", "#FC4E07")
+)
+fviz_famd_ind(res.famd, col.ind = "cos2", 
+              gradient.cols = c("#00AFBB", "#E7B800", "#FC4E07"),
+              repel = TRUE)
+
+heatmap(x=M_cor)
+
+
+Hazardous_subset<-subset(Asteroids_FINAL,Hazardous==TRUE)
+Not_Hazardous_subset<-subset(Asteroids_FINAL,Hazardous==FALSE)
+
+ggdensity(Asteroids_FINAL,x="Eccentricity",rug = TRUE, color = "Hazardous",fill = "Hazardous",size=2)+theme_bw()
+ggdensity(Asteroids_FINAL,x="Absolute_Magnitude",rug = TRUE, color = "Hazardous",fill = "Hazardous",size=2)+theme_bw()
+ggdensity(Asteroids_FINAL,x="Min_Orbit_Intersection",rug = TRUE, color = "Hazardous",fill = "Hazardous",size=2)+theme_bw()
+
+
+#Continuous variables analysis
+
+
+msx<-cmod(~.^1.,data=Asteroids_FINAL_double[,-21])
+msx2<-stepwise(msx,direction="forward",k=log(nrow(Asteroids_FINAL_double[,-21])),details=1)
+plot.igraph(as(msx2,'igraph'),layout=layout.fruchterman.reingold(as(msx2,'igraph'), niter=300000), vertex.color="red")
+
+#Mixed interaction analysis
+
+
+fit_mgm <- mgm(data = Asteroids_FINAL[,-1],type = c(rep("g",20),"c"),levels = c(rep(1,20),2),k=2,lambdaSel = "CV",lambdaFolds= 10,ruleReg="AND",overparameterize = T)
+
+
+qgraph::qgraph(fit_mgm$pairwise$wadj,
+               layout = "spring", repulsion = 1.3,
+               edge.color = fit_mgm$pairwise$edgecolor,
+               nodeNames = colnames(Asteroids_FINAL[,-1] ),
+               color = c(rep("lightblue",20),"purple"),
+               legend.mode="style2", legend.cex=.4,
+               vsize = 3.5, esize = 15)
+
+#Forecast assessment
+
+pred_obj <- predict(fit_mgm, Asteroids_FINAL[,-1])
+
+Predicted_vs_real<-as.data.frame(pred_obj[["predicted"]][,21])
+
+Predicted_vs_real<-as.data.frame(as.factor(Predicted_vs_real$`pred_obj[["predicted"]][, 21]`))
+
+colnames(Predicted_vs_real)<-c("PRED")
+
+levels(Predicted_vs_real$PRED) <- c('FALSE', 'TRUE')
+
+conf<-data.frame(lapply(Asteroids_FINAL[,22], as.factor),Predicted_vs_real)
+
+
+
+
+
+Confusion_matrix_ASTEROIDS<-confusionMatrix(conf$Hazardous,conf$PRED)
+
+fourfoldplot(Confusion_matrix_ASTEROIDS$table,color = c("red","darkgreen"), main = "Mixed Interaction")
+
+Confusion_matrix_ASTEROIDS
+
+pred_numeric<-prediction(as.numeric(conf$PRED),as.numeric(conf$Hazardous))
+
+roc_svm.perf <- performance(pred_numeric, measure = "tpr", x.measure = "fpr")
+
+phi_Asteroids<-performance(pred_numeric, "phi")
+
+phi_Asteroids@y.values[[1]][2]
 
 plot(roc_svm.perf,cex.lab=1.5,yaxis.cex.axis=1.5,xaxis.cex.axis=1.5)
 abline(a=0, b= 1)
 
-ggplot:autoplot(roc_svm.perf)+theme_bw()
 
 
 
-Asteroids[2:13] <- lapply(Asteroids[2:13], as.numeric)
 
 
-qgraph::qgraph(fit_mgm$pairwise$wadj,
-               layout = "spring", repulsion = 1.3,
-               edge.color = fit_mgm$pairwise$edgecolor,
-               nodeNames = colnames(Asteroids[1:2267,2:11] ),
-               color = c(rep("lightblue",9),"purple"),
-               legend.mode="style2", legend.cex=.4,
-               vsize = 3.5, esize = 15)
-
-
-qgraph::qgraph(fit_mgm$pairwise$wadj,
-               layout = "spring", repulsion = 1.3,
-               edge.color = fit_mgm$pairwise$edgecolor,
-               nodeNames = colnames(Asteroids2[2:23] ),
-               color = c(rep("lightblue",21),"purple"),
-               legend.mode="style2", legend.cex=.4,
-               vsize = 3.5, esize = 15)
-
-plot.igraph(as(msx2,'igraph'),layout=layout.fruchterman.reingold(as(msx2,'igraph'), niter=3000000), vertex.color="green")
-
-wl = matrix(c("Mean_Motion", "Hazardous"), ncol = 2, byrow = TRUE)
-
-dag = mmhc(Asteroids[1:4000,2:11],whitelist = wl)
-plot(as(amat(dag),"graphNEL"),)
-graphviz.plot(dag, shape = "ellipse")
