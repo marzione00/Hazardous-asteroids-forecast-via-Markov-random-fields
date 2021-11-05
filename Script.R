@@ -19,6 +19,9 @@ library(FactoMineR)
 library(factoextra)
 library(ggplot2)
 library(ggpubr)
+library(gRapHD)
+library(glasso)
+library(SIN)
 
 #Data Loading
 
@@ -99,11 +102,83 @@ msx<-cmod(~.^1.,data=Asteroids_FINAL_double[,-21])
 msx2<-stepwise(msx,direction="forward",k=log(nrow(Asteroids_FINAL_double[,-21])),details=1)
 plot.igraph(as(msx2,'igraph'),layout=layout.fruchterman.reingold(as(msx2,'igraph'), niter=300000), vertex.color="red")
 
+S.carc <- cov.wt(Asteroids_FINAL_double[,-21], method="ML")$cov
+K.carc <- solve(S.carc)
+round(100*K.carc)
+
+PC.carc <-cov2pcor(S.carc)
+round(PC.carc*100)
+round(100*PC.carc)
+threeshold <-0.1
+Z<-abs(PC.carc)
+Z[Z<threeshold] <- 0
+diag(Z) <- 0
+Z[Z>0] <- 1
+
+g.thresh <- as(Z,"graphNEL")
+thresh.carc <- cmod(edgeList(g.thresh ), data=Asteroids_FINAL_double[,-21])
+thresh.carc
+plot(as(thresh.carc,"igraph"))
+
+psin.carc<-sinUG(S.carc,n=nrow(Asteroids_FINAL_double[,-21]))
+plotUGpvalues(psin.carc)
+
+Zp<-psin.carc
+Zp[]<-0
+Zp[psin.carc<0.05]<- 1
+g.p05<-as(Zp,"graphNEL")
+
+pval105.carc <-cmod(edgeList(g.p05),data=Asteroids_FINAL_double[,-21])
+plot(as(pval105.carc,"igraph"))
+gsin.carc <-as(getgraph(psin.carc,0.1),"graphNEL")
+plot(as(gsin.carc,"igraph"))
+
+
+S.body<- cov.wt(Asteroids_FINAL_double[,-21])$cov
+C.body <- cov2cor(S.body)
+res.lasso <- glasso(C.body, rho=0.3)
+AM <- res.lasso$wi!=0
+diag(AM)<-FALSE
+g.lasso <- as(AM,"graphNEL")
+nodes(g.lasso)<-names(Asteroids_FINAL_double[,-21])
+glasso.body<- cmod(edgeList(g.lasso),data=Asteroids_FINAL_double[,-21])
+plot(as(glasso.body,"igraph"))
+
+
+
+msy<-cmod(~.^.,data=Asteroids_FINAL_double[,1:15])
+aic.carc <-stepwise(msy)
+plot(aic.carc)
+bic.carc <-stepwise(msy,k=log(nrow(Asteroids_FINAL_double[,-21])))
+ciccio<-as(msx2,"graphNEL")
+commonedges.carc<-as(msx2,"graphNEL")
+othermodels<-list(gsin.carc,thresh.carc,msx2)
+
+
+othermodels<-lapply(othermodels,as,"graphNEL")
+
+for(i in 1:length(othermodels)) {
+  commonedges.carc <- graph::intersection(commonedges.carc,othermodels[[i]])
+}
+
+plot(as(commonedges.carc,"igraph"))
+
+
+
+
+
+#minForest model
+
+bf<-minForest(Asteroids_FINAL_double,homog=TRUE,forbEdges=NULL,stat="LR")
+plot(bf)
+mbG<-stepw(model=bf,data=Asteroids_FINAL_double,exact=TRUE)
+plot(mbG,cex.vert.label=1.1,numIter=6000,col.labels=c("red"),vert.hl=c(21),col.hl=c("blue"))
+
+
 #Mixed interaction analysis
 
 
 fit_mgm <- mgm(data = Asteroids_FINAL[,-1],type = c(rep("g",20),"c"),levels = c(rep(1,20),2),k=2,lambdaSel = "CV",lambdaFolds= 10,ruleReg="AND",overparameterize = T)
-
 
 qgraph::qgraph(fit_mgm$pairwise$wadj,
                layout = "spring", repulsion = 1.3,
@@ -112,6 +187,7 @@ qgraph::qgraph(fit_mgm$pairwise$wadj,
                color = c(rep("lightblue",20),"purple"),
                legend.mode="style2", legend.cex=.4,
                vsize = 3.5, esize = 15)
+
 
 #Forecast assessment
 
