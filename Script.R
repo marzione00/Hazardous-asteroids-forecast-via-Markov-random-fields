@@ -22,12 +22,16 @@ library(ggpubr)
 library(gRapHD)
 library(glasso)
 library(SIN)
+library(gRain)
+library(randomForest)
+library(randomForestExplainer)
+library(e1071)
+library(MASS)
 
 #Data Loading
 
 Asteroids2 <- read_excel("Dataset/Asteroids2.xlsx")
 Asteroids2<-na.omit(Asteroids2)
-
 
 
 
@@ -102,68 +106,63 @@ msx<-cmod(~.^1.,data=Asteroids_FINAL_double[,-21])
 msx2<-stepwise(msx,direction="forward",k=log(nrow(Asteroids_FINAL_double[,-21])),details=1)
 plot.igraph(as(msx2,'igraph'),layout=layout.fruchterman.reingold(as(msx2,'igraph'), niter=300000), vertex.color="red")
 
-S.carc <- cov.wt(Asteroids_FINAL_double[,-21], method="ML")$cov
-K.carc <- solve(S.carc)
-round(100*K.carc)
+S.asteroids <- cov.wt(Asteroids_FINAL_double[,-21], method="ML")$cov
+K.asteroids <- solve(S.asteroids)
+round(100*K.asteroids)
 
-PC.carc <-cov2pcor(S.carc)
-round(PC.carc*100)
-round(100*PC.carc)
+PC.asteroids <-cov2pcor(S.asteroids)
+round(PC.asteroids*100)
+round(100*PC.asteroids)
 threeshold <-0.1
-Z<-abs(PC.carc)
+Z<-abs(PC.asteroids)
 Z[Z<threeshold] <- 0
 diag(Z) <- 0
 Z[Z>0] <- 1
 
 g.thresh <- as(Z,"graphNEL")
-thresh.carc <- cmod(edgeList(g.thresh ), data=Asteroids_FINAL_double[,-21])
-thresh.carc
-plot(as(thresh.carc,"igraph"))
+thresh.asteroids <- cmod(edgeList(g.thresh ), data=Asteroids_FINAL_double[,-21])
+thresh.asteroids
+plot(as(thresh.asteroids,"igraph"))
 
-psin.carc<-sinUG(S.carc,n=nrow(Asteroids_FINAL_double[,-21]))
-plotUGpvalues(psin.carc)
+psin.asteroids<-sinUG(S.asteroids,n=nrow(Asteroids_FINAL_double[,-21]))
+plotUGpvalues(psin.asteroids)
 
-Zp<-psin.carc
+Zp<-psin.asteroids
 Zp[]<-0
-Zp[psin.carc<0.05]<- 1
+Zp[psin.asteroids<0.05]<- 1
 g.p05<-as(Zp,"graphNEL")
 
-pval105.carc <-cmod(edgeList(g.p05),data=Asteroids_FINAL_double[,-21])
-plot(as(pval105.carc,"igraph"))
-gsin.carc <-as(getgraph(psin.carc,0.1),"graphNEL")
-plot(as(gsin.carc,"igraph"))
+pval105.asteroids <-cmod(edgeList(g.p05),data=Asteroids_FINAL_double[,-21])
+plot(as(pval105.asteroids,"igraph"))
+gsin.asteroids <-as(getgraph(psin.asteroids,0.1),"graphNEL")
+plot(as(gsin.asteroids,"igraph"))
 
 
-S.body<- cov.wt(Asteroids_FINAL_double[,-21])$cov
-C.body <- cov2cor(S.body)
-res.lasso <- glasso(C.body, rho=0.3)
+#S.body<- cov.wt(Asteroids_FINAL_double[,-21])$cov
+C.asteroids  <- cov2cor(S.asteroids )
+res.lasso <- glasso(C.asteroids , rho=0.3)
 AM <- res.lasso$wi!=0
 diag(AM)<-FALSE
 g.lasso <- as(AM,"graphNEL")
 nodes(g.lasso)<-names(Asteroids_FINAL_double[,-21])
-glasso.body<- cmod(edgeList(g.lasso),data=Asteroids_FINAL_double[,-21])
-plot(as(glasso.body,"igraph"))
+glasso.asteroids <- cmod(edgeList(g.lasso),data=Asteroids_FINAL_double[,-21])
+plot(as(glasso.asteroids ,"igraph"))
 
 
 
-msy<-cmod(~.^.,data=Asteroids_FINAL_double[,1:15])
-aic.carc <-stepwise(msy)
-plot(aic.carc)
-bic.carc <-stepwise(msy,k=log(nrow(Asteroids_FINAL_double[,-21])))
-ciccio<-as(msx2,"graphNEL")
-commonedges.carc<-as(msx2,"graphNEL")
-othermodels<-list(gsin.carc,thresh.carc,msx2)
+
+
+commonedges.asteroids <-as(msx2,"graphNEL")
+othermodels<-list(gsin.asteroids ,thresh.asteroids ,msx2)
 
 
 othermodels<-lapply(othermodels,as,"graphNEL")
 
 for(i in 1:length(othermodels)) {
-  commonedges.carc <- graph::intersection(commonedges.carc,othermodels[[i]])
+  commonedges.asteroids  <- graph::intersection(commonedges.asteroids ,othermodels[[i]])
 }
 
-plot(as(commonedges.carc,"igraph"))
-
-
+plot(as(commonedges.asteroids ,"igraph"))
 
 
 
@@ -172,7 +171,7 @@ plot(as(commonedges.carc,"igraph"))
 bf<-minForest(Asteroids_FINAL_double,homog=TRUE,forbEdges=NULL,stat="LR")
 plot(bf)
 mbG<-stepw(model=bf,data=Asteroids_FINAL_double,exact=TRUE)
-plot(mbG,cex.vert.label=1.1,numIter=6000,col.labels=c("red"),vert.hl=c(21),col.hl=c("blue"))
+plot(mbG,cex.vert.label=0.8,numIter=6000,col.labels=c("red"),vert.hl=c(21),col.hl=c("blue"))
 
 
 #Mixed interaction analysis
@@ -189,9 +188,12 @@ qgraph::qgraph(fit_mgm$pairwise$wadj,
                vsize = 3.5, esize = 15)
 
 
+
 #Forecast assessment
 
 pred_obj <- predict(fit_mgm, Asteroids_FINAL[,-1])
+
+round(pred_obj[["probabilties"]][[21]],2)
 
 Predicted_vs_real<-as.data.frame(pred_obj[["predicted"]][,21])
 
@@ -229,3 +231,149 @@ abline(a=0, b= 1)
 
 
 
+#Random forest
+
+
+
+Asteroids_FINAL_double_train<- sample(3552,2344)
+Asteroids_FINAL_double_test<-Asteroids_FINAL_double[-Asteroids_FINAL_double_train,]
+
+
+RF_perf_out<-tuneRF(Asteroids_FINAL_double_train[,-21],Asteroids_FINAL_double_train[,21], ntree=5000)
+RF_perf_out<-data.frame(RF_perf_out)
+rfor.planet <-randomForest(Hazardous~.,data=Asteroids_FINAL_double,subset=Asteroids_FINAL_double_train,localImp = TRUE,importance=TRUE,proximity=TRUE,ntry=4)
+rfor.predict<-data.frame(predict(rfor.planet, Asteroids_FINAL_double_test, type = "class"))
+
+var_imp_rforest<-data.frame(varImp(rfor.planet))
+colnames(var_imp_rforest)<-c("Variable","Overall")
+var_imp_rforest[,1]<-rownames(var_imp_rforest)
+rownames(var_imp_rforest)<-seq(1:20)
+
+ggplot(var_imp_rforest, aes(y=reorder(Variable,Overall),x=Overall,color="red")) + 
+  geom_point() +
+  geom_segment(aes(x=0,xend=Overall,yend=Variable)) +
+  scale_color_discrete(name="Variable Group") +
+  xlab("Overall importance") +
+  ylab("Variable Name") + guides(color = FALSE, size = FALSE) + theme_bw()
+
+
+plot(rfor.planet)
+tree_plot<-data.frame(rfor.planet[["err.rate"]])
+tree_plot[4]<-seq(1:500)
+colnames(tree_plot)<-c("OOB","Not_habitable","Habitable","Trees")
+
+
+
+
+ggplot() + geom_line(data = tree_plot, aes(x = Trees, y = OOB,color = "OOB") ) + 
+  geom_line(data = tree_plot, aes(x = Trees, y = Not_habitable,color = "Not H") ) +
+  geom_line(data = tree_plot, aes(x = Trees, y = Habitable,color = "H") )+labs(color = "Legend")+theme() + xlab('Trees') + ylab('Error')+theme_bw()
+
+
+plot(rfor.planet)
+legend("top", colnames(rfor.planet$err.rate), fill=1:ncol(rfor.planet$err.rate))
+varImpPlot(rfor.planet)
+proximityPlot(rfor.planet)
+print(rfor.planet)
+
+rfor.predict["Test"]<-as.factor(Asteroids_FINAL_double_test[,21])
+
+colnames(rfor.predict)<-c("Predict","Test")
+
+
+fourfoldplot(table(rfor.predict), color = c("red","darkgreen"),main = "Random Forest")
+
+pred_for<-prediction(as.numeric(rfor.predict$Predict),as.numeric(rfor.predict$Test))
+
+roc_for.perf <- performance(pred_for, measure = "tpr", x.measure = "fpr")
+
+autoplot(roc_for.perf)+theme_bw()
+
+
+#SVM
+
+
+tune_svm_full.out<-tune(svm ,Hazardous~.,data=Asteroids_FINAL_double[Asteroids_FINAL_double_train,], type = 'C-classification',kernel="polynomial",
+                        ranges =list(cost=(1:10),degree=(1:5)))
+print(tune_svm_full.out)
+perf_svm<-data.frame(tune_svm_full.out[["performances"]])
+
+ggplot(perf_svm,aes(x=cost,y=degree, z=error))+geom_line(color="red",linetype="dashed")+geom_point(color="red")+theme_bw()
+
+#X11(width=60, height=60)
+#plot_ly(perf_svm[,1:3],x = ~cost, y = ~degree, z = ~error, type="scatter3d", mode="markers") 
+
+
+svm.full <- svm(Hazardous~., data=Asteroids_FINAL_double[Asteroids_FINAL_double_train,],type = 'C-classification', kernel="polynomial",cost=10,degree=3,)
+
+svm.predict_full<-data.frame(predict(svm.full,Asteroids_FINAL_double[-Asteroids_FINAL_double_train,],type = "class"))
+
+svm.predict_full["T"]<-as.factor(Asteroids_FINAL_double_test[,21])
+
+svm_fin_full<-data.frame(svm.predict_full,stringsAsFactors = TRUE)
+
+colnames(svm_fin_full)<-c("Predict","Test")
+
+caret::confusionMatrix(table(svm_fin_full))
+
+fourfoldplot(table(svm_fin_full), color = c("red","darkgreen"),conf.level = 0, margin = 1, main = "SVM_FULL")
+
+pred_svm_full<-prediction(as.numeric(svm_fin_full$Predict),as.numeric(svm_fin_full$Test))
+
+roc_svm_full.perf <- performance(pred_svm_full, measure = "tpr", x.measure = "fpr")
+
+phi_svm_full<-performance(pred_svm_full, "mi")
+
+phi_svm_full@y.values
+
+autoplot(roc_svm_full.perf)+theme_bw()
+
+
+
+#QDA
+
+
+qda.planet<- qda(Hazardous~., data=Asteroids_FINAL_double, subset=Asteroids_FINAL_double_train)
+
+qda.prob<-data.frame(predict(qda.planet,Asteroids_FINAL_double[-Asteroids_FINAL_double_train,],type = "response"))
+qda.prob<-qda.prob["class"]
+
+qda_fin<-data.frame(qda.prob,stringsAsFactors = TRUE)
+qda_fin["Test"]<-as.factor(Asteroids_FINAL_double[-Asteroids_FINAL_double_train,21])
+
+colnames(qda_fin)<-c("Predict","Test")
+
+caret::confusionMatrix(table(qda_fin))
+
+fourfoldplot(table(qda_fin), color = c("red","darkgreen"),conf.level = 0, margin = 1, main = "QDA")
+
+pred_qda<-prediction(as.numeric(qda_fin$Predict),as.numeric(qda_fin$Test))
+
+roc_qda.perf <- performance(pred_qda, measure = "tpr", x.measure = "fpr")
+
+phi_qda<-performance(pred_qda, "phi")
+
+plot(phi_qda)
+
+autoplot(roc_qda.perf)+theme_bw()
+
+
+#Logistic
+
+
+
+model <- glm(Hazardous~.,family=binomial(link='logit'),data=Asteroids_FINAL_double)
+
+summary(model)
+
+logistic.prob<-data.frame(predict(model ,Asteroids_FINAL_double[-Asteroids_FINAL_double_train,],type = "response"))
+colnames(logistic.prob)<-c("P")
+logistic.prob<- data.frame(ifelse(logistic.prob > 0.5, "1", "0"))
+logistic.prob["T"]<-as.factor(Asteroids_FINAL_double[-Asteroids_FINAL_double_train,21])
+
+colnames(logistic.prob)<-c("P","T")
+
+
+fourfoldplot(table(logistic.prob), color = c("red","darkgreen"), main = "Logistic")
+
+caret::confusionMatrix(table(logistic.prob))
