@@ -27,6 +27,7 @@ library(randomForest)
 library(randomForestExplainer)
 library(e1071)
 library(MASS)
+library(infotheo)
 
 #Data Loading
 
@@ -97,6 +98,11 @@ Not_Hazardous_subset<-subset(Asteroids_FINAL,Hazardous==FALSE)
 ggdensity(Asteroids_FINAL,x="Eccentricity",rug = TRUE, color = "Hazardous",fill = "Hazardous",size=2)+theme_bw()
 ggdensity(Asteroids_FINAL,x="Absolute_Magnitude",rug = TRUE, color = "Hazardous",fill = "Hazardous",size=2)+theme_bw()
 ggdensity(Asteroids_FINAL,x="Min_Orbit_Intersection",rug = TRUE, color = "Hazardous",fill = "Hazardous",size=2)+theme_bw()
+
+
+library(varrank)
+pippo<- varrank(data= Asteroids_FINAL_double, variable.important = "Hazardous", discretization.method = "sturges")
+plot(pippo,margins = c(15, 15, 4, 2))
 
 
 #Continuous variables analysis
