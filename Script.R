@@ -28,11 +28,12 @@ library(randomForestExplainer)
 library(e1071)
 library(MASS)
 library(infotheo)
+library(varrank)
 
 #Data Loading
 
-Asteroids2 <- read_excel("Dataset/Asteroids2.xlsx")
-Asteroids2<-na.omit(Asteroids2)
+#Asteroids2 <- read_excel("Dataset/Asteroids2.xlsx")
+#Asteroids2<-na.omit(Asteroids2)
 
 
 
@@ -89,7 +90,7 @@ fviz_famd_ind(res.famd, col.ind = "cos2",
               gradient.cols = c("#00AFBB", "#E7B800", "#FC4E07"),
               repel = TRUE)
 
-heatmap(x=M_cor)
+heatmap(x=M_cor,margins = c(10,10))
 
 
 Hazardous_subset<-subset(Asteroids_FINAL,Hazardous==TRUE)
@@ -98,19 +99,21 @@ Not_Hazardous_subset<-subset(Asteroids_FINAL,Hazardous==FALSE)
 ggdensity(Asteroids_FINAL,x="Eccentricity",rug = TRUE, color = "Hazardous",fill = "Hazardous",size=2)+theme_bw()
 ggdensity(Asteroids_FINAL,x="Absolute_Magnitude",rug = TRUE, color = "Hazardous",fill = "Hazardous",size=2)+theme_bw()
 ggdensity(Asteroids_FINAL,x="Min_Orbit_Intersection",rug = TRUE, color = "Hazardous",fill = "Hazardous",size=2)+theme_bw()
+ggdensity(Asteroids_FINAL,x="Miss_Dist",rug = TRUE, color = "Hazardous",fill = "Hazardous",size=2)+theme_bw()
+ggdensity(Asteroids_FINAL,x="Close Approach Date",rug = TRUE, color = "Hazardous",fill = "Hazardous",size=2)+theme_bw()
+ggdensity(Asteroids_FINAL,x="Eccentricity",rug = TRUE, color = "Hazardous",fill = "Hazardous",size=2)+theme_bw()
 
 
-library(varrank)
-pippo<- varrank(data= Asteroids_FINAL_double, variable.important = "Hazardous", discretization.method = "sturges")
-plot(pippo,margins = c(15, 15, 4, 2))
+MI_var<- varrank(data= Asteroids_FINAL_double, variable.important = "Hazardous", discretization.method = "sturges")
+plot(MI_var,margins = c(13, 13, 4, 2),notecex=1,digitcell=2,labelscex=1)
 
 
 #Continuous variables analysis
 
 
-msx<-cmod(~.^1.,data=Asteroids_FINAL_double[,-21])
-msx2<-stepwise(msx,direction="forward",k=log(nrow(Asteroids_FINAL_double[,-21])),details=1)
-plot.igraph(as(msx2,'igraph'),layout=layout.fruchterman.reingold(as(msx2,'igraph'), niter=300000), vertex.color="red")
+#msx<-cmod(~.^1.,data=Asteroids_FINAL_double[,-21])
+#msx2<-stepwise(msx,direction="forward",k=log(nrow(Asteroids_FINAL_double[,-21])),details=1)
+#plot.igraph(as(msx2,'igraph'),layout=layout.fruchterman.reingold(as(msx2,'igraph'), niter=300000), vertex.color="red")
 
 S.asteroids <- cov.wt(Asteroids_FINAL_double[,-21], method="ML")$cov
 K.asteroids <- solve(S.asteroids)
@@ -144,6 +147,9 @@ gsin.asteroids <-as(getgraph(psin.asteroids,0.1),"graphNEL")
 plot(as(gsin.asteroids,"igraph"))
 
 
+
+
+
 #S.body<- cov.wt(Asteroids_FINAL_double[,-21])$cov
 C.asteroids  <- cov2cor(S.asteroids )
 res.lasso <- glasso(C.asteroids , rho=0.3)
@@ -152,7 +158,7 @@ diag(AM)<-FALSE
 g.lasso <- as(AM,"graphNEL")
 nodes(g.lasso)<-names(Asteroids_FINAL_double[,-21])
 glasso.asteroids <- cmod(edgeList(g.lasso),data=Asteroids_FINAL_double[,-21])
-plot(as(glasso.asteroids ,"igraph"))
+plot(as(glasso.asteroids ,"igraph"),vertex.color="red",vertex.label.dist=2,alpha=TRUE,vertex.label.cex=0.8,vertex.size=10,edge.color="black",edge.size=2,layout=layout_with_fr(as(glasso.asteroids,'igraph')), vertex.label.family='Helvetica')
 
 
 
@@ -168,7 +174,7 @@ for(i in 1:length(othermodels)) {
   commonedges.asteroids  <- graph::intersection(commonedges.asteroids ,othermodels[[i]])
 }
 
-plot(as(commonedges.asteroids ,"igraph"))
+plot(as(commonedges.asteroids ,"igraph"),vertex.color="orange",vertex.label.dist=2,alpha=TRUE,vertex.label.cex=0.5,vertex.size=10,edge.color="black",edge.size=2,layout=layout_with_fr(as(glasso.asteroids,'igraph')), vertex.label.family='Helvetica')
 
 
 
@@ -177,10 +183,12 @@ plot(as(commonedges.asteroids ,"igraph"))
 bf<-minForest(Asteroids_FINAL_double,homog=TRUE,forbEdges=NULL,stat="LR")
 plot(bf)
 mbG<-stepw(model=bf,data=Asteroids_FINAL_double,exact=TRUE)
-plot(mbG,cex.vert.label=0.8,numIter=6000,col.labels=c("red"),vert.hl=c(21),col.hl=c("blue"))
+plot(mbG,cex.vert.label=0.6,numIter=6000,col.labels=c("red"),vert.hl=c(21),col.hl=c("blue"),energy=TRUE)
 
 
 #Mixed interaction analysis
+
+
 
 
 fit_mgm <- mgm(data = Asteroids_FINAL[,-1],type = c(rep("g",20),"c"),levels = c(rep(1,20),2),k=2,lambdaSel = "CV",lambdaFolds= 10,ruleReg="AND",overparameterize = T)
@@ -217,7 +225,7 @@ conf<-data.frame(lapply(Asteroids_FINAL[,22], as.factor),Predicted_vs_real)
 
 Confusion_matrix_ASTEROIDS<-confusionMatrix(conf$Hazardous,conf$PRED)
 
-fourfoldplot(Confusion_matrix_ASTEROIDS$table,color = c("red","darkgreen"), main = "Mixed Interaction")
+fourfoldplot(Confusion_matrix_ASTEROIDS$table,color = c("red","darkgreen"), main = "Mixed Interaction",conf.level = 0)
 
 Confusion_matrix_ASTEROIDS
 
@@ -286,8 +294,9 @@ rfor.predict["Test"]<-as.factor(Asteroids_FINAL_double_test[,21])
 
 colnames(rfor.predict)<-c("Predict","Test")
 
+caret::confusionMatrix(table(rfor.predict))
 
-fourfoldplot(table(rfor.predict), color = c("red","darkgreen"),main = "Random Forest")
+fourfoldplot(table(rfor.predict), color = c("red","darkgreen"),main = "Random Forest",conf.level = 0)
 
 pred_for<-prediction(as.numeric(rfor.predict$Predict),as.numeric(rfor.predict$Test))
 
@@ -380,6 +389,6 @@ logistic.prob["T"]<-as.factor(Asteroids_FINAL_double[-Asteroids_FINAL_double_tra
 colnames(logistic.prob)<-c("P","T")
 
 
-fourfoldplot(table(logistic.prob), color = c("red","darkgreen"), main = "Logistic")
+fourfoldplot(table(logistic.prob), color = c("red","darkgreen"), main = "Logistic",conf.level = 0,margin = 1)
 
 caret::confusionMatrix(table(logistic.prob))

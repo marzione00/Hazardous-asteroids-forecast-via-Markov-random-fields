@@ -1,0 +1,219 @@
+% !TEX TS-program = pdflatex
+% !TEX root = Tes.tex
+% !TEX spellcheck = en-EN
+
+\documentclass[12pt,%                      % corpo del font principale
+               a4paper,%                   % A4 papers
+               %twoside,openright,%         % twoside with free right side
+               oneside,openany,%           % one side
+               titlepage,%                 % use a titlepage
+               headinclude,footinclude,%  % header and foot header
+               BCOR5mm,%                   % rilegatura di 5 mm
+               cleardoublepage=empty,%     % empty pages with no header and foot
+               tablecaptionabove,%         % table caption above tables
+               floatperchapter,
+               ]{scrreprt}                 % KOMA-Script report class;
+
+
+\usepackage{braket}
+\usepackage{changepage}
+\usepackage[english]{babel}	% latest language is predefined
+\usepackage[T1]{fontenc}		% font coding
+
+
+\usepackage{indentfirst}		% indent first paragraph of each section
+\usepackage{mparhack,fixltx2e,relsize}	% fancy typographies stuff
+
+\usepackage[eulerchapternumbers,%	% chapter font Euler
+            subfig,%			% in subfig objects
+            beramono,%			% Bera Mono as fixed spacing font
+            eulermath,%			% AMS Euler as math font
+            pdfspacing,%		% improves line filling
+            listings,%			% code output
+ %          parts,%			% uncomment for a document divided in parts
+            listsseparated,
+            ]{classicthesis}		% style ClassicThesis
+%\setlength{\cftbeforeloftitleskip}{100pt}
+%\renewcommand{\cftbeforeloftitleskip}{1000pt}
+
+\usepackage{arsclassica}		% modifies some aspects of ClassicThesis package
+\let\marginpar\oldmarginpar		% for margin notes with \todonotes (overwise conflict with the new definition of \marginpar in classic thesis)
+\usepackage[shadow]{todonotes}			% for margin notes and comments
+
+\usepackage{bookmark}			% bookmarks
+
+%*********************************************************************************
+% Bibliography
+%*********************************************************************************
+%%\usepackage[style=authoryear,hyperref,backref,natbib, ,maxcitenames=1, mincitenames = 1, citestyle=authoryear-comp, backend=biber,sortcites,sorting=ynt]{biblatex}
+%\usepackage[style=numeric,hyperref,backref,natbib]{biblatex}
+
+
+
+
+%*********************************************************************************
+% Graphics
+%*********************************************************************************
+\usepackage{graphicx}			% images
+\usepackage{subfigure}
+\usepackage{wrapfig}
+\usepackage{tikz}
+\usetikzlibrary{mindmap,trees}
+\usetikzlibrary{backgrounds}
+\usepackage{verbatim}
+\usepackage[dvipsnames]{xcolor}
+% \usepackage{morefloats}
+%\usepackage{chngcntr}
+\usepackage{pdfpages}
+
+%*********************************************************************************
+% Tables
+%*********************************************************************************
+\usepackage{tabularx}			% table of predefined length
+\usepackage{siunitx}
+\usepackage{pbox}
+\usepackage{colortbl}
+\usepackage{multirow}
+\usepackage{booktabs}
+\usepackage{rotating}
+\usepackage{hhline}
+\setlength\tabcolsep{3pt}
+\usepackage{changepage}
+% \usepackage[showframe=true]{geometry}
+
+%*********************************************************************************
+% Mathematics and symbols
+%*********************************************************************************
+\usepackage{amsmath, amssymb, amsthm}	% mathematics stuff
+\usepackage{mathrsfs}
+\usepackage{calc}
+\usepackage{algorithmic}
+\usepackage[ruled]{algorithm}
+\usepackage{latexsym}
+\usepackage[geometry]{ifsym}
+\usepackage{mathabx}
+\usepackage{pifont}
+
+%*********************************************************************************
+% Personal
+%*********************************************************************************
+\usepackage[font=itshape]{quoting}			% fancy quotation packages. [font=small] old option
+\usepackage[english]{varioref}		% complete reference package
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage[intoc, english, noprefix]{nomencl}	%for list of symbols
+\usepackage[normalem]{ulem}
+\usepackage{chemfig} %for chemical formulas
+\usepackage{eurosym}			% euro symbol
+\usepackage{epigraph}
+\usepackage{calligra}
+\usepackage{soul}
+\usepackage[utf8]{inputenc}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+
+\setlength{\epigraphwidth}{\textwidth}
+
+
+
+%*********************************************************************************
+% Calling personal settings and making nomenclature
+%*********************************************************************************
+\input{custom-commands}
+\input{general-settings}  % general custom settings (margins etc)
+
+% \makenomenclature
+% \renewcommand{\nomname}{List of Symbols and Abbreviations}
+
+\bibliographystyle{plain}
+
+\begin{document}
+
+
+
+%----------------------------------------------------------------------------------------
+%	TITLE AND AUTHOR(S)
+%----------------------------------------------------------------------------------------
+
+\title{\normalfont\spacedallcaps{Hazardous asteroids forecast via Markov random fields}} % The article title
+
+\subtitle{Project for the course Probabilistic modelling (DSE)} % Uncomment to display a subtitle
+
+\author{
+  Marzio De Corato
+}
+
+\date{} % An optional date to appear under the author(s)
+
+%----------------------------------------------------------------------------------------
+
+
+%----------------------------------------------------------------------------------------
+%	TABLE OF CONTENTS & LISTS OF FIGURES AND TABLES
+%----------------------------------------------------------------------------------------
+
+\maketitle % Print the title/author/date block
+
+%\setcounter{tocdepth}{2} % Set the depth of the table of contents to show sections and subsections only
+
+
+
+%\listoffigures % Print the list of figures%
+
+%\listoftables % Print the list of tables
+
+\newpage
+
+\epigraph{
+\textit{This day may possibly be my last: but the laws of probability, so true in general, so fallacious in particular, still allow about fifteen years. }\\Edward Gibbon (1737-1794)
+}
+
+\newpage
+
+\section*{\begin{center}
+Abstract
+\end{center}}
+
+
+
+
+\newpage
+
+\tableofcontents % Print the table of contents
+
+\newpage % Start the article content on the second page, remove this if you have a longer abstract that goes onto the second page
+
+
+
+\newpage
+%----------------------------------------------------------------------------------------
+%	INTRODUCTION
+%----------------------------------------------------------------------------------------
+
+\chapter{Introduction}
+
+\chapter{Theoretical Framework}
+
+\chapter{Dataset description}
+
+\chapter{Results}
+
+\chapter{Conclusion}
+
+
+\bibliographystyle{unsrt}
+
+\bibliography{sample.bib} % The file containing the bibliography
+
+\newpage
+
+
+
+
+%----------------------------------------------------------------------------------------
+
+\end{document}

@@ -1,0 +1,173 @@
+@article{yao2003information,
+  title={Information-theoretic measures for knowledge discovery and data mining},
+  author={Yao, YY},
+  journal={Entropy measures, maximum entropy principle and emerging applications},
+  pages={115--136},
+  year={2003},
+  publisher={Springer}
+}
+
+@book{tan2019introduction,
+  title={Introduction to Data Mining eBook: Global Edition},
+  author={Tan, P.N. and Steinbach, M. and Kumar, V. and Karpatne, A.},
+  isbn={9780273775324},
+  url={https://books.google.it/books?id=qK09yQEACAAJ},
+  year={2019},
+  publisher={Pearson Education}
+}
+
+@book{cover2006elements,
+  title={Elements of Information Theory},
+  author={Cover, T.M. and Thomas, J.A.},
+  isbn={9780471241959},
+  lccn={2005047799},
+  series={A Wiley-Interscience publication},
+  url={https://books.google.it/books?id=j0DBDwAAQBAJ},
+  year={2006},
+  publisher={Wiley}
+}
+
+@book{mackay2003information,
+  title={Information theory, inference and learning algorithms},
+  author={MacKay, David JC},
+  year={2003},
+  publisher={Cambridge university press}
+}
+
+@book{leskovec2020mining,
+  title={Mining of massive data sets},
+  author={Leskovec, Jure and Rajaraman, Anand and Ullman, Jeffrey David},
+  year={2020},
+  publisher={Cambridge university press}
+}
+
+@article{borah2019rare,
+  title={Rare pattern mining: challenges and future perspectives},
+  author={Borah, Anindita and Nath, Bhabesh},
+  journal={Complex \& Intelligent Systems},
+  volume={5},
+  number={1},
+  pages={1--23},
+  year={2019},
+  publisher={Springer}
+}
+
+@article{simpson1951interpretation,
+  title={The interpretation of interaction in contingency tables},
+  author={Simpson, Edward H},
+  journal={Journal of the Royal Statistical Society: Series B (Methodological)},
+  volume={13},
+  number={2},
+  pages={238--241},
+  year={1951},
+  publisher={Wiley Online Library}
+}
+
+@article{blyth1972simpson,
+  title={On Simpson's paradox and the sure-thing principle},
+  author={Blyth, Colin R},
+  journal={Journal of the American Statistical Association},
+  volume={67},
+  number={338},
+  pages={364--366},
+  year={1972},
+  publisher={Taylor \& Francis}
+}
+
+@book{tuffery2011data,
+  title={Data mining and statistics for decision making},
+  author={Tuff{\'e}ry, St{\'e}phane},
+  year={2011},
+  publisher={John Wiley \& Sons}
+}
+
+@book{van1992stochastic,
+  title={Stochastic processes in physics and chemistry},
+  author={Van Kampen, Nicolaas Godfried},
+  volume={1},
+  year={1992},
+  publisher={Elsevier}
+}
+
+@article{etaiwi2017impact,
+  title={The impact of applying different preprocessing steps on review spam detection},
+  author={Etaiwi, Wael and Naymat, Ghazi},
+  journal={Procedia computer science},
+  volume={113},
+  pages={273--279},
+  year={2017},
+  publisher={Elsevier}
+}
+
+@book{bird2009natural,
+  title={Natural language processing with Python: analyzing text with the natural language toolkit},
+  author={Bird, Steven and Klein, Ewan and Loper, Edward},
+  year={2009},
+  publisher={" O'Reilly Media, Inc."}
+}
+
+@misc{twitter,
+    howpublished = {\url{https://help.twitter.com/it/rules-and-policies/twitter-api}}
+}
+
+@article{planck1900theory,
+  title={The theory of heat radiation},
+  author={Planck, Max},
+  journal={Entropie},
+  volume={144},
+  number={190},
+  pages={164},
+  year={1900}
+}
+
+@book{zaki2014data,
+  title={Data mining and analysis: fundamental concepts and algorithms},
+  author={Zaki, Mohammed J and Meira Jr, Wagner and Meira, Wagner},
+  year={2014},
+  publisher={Cambridge University Press}
+}
+
+@book{jaynes2003probability,
+  title={Probability theory: The logic of science},
+  author={Jaynes, Edwin T},
+  year={2003},
+  publisher={Cambridge university press}
+}
+
+
+@misc{Folder,
+    howpublished = {\url{https://www.dropbox.com/sh/2whpk4r2ompd42e/AACHTKOBwx2WaBgp9KMNNX4ga?dl=0}}
+}
+
+@misc{Nowzad,
+    howpublished = {\url{https://www.independent.co.uk/asia/central-asia/pen-farthing-nowzad-afghanistan-kabul-b1908359.html}}
+}
+
+@book{petrucci2010general,
+  title={General chemistry: principles and modern applications},
+  author={Petrucci, Ralph H and Herring, F Geoffrey and Madura, Jeffry D},
+  year={2010},
+  publisher={Pearson Prentice Hall}
+}
+
+@article{zaharia2016apache,
+  title={Apache spark: a unified engine for big data processing},
+  author={Zaharia, Matei and Xin, Reynold S and Wendell, Patrick and Das, Tathagata and Armbrust, Michael and Dave, Ankur and Meng, Xiangrui and Rosen, Josh and Venkataraman, Shivaram and Franklin, Michael J and others},
+  journal={Communications of the ACM},
+  volume={59},
+  number={11},
+  pages={56--65},
+  year={2016},
+  publisher={ACM New York, NY, USA}
+}
+
+@article{raschka2018mlxtend,
+  title={MLxtend: Providing machine learning and data science utilities and extensions to Python’s scientific computing stack},
+  author={Raschka, Sebastian},
+  journal={Journal of open source software},
+  volume={3},
+  number={24},
+  pages={638},
+  year={2018},
+  publisher={The Open Journal}
+}
