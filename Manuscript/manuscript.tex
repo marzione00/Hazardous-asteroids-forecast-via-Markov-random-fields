@@ -199,7 +199,7 @@ Abstract
 
 \chapter{Theoretical Framework}
 
-In this section we are going to review the theoretical concepts that underlies to the probabilistic methods here used as well to the physical laws that describe the dynamics of the asteroids.  Concerning the methods,  we will expose them following the approaches of Murphy \cite{murphy2012machine},  Koller  \cite{koller2009probabilistic} and Russel \cite{russell2010artificial}.  Furthermore we will provide also a rapid overview of the main concepts of information theory,  since we used some of its concepts in the preliminary analysis of the dataset.  On the other side for the concepts related to the celestial mechanics we will follow the Murray textbook \cite{murray1999solar}.  
+In this section we are going to review the theoretical concepts that underlies to the probabilistic methods here used as well to the physical laws that describe the dynamics of the asteroids.  Concerning the methods,  we will expose them following the approaches of Murphy \cite{murphy2012machine},  Koller  \cite{koller2009probabilistic} and Russel \cite{russell2010artificial}.  Furthermore we will provide also a rapid overview of the main concepts of information theory,  following the Cover \cite{cover2006elements} and MacKay \cite{mackay2003information} approaches ,  since we used some of its concepts in the preliminary analysis of the dataset.  On the other side for the concepts related to the celestial mechanics we will follow the Murray textbook \cite{murray1999solar}.  
 
 \section{Markov random fields}
 
@@ -289,7 +289,7 @@ But this is nothing more that the well know \footnote{In physics} Hamiltonian of
 P_{\beta}(\textbf{y})=\dfrac{e^{-\beta H(\textbf{y}})}{Z_{\beta}}
 \end{equation}
 
-where $\beta$ is proportional to the inverse of the system temperature.  Coming back the unnormalized probability of a collective state $\textbf{y}$,  if we set $\Sigma^{-1}=\textbf{W}$, $\boldsymbol{\mu}=boldsymbol{\Sigma} b$ and $c=\dfrac{1}{2}\mu^{T}\boldsymbol{\Sigma}^{-1}\mu$ we obtain a Gaussian \cite{murray1999solar}: 
+where $\beta$ is proportional to the inverse of the system temperature.  Coming back the unnormalized probability of a collective state $\textbf{y}$,  if we set $\Sigma^{-1}=\textbf{W}$,  $\boldsymbol{\mu}=\boldsymbol{\Sigma} \textbf{b}$ and $c=\dfrac{1}{2}\mu^{T}\boldsymbol{\Sigma}^{-1}\mu$ we obtain a Gaussian \cite{murray1999solar}: 
 
 \begin{equation}
 \tilde{\textbf{p}}(y)\sim exp\left( -\frac{1}{2} (\textbf{y}-\boldsymbol{\mu})^{T} \boldsymbol{\Sigma}^{-1} (\textbf{y}-\boldsymbol{\mu}) + c \right)
