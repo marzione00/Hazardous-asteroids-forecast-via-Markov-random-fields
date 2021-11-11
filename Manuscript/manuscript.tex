@@ -65,6 +65,7 @@
 % \usepackage{morefloats}
 %\usepackage{chngcntr}
 \usepackage{pdfpages}
+\usepackage{braket}
 
 %*********************************************************************************
 % Tables
@@ -197,6 +198,103 @@ Abstract
 \chapter{Introduction}
 
 \chapter{Theoretical Framework}
+
+In this section we are going to review the theoretical concepts that underlies to the probabilistic methods here used as well to the physical laws that describe the dynamics of the asteroids.  Concerning the methods,  we will expose them following the approaches of Murphy \cite{murphy2012machine},  Koller  \cite{koller2009probabilistic} and Russel \cite{russell2010artificial}.  Furthermore we will provide also a rapid overview of the main concepts of information theory,  since we used some of its concepts in the preliminary analysis of the dataset.  On the other side for the concepts related to the celestial mechanics we will follow the Murray textbook \cite{murray1999solar}.  
+
+\section{Markov random fields}
+
+Lets start by supposing that we would represent compactly a joint distribution such as \cite{murphy2012machine}:
+
+\begin{equation}
+p(x_{1},x_{2},...,x_{n})
+\end{equation}
+
+that can represent for instance words in a documents or pixels of an image.  Firstly we know that using the chain rule,  we can decompose it, into the following form \cite{murphy2012machine}:
+
+\begin{equation}
+p(x_{1:V})=p(x_{1})p(x_{2}|x_{1})p(x_{3}|x_{2},x_{1})...p(x_{V}|x_{1:V-1})
+\end{equation}
+
+where V is the number of variables and 1:V stands for ${1,2,...,V}$.  This decomposition makes explicit the conditional probability tables, or in other terms the transition probability tensors \cite{wu2017markov}.  As one can point out the number of parameter is cumbersome as the number of variables grows: indeed the number of parameter required scales as $\mathcal{O}(K^{V})$. 
+Such formidable problem can be attacked by considering the concept of conditional independence.  This is defined as  \cite{murphy2012machine}:
+
+\begin{equation}
+X  \perp Y| Z \iff  p(X,Y|Z) = p(X|Z)p(Y|Z)
+\end{equation}
+
+A particular case of this definition is the Markov assumption,  by which \textit{the future is independent from the past given the present } or in symbols \cite{murphy2012machine}: 
+
+\begin{equation}
+p(\textbf{x}_{1:V})=p(x_{1})\prod^{V}_{t=1}p(x_{t}|x_{t-1})
+\end{equation}
+
+In this case a first order Markov chain is obtained,  where the transtion tensor is of second order \cite{wu2017markov}.  Given this formalism we are interested in finding a smart way to plot such joint distribution into an intuitive way: the graph theory provide the answer to this quest.  In particular the random variables can be represented by nodes and presence of conditional indipendence for two random variables by the lack of an edge that interconnects them.  Bayesian networks consider directed edges,  while Markov random fields (MRF) only undirected.  As consequence,  while the the concept of topological ordering,  by which the parents n nodes are labelled with a lower  with respect to their children,  is well defined for Bayesian network,  for MRF is not.  In order to solve this issue it is useful to consider the Hammersley-Clifford theorem as stated in \cite{murphy2012machine}:
+
+\begin{theorem}[Hammersley-Clifford]
+A positive distribution p(\textbf{y})>0 satisfies the CI properties of an indirect graph G iif p can be represented as a product of factor, one per maximal clique,  i.e.
+\begin{equation}
+p(\textbf{y}|\theta)= \dfrac{1}{Z(\theta)}\prod_{c \in C }\psi_{c}(\textbf{y}_{c}|\theta_{c})
+\end{equation}
+where C is the set of all the (maximal) cliques of G,  and Z($\theta$) is the partition function given by 
+\begin{equation}
+Z(\theta):= \sum_{y}\prod_{c\in C}\psi_{c}(\textbf{y}_{c}|\theta_{c})
+\end{equation}
+Note that this partition function is what ensures the overall distribution sums to 1
+\end{theorem}
+
+Such theorem allows to represent a probability distribution with potential functions for each maximal clique in the graph.  A particular case of these is the Gibbs distribution \cite{murphy2012machine}: 
+
+\begin{equation}
+p(y|\theta)=\dfrac{1}{Z(\theta)} exp\left(-\sum_{c}E(y_{c}|\theta_{c})\right)
+\end{equation}
+
+where $E(y_{c})>0$ represent the energy associated with the variables in the clique c.  This form can be adapted to a UGM with the following expression \cite{murphy2012machine}:
+
+\begin{equation}
+\psi_{c}(y_{c}|\theta_{c})=exp\left(-E(y_{c}|\theta_{c})\right)
+\end{equation}
+
+Finally in order to reduce the computational cost,  one can consider only the pairwise interaction instead of the maximum clique. This is the analogue of what is usually performed in solid state physics (but surely not always)  when only the interaction between the first neighbour is considered.  Another example is the  Ising model: here we have a lattice of spins that can be or in $\ket{+}$ or in $\ket{-}$ and their interaction is modelled by\cite{murphy2012machine}:
+
+
+\begin{equation}
+\psi_{st}\left(y_{s},y_{t}\right) =
+\begin{pmatrix}
+e^{w_{st}} & e^{-w_{st}} \\
+e^{-w_{st}} & e^{w_{st}} \\
+\end{pmatrix}
+\end{equation}
+
+where $w_{st}=J$ represent the coupling strength between two neighbour site.  The collective state is described by 
+
+\begin{equation}
+\ket{i_{1},i_{2},...,i_{n}}=\ket{i_{1}}\otimes\ket{i_{2}}\otimes...\otimes\ket{i_{n}}
+\end{equation}
+
+where $\otimes$ is the tensor product.  If this parameter is associated with a positive finite value we have an associative Markov network: basically collective states in which all sites have the same configuration is favoured. Thus we will have two collective states: one for which we have all $\ket{+}$ and another in which we have all $\ket{-}$  Such situation would model,  in principle,  the ferromagnet materials where the external magnetic field induce into the material a magnetic filed with the same direction.  On the other side if the magnetization of the material is opposite with respect to the external field,  and thus $J<0$,  we have an anti-ferromagnetic system in which frustrated states are present.  Furthermore lets consider the unnormalized log probability of a collective state $\textbf{y}=\ket{i_{1},i_{2},...,i_{n}}$
+
+\begin{equation}
+\log\tilde{\textbf{p}}(y)= -\sum_{s\sim t}y_{s}w_{st}y_{t}
+\end{equation}
+
+If we also consider an external field 
+
+\begin{equation}
+\log\tilde{\textbf{p}}(y)= -\sum_{s\sim t}y_{s}w_{st}y_{t}+\sum_{s}b_{s}y_{s}
+\end{equation}
+
+But this is nothing more that the well know \footnote{In physics} Hamiltonian of an Ising system. This is not a simple coincidence:  indeed the Hamiltonian of a system represent,  rudely speaking,  its total energy.  Thus according to the Boltzmann or Gibbs distribution we have 
+
+\begin{equation}
+P_{\beta}(\textbf{y})=\dfrac{e^{-\beta H(\textbf{y}})}{Z_{\beta}}
+\end{equation}
+
+where $\beta$ is proportional to the inverse of the system temperature.  Coming back the unnormalized probability of a collective state $\textbf{y}$,  if we set $\Sigma^{-1}=\textbf{W}$, $\boldsymbol{\mu}=boldsymbol{\Sigma} b$ and $c=\dfrac{1}{2}\mu^{T}\boldsymbol{\Sigma}^{-1}\mu$ we obtain a Gaussian \cite{murray1999solar}: 
+
+\begin{equation}
+\tilde{\textbf{p}}(y)\sim exp\left( -\frac{1}{2} (\textbf{y}-\boldsymbol{\mu})^{T} \boldsymbol{\Sigma}^{-1} (\textbf{y}-\boldsymbol{\mu}) + c \right)
+\end{equation}
+
 
 \chapter{Dataset description}
 

@@ -1,3 +1,29 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{1}
+
+\bibitem{koller2009probabilistic}
+Daphne Koller and Nir Friedman.
+\newblock {\em Probabilistic graphical models: principles and techniques}.
+\newblock MIT press, 2009.
+
+\bibitem{murphy2012machine}
+Kevin~P Murphy.
+\newblock {\em Machine learning: a probabilistic perspective}.
+\newblock MIT press, 2012.
+
+\bibitem{murray1999solar}
+Carl~D Murray and Stanley~F Dermott.
+\newblock {\em Solar system dynamics}.
+\newblock Cambridge university press, 1999.
+
+\bibitem{russell2010artificial}
+S.~Russell, S.J. Russell, P.~Norvig, and E.~Davis.
+\newblock {\em Artificial Intelligence: A Modern Approach}.
+\newblock Prentice Hall series in artificial intelligence. Prentice Hall, 2010.
+
+\bibitem{wu2017markov}
+Sheng-Jhih Wu and Moody~T Chu.
+\newblock Markov chains with memory, tensor formulation, and the dynamics of
+  power iteration.
+\newblock {\em Applied Mathematics and Computation}, 303:226--239, 2017.
 
 \end{thebibliography}

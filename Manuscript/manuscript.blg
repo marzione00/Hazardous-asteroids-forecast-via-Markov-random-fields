@@ -1,54 +1,51 @@
-This is BibTeX, Version 0.99d
+This is BibTeX, Version 0.99d (TeX Live 2019)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: manuscript.aux
-Reallocating 'name_of_file' (item size: 1) to 6 items.
 The style file: plain.bst
-Illegal, another \bibstyle command---line 53 of file manuscript.aux
+Illegal, another \bibstyle command---line 70 of file manuscript.aux
  : \bibstyle
  :          {unsrt}
 I'm skipping whatever remains of this command
-Reallocating 'name_of_file' (item size: 1) to 11 items.
-I found no \citation commands---while reading file manuscript.aux
 Database file #1: sample.bib
-You've used 0 entries,
+You've used 5 entries,
             2118 wiz_defined-function locations,
-            497 strings with 4003 characters,
-and the built_in function-call counts, 18 in all, are:
-= -- 0
-> -- 0
+            525 strings with 4680 characters,
+and the built_in function-call counts, 1390 in all, are:
+= -- 128
+> -- 69
 < -- 0
-+ -- 0
-- -- 0
-* -- 2
-:= -- 7
-add.period$ -- 0
-call.type$ -- 0
-change.case$ -- 0
++ -- 27
+- -- 22
+* -- 79
+:= -- 249
+add.period$ -- 16
+call.type$ -- 5
+change.case$ -- 22
 chr.to.int$ -- 0
-cite$ -- 0
-duplicate$ -- 0
-empty$ -- 1
-format.name$ -- 0
-if$ -- 1
+cite$ -- 5
+duplicate$ -- 59
+empty$ -- 115
+format.name$ -- 22
+if$ -- 287
 int.to.chr$ -- 0
-int.to.str$ -- 0
-missing$ -- 0
-newline$ -- 3
-num.names$ -- 0
-pop$ -- 0
+int.to.str$ -- 5
+missing$ -- 9
+newline$ -- 28
+num.names$ -- 10
+pop$ -- 38
 preamble$ -- 1
-purify$ -- 0
+purify$ -- 21
 quote$ -- 0
-skip$ -- 1
+skip$ -- 34
 stack$ -- 0
-substring$ -- 0
-swap$ -- 0
+substring$ -- 50
+swap$ -- 5
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 0
+type$ -- 12
 warning$ -- 0
-while$ -- 0
-width$ -- 0
-write$ -- 2
-(There were 2 error messages)
+while$ -- 12
+width$ -- 6
+write$ -- 54
+(There was 1 error message)
