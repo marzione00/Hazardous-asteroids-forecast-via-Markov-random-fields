@@ -202,7 +202,7 @@ Abstract
 
 \chapter{Theoretical Framework}
 
-In this section we are going to review the theoretical concepts that underlies to the probabilistic methods here used as well to the physical laws that describe the dynamics of the asteroids.  Concerning the methods,  we will expose them following the approaches of Murphy \cite{murphy2012machine},  Koller et al. \cite{koller2009probabilistic}, H{\o}jsgaardand \cite{hojsgaard2012graphical} et al.  and Russel et al. \cite{russell2010artificial}.  Furthermore we will provide also a rapid overview of the main concepts of information theory,  following the Cover \cite{cover2006elements} and MacKay \cite{mackay2003information} approaches ,  since we used some of its concepts in the preliminary analysis of the dataset.  On the other side for the concepts related to the celestial mechanics we will follow the Murray textbook \cite{murray1999solar}.  
+In this section we are going to review the theoretical concepts that underlies to the probabilistic methods here used:  we will expose them following the approaches of Murphy \cite{murphy2012machine},  Koller et al. \cite{koller2009probabilistic}, H{\o}jsgaardand \cite{hojsgaard2012graphical} et al.  and Russel et al. \cite{russell2010artificial}.  Furthermore we will provide also a rapid overview of the main concepts of information theory,  following the Cover \cite{cover2006elements} and MacKay \cite{mackay2003information} approaches ,  since we used some of its concepts in the preliminary analysis of the dataset.  On the other side the concepts related to the celestial mechanics here used will be described, following the Murray approach \cite{murray1999solar} into the Appendix A
 
 \section{Markov random fields}
 
@@ -350,16 +350,92 @@ In the first term $\textbf{y}$ is fixed to its observed values while in the seco
 Therfore at the optimum we will have \cite{murphy2012machine}:
 
 \begin{equation}
-mathbb{E}_{p_{emp}}\left[\phi_{c}(\textbf{y})\right]=\mathbb{E}_{p_{(\cdot|\boldsymbol{\theta})}}\left[\phi_{c}(\textbf{y})\right]
+\mathbb{E}_{p_{emp}}\left[\phi_{c}(\textbf{y})\right]=\mathbb{E}_{p_{(\cdot|\boldsymbol{\theta})}}\left[\phi_{c}(\textbf{y})\right]
 \end{equation}
 
-From this expression it is clear why this method is called moment matching; it is worth nothing tha such computation is largely expensive from a computational point of view: thus scholar usually consider other techinques or at least stochastic gradient descent method. A full review can be found in \cite{murphy2012machine} and \citep{koller2009probabilistic}.
+From this expression it is clear why this method is called moment matching; it is worth nothing tha such computation is largely expensive from a computational point of view: thus scholar usually consider other techinques or at least stochastic gradient descent method. A full review can be found in \cite{murphy2012machine} and \cite{koller2009probabilistic}. Finally we consider, as for the dataset in analysed in this work, the case where we have both discrete and continuous variables i.e. $x=\left(i_{1},...,i_{d},y_{1},...,y_{q} \right)$ with d discrete variable and q continuos variables. The are called in the literature Mixed Interaction Models. In this case the following density has to be considered \cite{hojsgaard2012graphical}:
+
+\begin{equation}
+\begin{split}
+f(i,y)=& p(i)(2\pi)^{-q/2}det(\Sigma)^{-1/2} \\
+& exp\left[-\dfrac{1}{2}\left(y-\mu(i)\right)^{T}\Sigma^{-1}\left(y-\mu(i)\right)\right]
+\end{split}
+\label{gaussMix}
+\end{equation}
+
+Which can be rewritten in the exponential family form \cite{hojsgaard2012graphical}: 
+
+\begin{equation}
+\begin{split}
+f(i,y) & = \exp\left\lbrace g(i)+\sum_{u}h^{u}(i)y_{u}-\dfrac{1}{2}\sum_{uv} y_{u}y_{v}k_{uv}\right\rbrace \\
+&= \exp\left\lbrace g(i)+h(i)^{T}y-\dfrac{1}{2}y^{T}Ky \right\rbrace
+\end{split}
+\end{equation}
+
+where $g(i)$, $h(i)$ and $K$ are the canonical parameters. These are connected with the parameters of expression \ref{gaussMix} by the following identities \cite{hojsgaard2012graphical}: 
+
+\begin{equation}
+\begin{split}
+K=&\Sigma^{-1} \\
+h(i)=&\Sigma^{-1}\mu(i) \\
+g(i)=&\log p(i) -\frac{1}{2}\log det (\Sigma) \\
+&-\dfrac{1}{2}\mu(i)^{T}\Sigma^{-1}\mu(i)-\dfrac{q}{2}\log 2\pi
+\end{split}
+\end{equation}
+
+Moreover one can further modify the previous form in order to obtain a particular factorial expansion: such models are referred as homogeneous mixed interaction models \cite{hojsgaard2012graphical}.
+
+\section{Information theory}
+Given an ensemble of random variable, we can find the amount of information that one variable contains of another one: such quantity is called mutual information and it is a key concept within the information theory. This approach, that was implemented by Claude Shannon decades before the probabilistic modelling, represent a complementary way by which one can attack the problem of conditional dependence between random variables. Here we would provide some basic concepts of this theory, following the Cover \cite{cover2006elements} and MacKay \cite{mackay2003information} approaches, that allows to properly define the concept of mutual information. The starting concept of information theory is the entropy which express the uncertainty of a random variable. Given a random variable $X$ with alphabet (the accessible states) $\cite{cover2006elements}:$ and probability mass function $p(x)=Pr\left\lbrace X=x \rbrace\; x \in \chi$ we define the entropy of $X$ as $H(X)=-\sum_{x \in X} p(x)log p(x)$ where the logarithm has to be considered with basis 2. In analogous way the joint entropy of two random variables $(X,Y)$ with a joint distribution p(x,y) is defined as \cite{cover2006elements}:
+\begin{equation}
+H(X,Y)=-\sum_{x\in \chi}\sum_{y\in \mathcal{Y}}p(x,y)\log p(x,y)
+\end{equation}
+Furthermore, we can define also the conditional entropy as \cite{cover2006elements}:
+\begin{equation}
+\begin{split}
+H(X|Y)=& \sum_{x\in \mathcal{X} }p(x)H(Y|X=x)\\
+=& -\sum_{x\in \mathcal{X}}p(x)\sum_{y\in \mathcal{Y}}p(x,y)\log p(y|x) \\
+=& -E\log p(Y|X)
+\end{split}
+\end{equation}
+The joint entropy and the conditional entropy are related by the chain rule \cite{cover2006elements}:
+\begin{equation}
+H(X,Y)=H(X)+H(Y|X)
+\end{equation}
+Such rule can be extended to to the following from \cite{cover2006elements}:
+\begin{equation}
+H(X,Y|Z)=H(X|Z)+H(Y|X,Z)
+\end{equation}
+Given a distribution q and another distribution p, one can quantify how inefficently the second one describe the first one using the concept of relative entropy or Kullback-Leibler distance \cite{cover2006elements,mackay2003information}:
+\begin{equation}
+D(p||q)=\sum p(x)\log\frac{p(x)}{q(x)}
+\end{equation}
+As stated by the Gibbs inequality \cite{cover2006elements,mackay2003information}:
+\begin{equation}
+D(p||q)\geq 0
+\end{equation}
+this quantity can not be negative: the entropy of a random variable associated to another cannot have a degree of uncertainty lower with respect to the quantity that its aimed to describe. On these basis we are now ready to introduce the concept of mutual information. This is defined as  \cite{cover2006elements}:
+\begin{equation}
+\begin{split}
+I(X;Y)&=\sum\sump(x,y)\log\dfrac{p(x,y)}{p(x)p(y)}=\\
+&=D(p(x,y)||p(x)p(y)) \\
+&=H(X)-H(X|Y)=H(Y)-H(Y|X)
+\end{split}
+\end{equation}
+As for the joint distribution also in this case we have a chain rule  \cite{cover2006elements}:
+\begin{equation}
+I(X_{1},X_{2},...,X_{n};Y)=\sum^{n}_{i=1}I(X_{i};Y|X_{i-1},X_{i-2},...,X_{1})
+\end{equation}
+Finally we would report the data process inequality theorem that connects the information theory with the Markov chain: if we have a Markov chains, $X\rightarrow Y \rightarrow Z$  then $I(X;Y)\geq I(X;Z) $. As for the Gibbs inequality, the underlying idea is that no clever manipulation of the data can improve the inference that can be made on them \cite{cover2006elements,mackay2003information}. Otherwise we would have a clear violation of the second principle of thermodynamics (see for instance the Maxwell's demon \cite{feynman2018feynman})
+
 
 \chapter{Dataset description}
 
 \chapter{Results}
 
 \chapter{Conclusion}
+
+\chapter{Appendix A: Concepts of celestial mechanics}
 
 
 \bibliographystyle{unsrt}

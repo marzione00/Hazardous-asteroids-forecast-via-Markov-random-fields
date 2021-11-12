@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.2.22)  12 NOV 2021 12:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.2.22)  12 NOV 2021 18:26
 entering extended mode
 **./manuscript.tex
 (manuscript.tex
@@ -2232,6 +2232,12 @@ Package tocbasic Info: character protrusion at toc deactivated on input line 19
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/pplj/m/sc/12'.
 (microtype)             Ignoring protrusion settings for this character.
+
+Overfull \hbox (14.5139pt too wide) in paragraph at lines 10--10
+ [][] []\T1/iwona/m/sc/12/80ls appendix a: con-cepts of ce-les-tial me-chan-ics
+ []  
+ []
+
 )
 \tf@toc=\write4
 \openout4 = `manuscript.toc'.
@@ -2282,10 +2288,41 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-[9]
+[9] [10]
+! Missing \right. inserted.
+<inserted text> 
+                \right .
+l.389 ...=Pr\left\lbrace X=x \rbrace\; x \in \chi$
+                                                   we define the entropy of ...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (8.68796pt too wide) in paragraph at lines 389--390
+[]\T1/pplj/m/n/12 Given an en-sem-ble of ran-dom vari-able, we can find the amo
+unt
+ []
+
+[11]
 ! Undefined control sequence.
-l.356 ...nd in \cite{murphy2012machine} and \citep
-                                                  {koller2009probabilistic}.
+<argument> ...g \begin {split} I(X;Y)&=\sum \sump 
+                                                  (x,y)\log \dfrac {p(x,y)}{...
+l.423 \end{split}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ...g \begin {split} I(X;Y)&=\sum \sump 
+                                                  (x,y)\log \dfrac {p(x,y)}{...
+l.423 \end{split}
+                 
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -2293,24 +2330,33 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 Chapter 3.
-[10]
+[12]
 Chapter 4.
-[11
+[13
 
 ]
 Chapter 5.
-[12
+[14
 
-] (manuscript.bbl [13
+]
+Chapter 6.
+[15
 
-]) [14
+]
+Overfull \hbox (5.81458pt too wide) in paragraph at lines 438--438
+|[]\T1/iwona/m/n/17.28/160ls APPENDIX A: CON-CEPTS OF
+ []
+
+(manuscript.bbl [16
+
+]) [17
 
 ] (manuscript.aux) ) 
 Here is how much of TeX's memory you used:
- 39060 strings out of 479334
- 760068 string characters out of 2865057
- 1437582 words of memory out of 3000000
- 55526 multiletter control sequences out of 15000+200000
+ 39085 strings out of 479334
+ 760383 string characters out of 2865057
+ 1436582 words of memory out of 3000000
+ 55534 multiletter control sequences out of 15000+200000
  558467 words of font info for 282 fonts, out of 3000000 for 9000
  1142 hyphenation exceptions out of 8191
  128i,23n,130p,10607b,816s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2337,9 +2383,9 @@ iwonab.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/nowacki/iwona/iwonar.pfb><C
 s/MiKTeX 2.9/fonts/type1/urw/palatino/uplbi8a.pfb><C:/Program Files/MiKTeX 2.9/
 fonts/type1/urw/palatino/uplr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/ur
 w/palatino/uplri8a.pfb>
-Output written on manuscript.pdf (15 pages, 219370 bytes).
+Output written on manuscript.pdf (18 pages, 243535 bytes).
 PDF statistics:
- 334 PDF objects out of 1000 (max. 8388607)
- 55 named destinations out of 1000 (max. 500000)
- 37533 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 403 PDF objects out of 1000 (max. 8388607)
+ 72 named destinations out of 1000 (max. 500000)
+ 37549 words of extra memory for PDF output out of 42996 (max. 10000000)
 
