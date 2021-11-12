@@ -5,6 +5,11 @@ T.M. Cover and J.A. Thomas.
 \newblock {\em Elements of Information Theory}.
 \newblock A Wiley-Interscience publication. Wiley, 2006.
 
+\bibitem{hojsgaard2012graphical}
+S{\o}ren H{\o}jsgaard, David Edwards, and Steffen Lauritzen.
+\newblock {\em Graphical models with R}.
+\newblock Springer Science \& Business Media, 2012.
+
 \bibitem{koller2009probabilistic}
 Daphne Koller and Nir Friedman.
 \newblock {\em Probabilistic graphical models: principles and techniques}.

@@ -66,6 +66,9 @@
 %\usepackage{chngcntr}
 \usepackage{pdfpages}
 \usepackage{braket}
+\usepackage{amssymb}
+\def\delequal{\mathrel{\ensurestackMath{\stackon[1pt]{=}{\scriptstyle\Delta}}}}
+
 
 %*********************************************************************************
 % Tables
@@ -199,7 +202,7 @@ Abstract
 
 \chapter{Theoretical Framework}
 
-In this section we are going to review the theoretical concepts that underlies to the probabilistic methods here used as well to the physical laws that describe the dynamics of the asteroids.  Concerning the methods,  we will expose them following the approaches of Murphy \cite{murphy2012machine},  Koller  \cite{koller2009probabilistic} and Russel \cite{russell2010artificial}.  Furthermore we will provide also a rapid overview of the main concepts of information theory,  following the Cover \cite{cover2006elements} and MacKay \cite{mackay2003information} approaches ,  since we used some of its concepts in the preliminary analysis of the dataset.  On the other side for the concepts related to the celestial mechanics we will follow the Murray textbook \cite{murray1999solar}.  
+In this section we are going to review the theoretical concepts that underlies to the probabilistic methods here used as well to the physical laws that describe the dynamics of the asteroids.  Concerning the methods,  we will expose them following the approaches of Murphy \cite{murphy2012machine},  Koller et al. \cite{koller2009probabilistic}, H{\o}jsgaardand \cite{hojsgaard2012graphical} et al.  and Russel et al. \cite{russell2010artificial}.  Furthermore we will provide also a rapid overview of the main concepts of information theory,  following the Cover \cite{cover2006elements} and MacKay \cite{mackay2003information} approaches ,  since we used some of its concepts in the preliminary analysis of the dataset.  On the other side for the concepts related to the celestial mechanics we will follow the Murray textbook \cite{murray1999solar}.  
 
 \section{Markov random fields}
 
@@ -271,30 +274,86 @@ where $w_{st}=J$ represent the coupling strength between two neighbour site.  Th
 \ket{i_{1},i_{2},...,i_{n}}=\ket{i_{1}}\otimes\ket{i_{2}}\otimes...\otimes\ket{i_{n}}
 \end{equation}
 
-where $\otimes$ is the tensor product.  If this parameter is associated with a positive finite value we have an associative Markov network: basically collective states in which all sites have the same configuration is favoured. Thus we will have two collective states: one for which we have all $\ket{+}$ and another in which we have all $\ket{-}$  Such situation would model,  in principle,  the ferromagnet materials where the external magnetic field induce into the material a magnetic filed with the same direction.  On the other side if the magnetization of the material is opposite with respect to the external field,  and thus $J<0$,  we have an anti-ferromagnetic system in which frustrated states are present.  Furthermore lets consider the unnormalized log probability of a collective state $\textbf{y}=\ket{i_{1},i_{2},...,i_{n}}$
+where $\otimes$ is the tensor product.  If this parameter is associated with a positive finite value we have an associative Markov network: basically collective states in which all sites have the same configuration is favoured. Thus we will have two collective states: one for which we have all $\ket{+}$ and another in which we have all $\ket{-}$  Such situation would model,  in principle,  the ferromagnet materials where the external magnetic field induce into the material a magnetic filed with the same direction.  On the other side if the magnetization of the material is opposite with respect to the external field,  and thus $J<0$,  we have an anti-ferromagnetic system in which frustrated states are present.  Furthermore lets consider the unnormalized log probability of a collective state $\textbf{y}=\ket{i_{1},i_{2},...,i_{n}}$ \cite{murphy2012machine}:
 
 \begin{equation}
 \log\tilde{\textbf{p}}(y)= -\sum_{s\sim t}y_{s}w_{st}y_{t}
 \end{equation}
 
-If we also consider an external field 
+If we also consider an external field \cite{murphy2012machine}:
 
 \begin{equation}
 \log\tilde{\textbf{p}}(y)= -\sum_{s\sim t}y_{s}w_{st}y_{t}+\sum_{s}b_{s}y_{s}
 \end{equation}
 
-But this is nothing more that the well know \footnote{In physics} Hamiltonian of an Ising system. This is not a simple coincidence:  indeed the Hamiltonian of a system represent,  rudely speaking,  its total energy.  Thus according to the Boltzmann or Gibbs distribution we have 
+But this is nothing more that the well know \footnote{In physics} Hamiltonian of an Ising system. This is not a simple coincidence:  indeed the Hamiltonian of a system represent,  rudely speaking,  its total energy.  Thus according to the Boltzmann or Gibbs distribution we have \cite{murphy2012machine}:
 
 \begin{equation}
 P_{\beta}(\textbf{y})=\dfrac{e^{-\beta H(\textbf{y}})}{Z_{\beta}}
 \end{equation}
 
-where $\beta$ is proportional to the inverse of the system temperature.  Coming back the unnormalized probability of a collective state $\textbf{y}$,  if we set $\Sigma^{-1}=\textbf{W}$,  $\boldsymbol{\mu}=\boldsymbol{\Sigma} \textbf{b}$ and $c=\dfrac{1}{2}\mu^{T}\boldsymbol{\Sigma}^{-1}\mu$ we obtain a Gaussian \cite{murray1999solar}: 
+where $\beta$ is proportional to the inverse of the system temperature.  Coming back the unnormalized probability of a collective state $\textbf{y}$,  if we set $\Sigma^{-1}=\textbf{W}$,  $\boldsymbol{\mu}=\boldsymbol{\Sigma} \textbf{b}$ and $c=\dfrac{1}{2}\mu^{T}\boldsymbol{\Sigma}^{-1}\mu$ we obtain a Gaussian \cite{murphy2012machine}:
 
 \begin{equation}
 \tilde{\textbf{p}}(y)\sim exp\left( -\frac{1}{2} (\textbf{y}-\boldsymbol{\mu})^{T} \boldsymbol{\Sigma}^{-1} (\textbf{y}-\boldsymbol{\mu}) + c \right)
 \end{equation}
 
+In general we refer to Gaussian Markov random fields for a joint distribution that can be decomposed in the following way \cite{murphy2012machine}:
+
+\begin{equation}
+p\left(\textbf{y}|\boldsymbol{\theta}\right) \propto \prod_{s\sim t} \psi_{st}\left(y_{s},y_{t}\right)\prod_{t}\psi_{t}\left(y_{t}\right)
+\end{equation}
+
+\begin{equation}
+\psi_{st}\left( y_{s},y_{t} \right)=exp\left( -\dfrac{1}{2} y_{s}\Delta_{st}y_{t} \right)
+\end{equation}
+
+\begin{equation}
+\psi_{t}\left(y_{t}\right)= \exp \left( -\dfrac{1}{2}\Delta_{tt}y^{2}_{t}+\eta_{t}y_{t}\right)
+\end{equation}
+
+\begin{equation}
+p\left(\textbf{y}|\boldsymbol{\theta}\right) \propto \exp \left( \boldsymbol{\eta}^{T} \textbf{y}-\dfrac{1}{2}y^{T}\Delta \textbf{y} \right)
+\end{equation}
+
+(this last expression can be reconducted to the multivariate gassian if one consider $\boldsymbol{\Delta}=\boldsymbol{\Sigma}^{-1}$ and $\boldsymbol{\eta}=\boldsymbol{\Delta}\boldsymbol{\mu}$. Given the network, we would now move on how the parameters can be achieved. Lets start from a Markov random field in log-linear form \cite{murphy2012machine}:
+
+\begin{equation}
+p\left(\textbf{y}|\boldsymbol{\theta}\right) = \dfrac{1}{Z(\theta)}\exp \left( \sum_{c}\boldsymbol{\theta}^{T}_{c}\phi_{c}\left(\textbf{y}\right)\right)
+\end{equation}
+
+thus we can define the log-likehood as \cite{murphy2012machine}:
+
+\begin{equation}
+\mathcal{L}\left(\boldsymbol{\theta}\right):= \frac{1}{N}\sum_{i}\log p\left(\textbf{y}_{i}|\boldsymbol{\theta}\right)=\frac{1}{N}\sum_{i}\left[\sum_{c} \boldsymbol{\theta}^{T}_{c}\phi_{c}(y_{i})-\log Z\left(\boldsymbol{\theta}\right)\right]
+\end{equation}
+
+\begin{equation}
+\frac{\partial\mathcal{L}}{\partial\boldsymbol{\theta}_{c}}=\frac{1}{N}\sum_{i}\left[\phi_{c}(y_{i})-\frac{\partial}{\partial\boldsymbol{\theta}_{c}}\log Z(\boldsymbol{\theta})\right]
+\end{equation}
+
+\begin{equation}
+\frac{\partial \log Z(\boldsymbol{\theta})}{\partial\boldsymbol{\theta}}=\mathbb{E}\left[\phi_{c}(\textbf{y})\right|\theta]=\sum_{\textbf{y}}\phi_{c}(\textbf{y})p(\textbf{y}|\boldsymbol{\theta})}
+\end{equation}
+
+
+\begin{equation}
+\frac{\partial\mathcal{L}}{\partial\boldsymbol{\theta}_{c}}=\left[\frac{1}{N}\sum_{i}\phi_{c}(y_{i})\right]-\mathbb{E}\left[\phi_{c}(\textbf{y})\right]
+\end{equation}
+
+In the first term $\textbf{y}$ is fixed to its observed values while in the second it is free. Such expression can be recasted in to a more explicative form \cite{murphy2012machine}:
+
+\begin{equation}
+\frac{\partial\mathcal{L}}{\partial\boldsymbol{\theta}_{c}}=\mathbb{E}_{p_{emp}}\left[\phi_{c}(\textbf{y})\right]-\mathbb{E}_{p_{(\cdot|\boldsymbol{\theta})}}\left[\phi_{c}(\textbf{y})\right]
+\end{equation}
+
+Therfore at the optimum we will have \cite{murphy2012machine}:
+
+\begin{equation}
+mathbb{E}_{p_{emp}}\left[\phi_{c}(\textbf{y})\right]=\mathbb{E}_{p_{(\cdot|\boldsymbol{\theta})}}\left[\phi_{c}(\textbf{y})\right]
+\end{equation}
+
+From this expression it is clear why this method is called moment matching; it is worth nothing tha such computation is largely expensive from a computational point of view: thus scholar usually consider other techinques or at least stochastic gradient descent method. A full review can be found in \cite{murphy2012machine} and \citep{koller2009probabilistic}.
 
 \chapter{Dataset description}
 
