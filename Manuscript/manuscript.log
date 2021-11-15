@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.2.22)  15 NOV 2021 12:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.2.22)  15 NOV 2021 15:31
 entering extended mode
 **./manuscript.tex
 (manuscript.tex
@@ -2333,101 +2333,107 @@ Chapter 3.
 Chapter 4.
 [13
 
+] [14
+
 ]
-<Figures/FAMD.pdf, id=232, 410.53375pt x 413.545pt>
+<Figures/FAMD.pdf, id=244, 410.53375pt x 413.545pt>
 File: Figures/FAMD.pdf Graphic file (type pdf)
 <use Figures/FAMD.pdf>
-Package pdftex.def Info: Figures/FAMD.pdf  used on input line 446.
+Package pdftex.def Info: Figures/FAMD.pdf  used on input line 457.
 (pdftex.def)             Requested size: 336.0pt x 338.46544pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Figures/FAMD_Quantitative variables.pdf, id=235, 410.53375pt x 413.545pt>
+<Figures/FAMD_Quantitative variables.pdf, id=247, 410.53375pt x 413.545pt>
 File: Figures/FAMD_Quantitative variables.pdf Graphic file (type pdf)
 <use Figures/FAMD_Quantitative variables.pdf>
 Package pdftex.def Info: Figures/FAMD_Quantitative variables.pdf  used on input
- line 454.
+ line 465.
 (pdftex.def)             Requested size: 336.0pt x 338.46544pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Figures/FAMD_Individuals_(c).pdf, id=238, 410.53375pt x 413.545pt>
+<Figures/FAMD_Individuals_(c).pdf, id=250, 410.53375pt x 413.545pt>
 File: Figures/FAMD_Individuals_(c).pdf Graphic file (type pdf)
 <use Figures/FAMD_Individuals_(c).pdf>
 Package pdftex.def Info: Figures/FAMD_Individuals_(c).pdf  used on input line 4
-62.
+73.
 (pdftex.def)             Requested size: 336.0pt x 338.46544pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[14
-
-] [15 <./Figures/FAMD.pdf>] [16 <./Figures/FAMD_Quantitative variables.pdf>] [1
-7 <./Figures/FAMD_Individuals_(c).pdf>]
-<Figures/Mutual_information.pdf, id=279, 844.15375pt x 597.23125pt>
+[15] [16 <./Figures/FAMD.pdf>] [17 <./Figures/FAMD_Quantitative variables.pdf>]
+[18 <./Figures/FAMD_Individuals_(c).pdf>]
+<Figures/Mutual_information.pdf, id=293, 844.15375pt x 597.23125pt>
 File: Figures/Mutual_information.pdf Graphic file (type pdf)
 <use Figures/Mutual_information.pdf>
-Package pdftex.def Info: Figures/Mutual_information.pdf  used on input line 471
+Package pdftex.def Info: Figures/Mutual_information.pdf  used on input line 482
 .
 (pdftex.def)             Requested size: 588.0pt x 416.0177pt.
 
 
-LaTeX Warning: Float too large for page by 117.29773pt on input line 475.
+LaTeX Warning: Float too large for page by 117.29773pt on input line 486.
 
-[18 <./Figures/Mutual_information.pdf>]
+[19 <./Figures/Mutual_information.pdf>]
 Chapter 5.
-[19
+[20
 
 
 ]
 Chapter 6.
-[20
+[21
 
 ]
-Overfull \hbox (5.81458pt too wide) in paragraph at lines 486--486
+Overfull \hbox (5.81458pt too wide) in paragraph at lines 497--497
 |[]\T1/iwona/m/n/17.28/160ls APPENDIX A: CON-CEPTS OF
  []
 
-(manuscript.bbl [21
+(manuscript.bbl [22
 
-]) [22
+]
+Underfull \hbox (badness 1173) in paragraph at lines 50--55
+\T1/pplj/m/it/12 Trans-ac-tions on pat-tern anal-y-sis and ma-chine in-tel-li-g
+ence\T1/pplj/m/n/12 ,
+ []
 
-] (manuscript.aux) ) 
+[23
+
+]) [24] (manuscript.aux) ) 
 Here is how much of TeX's memory you used:
- 39147 strings out of 479334
- 761791 string characters out of 2865057
+ 39155 strings out of 479334
+ 761898 string characters out of 2865057
  1436747 words of memory out of 3000000
- 55577 multiletter control sequences out of 15000+200000
+ 55580 multiletter control sequences out of 15000+200000
  561597 words of font info for 283 fonts, out of 3000000 for 9000
  1142 hyphenation exceptions out of 8191
- 128i,23n,130p,10607b,816s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\Marzio\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/
-public/mathabx/dpi600\matha7.pk>{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/ba
-se/8r.enc} <C:\Users\Marzio\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/public/mat
-habx/dpi720\mathx10.pk> <C:\Users\Marzio\AppData\Local\MiKTeX\2.9\fonts/pk/ljfo
-ur/public/mathabx/dpi600\matha9.pk> <C:\Users\Marzio\AppData\Local\MiKTeX\2.9\f
-onts/pk/ljfour/public/mathabx/dpi600\matha12.pk>{C:/Program Files/MiKTeX 2.9/fo
-nts/enc/dvips/iwona/ec-iwona-sc.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvip
-s/iwona/ec-iwona.enc} <C:\Users\Marzio\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour
-/jknappen/ec/dpi600\ecrm1200.pk><C:/Program Files/MiKTeX 2.9/fonts/type1/public
-/amsfonts/euler/eufm10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
-onts/euler/eurb10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
-euler/eurb7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/euler/
-eurm10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/euler/eurm7
-.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/euler/eusm10.pfb>
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/fpl/fplbj8a.pfb><C:/Program Fil
-es/MiKTeX 2.9/fonts/type1/public/mathpazo/fplmbb.pfb><C:/Program Files/MiKTeX 2
-.9/fonts/type1/public/fpl/fplrc8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
-public/fpl/fplrij8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/nowacki/iwona/
-iwonab.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/nowacki/iwona/iwonar.pfb><C
-:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplb8a.pfb><C:/Program File
-s/MiKTeX 2.9/fonts/type1/urw/palatino/uplbi8a.pfb><C:/Program Files/MiKTeX 2.9/
-fonts/type1/urw/palatino/uplr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/ur
-w/palatino/uplri8a.pfb>
-Output written on manuscript.pdf (23 pages, 529536 bytes).
+ 128i,23n,130p,10607b,893s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\Marzio\AppData\Local\MiKTeX\2.9\fonts/pk/l
+jfour/public/mathabx/dpi600\matha7.pk>{C:/Program Files/MiKTeX 2.9/fonts/enc/dv
+ips/base/8r.enc} <C:\Users\Marzio\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/publ
+ic/mathabx/dpi720\mathx10.pk> <C:\Users\Marzio\AppData\Local\MiKTeX\2.9\fonts/p
+k/ljfour/public/mathabx/dpi600\matha9.pk> <C:\Users\Marzio\AppData\Local\MiKTeX
+\2.9\fonts/pk/ljfour/public/mathabx/dpi600\matha12.pk>{C:/Program Files/MiKTeX 
+2.9/fonts/enc/dvips/iwona/ec-iwona-sc.enc}{C:/Program Files/MiKTeX 2.9/fonts/en
+c/dvips/iwona/ec-iwona.enc} <C:\Users\Marzio\AppData\Local\MiKTeX\2.9\fonts/pk/
+ljfour/jknappen/ec/dpi600\ecrm1200.pk><C:/Program Files/MiKTeX 2.9/fonts/type1/
+public/amsfonts/euler/eufm10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
+c/amsfonts/euler/eurb10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
+fonts/euler/eurb7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
+euler/eurm10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/euler
+/eurm7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/euler/eusm1
+0.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/fpl/fplbj8a.pfb><C:/Progr
+am Files/MiKTeX 2.9/fonts/type1/public/mathpazo/fplmbb.pfb><C:/Program Files/Mi
+KTeX 2.9/fonts/type1/public/fpl/fplrc8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/
+type1/public/fpl/fplrij8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/nowacki/
+iwona/iwonab.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/nowacki/iwona/iwonar.
+pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplb8a.pfb><C:/Progra
+m Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplbi8a.pfb><C:/Program Files/MiKTe
+X 2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
+pe1/urw/palatino/uplri8a.pfb>
+Output written on manuscript.pdf (25 pages, 535846 bytes).
 PDF statistics:
- 490 PDF objects out of 1000 (max. 8388607)
- 86 named destinations out of 1000 (max. 500000)
+ 507 PDF objects out of 1000 (max. 8388607)
+ 91 named destinations out of 1000 (max. 500000)
  38105 words of extra memory for PDF output out of 42996 (max. 10000000)
 

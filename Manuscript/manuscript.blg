@@ -3,51 +3,51 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: manuscript.aux
 Reallocating 'name_of_file' (item size: 1) to 6 items.
 The style file: plain.bst
-Illegal, another \bibstyle command---line 151 of file manuscript.aux
+Illegal, another \bibstyle command---line 155 of file manuscript.aux
  : \bibstyle
  :          {unsrt}
 I'm skipping whatever remains of this command
 Reallocating 'name_of_file' (item size: 1) to 11 items.
 Database file #1: sample.bib
-You've used 11 entries,
+You've used 12 entries,
             2118 wiz_defined-function locations,
-            555 strings with 5522 characters,
-and the built_in function-call counts, 3011 in all, are:
-= -- 278
-> -- 156
+            564 strings with 5773 characters,
+and the built_in function-call counts, 3393 in all, are:
+= -- 317
+> -- 174
 < -- 0
-+ -- 61
-- -- 50
-* -- 174
-:= -- 539
-add.period$ -- 35
-call.type$ -- 11
-change.case$ -- 50
++ -- 68
+- -- 56
+* -- 207
+:= -- 602
+add.period$ -- 38
+call.type$ -- 12
+change.case$ -- 56
 chr.to.int$ -- 0
-cite$ -- 11
-duplicate$ -- 128
-empty$ -- 244
-format.name$ -- 50
-if$ -- 621
+cite$ -- 12
+duplicate$ -- 139
+empty$ -- 273
+format.name$ -- 56
+if$ -- 698
 int.to.chr$ -- 0
-int.to.str$ -- 11
-missing$ -- 19
-newline$ -- 58
-num.names$ -- 22
-pop$ -- 82
+int.to.str$ -- 12
+missing$ -- 20
+newline$ -- 63
+num.names$ -- 24
+pop$ -- 86
 preamble$ -- 1
-purify$ -- 47
+purify$ -- 52
 quote$ -- 0
-skip$ -- 73
+skip$ -- 80
 stack$ -- 0
-substring$ -- 96
-swap$ -- 11
+substring$ -- 132
+swap$ -- 12
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 28
+type$ -- 32
 warning$ -- 0
-while$ -- 26
-width$ -- 13
-write$ -- 116
+while$ -- 30
+width$ -- 14
+write$ -- 127
 (There was 1 error message)

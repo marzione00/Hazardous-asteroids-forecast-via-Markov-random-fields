@@ -88,3 +88,14 @@
   pages={1--18},
   year={2008}
 }
+
+@article{peng2005feature,
+  title={Feature selection based on mutual information criteria of max-dependency, max-relevance, and min-redundancy},
+  author={Peng, Hanchuan and Long, Fuhui and Ding, Chris},
+  journal={IEEE Transactions on pattern analysis and machine intelligence},
+  volume={27},
+  number={8},
+  pages={1226--1238},
+  year={2005},
+  publisher={IEEE}
+}

@@ -46,6 +46,13 @@ Carl~D Murray and Stanley~F Dermott.
 \newblock {\em Solar system dynamics}.
 \newblock Cambridge university press, 1999.
 
+\bibitem{peng2005feature}
+Hanchuan Peng, Fuhui Long, and Chris Ding.
+\newblock Feature selection based on mutual information criteria of
+  max-dependency, max-relevance, and min-redundancy.
+\newblock {\em IEEE Transactions on pattern analysis and machine intelligence},
+  27(8):1226--1238, 2005.
+
 \bibitem{russell2010artificial}
 S.~Russell, S.J. Russell, P.~Norvig, and E.~Davis.
 \newblock {\em Artificial Intelligence: A Modern Approach}.
