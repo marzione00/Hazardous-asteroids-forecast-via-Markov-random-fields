@@ -105,8 +105,8 @@ ggdensity(Asteroids_FINAL,x="Eccentricity",rug = TRUE, color = "Hazardous",fill 
 
 
 MI_var<- varrank(data= Asteroids_FINAL_double, variable.important = "Hazardous", discretization.method = "sturges")
-plot(MI_var,margins = c(13, 13, 4, 2),notecex=1,digitcell=2,labelscex=1)
-
+plot(MI_var,margins = c(8, 8, 4, 0.1),notecex=0.5,digitcell=2,labelscex=0.6,textlines = 0.,maincex =0.5)
+summary(MI_var)
 
 #Continuous variables analysis
 

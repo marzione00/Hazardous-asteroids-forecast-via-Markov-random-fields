@@ -68,6 +68,7 @@
 \usepackage{braket}
 \usepackage{amssymb}
 \def\delequal{\mathrel{\ensurestackMath{\stackon[1pt]{=}{\scriptstyle\Delta}}}}
+\usepackage{lscape}
 
 
 %*********************************************************************************
@@ -426,12 +427,59 @@ As for the joint distribution also in this case we have a chain rule  \cite{cove
 \begin{equation}
 I(X_{1},X_{2},...,X_{n};Y)=\sum^{n}_{i=1}I(X_{i};Y|X_{i-1},X_{i-2},...,X_{1})
 \end{equation}
-Finally we would report the data process inequality theorem that connects the information theory with the Markov chain: if we have a Markov chains, $X\rightarrow Y \rightarrow Z$  then $I(X;Y)\geq I(X;Z) $. As for the Gibbs inequality, the underlying idea is that no cleaver manipulation of the data can improve the inference that can be made on them \cite{cover2006elements,mackay2003information}. Otherwise we would have a clear violation of the second principle of thermodynamics (see for instance the Maxwell's demon \cite{feynman2018feynman})
+Finally we would report the data process inequality theorem that connects the information theory with the Markov chain: if we have a Markov chains, $X\rightarrow Y \rightarrow Z$  then $I(X;Y)\geq I(X;Z) $. As for the Gibbs inequality, the underlying idea is that no clever manipulation of the data can improve the inference that can be made on them \cite{cover2006elements,mackay2003information}. Otherwise we would have a clear violation of the second principle of thermodynamics (see for instance the Maxwell's demon \cite{feynman2018feynman})
 
 
 \chapter{Dataset description}
 
 \chapter{Results}
+
+This chapter is organized in the following way: first we are going to report the results concerning the preliminary analysis performed on the dataset. This include the factor analysis of mixed data and the mutual information analysis of the continuous variables of asteroids vs their hazard. Then it will follow the analysis of the dataset performed with the probabilistic methods: after a preliminary analysis on the continuous variables, the mixed interaction model as well the minforest model obtained for the whole dataset will be presented and discussed. Finally the probabilistic models previously obtained will be compared with the outputs and the performances of four machine learning algorithm (Random Forest, Support vector machines Quadratic Discriminant Analysis and Logistic regression).
+
+\section{Preliminary analysis}
+
+In Fig. \ref{FADM},\ref{FAMD_Quantitative variables} and \ref{FAMD_Individuals_(c)} are reported the main achivements of FADM (performed with FactoMineR package \cite{le2008factominer}): in particular from the correlation circle in Fig. \ref{FAMD_Quantitative variables} we can recognize different correlations that are given by the celestial mechanics law: for instance see that there is strong correlation of the mean motion with the semi-major axis. This is due to the Kepler law discussed in Appendix A. Furthermore we see that that the mean motion is correctly almost independent with respect to the the diameter (max or min) of  the asteroid. As explained in Appendix A this is an another result of Newton gravitation theory for a two body interaction: the mean motion of an asteroid, as long as the the mass of it is much lower with respect to the sun, is independent from its mass. On the other side the fact that relative velocity is correlated with the diameter is not surprising since here there is a three body dynamics (the Sun, the Earth and the Asteroid). 
+
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=1\textwidth]{Figures/FAMD.pdf}
+\caption{The FAMD main plot in which the correlation between the continuous and discrete variables is reported. Plot obtained from FactoMineR package \cite{le2008factominer}}
+\label{FADM}
+\end{center}
+\end{figure}
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=1\textwidth]{Figures/FAMD_Quantitative variables.pdf}
+\caption{The FAMD correlation circle for continuos variables as obtained from FactoMineR package \cite{le2008factominer}}
+\label{FAMD_Quantitative variables}
+\end{center}
+\end{figure}
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=1\textwidth]{Figures/FAMD_Individuals_(c).pdf}
+\caption{Graph of individuals, for the qualititative variables, as obtained from FactoMineR package \cite{le2008factominer}}
+\label{FAMD_Individuals_(c)}
+\end{center}
+\end{figure}
+
+\begin{landscape}
+\begin{figure}
+\begin{center}
+\includegraphics[width=1.75\textheight]{Figures/Mutual_information.pdf}
+\caption{Mutual information as obtained with the varrank package \cite{kratzer2018varrank}}
+\label{Mutual_information}
+\end{center}
+\end{figure}
+\end{landscape}
+
+\pagebreak
+
+\section{Probabilistic models}
+
+\section{Machine learning algorithms}
 
 \chapter{Conclusion}
 

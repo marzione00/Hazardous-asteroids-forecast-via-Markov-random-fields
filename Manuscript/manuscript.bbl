@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{cover2006elements}
 T.M. Cover and J.A. Thomas.
@@ -19,6 +19,17 @@ S{\o}ren H{\o}jsgaard, David Edwards, and Steffen Lauritzen.
 Daphne Koller and Nir Friedman.
 \newblock {\em Probabilistic graphical models: principles and techniques}.
 \newblock MIT press, 2009.
+
+\bibitem{kratzer2018varrank}
+Gilles Kratzer and Reinhard Furrer.
+\newblock varrank: an r package for variable ranking based on mutual
+  information with applications to observed systemic datasets.
+\newblock {\em arXiv preprint arXiv:1804.07134}, 2018.
+
+\bibitem{le2008factominer}
+S{\'e}bastien L{\^e}, Julie Josse, and Fran{\c{c}}ois Husson.
+\newblock Factominer: an r package for multivariate analysis.
+\newblock {\em Journal of statistical software}, 25(1):1--18, 2008.
 
 \bibitem{mackay2003information}
 David~JC MacKay.

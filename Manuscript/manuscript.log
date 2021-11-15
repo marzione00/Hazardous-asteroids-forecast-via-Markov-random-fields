@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.2.22)  12 NOV 2021 18:26
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.2.22)  15 NOV 2021 12:16
 entering extended mode
 **./manuscript.tex
 (manuscript.tex
@@ -1251,6 +1251,9 @@ LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
+(C:\Program Files\MiKTeX 2.9\tex/latex/graphics\lscape.sty
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+)
 (C:\Program Files\MiKTeX 2.9\tex/latex/latex-tools\tabularx.sty
 Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
 
@@ -1996,33 +1999,33 @@ Package typearea Info: These are the values describing the layout:
 (typearea)              on input line 95.
 )
 LaTeX Font Info:    Trying to load font information for T1+pplj on input line 1
-38.
+39.
  (C:\Program Files\MiKTeX 2.9\tex/latex/psnfss\t1pplj.fd
 File: t1pplj.fd 2004/09/06 font definitions for T1/pplj.
 ) (manuscript.aux)
 \openout1 = `manuscript.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 138.
-LaTeX Font Info:    ... okay on input line 138.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 138.
-LaTeX Font Info:    ... okay on input line 138.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 138.
-LaTeX Font Info:    ... okay on input line 138.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 138.
-LaTeX Font Info:    ... okay on input line 138.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 138.
-LaTeX Font Info:    ... okay on input line 138.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 138.
-LaTeX Font Info:    ... okay on input line 138.
-LaTeX Font Info:    Checking defaults for U/mathx/m/n on input line 138.
-LaTeX Font Info:    ... okay on input line 138.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 138.
-LaTeX Font Info:    ... okay on input line 138.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 138.
-LaTeX Font Info:    ... okay on input line 138.
-Package scrbase Info: activating english \contentsname on input line 138.
-Package scrbase Info: activating english \listfigurename on input line 138.
-Package scrbase Info: activating english \listtablename on input line 138.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 139.
+LaTeX Font Info:    ... okay on input line 139.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 139.
+LaTeX Font Info:    ... okay on input line 139.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 139.
+LaTeX Font Info:    ... okay on input line 139.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 139.
+LaTeX Font Info:    ... okay on input line 139.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 139.
+LaTeX Font Info:    ... okay on input line 139.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 139.
+LaTeX Font Info:    ... okay on input line 139.
+LaTeX Font Info:    Checking defaults for U/mathx/m/n on input line 139.
+LaTeX Font Info:    ... okay on input line 139.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 139.
+LaTeX Font Info:    ... okay on input line 139.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 139.
+LaTeX Font Info:    ... okay on input line 139.
+Package scrbase Info: activating english \contentsname on input line 139.
+Package scrbase Info: activating english \listfigurename on input line 139.
+Package scrbase Info: activating english \listtablename on input line 139.
 \c@lstlisting=\count378
 
 (C:\Program Files\MiKTeX 2.9\tex/context/base/mkii\supp-pdf.mkii
@@ -2051,7 +2054,7 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 504.
 )
-LaTeX Info: Redefining \microtypecontext on input line 138.
+LaTeX Info: Redefining \microtypecontext on input line 139.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -2070,7 +2073,7 @@ Package caption Info: rotating package is loaded.
 Package caption Info: subfigure package is loaded.
 Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring ON on input line 138.
+Package hyperref Info: Link coloring ON on input line 139.
 
 (C:\Program Files\MiKTeX 2.9\tex/latex/hyperref\nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -2084,17 +2087,13 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 \c@section@level=\count385
 LaTeX Info: Redefining \Ref on input line 520.
 )
-LaTeX Info: Redefining \ref on input line 138.
-LaTeX Info: Redefining \pageref on input line 138.
-LaTeX Info: Redefining \nameref on input line 138.
-LaTeX Info: Redefining \Ref on input line 138.
+LaTeX Info: Redefining \ref on input line 139.
+LaTeX Info: Redefining \pageref on input line 139.
+LaTeX Info: Redefining \nameref on input line 139.
+LaTeX Info: Redefining \Ref on input line 139.
 
 (C:\Program Files\MiKTeX 2.9\tex/latex/pdflscape\pdflscape.sty
 Package: pdflscape 2019/12/05 v0.12 Display of landscape pages in PDF (HO)
-
-(C:\Program Files\MiKTeX 2.9\tex/latex/graphics\lscape.sty
-Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
-)
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
 (C:\Program Files\MiKTeX 2.9\tex/latex/siunitx\siunitx-abbreviations.cfg
@@ -2105,7 +2104,7 @@ nglish.dict
 Dictionary: translator-basic-dictionary, Language: English 
 )
 LaTeX Font Info:    Trying to load font information for U+zeur on input line 13
-8.
+9.
  (C:\Program Files\MiKTeX 2.9\tex/latex/eulervm\uzeur.fd
 File: uzeur.fd 2005/01/11 v4.0 (WaS)
 )
@@ -2113,7 +2112,7 @@ File: uzeur.fd 2005/01/11 v4.0 (WaS)
 File: mt-eur.cfg 2006/07/31 v1.1 microtype config. file: AMS Euler Roman (RS)
 )
 LaTeX Font Info:    Trying to load font information for U+zeus on input line 13
-8.
+9.
 
 (C:\Program Files\MiKTeX 2.9\tex/latex/eulervm\uzeus.fd
 File: uzeus.fd 2005/01/11 v4.0 (WaS)
@@ -2122,13 +2121,13 @@ File: uzeus.fd 2005/01/11 v4.0 (WaS)
 File: mt-eus.cfg 2006/07/28 v1.2 microtype config. file: AMS Euler Script (RS)
 )
 LaTeX Font Info:    Trying to load font information for U+zeuex on input line 1
-38.
+39.
 
 (C:\Program Files\MiKTeX 2.9\tex/latex/eulervm\uzeuex.fd
 File: uzeuex.fd 2005/01/11 v4.0 (WaS)
 )
 LaTeX Font Info:    Trying to load font information for OT1+zplm on input line 
-138.
+139.
 
 (C:\Program Files\MiKTeX 2.9\tex/latex/psnfss\ot1zplm.fd
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
@@ -2145,19 +2144,19 @@ File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 LaTeX Font Info:    Trying to load font information for U+rsfs on input line 13
-8.
+9.
 
 (C:\Program Files\MiKTeX 2.9\tex/latex/jknappen\ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
 LaTeX Font Info:    Trying to load font information for U+lasy on input line 13
-8.
+9.
 
 (C:\Program Files\MiKTeX 2.9\tex/latex/base\ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
 LaTeX Font Info:    Trying to load font information for T1+cmss on input line 1
-38.
+39.
 
 (C:\Program Files\MiKTeX 2.9\tex/latex/base\t1cmss.fd
 File: t1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
@@ -2167,23 +2166,23 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Trying to load font information for T1+fvm on input line 13
-8.
+9.
 
 (C:\Program Files\MiKTeX 2.9\tex/latex/bera\t1fvm.fd
 File: t1fvm.fd 2004/09/07 scalable font definitions for T1/fvm.
 )
 LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
-(Font)              scaled to size 10.20007pt on input line 138.
+(Font)              scaled to size 10.20007pt on input line 139.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `fvm' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
-(Font)              scaled to size 7.65005pt on input line 138.
+(Font)              scaled to size 7.65005pt on input line 139.
 LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
-(Font)              scaled to size 5.95004pt on input line 138.
+(Font)              scaled to size 5.95004pt on input line 139.
 LaTeX Font Info:    Trying to load font information for T1+iwona on input line 
-164.
+165.
 
 (C:\Program Files\MiKTeX 2.9\tex/latex/iwona\t1iwona.fd
 File: t1iwona.fd 2008/07/22 v0.995 font definition file for T1/iwona (MW)
@@ -2196,44 +2195,44 @@ Package microtype Info: Loading generic protrusion settings for font family
 
 ]
 LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
-(Font)              scaled to size 21.14815pt on input line 164.
+(Font)              scaled to size 21.14815pt on input line 165.
 LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
-(Font)              scaled to size 17.62912pt on input line 164.
+(Font)              scaled to size 17.62912pt on input line 165.
 LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
-(Font)              scaled to size 12.24008pt on input line 164.
+(Font)              scaled to size 12.24008pt on input line 165.
 LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
-(Font)              scaled to size 14.6881pt on input line 164.
+(Font)              scaled to size 14.6881pt on input line 165.
 LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
-(Font)              scaled to size 8.50006pt on input line 164.
+(Font)              scaled to size 8.50006pt on input line 165.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.164 
+l.165 
        [1
 
 
 ]
 LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
-(Font)              scaled to size 9.30756pt on input line 178.
+(Font)              scaled to size 9.30756pt on input line 179.
 LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
-(Font)              scaled to size 6.80005pt on input line 178.
+(Font)              scaled to size 6.80005pt on input line 179.
 LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
-(Font)              scaled to size 5.10004pt on input line 178.
+(Font)              scaled to size 5.10004pt on input line 179.
 
-Overfull \hbox (34.0pt too wide) in paragraph at lines 178--178
+Overfull \hbox (34.0pt too wide) in paragraph at lines 179--179
  []$
  []
 
 [2] [3]
 Package tocbasic Info: character protrusion at toc deactivated on input line 19
-0.
+1.
  (manuscript.toc
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/pplj/m/sc/12'.
 (microtype)             Ignoring protrusion settings for this character.
 
-Overfull \hbox (14.5139pt too wide) in paragraph at lines 10--10
+Overfull \hbox (14.5139pt too wide) in paragraph at lines 13--13
  [][] []\T1/iwona/m/sc/12/80ls appendix a: con-cepts of ce-les-tial me-chan-ics
  []  
  []
@@ -2250,7 +2249,7 @@ Chapter 2.
 [5
 
 ]
-Overfull \hbox (5.25374pt too wide) in paragraph at lines 203--203
+Overfull \hbox (5.25374pt too wide) in paragraph at lines 204--204
 |[]\T1/iwona/m/n/17.28/160ls THEORETICAL FRAME-WORK| 
  []
 
@@ -2258,7 +2257,7 @@ Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/iwona/m/sc/17.28'.
 (microtype)             Ignoring protrusion settings for this character.
 
-Overfull \hbox (5.62625pt too wide) in paragraph at lines 221--223
+Overfull \hbox (5.62625pt too wide) in paragraph at lines 222--224
 []\T1/pplj/m/n/12 where V is the num-ber of vari-ables and 1:V stands for $[]$.
 
  []
@@ -2271,16 +2270,16 @@ Package microtype Info: Character `029' is missing
 (microtype)             Ignoring protrusion settings for this character.
  [7] [8]
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <9> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 295.
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 296.
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <7> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 295.
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 296.
 LaTeX Font Info:    Trying to load font information for U+fplmbb on input line 
-336.
+337.
  (C:\Program Files\MiKTeX 2.9\tex/latex/psnfss\ufplmbb.fd
 File: ufplmbb.fd 2003/10/30 Fontinst v1.914 font definitions for U/fplmbb.
 )
 ! Extra }, or forgotten $.
-l.336 ...tbf{y})p(\textbf{y}|\boldsymbol{\theta})}
+l.337 ...tbf{y})p(\textbf{y}|\boldsymbol{\theta})}
                                                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2292,7 +2291,7 @@ deleted material, e.g., by typing `I$}'.
 ! Missing \right. inserted.
 <inserted text> 
                 \right .
-l.389 ...=Pr\left\lbrace X=x \rbrace\; x \in \chi$
+l.390 ...=Pr\left\lbrace X=x \rbrace\; x \in \chi$
                                                    we define the entropy of ...
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2301,7 +2300,7 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-Overfull \hbox (8.68796pt too wide) in paragraph at lines 389--390
+Overfull \hbox (8.68796pt too wide) in paragraph at lines 390--391
 []\T1/pplj/m/n/12 Given an en-sem-ble of ran-dom vari-able, we can find the amo
 unt
  []
@@ -2310,7 +2309,7 @@ unt
 ! Undefined control sequence.
 <argument> ...g \begin {split} I(X;Y)&=\sum \sump 
                                                   (x,y)\log \dfrac {p(x,y)}{...
-l.423 \end{split}
+l.424 \end{split}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2321,7 +2320,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <argument> ...g \begin {split} I(X;Y)&=\sum \sump 
                                                   (x,y)\log \dfrac {p(x,y)}{...
-l.423 \end{split}
+l.424 \end{split}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2335,29 +2334,72 @@ Chapter 4.
 [13
 
 ]
-Chapter 5.
+<Figures/FAMD.pdf, id=232, 410.53375pt x 413.545pt>
+File: Figures/FAMD.pdf Graphic file (type pdf)
+<use Figures/FAMD.pdf>
+Package pdftex.def Info: Figures/FAMD.pdf  used on input line 446.
+(pdftex.def)             Requested size: 336.0pt x 338.46544pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Figures/FAMD_Quantitative variables.pdf, id=235, 410.53375pt x 413.545pt>
+File: Figures/FAMD_Quantitative variables.pdf Graphic file (type pdf)
+<use Figures/FAMD_Quantitative variables.pdf>
+Package pdftex.def Info: Figures/FAMD_Quantitative variables.pdf  used on input
+ line 454.
+(pdftex.def)             Requested size: 336.0pt x 338.46544pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Figures/FAMD_Individuals_(c).pdf, id=238, 410.53375pt x 413.545pt>
+File: Figures/FAMD_Individuals_(c).pdf Graphic file (type pdf)
+<use Figures/FAMD_Individuals_(c).pdf>
+Package pdftex.def Info: Figures/FAMD_Individuals_(c).pdf  used on input line 4
+62.
+(pdftex.def)             Requested size: 336.0pt x 338.46544pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 [14
+
+] [15 <./Figures/FAMD.pdf>] [16 <./Figures/FAMD_Quantitative variables.pdf>] [1
+7 <./Figures/FAMD_Individuals_(c).pdf>]
+<Figures/Mutual_information.pdf, id=279, 844.15375pt x 597.23125pt>
+File: Figures/Mutual_information.pdf Graphic file (type pdf)
+<use Figures/Mutual_information.pdf>
+Package pdftex.def Info: Figures/Mutual_information.pdf  used on input line 471
+.
+(pdftex.def)             Requested size: 588.0pt x 416.0177pt.
+
+
+LaTeX Warning: Float too large for page by 117.29773pt on input line 475.
+
+[18 <./Figures/Mutual_information.pdf>]
+Chapter 5.
+[19
+
 
 ]
 Chapter 6.
-[15
+[20
 
 ]
-Overfull \hbox (5.81458pt too wide) in paragraph at lines 438--438
+Overfull \hbox (5.81458pt too wide) in paragraph at lines 486--486
 |[]\T1/iwona/m/n/17.28/160ls APPENDIX A: CON-CEPTS OF
  []
 
-(manuscript.bbl [16
+(manuscript.bbl [21
 
-]) [17
+]) [22
 
 ] (manuscript.aux) ) 
 Here is how much of TeX's memory you used:
- 39085 strings out of 479334
- 760383 string characters out of 2865057
- 1436582 words of memory out of 3000000
- 55534 multiletter control sequences out of 15000+200000
- 558467 words of font info for 282 fonts, out of 3000000 for 9000
+ 39147 strings out of 479334
+ 761791 string characters out of 2865057
+ 1436747 words of memory out of 3000000
+ 55577 multiletter control sequences out of 15000+200000
+ 561597 words of font info for 283 fonts, out of 3000000 for 9000
  1142 hyphenation exceptions out of 8191
  128i,23n,130p,10607b,816s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\Marzio\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/
@@ -2383,9 +2425,9 @@ iwonab.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/nowacki/iwona/iwonar.pfb><C
 s/MiKTeX 2.9/fonts/type1/urw/palatino/uplbi8a.pfb><C:/Program Files/MiKTeX 2.9/
 fonts/type1/urw/palatino/uplr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/ur
 w/palatino/uplri8a.pfb>
-Output written on manuscript.pdf (18 pages, 243535 bytes).
+Output written on manuscript.pdf (23 pages, 529536 bytes).
 PDF statistics:
- 403 PDF objects out of 1000 (max. 8388607)
- 72 named destinations out of 1000 (max. 500000)
- 37549 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 490 PDF objects out of 1000 (max. 8388607)
+ 86 named destinations out of 1000 (max. 500000)
+ 38105 words of extra memory for PDF output out of 42996 (max. 10000000)
 
