@@ -1,14 +1,27 @@
 \begin{thebibliography}{10}
 
+\bibitem{glasso}
+\url{https://cran.r-project.org/web/packages/glasso/glasso.pdf}.
+
 \bibitem{cover2006elements}
 T.M. Cover and J.A. Thomas.
 \newblock {\em Elements of Information Theory}.
 \newblock A Wiley-Interscience publication. Wiley, 2006.
 
+\bibitem{igraph}
+Gabor Csardi and Tamas Nepusz.
+\newblock The igraph software package for complex network research.
+\newblock {\em InterJournal}, Complex Systems:1695, 2006.
+
 \bibitem{feynman2018feynman}
 Richard~P Feynman, Tony Hey, and Robin~W Allen.
 \newblock {\em Feynman lectures on computation}.
 \newblock CRC Press, 2018.
+
+\bibitem{friedman2008sparse}
+Jerome Friedman, Trevor Hastie, and Robert Tibshirani.
+\newblock Sparse inverse covariance estimation with the graphical lasso.
+\newblock {\em Biostatistics}, 9(3):432--441, 2008.
 
 \bibitem{hojsgaard2012graphical}
 S{\o}ren H{\o}jsgaard, David Edwards, and Steffen Lauritzen.

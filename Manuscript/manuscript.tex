@@ -232,7 +232,7 @@ A particular case of this definition is the Markov assumption,  by which \textit
 p(\textbf{x}_{1:V})=p(x_{1})\prod^{V}_{t=1}p(x_{t}|x_{t-1})
 \end{equation}
 
-In this case a first order Markov chain is obtained,  where the transtion tensor is of second order \cite{wu2017markov}.  Given this formalism we are interested in finding a smart way to plot such joint distribution into an intuitive way: the graph theory provide the answer to this quest.  In particular the random variables can be represented by nodes and presence of conditional indipendence for two random variables by the lack of an edge that interconnects them.  Bayesian networks consider directed edges,  while Markov random fields (MRF) only undirected.  As consequence,  while the the concept of topological ordering,  by which the parents n nodes are labelled with a lower  with respect to their children,  is well defined for Bayesian network,  for MRF is not.  In order to solve this issue it is useful to consider the Hammersley-Clifford theorem as stated in \cite{murphy2012machine}:
+In this case a first order Markov chain is obtained,  where the transition tensor is of second order \cite{wu2017markov}.  Given this formalism we are interested in finding a smart way to plot such joint distribution into an intuitive way: the graph theory provide the answer to this quest.  In particular the random variables can be represented by nodes and presence of conditional independence for two random variables by the lack of an edge that interconnects them.  Bayesian networks consider directed edges,  while Markov random fields (MRF) only undirected.  As consequence,  while the the concept of topological ordering,  by which the parents n nodes are labelled with a lower  with respect to their children,  is well defined for Bayesian network,  for MRF is not.  In order to solve this issue it is useful to consider the Hammersley-Clifford theorem as stated in \cite{murphy2012machine}:
 
 \begin{theorem}[Hammersley-Clifford]
 A positive distribution p(\textbf{y})>0 satisfies the CI properties of an indirect graph G iif p can be represented as a product of factor, one per maximal clique,  i.e.
@@ -490,9 +490,51 @@ following the Peng. et al approach \cite{peng2005feature}. We see that the first
 
 \section{Probabilistic models}
 
+We started the analysis with the graphical models by inspecting the relations between continuous variables in the dataset, thus in this first step the binary variable \textit{Hazardous} was excluded. For this purpose, among the different methods available, we considered the \textit{Graphical least absolute shrinkage and selection operator} GLASSO as implemented in the \textit{glasso} R package \cite{friedman2008sparse,glasso}. After different tests reported in Fig. \ref{GLASSO_convergence}, we considered as final result the graph obtained with the value of $\rho$ (the one that penalize further connections) equal to $0.2$. In this plot we see that the conditional dependences/independences state by the Celestial Mechanics are reproduced: for instance we see that the mean motion is conditionally independent with respect to the the estimated diameters, but the relative velocity not. Furthermore the eccentricity is conditionally depended, as one can expect to quantity that describe the elliptical orbits: the perihelion distance, the semi-major axis and the Jupiter Tisserand's parameter. Finally we would compare the results of GLASSO with the graph intersection obtained from the stepwise model (forward direction, BIC) (as implemented in the grim package \cite{hojsgaard2012graphical}), SIN (simultaneous p-values method, as implemented in the SIN package \cite{SIN_package}) and thresholding method (as implemented in the grim package \cite{hojsgaard2012graphical}) shown in Fig. \ref{ST+TH+SIN_PLOT}: in this case the volume/mass of the asteroid is not connect with the Relative velocity.
+
+
+\begin{figure}[ht]
+  \begin{minipage}[b]{0.5\linewidth}
+    \centering
+    \includegraphics[width=.9\linewidth]{Figures/GLASSO_0.1.pdf}
+    \subcaption{$\rho$=0.1}
+    \vspace{4ex}
+  \end{minipage} 
+  \begin{minipage}[b]{0.5\linewidth}
+    \centering
+    \includegraphics[width=.9\linewidth]{Figures/GLASSO_0.2.pdf}
+    \subcaption{$\rho$=0.2}
+    \vspace{4ex}
+  \end{minipage} \\
+  \begin{minipage}[b]{0.5\linewidth}
+    \centering
+    \includegraphics[width=.9\linewidth]{Figures/GLASSO_0.3.pdf}
+    \subcaption{$\rho$=0.3}
+    \vspace{4ex}
+  \end{minipage}%%
+    \begin{minipage}[b]{0.5\linewidth}
+    \centering
+    \includegraphics[width=.9\linewidth]{Figures/GLASSO_0.4.pdf}
+    \subcaption{$\rho$=0.4}
+    \vspace{4ex}
+  \end{minipage}%%
+\caption{GLASSO analysis, performed with the glasso package \cite{friedman2008sparse,glasso}, with different $\rho$ parameter (the one that penalize further connections) for the Asteroid dataset without the discrete variable Hazardous. The plots were obtained with the igraph package for R \cite{igraph}}
+\label{GLASSO_convergence}
+\end{figure}
+
+
+\begin{figure}
+\begin{center}
+\includegraphics[\linewidth]{Figures/ST+TH+SIN_PLOT.pdf}
+\caption{Intersection of the graphs obtained from the stepwise method (forward, BIC),from the  threshold method (as implemented in the grim package \cite{hojsgaard2012graphical}) and the SIN one (as implemented in the SIN package \cite{SIN_package}). The plots were obtained with the igraph package for R \cite{igraph} }
+\label{ST+TH+SIN_PLOT}
+\end{center}
+\end{figure}
+
+
 \section{Machine learning algorithms}
 
-\chapter{Conclusion}
+\chapter{Conclusions}
 
 \chapter{Appendix A: Concepts of celestial mechanics}
 

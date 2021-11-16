@@ -111,8 +111,8 @@ summary(MI_var)
 #Continuous variables analysis
 
 
-#msx<-cmod(~.^1.,data=Asteroids_FINAL_double[,-21])
-#msx2<-stepwise(msx,direction="forward",k=log(nrow(Asteroids_FINAL_double[,-21])),details=1)
+msx<-cmod(~.^1.,data=Asteroids_FINAL_double[,-21])
+msx2<-stepwise(msx,direction="forward",k=log(nrow(Asteroids_FINAL_double[,-21])),details=1)
 #plot.igraph(as(msx2,'igraph'),layout=layout.fruchterman.reingold(as(msx2,'igraph'), niter=300000), vertex.color="red")
 
 S.asteroids <- cov.wt(Asteroids_FINAL_double[,-21], method="ML")$cov
@@ -147,6 +147,15 @@ gsin.asteroids <-as(getgraph(psin.asteroids,0.1),"graphNEL")
 plot(as(gsin.asteroids,"igraph"))
 
 
+C.asteroids  <- cov2cor(S.asteroids )
+res.lasso <- glasso(C.asteroids , rho=0.4)
+AM <- res.lasso$wi!=0
+diag(AM)<-FALSE
+g.lasso <- as(AM,"graphNEL")
+nodes(g.lasso)<-names(Asteroids_FINAL_double[,-21])
+glasso.asteroids <- cmod(edgeList(g.lasso),data=Asteroids_FINAL_double[,-21])
+plot(as(glasso.asteroids ,"igraph"),vertex.color="red",vertex.label.dist=2,alpha=TRUE,vertex.label.cex=0.8,vertex.size=10,edge.color="black",edge.size=2,layout=layout_with_fr(as(glasso.asteroids,'igraph')), vertex.label.family='Helvetica')
+
 
 
 
@@ -160,7 +169,26 @@ nodes(g.lasso)<-names(Asteroids_FINAL_double[,-21])
 glasso.asteroids <- cmod(edgeList(g.lasso),data=Asteroids_FINAL_double[,-21])
 plot(as(glasso.asteroids ,"igraph"),vertex.color="red",vertex.label.dist=2,alpha=TRUE,vertex.label.cex=0.8,vertex.size=10,edge.color="black",edge.size=2,layout=layout_with_fr(as(glasso.asteroids,'igraph')), vertex.label.family='Helvetica')
 
+#S.body<- cov.wt(Asteroids_FINAL_double[,-21])$cov
+C.asteroids  <- cov2cor(S.asteroids )
+res.lasso <- glasso(C.asteroids , rho=0.2)
+AM <- res.lasso$wi!=0
+diag(AM)<-FALSE
+g.lasso <- as(AM,"graphNEL")
+nodes(g.lasso)<-names(Asteroids_FINAL_double[,-21])
+glasso.asteroids <- cmod(edgeList(g.lasso),data=Asteroids_FINAL_double[,-21])
+plot(as(glasso.asteroids ,"igraph"),vertex.color="red",vertex.label.dist=2,alpha=TRUE,vertex.label.cex=0.8,vertex.size=10,edge.color="black",edge.size=2,layout=layout_with_fr(as(glasso.asteroids,'igraph')), vertex.label.family='Helvetica')
 
+
+#S.body<- cov.wt(Asteroids_FINAL_double[,-21])$cov
+C.asteroids  <- cov2cor(S.asteroids )
+res.lasso <- glasso(C.asteroids , rho=0.1)
+AM <- res.lasso$wi!=0
+diag(AM)<-FALSE
+g.lasso <- as(AM,"graphNEL")
+nodes(g.lasso)<-names(Asteroids_FINAL_double[,-21])
+glasso.asteroids <- cmod(edgeList(g.lasso),data=Asteroids_FINAL_double[,-21])
+plot(as(glasso.asteroids ,"igraph"),vertex.color="red",vertex.label.dist=2,alpha=TRUE,vertex.label.cex=0.8,vertex.size=10,edge.color="black",edge.size=2,layout=layout_with_fr(as(glasso.asteroids,'igraph')), vertex.label.family='Helvetica')
 
 
 
@@ -174,7 +202,7 @@ for(i in 1:length(othermodels)) {
   commonedges.asteroids  <- graph::intersection(commonedges.asteroids ,othermodels[[i]])
 }
 
-plot(as(commonedges.asteroids ,"igraph"),vertex.color="orange",vertex.label.dist=2,alpha=TRUE,vertex.label.cex=0.5,vertex.size=10,edge.color="black",edge.size=2,layout=layout_with_fr(as(glasso.asteroids,'igraph')), vertex.label.family='Helvetica')
+plot(as(commonedges.asteroids ,"igraph"),vertex.color="orange",vertex.label.dist=2,alpha=TRUE,vertex.label.cex=0.5,vertex.size=10,edge.color="black",edge.size=2,layout=layout_with_fr(as(commonedges.asteroids,'igraph')), vertex.label.family='Helvetica')
 
 
 
