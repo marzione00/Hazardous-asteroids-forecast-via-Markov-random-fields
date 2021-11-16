@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.2.22)  16 NOV 2021 12:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.2.22)  16 NOV 2021 15:15
 entering extended mode
 **./manuscript.tex
 (manuscript.tex
@@ -2376,14 +2376,12 @@ Package pdftex.def Info: Figures/Mutual_information.pdf  used on input line 482
 LaTeX Warning: Float too large for page by 117.29773pt on input line 486.
 
 [19 <./Figures/Mutual_information.pdf>]
-
-LaTeX Warning: Citation `SIN_package' on page 20 undefined on input line 493.
-
-<Figures/GLASSO_0.1.pdf, id=312, 409.53pt x 319.1925pt>
+<Figures/GLASSO_0.1.pdf, id=309, 409.53pt x 319.1925pt>
 File: Figures/GLASSO_0.1.pdf Graphic file (type pdf)
 <use Figures/GLASSO_0.1.pdf>
 Package pdftex.def Info: Figures/GLASSO_0.1.pdf  used on input line 499.
 (pdftex.def)             Requested size: 151.19897pt x 117.8461pt.
+
 ! Undefined control sequence.
 l.500     \subcaption
                      {$\rho$=0.1}
@@ -2393,7 +2391,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<Figures/GLASSO_0.2.pdf, id=313, 409.53pt x 319.1925pt>
+<Figures/GLASSO_0.2.pdf, id=310, 409.53pt x 319.1925pt>
 File: Figures/GLASSO_0.2.pdf Graphic file (type pdf)
 <use Figures/GLASSO_0.2.pdf>
 Package pdftex.def Info: Figures/GLASSO_0.2.pdf  used on input line 505.
@@ -2407,7 +2405,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<Figures/GLASSO_0.3.pdf, id=314, 409.53pt x 319.1925pt>
+<Figures/GLASSO_0.3.pdf, id=311, 409.53pt x 319.1925pt>
 File: Figures/GLASSO_0.3.pdf Graphic file (type pdf)
 <use Figures/GLASSO_0.3.pdf>
 Package pdftex.def Info: Figures/GLASSO_0.3.pdf  used on input line 511.
@@ -2421,7 +2419,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<Figures/GLASSO_0.4.pdf, id=315, 409.53pt x 319.1925pt>
+<Figures/GLASSO_0.4.pdf, id=312, 409.53pt x 319.1925pt>
 File: Figures/GLASSO_0.4.pdf Graphic file (type pdf)
 <use Figures/GLASSO_0.4.pdf>
 Package pdftex.def Info: Figures/GLASSO_0.4.pdf  used on input line 517.
@@ -2440,57 +2438,21 @@ Overfull \hbox (2.65201pt too wide) in paragraph at lines 497--521
 [][] [] 
  []
 
-! Missing \endcsname inserted.
-<to be read again> 
-                   \linewidth 
-l.528 ...s[\linewidth]{Figures/ST+TH+SIN_PLOT.pdf}
-                                                  
-The control sequence marked <to be read again> should
-not appear between \csname and \endcsname.
-
-
-! Package xkeyval Error: `\linewidth ' undefined in families `Gin'.
-
-See the xkeyval package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.528 ...s[\linewidth]{Figures/ST+TH+SIN_PLOT.pdf}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-<Figures/ST+TH+SIN_PLOT.pdf, id=322, 409.53pt x 319.1925pt>
-File: Figures/ST+TH+SIN_PLOT.pdf Graphic file (type pdf)
-<use Figures/ST+TH+SIN_PLOT.pdf>
-Package pdftex.def Info: Figures/ST+TH+SIN_PLOT.pdf  used on input line 528.
-(pdftex.def)             Requested size: 409.52899pt x 319.19171pt.
-
-Overfull \hbox (73.52899pt too wide) in paragraph at lines 528--529
- [] 
- []
-
-
-LaTeX Warning: Citation `SIN_package' on page 20 undefined on input line 529.
-
-
-LaTeX Warning: Citation `SIN_package' on page 20 undefined on input line 529.
-
 Chapter 5.
 [20
 
 
 ] [21 <./Figures/GLASSO_0.1.pdf> <./Figures/GLASSO_0.2.pdf> <./Figures/GLASSO_0
-.3.pdf> <./Figures/GLASSO_0.4.pdf>] [22 <./Figures/ST+TH+SIN_PLOT.pdf>]
+.3.pdf> <./Figures/GLASSO_0.4.pdf>]
 Chapter 6.
-[23
+[22
 
 ]
-Overfull \hbox (5.81458pt too wide) in paragraph at lines 539--539
+Overfull \hbox (5.81458pt too wide) in paragraph at lines 531--531
 |[]\T1/iwona/m/n/17.28/160ls APPENDIX A: CON-CEPTS OF
  []
 
-(manuscript.bbl [24
+(manuscript.bbl [23
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 4--5
@@ -2504,47 +2466,44 @@ Underfull \hbox (badness 1173) in paragraph at lines 63--68
 ence\T1/pplj/m/n/12 ,
  []
 
-[25
+[24
 
-]) [26] (manuscript.aux)
-
-LaTeX Warning: There were undefined references.
-
- ) 
+]) [25] (manuscript.aux) ) 
 Here is how much of TeX's memory you used:
- 39216 strings out of 479334
- 763163 string characters out of 2865057
+ 39201 strings out of 479334
+ 762858 string characters out of 2865057
  1436747 words of memory out of 3000000
- 55620 multiletter control sequences out of 15000+200000
- 566679 words of font info for 296 fonts, out of 3000000 for 9000
+ 55611 multiletter control sequences out of 15000+200000
+ 563754 words of font info for 292 fonts, out of 3000000 for 9000
  1142 hyphenation exceptions out of 8191
  128i,23n,130p,10607b,893s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc} <C:\Users\Marzio\Ap
-pData\Local\MiKTeX\2.9\fonts/pk/ljfour/public/mathabx/dpi600\matha7.pk> <C:\Use
-rs\Marzio\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/public/mathabx/dpi720\mathx1
-0.pk> <C:\Users\Marzio\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/public/mathabx/
-dpi600\matha9.pk> <C:\Users\Marzio\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/pub
-lic/mathabx/dpi600\matha12.pk>{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/iwon
-a/ec-iwona-sc.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/iwona/ec-iwona.e
-nc} <C:\Users\Marzio\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi60
-0\ecrm1200.pk><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/euler/eu
-fm10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/euler/eurb10.
-pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/euler/eurb7.pfb><C
-:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/euler/eurm10.pfb><C:/Pro
-gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/euler/eurm7.pfb><C:/Program F
-iles/MiKTeX 2.9/fonts/type1/public/amsfonts/euler/eusm10.pfb><C:/Program Files/
-MiKTeX 2.9/fonts/type1/public/fpl/fplbj8a.pfb><C:/Program Files/MiKTeX 2.9/font
-s/type1/public/mathpazo/fplmbb.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
-lic/fpl/fplrc8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/fpl/fplrij8
-a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/bera/fvmr8a.pfb><C:/Program File
-s/MiKTeX 2.9/fonts/type1/nowacki/iwona/iwonab.pfb><C:/Program Files/MiKTeX 2.9/
-fonts/type1/nowacki/iwona/iwonar.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/u
-rw/palatino/uplb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/up
-lbi8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/
-Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on manuscript.pdf (27 pages, 578210 bytes).
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.
+enc} <C:\Users\Marzio\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/public/mathabx/d
+pi600\matha7.pk> <C:\Users\Marzio\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/publ
+ic/mathabx/dpi720\mathx10.pk> <C:\Users\Marzio\AppData\Local\MiKTeX\2.9\fonts/p
+k/ljfour/public/mathabx/dpi600\matha9.pk> <C:\Users\Marzio\AppData\Local\MiKTeX
+\2.9\fonts/pk/ljfour/public/mathabx/dpi600\matha12.pk>{C:/Program Files/MiKTeX 
+2.9/fonts/enc/dvips/iwona/ec-iwona-sc.enc}{C:/Program Files/MiKTeX 2.9/fonts/en
+c/dvips/iwona/ec-iwona.enc} <C:\Users\Marzio\AppData\Local\MiKTeX\2.9\fonts/pk/
+ljfour/jknappen/ec/dpi600\ecrm1200.pk><C:/Program Files/MiKTeX 2.9/fonts/type1/
+public/amsfonts/euler/eufm10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
+c/amsfonts/euler/eurb10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
+fonts/euler/eurb7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
+euler/eurm10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/euler
+/eurm7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/euler/eusm1
+0.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/fpl/fplbj8a.pfb><C:/Progr
+am Files/MiKTeX 2.9/fonts/type1/public/mathpazo/fplmbb.pfb><C:/Program Files/Mi
+KTeX 2.9/fonts/type1/public/fpl/fplrc8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/
+type1/public/fpl/fplrij8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/bera/fvm
+r8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/nowacki/iwona/iwonab.pfb><C:/P
+rogram Files/MiKTeX 2.9/fonts/type1/nowacki/iwona/iwonar.pfb><C:/Program Files/
+MiKTeX 2.9/fonts/type1/urw/palatino/uplb8a.pfb><C:/Program Files/MiKTeX 2.9/fon
+ts/type1/urw/palatino/uplbi8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/
+palatino/uplr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplri
+8a.pfb>
+Output written on manuscript.pdf (26 pages, 569266 bytes).
 PDF statistics:
- 573 PDF objects out of 1000 (max. 8388607)
- 98 named destinations out of 1000 (max. 500000)
- 38642 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 554 PDF objects out of 1000 (max. 8388607)
+ 96 named destinations out of 1000 (max. 500000)
+ 38125 words of extra memory for PDF output out of 42996 (max. 10000000)
 

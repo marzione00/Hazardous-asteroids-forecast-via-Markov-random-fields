@@ -9,6 +9,6 @@
 \contentsline {section}{\numberline {4.1}{Preliminary analysis}}{14}{section.4.1}%
 \contentsline {section}{\numberline {4.2}{Probabilistic models}}{20}{section.4.2}%
 \contentsline {section}{\numberline {4.3}{Machine learning algorithms}}{20}{section.4.3}%
-\contentsline {chapter}{\numberline {5}{Conclusions}}{23}{chapter.5}%
-\contentsline {chapter}{\numberline {6}{Appendix A: Concepts of celestial mechanics}}{24}{chapter.6}%
+\contentsline {chapter}{\numberline {5}{Conclusions}}{22}{chapter.5}%
+\contentsline {chapter}{\numberline {6}{Appendix A: Concepts of celestial mechanics}}{23}{chapter.6}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

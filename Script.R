@@ -193,7 +193,7 @@ plot(as(glasso.asteroids ,"igraph"),vertex.color="red",vertex.label.dist=2,alpha
 
 
 commonedges.asteroids <-as(msx2,"graphNEL")
-othermodels<-list(gsin.asteroids ,thresh.asteroids ,msx2)
+othermodels<-list(gsin.asteroids ,thresh.asteroids ,glasso.asteroids)
 
 
 othermodels<-lapply(othermodels,as,"graphNEL")
@@ -208,10 +208,18 @@ plot(as(commonedges.asteroids ,"igraph"),vertex.color="orange",vertex.label.dist
 
 #minForest model
 
-bf<-minForest(Asteroids_FINAL_double,homog=TRUE,forbEdges=NULL,stat="LR")
-plot(bf)
-mbG<-stepw(model=bf,data=Asteroids_FINAL_double,exact=TRUE)
+bf<-minForest(Asteroids_FINAL_double)
+plot(bf,cex.vert.label=0.6,numIter=6000,col.labels=c("red"),vert.hl=c(21),col.hl=c("blue"),energy=TRUE)
+mbG<-stepw(model=bf,data=Asteroids_FINAL_double,threshold=1)
 plot(mbG,cex.vert.label=0.6,numIter=6000,col.labels=c("red"),vert.hl=c(21),col.hl=c("blue"),energy=TRUE)
+
+
+aa<-mmod(~.^1.,data=Asteroids_FINAL[,2:22])
+aa2<-stepwise(aa,k=log(nrow(Asteroids_FINAL[,2:22])),direction="forward",details=1)
+plot(aa2)
+
+
+plot(as(aa2 ,"igraph"),vertex.color="red",vertex.label.dist=2,alpha=TRUE,vertex.label.cex=0.5,vertex.size=10,edge.color="black",edge.size=2,layout=layout_with_fr(as(aa2,'igraph')), vertex.label.family='Helvetica')
 
 
 #Mixed interaction analysis
