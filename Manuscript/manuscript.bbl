@@ -1,7 +1,16 @@
 \begin{thebibliography}{10}
 
+\bibitem{kaggle_dataset}
+\url{https://www.kaggle.com/shrutimehta/nasa-asteroids-classification}.
+
+\bibitem{cneos+nasa}
+\url{https://cneos.jpl.nasa.gov/}.
+
 \bibitem{glasso}
 \url{https://cran.r-project.org/web/packages/glasso/glasso.pdf}.
+
+\bibitem{mgm}
+\url{https://cran.r-project.org/web/packages/mgm/mgm.pdf}.
 
 \bibitem{cover2006elements}
 T.M. Cover and J.A. Thomas.
@@ -22,6 +31,12 @@ Richard~P Feynman, Tony Hey, and Robin~W Allen.
 Jerome Friedman, Trevor Hastie, and Robert Tibshirani.
 \newblock Sparse inverse covariance estimation with the graphical lasso.
 \newblock {\em Biostatistics}, 9(3):432--441, 2008.
+
+\bibitem{haslbeck2015mgm}
+Jonas Haslbeck and Lourens~J Waldorp.
+\newblock mgm: Estimating time-varying mixed graphical models in
+  high-dimensional data.
+\newblock {\em arXiv preprint arXiv:1510.06871}, 2015.
 
 \bibitem{hojsgaard2012graphical}
 S{\o}ren H{\o}jsgaard, David Edwards, and Steffen Lauritzen.

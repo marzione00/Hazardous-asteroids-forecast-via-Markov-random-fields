@@ -432,13 +432,16 @@ Finally we would report the data process inequality theorem that connects the in
 
 \chapter{Dataset description}
 
+The asteroid dataset was retrieved from Kaggle \cite{kaggle_dataset}, which reports into an more user-friendly mode the dataset of The Center for Near-Earth Object Studies (CNEOS) \cite{cneos+nasa}, a NASA research center. Among the 40 features there were present in the dataset we excluded the ones that were clearly redundant (such as the distance quantity evaluated in miles instead of kilometres), the ones that were connected only to the other name of the asteroid, the one connected to the name of the orbit and the one connected with the orbiting planet, since for all it was the Earth. Thus the features obtained were reduced to 22. Their enumeration and their description will be postponed to Appendix A, since a description of them cannot be disjoint with celestial mechanics concepts. Since only the 16 \% of the asteroids were hazardous, we considered to reduce the number of the non-hazardous in order to improve the portion of the hazardous ones. For this purpose we constructed a database in which the proportion hazardous/not hazardous was 1:5: thus all the hazardous one were included, while the not-hazardous were randomly selected \footnote{The author is aware that in principle the proportion should be much less unbalanced, however the tool that has to be paid for this operation is an overall reduction of the cases in the dataset that lowers the performances of the algorithms here used. The proportion here used was a trade-off for these two contrasting facts}. Furthermore, concerning the continuous measures, the dataset was standardised and demeaned. 
+
+
 \chapter{Results}
 
 This chapter is organized in the following way: first we are going to report the results concerning the preliminary analysis performed on the dataset. This include the factor analysis of mixed data and the mutual information analysis of the continuous variables of asteroids vs their hazard. Then it will follow the analysis of the dataset performed with the probabilistic methods: after a preliminary analysis on the continuous variables, the mixed interaction model as well the minforest model obtained for the whole dataset will be presented and discussed. Finally the probabilistic models previously obtained will be compared with the outputs and the performances of four machine learning algorithm (Random Forest, Support vector machines Quadratic Discriminant Analysis and Logistic regression).
 
 \section{Preliminary analysis}
 
-In Fig. \ref{FADM},\ref{FAMD_Quantitative variables} and \ref{FAMD_Individuals_(c)} are reported the main achivements of FADM (performed with FactoMineR package \cite{le2008factominer}): in particular from the correlation circle in Fig. \ref{FAMD_Quantitative variables} we can recognize the different correlations that are given by the celestial mechanics laws: for instance see that there is strong correlation of the mean motion with the semi-major axis. This is due to the Kepler law discussed in Appendix A. Furthermore we see that that the mean motion is correctly almost independent with respect to the the diameter (max or min) of  the asteroid. As explained in Appendix A this is an another result of Newton gravitation theory for a two body interaction: the mean motion of an asteroid, as long as the the mass of it is much lower with respect to the sun, is independent from its mass. On the other side the fact that relative velocity is correlated with the diameter is a spurios correlation. At this point one can ask why the mean motion and the relative velocity are orthogonal: this point will be clarified from a theoretical point of view in appendix A and also with graphical models. Briefly the motion of an object on an ellipse as seen from a focus is not uniforms: this is faster as the two bodies approaches. Beside this inspection a further analysis based on the concept of mutual information (summarized in the previous chapter) was performed: its result is reported in Fig. \ref{Mutual_information}. This figure summarize the ranking of the features considered in the dataset for the dangerousness classification of the asteroids according to the following expression \cite{kratzer2018varrank}
+The first inspection that was performed on the dataset was related the density distributions of a selection of continuous features that are known, from the celestial mechanics, to be important for the prediction of the asteroids dangerousness. These are reported in Fig. \ref{Density_relevant}. Next we moved on a more systematic analysis with FADM and mutual information. In Fig. \ref{FADM},\ref{FAMD_Quantitative variables} and \ref{FAMD_Individuals_(c)} are reported the main achivements of FADM (performed with FactoMineR package \cite{le2008factominer}): in particular from the correlation circle in Fig. \ref{FAMD_Quantitative variables} the different correlations that are given by the celestial mechanics laws can be recognized: for instance, see that there is strong correlation of the mean motion with the semi-major axis. This is due to the Kepler law discussed in Appendix A. Furthermore we see that that the mean motion is correctly almost independent with respect to the the diameter (max or min) of  the asteroid. As explained in Appendix A this is an another result of Newton gravitation theory for a two body interaction: the mean motion of an asteroid, as long as the the mass of it is much lower with respect to the sun, is independent from its mass. On the other side the fact that relative velocity is correlated with the diameter is a spurios correlation. At this point one can ask why the mean motion and the relative velocity are orthogonal: this point will be clarified from a theoretical point of view in appendix A and also with graphical models. Briefly the motion of an object on an ellipse as seen from a focus is not uniform: this is faster as the two bodies approaches. Beside this inspection a further analysis based on the concept of mutual information (summarized in the previous chapter) was performed: its result is reported in Fig. \ref{Mutual_information}. This figure summarize the ranking of the features considered in the dataset for the dangerousness classification of the asteroids according to the following expression \cite{kratzer2018varrank}
 
 \begin{equation}
 g(\alpha,\textbf{C},\textbf{S},f_{i})=MI(f_{i};\textbf{C})-\sum_{f_{s}\in S}\alpha(f_{i},f_{s},\textbf{C},\textbf{S})MI(f_{i};f_{s})
@@ -449,7 +452,45 @@ where the first term $MI(f_{i};\textbf{C})$ is called relevance and measures the
 \alpha(f_{i},f_{s},\textbf{C},\textbf{S})=\dfrac{1}{|\textbf{S}|}
 \end{equation}
 
-following the Peng. et al approach \cite{peng2005feature}. We see that the first placein the mutual information ranking, looking to the diagonal element,  is taken by minimum orbit intersection: this is correct since this is one parameter used by NASA for deciding if an asteroid is hazardous or not (see Appendix A). The second place is occupied by Epoch date close approach. The third place is the eccentricity value: this parameter is entangled with the minimum orbit intersection and thus it is reasonable that it is important. Then we have two parameter that are related to the dimension of the asteroid: this is meaningful since if the asteroid has a too reduced volume it will be destroyed by the Earth atmosphere. On the other side the other parameters seems to have a too low MI for being interesting in this preliminary analysis. The results obtained for FAMD and MI will provide a useful path-guide, together with the celestial mechanics theory, for the interpretation of the results obtained in the following section 
+following the Peng. et al approach \cite{peng2005feature}. We see that the first place in the mutual information ranking, looking to the diagonal element, is taken by minimum orbit intersection: this is correct since this is one parameter used by NASA for deciding if an asteroid is hazardous or not (see Appendix A). The second place is occupied by Epoch date close approach. The third place is the eccentricity value: this parameter is entangled with the minimum orbit intersection and thus it is reasonable that it is important. Then we have two parameter that are related to the dimension of the asteroid: this is meaningful since if the asteroid has a too reduced volume it will be destroyed by the Earth atmosphere. On the other side the other parameters seems to have a too low MI for being interesting in this preliminary analysis. The results obtained for FAMD and MI will provide a useful path-guide, together with the celestial mechanics theory, for the interpretation of the results obtained in the following section 
+
+
+\begin{figure}[ht]
+  \begin{minipage}[b]{0.5\linewidth}
+    \centering
+    \includegraphics[width=.9\linewidth]{Figures/DENSITY_Perihelion_Distance.pdf}
+    \subcaption{ \begin{center}
+    a) Perihelion Distance
+    \end{center}}
+    \vspace{4ex}
+  \end{minipage} 
+  \begin{minipage}[b]{0.5\linewidth}
+    \centering
+    \includegraphics[width=.9\linewidth]{Figures/DENSITY_Eccentricity.pdf}
+    \subcaption{ \begin{center}
+    b) Eccentricity
+    \end{center}}
+    \vspace{4ex}
+  \end{minipage} \\
+    \begin{minipage}[b]{0.5\linewidth}
+    \centering
+    \includegraphics[width=.9\linewidth]{Figures/DENSITY_Min_orbit_intersection.pdf}
+    \subcaption{ \begin{center}
+    c) Min orbit intersection
+    \end{center}}
+    \vspace{4ex}
+  \end{minipage}
+  \begin{minipage}[b]{0.5\linewidth}
+    \centering
+    \includegraphics[width=.9\linewidth]{Figures/DENSITY_Absolute_magnitude.pdf}
+    \subcaption{ \begin{center}
+    d) Semi Major Axis
+    \end{center}}
+    \vspace{4ex}
+  \end{minipage}
+\caption{Comparison between the density distributions of hazardous (red) and non-hazardous (light blue) asteroids for a selected set of features that, according to the theory, are interesting.}
+\label{Density_relevant}
+\end{figure}
 
 
 \begin{figure}[h]
@@ -490,9 +531,7 @@ following the Peng. et al approach \cite{peng2005feature}. We see that the first
 
 \section{Probabilistic models}
 
-We started the analysis with the graphical models by inspecting the relations between continuous variables in the dataset, thus in this first step the binary variable \textit{Hazardous} was excluded. For this purpose, among the different methods available, we considered the \textit{Graphical least absolute shrinkage and selection operator} GLASSO as implemented in the \textit{glasso} R package \cite{friedman2008sparse,glasso}. After different tests reported in Fig. \ref{GLASSO_convergence}, we considered as final result the graph obtained with the value of $\rho$ (the one that penalize further connections) equal to $0.3$. This is beacuse in this plot we see that the conditional dependences/independences state by the Celestial Mechanics are correctly reproduced: for instance we see that the diameter of the asteorids is indipendent from all features related to its motion. This is definitely meaningful since the mass of the asteroids is largely lower with respect to the mass of earth: thus there is no way by which the asteroid orbit can be modified by its mass as explained in Appendix A. Furthermore we see that the Close approach Date and the Epoch date are dependant each other but in no way from the other features: this is right since the date and epoch are set with an arbitary scale. Also the Perihelion Epoch and Osculation Time are dependant, as expected, but there is no depencdence with the orbit parameters. We see that the mean motion is conditionally indipendent with respect to relative velocity, but correctly this is dependent from perihelion distance.
-
-
+We started the analysis with the graphical models by inspecting the relations between continuous variables in the dataset: thus in this first step the binary variable \textit{Hazardous} was excluded. For this purpose, among the different methods available, we considered the \textit{Graphical least absolute shrinkage and selection operator} GLASSO as implemented in the \textit{glasso} R package \cite{friedman2008sparse,glasso}. After different tests reported in Fig. \ref{GLASSO_convergence}, we considered as final result the graph obtained with the value of $\rho$ (the one that penalize further connections) equal to $0.3$. This is because, in this plot, we see that the conditional dependences/independences stated by the Celestial Mechanics are correctly reproduced: for instance we see that the diameter of the asteroids is independent from all features related to its motion. This is definitely meaningful since the mass of the asteroids is largely lower with respect to the mass of earth: thus there is no way by which the asteroid orbit can be modified by its mass as explained in Appendix A. Furthermore we see that the Close approach Date and the Epoch date are dependant each other but in no way from the other features: this is right since the date and epoch are set with an arbitrary scale. Also the Perihelion Epoch and Osculation Time are dependant, as expected, but there is no dependence with the orbit parameters. We see that the mean motion is conditionally independent with respect to relative velocity, but correctly this is dependent from perihelion distance.
 \begin{figure}[ht]
   \begin{minipage}[b]{0.5\linewidth}
     \centering
@@ -518,11 +557,21 @@ We started the analysis with the graphical models by inspecting the relations be
     \subcaption{$\rho$=0.4}
     \vspace{4ex}
   \end{minipage}%%
-\caption{GLASSO analysis, performed with the glasso package \cite{friedman2008sparse,glasso}, with different $\rho$ parameter (the one that penalize further connections) for the Asteroid dataset without the discrete variable Hazardous. The plots were obtained with the igraph package for R \cite{igraph}}
+\caption{GLASSO analysis, performed with the glasso package \cite{friedman2008sparse,glasso}, with different $\rho$ parameter (the one that penalize further connections) for the Asteroid dataset without the discrete variable Hazardous. The plots were obtained with the \textit{igraph} package for R \cite{igraph}}
 \label{GLASSO_convergence}
 \end{figure}
+Lets now move on the mixed interaction model: first we considered its implementation in the mgm package \cite{mgm,haslbeck2015mgm}. We choose as $k$ parameter 2 and a cross validation (CV) with ten folds. The result is reported in Fig. \ref{mgm}. From this figure we see that the features that are conditionally dependant to the Hazardous features are: the absolute magnitude, the min orbit intersection, and the eccentricity. 
 
-Lets now move on the mixed interaction model by which  
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=1\textwidth]{Figures/mgm.pdf}
+\caption{The graphical model obtained with the mixed interaction model as implemented in the mgm package \cite{mgm,haslbeck2015mgm}. The plot was obtained with the \cite{qgraph} package}
+\label{mgm}
+\end{center}
+\end{figure}
+
+
 
 
 

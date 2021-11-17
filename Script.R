@@ -101,7 +101,11 @@ ggdensity(Asteroids_FINAL,x="Absolute_Magnitude",rug = TRUE, color = "Hazardous"
 ggdensity(Asteroids_FINAL,x="Min_Orbit_Intersection",rug = TRUE, color = "Hazardous",fill = "Hazardous",size=2)+theme_bw()
 ggdensity(Asteroids_FINAL,x="Miss_Dist",rug = TRUE, color = "Hazardous",fill = "Hazardous",size=2)+theme_bw()
 ggdensity(Asteroids_FINAL,x="Close Approach Date",rug = TRUE, color = "Hazardous",fill = "Hazardous",size=2)+theme_bw()
-ggdensity(Asteroids_FINAL,x="Eccentricity",rug = TRUE, color = "Hazardous",fill = "Hazardous",size=2)+theme_bw()
+ggdensity(Asteroids_FINAL,x="Semi Major Axis",rug = TRUE, color = "Hazardous",fill = "Hazardous",size=2)+theme_bw()
+ggdensity(Asteroids_FINAL,x="Perihelion Distance",rug = TRUE, color = "Hazardous",fill = "Hazardous",size=2)+theme_bw()
+ggdensity(Asteroids_FINAL,x="Perihelion Time",rug = TRUE, color = "Hazardous",fill = "Hazardous",size=2)+theme_bw()
+ggdensity(Asteroids_FINAL,x="Epoch_Osculation",rug = TRUE, color = "Hazardous",fill = "Hazardous",size=2)+theme_bw()
+ggdensity(Asteroids_FINAL,x="Orbital Period",rug = TRUE, color = "Hazardous",fill = "Hazardous",size=2)+theme_bw()
 
 
 MI_var<- varrank(data= Asteroids_FINAL_double, variable.important = "Hazardous", discretization.method = "sturges")

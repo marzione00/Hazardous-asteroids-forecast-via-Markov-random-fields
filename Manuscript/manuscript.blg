@@ -3,52 +3,55 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: manuscript.aux
 Reallocating 'name_of_file' (item size: 1) to 6 items.
 The style file: plain.bst
-Illegal, another \bibstyle command---line 166 of file manuscript.aux
+Illegal, another \bibstyle command---line 180 of file manuscript.aux
  : \bibstyle
  :          {unsrt}
 I'm skipping whatever remains of this command
 Reallocating 'name_of_file' (item size: 1) to 11 items.
 Database file #1: sample.bib
+Warning--to sort, need author or key in kaggle_dataset
+Warning--to sort, need author or key in cneos+nasa
 Warning--to sort, need author or key in glasso
-You've used 15 entries,
+Warning--to sort, need author or key in mgm
+You've used 19 entries,
             2118 wiz_defined-function locations,
-            579 strings with 6146 characters,
-and the built_in function-call counts, 4196 in all, are:
-= -- 395
-> -- 206
+            590 strings with 6497 characters,
+and the built_in function-call counts, 4883 in all, are:
+= -- 457
+> -- 222
 < -- 0
-+ -- 82
-- -- 66
-* -- 262
-:= -- 728
-add.period$ -- 45
-call.type$ -- 15
-change.case$ -- 69
++ -- 90
+- -- 70
+* -- 289
+:= -- 815
+add.period$ -- 51
+call.type$ -- 19
+change.case$ -- 80
 chr.to.int$ -- 0
-cite$ -- 16
-duplicate$ -- 168
-empty$ -- 346
-format.name$ -- 66
-if$ -- 868
+cite$ -- 23
+duplicate$ -- 199
+empty$ -- 432
+format.name$ -- 70
+if$ -- 1030
 int.to.chr$ -- 0
-int.to.str$ -- 15
-missing$ -- 22
-newline$ -- 76
-num.names$ -- 28
-pop$ -- 102
+int.to.str$ -- 19
+missing$ -- 23
+newline$ -- 90
+num.names$ -- 30
+pop$ -- 134
 preamble$ -- 1
-purify$ -- 63
+purify$ -- 73
 quote$ -- 0
-skip$ -- 104
+skip$ -- 139
 stack$ -- 0
-substring$ -- 185
-swap$ -- 15
+substring$ -- 205
+swap$ -- 19
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 44
-warning$ -- 1
-while$ -- 37
-width$ -- 17
-write$ -- 154
+type$ -- 60
+warning$ -- 4
+while$ -- 39
+width$ -- 21
+write$ -- 179
 (There was 1 error message)

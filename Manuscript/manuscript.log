@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.2.22)  16 NOV 2021 15:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.2.22)  17 NOV 2021 12:01
 entering extended mode
 **./manuscript.tex
 (manuscript.tex
@@ -2336,54 +2336,126 @@ Chapter 4.
 ] [14
 
 ]
-<Figures/FAMD.pdf, id=244, 410.53375pt x 413.545pt>
+<Figures/DENSITY_Perihelion_Distance.pdf, id=250, 319.1925pt x 409.53pt>
+File: Figures/DENSITY_Perihelion_Distance.pdf Graphic file (type pdf)
+<use Figures/DENSITY_Perihelion_Distance.pdf>
+Package pdftex.def Info: Figures/DENSITY_Perihelion_Distance.pdf  used on input
+ line 461.
+(pdftex.def)             Requested size: 151.19897pt x 193.99136pt.
+
+! Undefined control sequence.
+l.462     \subcaption
+                     { \begin{center}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+<Figures/DENSITY_Eccentricity.pdf, id=251, 319.1925pt x 409.53pt>
+File: Figures/DENSITY_Eccentricity.pdf Graphic file (type pdf)
+<use Figures/DENSITY_Eccentricity.pdf>
+Package pdftex.def Info: Figures/DENSITY_Eccentricity.pdf  used on input line 4
+69.
+(pdftex.def)             Requested size: 151.19897pt x 193.99136pt.
+! Undefined control sequence.
+l.470     \subcaption
+                     { \begin{center}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+<Figures/DENSITY_Min_orbit_intersection.pdf, id=252, 319.1925pt x 409.53pt>
+File: Figures/DENSITY_Min_orbit_intersection.pdf Graphic file (type pdf)
+<use Figures/DENSITY_Min_orbit_intersection.pdf>
+Package pdftex.def Info: Figures/DENSITY_Min_orbit_intersection.pdf  used on in
+put line 477.
+(pdftex.def)             Requested size: 151.19897pt x 193.99136pt.
+! Undefined control sequence.
+l.478     \subcaption
+                     { \begin{center}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+<Figures/DENSITY_Absolute_magnitude.pdf, id=253, 319.1925pt x 409.53pt>
+File: Figures/DENSITY_Absolute_magnitude.pdf Graphic file (type pdf)
+<use Figures/DENSITY_Absolute_magnitude.pdf>
+Package pdftex.def Info: Figures/DENSITY_Absolute_magnitude.pdf  used on input 
+line 485.
+(pdftex.def)             Requested size: 151.19897pt x 193.99136pt.
+! Undefined control sequence.
+l.486     \subcaption
+                     { \begin{center}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (2.65201pt too wide) in paragraph at lines 459--491
+[][] [] 
+ []
+
+
+Overfull \hbox (2.65201pt too wide) in paragraph at lines 459--491
+[] [] 
+ []
+
+<Figures/FAMD.pdf, id=254, 410.53375pt x 413.545pt>
 File: Figures/FAMD.pdf Graphic file (type pdf)
 <use Figures/FAMD.pdf>
-Package pdftex.def Info: Figures/FAMD.pdf  used on input line 457.
+Package pdftex.def Info: Figures/FAMD.pdf  used on input line 498.
 (pdftex.def)             Requested size: 336.0pt x 338.46544pt.
-
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Figures/FAMD_Quantitative variables.pdf, id=247, 410.53375pt x 413.545pt>
+<Figures/FAMD_Quantitative variables.pdf, id=257, 410.53375pt x 413.545pt>
 File: Figures/FAMD_Quantitative variables.pdf Graphic file (type pdf)
 <use Figures/FAMD_Quantitative variables.pdf>
 Package pdftex.def Info: Figures/FAMD_Quantitative variables.pdf  used on input
- line 465.
+ line 506.
 (pdftex.def)             Requested size: 336.0pt x 338.46544pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Figures/FAMD_Individuals_(c).pdf, id=250, 410.53375pt x 413.545pt>
+<Figures/FAMD_Individuals_(c).pdf, id=260, 410.53375pt x 413.545pt>
 File: Figures/FAMD_Individuals_(c).pdf Graphic file (type pdf)
 <use Figures/FAMD_Individuals_(c).pdf>
-Package pdftex.def Info: Figures/FAMD_Individuals_(c).pdf  used on input line 4
-73.
+Package pdftex.def Info: Figures/FAMD_Individuals_(c).pdf  used on input line 5
+14.
 (pdftex.def)             Requested size: 336.0pt x 338.46544pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[15] [16 <./Figures/FAMD.pdf>] [17 <./Figures/FAMD_Quantitative variables.pdf>]
-[18 <./Figures/FAMD_Individuals_(c).pdf>]
-<Figures/Mutual_information.pdf, id=293, 844.15375pt x 597.23125pt>
+[15] [16 <./Figures/DENSITY_Perihelion_Distance.pdf> <./Figures/DENSITY_Eccentr
+icity.pdf> <./Figures/DENSITY_Min_orbit_intersection.pdf> <./Figures/DENSITY_Ab
+solute_magnitude.pdf>] [17 <./Figures/FAMD.pdf>] [18 <./Figures/FAMD_Quantitati
+ve variables.pdf>] [19 <./Figures/FAMD_Individuals_(c).pdf>]
+<Figures/Mutual_information.pdf, id=343, 844.15375pt x 597.23125pt>
 File: Figures/Mutual_information.pdf Graphic file (type pdf)
 <use Figures/Mutual_information.pdf>
-Package pdftex.def Info: Figures/Mutual_information.pdf  used on input line 482
+Package pdftex.def Info: Figures/Mutual_information.pdf  used on input line 523
 .
 (pdftex.def)             Requested size: 588.0pt x 416.0177pt.
 
 
-LaTeX Warning: Float too large for page by 117.29773pt on input line 486.
+LaTeX Warning: Float too large for page by 117.29773pt on input line 527.
 
-[19 <./Figures/Mutual_information.pdf>]
-<Figures/GLASSO_0.1.pdf, id=309, 409.53pt x 319.1925pt>
+[20 <./Figures/Mutual_information.pdf>]
+<Figures/GLASSO_0.1.pdf, id=359, 409.53pt x 319.1925pt>
 File: Figures/GLASSO_0.1.pdf Graphic file (type pdf)
 <use Figures/GLASSO_0.1.pdf>
-Package pdftex.def Info: Figures/GLASSO_0.1.pdf  used on input line 499.
+Package pdftex.def Info: Figures/GLASSO_0.1.pdf  used on input line 538.
 (pdftex.def)             Requested size: 151.19897pt x 117.8461pt.
 
 ! Undefined control sequence.
-l.500     \subcaption
+l.539     \subcaption
                      {$\rho$=0.1}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2391,13 +2463,13 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<Figures/GLASSO_0.2.pdf, id=310, 409.53pt x 319.1925pt>
+<Figures/GLASSO_0.2.pdf, id=360, 409.53pt x 319.1925pt>
 File: Figures/GLASSO_0.2.pdf Graphic file (type pdf)
 <use Figures/GLASSO_0.2.pdf>
-Package pdftex.def Info: Figures/GLASSO_0.2.pdf  used on input line 505.
+Package pdftex.def Info: Figures/GLASSO_0.2.pdf  used on input line 544.
 (pdftex.def)             Requested size: 151.19897pt x 117.8461pt.
 ! Undefined control sequence.
-l.506     \subcaption
+l.545     \subcaption
                      {$\rho$=0.2}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2405,13 +2477,13 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<Figures/GLASSO_0.3.pdf, id=311, 409.53pt x 319.1925pt>
+<Figures/GLASSO_0.3.pdf, id=361, 409.53pt x 319.1925pt>
 File: Figures/GLASSO_0.3.pdf Graphic file (type pdf)
 <use Figures/GLASSO_0.3.pdf>
-Package pdftex.def Info: Figures/GLASSO_0.3.pdf  used on input line 511.
+Package pdftex.def Info: Figures/GLASSO_0.3.pdf  used on input line 550.
 (pdftex.def)             Requested size: 151.19897pt x 117.8461pt.
 ! Undefined control sequence.
-l.512     \subcaption
+l.551     \subcaption
                      {$\rho$=0.3}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2419,13 +2491,13 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<Figures/GLASSO_0.4.pdf, id=312, 409.53pt x 319.1925pt>
+<Figures/GLASSO_0.4.pdf, id=362, 409.53pt x 319.1925pt>
 File: Figures/GLASSO_0.4.pdf Graphic file (type pdf)
 <use Figures/GLASSO_0.4.pdf>
-Package pdftex.def Info: Figures/GLASSO_0.4.pdf  used on input line 517.
+Package pdftex.def Info: Figures/GLASSO_0.4.pdf  used on input line 556.
 (pdftex.def)             Requested size: 151.19897pt x 117.8461pt.
 ! Undefined control sequence.
-l.518     \subcaption
+l.557     \subcaption
                      {$\rho$=0.4}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2434,76 +2506,104 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Overfull \hbox (2.65201pt too wide) in paragraph at lines 497--521
+Overfull \hbox (2.65201pt too wide) in paragraph at lines 536--560
 [][] [] 
  []
 
+<Figures/mgm.pdf, id=372, 410.53375pt x 413.545pt>
+File: Figures/mgm.pdf Graphic file (type pdf)
+<use Figures/mgm.pdf>
+Package pdftex.def Info: Figures/mgm.pdf  used on input line 568.
+(pdftex.def)             Requested size: 336.0pt x 338.46544pt.
+
+LaTeX Warning: Citation `qgraph' on page 21 undefined on input line 569.
+
+
+LaTeX Warning: Citation `qgraph' on page 21 undefined on input line 569.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 Chapter 5.
-[20
+[21
 
 
-] [21 <./Figures/GLASSO_0.1.pdf> <./Figures/GLASSO_0.2.pdf> <./Figures/GLASSO_0
-.3.pdf> <./Figures/GLASSO_0.4.pdf>]
+] [22 <./Figures/GLASSO_0.1.pdf> <./Figures/GLASSO_0.2.pdf> <./Figures/GLASSO_0
+.3.pdf> <./Figures/GLASSO_0.4.pdf>] [23 <./Figures/mgm.pdf>]
 Chapter 6.
-[22
+[24
 
 ]
-Overfull \hbox (5.81458pt too wide) in paragraph at lines 531--531
+Overfull \hbox (5.81458pt too wide) in paragraph at lines 582--582
 |[]\T1/iwona/m/n/17.28/160ls APPENDIX A: CON-CEPTS OF
  []
 
-(manuscript.bbl [23
+(manuscript.bbl [25
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 4--5
+[][][]$\T1/fvm/m/n/12 https : / / www . kaggle . com / shrutimehta /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10--11
 [][][]$\T1/fvm/m/n/12 https : / / cran . r-[]project . org / web / packages / g
 lasso /
  []
 
 
-Underfull \hbox (badness 1173) in paragraph at lines 63--68
+Underfull \hbox (badness 10000) in paragraph at lines 13--14
+[][][]$\T1/fvm/m/n/12 https : / / cran . r-[]project . org / web / packages / m
+gm / mgm .
+ []
+
+[26
+
+]
+Underfull \hbox (badness 1173) in paragraph at lines 78--83
 \T1/pplj/m/it/12 Trans-ac-tions on pat-tern anal-y-sis and ma-chine in-tel-li-g
 ence\T1/pplj/m/n/12 ,
  []
 
-[24
+) [27] (manuscript.aux)
 
-]) [25] (manuscript.aux) ) 
+LaTeX Warning: There were undefined references.
+
+ ) 
 Here is how much of TeX's memory you used:
- 39201 strings out of 479334
- 762858 string characters out of 2865057
+ 39252 strings out of 479334
+ 764299 string characters out of 2865057
  1436747 words of memory out of 3000000
- 55611 multiletter control sequences out of 15000+200000
- 563754 words of font info for 292 fonts, out of 3000000 for 9000
+ 55646 multiletter control sequences out of 15000+200000
+ 566679 words of font info for 296 fonts, out of 3000000 for 9000
  1142 hyphenation exceptions out of 8191
- 128i,23n,130p,10607b,893s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.
-enc} <C:\Users\Marzio\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/public/mathabx/d
-pi600\matha7.pk> <C:\Users\Marzio\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/publ
-ic/mathabx/dpi720\mathx10.pk> <C:\Users\Marzio\AppData\Local\MiKTeX\2.9\fonts/p
-k/ljfour/public/mathabx/dpi600\matha9.pk> <C:\Users\Marzio\AppData\Local\MiKTeX
-\2.9\fonts/pk/ljfour/public/mathabx/dpi600\matha12.pk>{C:/Program Files/MiKTeX 
-2.9/fonts/enc/dvips/iwona/ec-iwona-sc.enc}{C:/Program Files/MiKTeX 2.9/fonts/en
-c/dvips/iwona/ec-iwona.enc} <C:\Users\Marzio\AppData\Local\MiKTeX\2.9\fonts/pk/
-ljfour/jknappen/ec/dpi600\ecrm1200.pk><C:/Program Files/MiKTeX 2.9/fonts/type1/
-public/amsfonts/euler/eufm10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
-c/amsfonts/euler/eurb10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
-fonts/euler/eurb7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
-euler/eurm10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/euler
-/eurm7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/euler/eusm1
-0.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/fpl/fplbj8a.pfb><C:/Progr
-am Files/MiKTeX 2.9/fonts/type1/public/mathpazo/fplmbb.pfb><C:/Program Files/Mi
-KTeX 2.9/fonts/type1/public/fpl/fplrc8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/
-type1/public/fpl/fplrij8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/bera/fvm
-r8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/nowacki/iwona/iwonab.pfb><C:/P
-rogram Files/MiKTeX 2.9/fonts/type1/nowacki/iwona/iwonar.pfb><C:/Program Files/
-MiKTeX 2.9/fonts/type1/urw/palatino/uplb8a.pfb><C:/Program Files/MiKTeX 2.9/fon
-ts/type1/urw/palatino/uplbi8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/
-palatino/uplr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplri
-8a.pfb>
-Output written on manuscript.pdf (26 pages, 569266 bytes).
+ 128i,23n,130p,10607b,891s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc} <C:\Users\Marzio\Ap
+pData\Local\MiKTeX\2.9\fonts/pk/ljfour/public/mathabx/dpi600\matha7.pk> <C:\Use
+rs\Marzio\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/public/mathabx/dpi720\mathx1
+0.pk> <C:\Users\Marzio\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/public/mathabx/
+dpi600\matha9.pk> <C:\Users\Marzio\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/pub
+lic/mathabx/dpi600\matha12.pk>{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/iwon
+a/ec-iwona-sc.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/iwona/ec-iwona.e
+nc} <C:\Users\Marzio\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi60
+0\ecrm1200.pk><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/euler/eu
+fm10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/euler/eurb10.
+pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/euler/eurb7.pfb><C
+:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/euler/eurm10.pfb><C:/Pro
+gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/euler/eurm7.pfb><C:/Program F
+iles/MiKTeX 2.9/fonts/type1/public/amsfonts/euler/eusm10.pfb><C:/Program Files/
+MiKTeX 2.9/fonts/type1/public/fpl/fplbj8a.pfb><C:/Program Files/MiKTeX 2.9/font
+s/type1/public/mathpazo/fplmbb.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pub
+lic/fpl/fplrc8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/fpl/fplrij8
+a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/bera/fvmr8a.pfb><C:/Program File
+s/MiKTeX 2.9/fonts/type1/nowacki/iwona/iwonab.pfb><C:/Program Files/MiKTeX 2.9/
+fonts/type1/nowacki/iwona/iwonar.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/u
+rw/palatino/uplb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/up
+lbi8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/
+Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on manuscript.pdf (28 pages, 719556 bytes).
 PDF statistics:
- 554 PDF objects out of 1000 (max. 8388607)
- 96 named destinations out of 1000 (max. 500000)
- 38125 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 631 PDF objects out of 1000 (max. 8388607)
+ 104 named destinations out of 1000 (max. 500000)
+ 38662 words of extra memory for PDF output out of 42996 (max. 10000000)
 
