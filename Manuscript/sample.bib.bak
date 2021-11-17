@@ -148,7 +148,7 @@ howpublished = {\url{https://cran.r-project.org/web/packages/mgm/mgm.pdf}}
   year={2015}
 }
 
-@Article{qgraph,
+@article{qgraph,
     title = {{qgraph}: Network Visualizations of Relationships in
       Psychometric Data},
     author = {Sacha Epskamp and Ang\'elique O. J. Cramer and Lourens J.
@@ -158,6 +158,39 @@ howpublished = {\url{https://cran.r-project.org/web/packages/mgm/mgm.pdf}}
     volume = {48},
     number = {4},
     pages = {1--18},
+  }
+
+@article{kuhn2008building,
+  title={Building predictive models in R using the caret package},
+  author={Kuhn, Max},
+  journal={Journal of statistical software},
+  volume={28},
+  number={1},
+  pages={1--26},
+  year={2008}
+}
+
+@misc{caret,
+howpublished = {\url{https://cran.r-project.org/web/packages/caret/caret.pdf}}
+}
+
+@article{sing2005rocr,
+  title={ROCR: visualizing classifier performance in R},
+  author={Sing, Tobias and Sander, Oliver and Beerenwinkel, Niko and Lengauer, Thomas},
+  journal={Bioinformatics},
+  volume={21},
+  number={20},
+  pages={3940--3941},
+  year={2005},
+  publisher={Oxford University Press}
+}
+@book{ggplot2,
+    author = {Hadley Wickham},
+    title = {ggplot2: Elegant Graphics for Data Analysis},
+    publisher = {Springer-Verlag New York},
+    year = {2016},
+    isbn = {978-3-319-24277-4},
+    url = {https://ggplot2.tidyverse.org},
   }
 
 

@@ -560,7 +560,7 @@ We started the analysis with the graphical models by inspecting the relations be
 \caption{GLASSO analysis, performed with the glasso package \cite{friedman2008sparse,glasso}, with different $\rho$ parameter (the one that penalize further connections) for the Asteroid dataset without the discrete variable Hazardous. The plots were obtained with the \textit{igraph} package for R \cite{igraph}}
 \label{GLASSO_convergence}
 \end{figure}
-Lets now move on the mixed interaction model: first we considered its implementation in the mgm package \cite{mgm,haslbeck2015mgm}. We choose as $k$ parameter 2 and a cross validation (CV) with ten folds. The result is reported in Fig. \ref{mgm}. From this figure we see that the features that are conditionally dependant to the Hazardous features are: the absolute magnitude, the min orbit intersection, and the eccentricity. 
+Lets now move on the mixed interaction model: first we considered its implementation in the mgm package \cite{mgm,haslbeck2015mgm}. We choose as $k$ parameter 2 and a cross validation (CV) with ten folds. The result is reported in Fig. \ref{mgm}. From this figure we see that the features that are conditionally dependant to the Hazardous features are: the absolute magnitude, the min orbit intersection, and the eccentricity.  All these connections are supported by the theory: the min orbit intersection is the main parameter for the hazardous value, the eccentricity on the other side can be tough as a parameter that describes how near the celestial body moves at the perihelion (indeed this parameter is correctly linked with the perihelion distance) and the Absolute Magnitude is also a meaningful parameter for the hazard evaluation since, if the asteroid is too small it will be destroyed by the earth atmosphere. It is worth mentioning that this parameter is correctly not connected with all quantities related to the orbital parameter except for the mean anomaly. Furthermore the parameters related to the diameters are also not connected with the orbital parameters. Furthermore we see also that the mean velocity is not directly related to the mean motion but there are the orbital parameters within them as expected. Thus it can be said that the model produced is almost consistent with the astronomic laws. On this basis, we can evaluate the performances of the model in term of confusion matrix, ROC curve and $\phi$ parameters (we used for this purpose the Caret R package \cite{kuhn2008building,caret}). The confusion matrix obtained is reported in Fig. \ref{mgm_confusion}: the ROC curve is given in Fig \ref{ROC_mgm} and it corresponds to a $\phi=0.6$
 
 
 \begin{figure}[h]
@@ -571,9 +571,23 @@ Lets now move on the mixed interaction model: first we considered its implementa
 \end{center}
 \end{figure}
 
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=1\textwidth]{Figures/mgm_confusion.pdf}
+\caption{The confusion matrix of the graphical model reported in Fig. \ref{mgm} as obtained from the Caret package \cite{kuhn2008building,caret}} 
+\label{mgm_confusion}
+\end{center}
+\end{figure}
 
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=1\textwidth]{Figures/ROC_mgm.pdf}
+\caption{The ROC curve as obtained from the ROCR package \cite{sing2005rocr} and ggplot2 \cite{ggplot2}. The corresponding $\phi$ value is $0.6$ } 
+\label{ROC_mgm}
+\end{center}
+\end{figure}
 
-
+\pagebreak
 
 \section{Machine learning algorithms}
 

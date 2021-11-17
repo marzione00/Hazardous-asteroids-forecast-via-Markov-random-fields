@@ -265,23 +265,26 @@ conf<-data.frame(lapply(Asteroids_FINAL[,22], as.factor),Predicted_vs_real)
 
 Confusion_matrix_ASTEROIDS<-confusionMatrix(conf$Hazardous,conf$PRED)
 
-fourfoldplot(Confusion_matrix_ASTEROIDS$table,color = c("red","darkgreen"), main = "Mixed Interaction",conf.level = 0)
+fourfoldplot(Confusion_matrix_ASTEROIDS$table,color = c("red","darkgreen"),conf.level = 0)
 
 Confusion_matrix_ASTEROIDS
 
 pred_numeric<-prediction(as.numeric(conf$PRED),as.numeric(conf$Hazardous))
 
-roc_svm.perf <- performance(pred_numeric, measure = "tpr", x.measure = "fpr")
+roc_mgm.perf <- performance(pred_numeric,measure = "tpr", x.measure = "fpr")
 
 phi_Asteroids<-performance(pred_numeric, "phi")
 
 phi_Asteroids@y.values[[1]][2]
 
-plot(roc_svm.perf,cex.lab=1.5,yaxis.cex.axis=1.5,xaxis.cex.axis=1.5)
+pippo<-plot(roc_svm.perf,cex.lab=1.5,yaxis.cex.axis=1.5,xaxis.cex.axis=1.5)
 abline(a=0, b= 1)
 
+df <- data.frame (roc_mgm.perf@x.values,roc_mgm.perf@y.values)
 
+colnames(df)<-c("FPR", "TPR")
 
+ggplot(df,aes(FPR,TPR))+geom_point(color="red")+geom_line(color="red")+ggtitle("ROC CURVE")+theme_bw()+theme(axis.text=element_text(size=16),axis.title=element_text(size=14,face="bold"))
 
 
 

@@ -12,6 +12,9 @@
 \bibitem{mgm}
 \url{https://cran.r-project.org/web/packages/mgm/mgm.pdf}.
 
+\bibitem{caret}
+\url{https://cran.r-project.org/web/packages/caret/caret.pdf}.
+
 \bibitem{cover2006elements}
 T.M. Cover and J.A. Thomas.
 \newblock {\em Elements of Information Theory}.
@@ -21,6 +24,13 @@ T.M. Cover and J.A. Thomas.
 Gabor Csardi and Tamas Nepusz.
 \newblock The igraph software package for complex network research.
 \newblock {\em InterJournal}, Complex Systems:1695, 2006.
+
+\bibitem{qgraph}
+Sacha Epskamp, Ang\'elique O.~J. Cramer, Lourens~J. Waldorp, Verena~D.
+  Schmittmann, and Denny Borsboom.
+\newblock {qgraph}: Network visualizations of relationships in psychometric
+  data.
+\newblock {\em Journal of Statistical Software}, 48(4):1--18, 2012.
 
 \bibitem{feynman2018feynman}
 Richard~P Feynman, Tony Hey, and Robin~W Allen.
@@ -54,6 +64,11 @@ Gilles Kratzer and Reinhard Furrer.
   information with applications to observed systemic datasets.
 \newblock {\em arXiv preprint arXiv:1804.07134}, 2018.
 
+\bibitem{kuhn2008building}
+Max Kuhn.
+\newblock Building predictive models in r using the caret package.
+\newblock {\em Journal of statistical software}, 28(1):1--26, 2008.
+
 \bibitem{le2008factominer}
 S{\'e}bastien L{\^e}, Julie Josse, and Fran{\c{c}}ois Husson.
 \newblock Factominer: an r package for multivariate analysis.
@@ -85,6 +100,16 @@ Hanchuan Peng, Fuhui Long, and Chris Ding.
 S.~Russell, S.J. Russell, P.~Norvig, and E.~Davis.
 \newblock {\em Artificial Intelligence: A Modern Approach}.
 \newblock Prentice Hall series in artificial intelligence. Prentice Hall, 2010.
+
+\bibitem{sing2005rocr}
+Tobias Sing, Oliver Sander, Niko Beerenwinkel, and Thomas Lengauer.
+\newblock Rocr: visualizing classifier performance in r.
+\newblock {\em Bioinformatics}, 21(20):3940--3941, 2005.
+
+\bibitem{ggplot2}
+Hadley Wickham.
+\newblock {\em ggplot2: Elegant Graphics for Data Analysis}.
+\newblock Springer-Verlag New York, 2016.
 
 \bibitem{wu2017markov}
 Sheng-Jhih Wu and Moody~T Chu.
