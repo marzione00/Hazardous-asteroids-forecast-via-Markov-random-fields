@@ -560,7 +560,7 @@ We started the analysis with the graphical models by inspecting the relations be
 \caption{GLASSO analysis, performed with the glasso package \cite{friedman2008sparse,glasso}, with different $\rho$ parameter (the one that penalize further connections) for the Asteroid dataset without the discrete variable Hazardous. The plots were obtained with the \textit{igraph} package for R \cite{igraph}}
 \label{GLASSO_convergence}
 \end{figure}
-Lets now move on the mixed interaction model: first we considered its implementation in the mgm package \cite{mgm,haslbeck2015mgm}. We choose as $k$ parameter 2 and a cross validation (CV) with ten folds. The result is reported in Fig. \ref{mgm}. From this figure we see that the features that are conditionally dependant to the Hazardous features are: the absolute magnitude, the min orbit intersection, and the eccentricity.  All these connections are supported by the theory: the min orbit intersection is the main parameter for the hazardous value, the eccentricity on the other side can be tough as a parameter that describes how near the celestial body moves at the perihelion (indeed this parameter is correctly linked with the perihelion distance) and the Absolute Magnitude is also a meaningful parameter for the hazard evaluation since, if the asteroid is too small it will be destroyed by the earth atmosphere. It is worth mentioning that this parameter is correctly not connected with all quantities related to the orbital parameter except for the mean anomaly. Furthermore the parameters related to the diameters are also not connected with the orbital parameters. Furthermore we see also that the mean velocity is not directly related to the mean motion but there are the orbital parameters within them as expected. Thus it can be said that the model produced is almost consistent with the astronomic laws. On this basis, we can evaluate the performances of the model in term of confusion matrix, ROC curve and $\phi$ parameters (we used for this purpose the Caret R package \cite{kuhn2008building,caret}). The confusion matrix obtained is reported in Fig. \ref{mgm_confusion}: the ROC curve is given in Fig \ref{ROC_mgm} and it corresponds to a $\phi=0.6$
+Lets now move on the mixed interaction model: first we considered its implementation in the mgm package \cite{mgm,haslbeck2015mgm}. We choose as $k$ parameter 2 and a cross validation (CV) with ten folds. The result is reported in Fig. \ref{mgm}. From this figure we see that the features that are conditionally dependant to the Hazardous features are: the absolute magnitude, the min orbit intersection, and the eccentricity.  All these connections are supported by the theory: the min orbit intersection is the main parameter for the hazardous value, the eccentricity on the other side can be tough as a parameter that describes how near the celestial body moves at the perihelion (indeed this parameter is correctly linked with the perihelion distance) and the Absolute Magnitude is also a meaningful parameter for the hazard evaluation since, if the asteroid is too small it will be destroyed by the earth atmosphere. It is worth mentioning that this parameter is correctly not connected with all quantities related to the orbital parameter except for the mean anomaly. Furthermore the parameters related to the diameters are also not connected with the orbital parameters. Furthermore we see also that the mean velocity is not directly related to the mean motion but there are the orbital parameters within them as expected. Thus it can be said that the model produced is almost consistent with the astronomic laws. On this basis, we can evaluate the performances of the model in term of confusion matrix, ROC curve and $\phi$ parameters (we used for this purpose the Caret R package \cite{kuhn2008building,caret}). The confusion matrix obtained is reported in Fig. \ref{mgm_confusion}: the ROC curve is given in Fig. \ref{ROC_mgm} and it corresponds to a $\phi=0.6$. We will comment these performances in a few when we will present the performances of other algorithms for the same dataset. Before this we would show the graphical models obtained with different implementation of mixed interaction model: we considered the function \textit{mmod()} of gRim package \cite{hojsgaard2012graphical} and the \textit{minforest()} of gRapHD (which uses the minForest method) \cite{de2009high}. Both were obtained with a stepwise algorithm.  Their result are reported in Fig. \ref{mmod} and \ref{minforest}. We see that in these models the minimum diameter is linked with the hazordous feature, and this is correct, but what is without a physical meaning is that this quantity is also linked to the features connected with the orbital parameters. Indeed, while for the magnitude (as for mgm model) a weak relationship can be admitted since this depends also on the distance between the asteroids and the observer and from the orbit, a volume and thus a mass dependence is not acceptable. In principle one can set these link as forbidden in the algorithm (blacklist), but in the author view it is preferable a model were the result is obtained without boundaries, instead of a one obtained with a large number of boundaries. Thus since a correct model was obtained without the imposition a blacklist, the mgm, we simply reject the mmod and minforest ones in favour of the first one. As consequence this is the reason why we report the performances of mgm model only. 
 
 
 \begin{figure}[h]
@@ -587,9 +587,119 @@ Lets now move on the mixed interaction model: first we considered its implementa
 \end{center}
 \end{figure}
 
+\begin{landscape}
+\begin{figure}
+\begin{center}
+\includegraphics[width=1.5\textheight]{Figures/mmod.pdf}
+\caption{The graphical mixed interaction model obtained with the grim package \cite{hojsgaard2012graphical}. The plot was obtained with the igraph package for R \cite{igraph} }
+\label{mmod}
+\end{center}
+\end{figure}
+\end{landscape}
+\\
+\begin{landscape}
+\begin{figure}
+\begin{center}
+\includegraphics[width=1.5\textheight]{Figures/minforest.pdf}
+\caption{The graphical mixed interaction model obtained with the gRapHD package \cite{de2009high} with a stepwise algorithm. The plot was obtained with the \cite{qgraph} package }
+\label{minforest}
+\end{center}
+\end{figure}
+\end{landscape}
+
+
 \pagebreak
 
 \section{Machine learning algorithms}
+
+Given the mgm model as the one obtained with the probabilistic graphical methods, we would compare its performances with the ones obtained from the following machine learning algorithms: the random-forest (as implemented in the RandomForest package \cite{rfor}), the support vector machines (as implemented in the e1071 package \cite{dimitriadou2008misc}) , the quadratic discriminant analysis (as implemented in the MASS package \cite{MASS} and the logistic regression (as implented in stats package \cite{stats}). Their performances are reported in Fig. \ref{CF_ML} and \ref{ROC_mgm} as well in the Tab. \ref{phi_values}. From these comparison we can see that most of these algorithms, expect for the QDA outperform the graphical method mgm or have similar performances as for the logistic algorithm. Thus at this point one can ask what is the advantage of using a graphical method instead of a random forest or a SVM since its performances seems lower. The answer is the interpretability of the model provided: the random forest, at lest, can provide a variable rank importance as reported in Fig. \ref{RF_Importance} (note that apart from the Min Orbit intersection, there is a slight reshuffling in the feature importance with respect to the one established by the MI in fig \ref{Mutual_information}; however apart from this is a black-box as the SVM, the logistic regression and the QDA. Differently the probabilistic graph, providing the conditional independences, give to the user a interpretable model whose properties can be also compared, discussed and validated with the theory. Thus the model developed in this way allows a more scientific evaluation with respect to the black-box one. In the author view this characteristic definitely compensates the lack of predictive power with respect to the Random Forest or the SVM methods.
+
+
+\begin{figure}[ht]
+  \begin{minipage}[b]{0.5\linewidth}
+    \centering
+    \includegraphics[width=.9\linewidth]{Figures/RF_confusion.pdf}
+    \subcaption{Random Forest}
+    \vspace{4ex}
+  \end{minipage} 
+  \begin{minipage}[b]{0.5\linewidth}
+    \centering
+    \includegraphics[width=.9\linewidth]{Figures/SVM_confusion.pdf}
+    \subcaption{SVM}
+    \vspace{4ex}
+  \end{minipage} \\
+  \begin{minipage}[b]{0.5\linewidth}
+    \centering
+    \includegraphics[width=.9\linewidth]{Figures/QDA_confusion.pdf}
+    \subcaption{QDA}
+    \vspace{4ex}
+  \end{minipage}%%
+    \begin{minipage}[b]{0.5\linewidth}
+    \centering
+    \includegraphics[width=.9\linewidth]{Figures/Logisic_confusion.pdf}
+    \subcaption{Logistic}
+    \vspace{4ex}
+  \end{minipage}%%
+\caption{Confusion matrices for a selected set of ML algorithms as obtained from the Caret package \cite{kuhn2008building,caret}}
+\label{CF_ML}
+  \end{figure}
+  
+  
+  \begin{figure}[ht]
+  \begin{minipage}[b]{0.5\linewidth}
+    \centering
+    \includegraphics[width=.9\linewidth]{Figures/ROC_RF.pdf}
+    \subcaption{Random Forest}
+    \vspace{4ex}
+  \end{minipage} 
+  \begin{minipage}[b]{0.5\linewidth}
+    \centering
+    \includegraphics[width=.9\linewidth]{Figures/ROC_SVM.pdf}
+    \subcaption{SVM}
+    \vspace{4ex}
+  \end{minipage} \\
+  \begin{minipage}[b]{0.5\linewidth}
+    \centering
+    \includegraphics[width=.9\linewidth]{Figures/ROC_QDA.pdf}
+    \subcaption{QDA}
+    \vspace{4ex}
+  \end{minipage}%%
+    \begin{minipage}[b]{0.5\linewidth}
+    \centering
+    \includegraphics[width=.9\linewidth]{Figures/ROC_logistic.pdf}
+    \subcaption{Logistic}
+    \vspace{4ex}
+  \end{minipage}%%
+\caption{ROC curves for a selected set of ML algorithms. Plot obtained with caret and ggplot2 package \cite{kuhn2008building},ggplot2}}
+\label{ROC_ML}
+  \end{figure}
+
+
+
+\begin{table}[]
+\label{phi_values}
+\caption{$\phi$ factor for a selected set of ML algorithms as compared with the mgm}
+\begin{center}
+\begin{tabular}{c|c}
+Algorithm & $\phi$ \\ \hline
+RF        & 0.9876 \\ \hline
+SVM       & 0.7111 \\ \hline
+logistic  & 0.6173 \\ \hline
+mgm       & 0.5997 \\ \hline
+QDA       & 0.5562 
+
+\end{tabular}
+\end{center}
+\end{table}
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=1\textwidth]{Figures/RF_Importance.pdf}
+\caption{Variable importance according to the random forest algorithm as implemented in \cite{rfor} package. Plot obtained with ggplot2 package \cite{ggplot2}}
+\label{RF_Importance}
+\end{center}
+\end{figure}
+
 
 \chapter{Conclusions}
 
@@ -601,7 +711,6 @@ Lets now move on the mixed interaction model: first we considered its implementa
 \bibliography{sample.bib} % The file containing the bibliography
 
 \newpage
-
 
 
 

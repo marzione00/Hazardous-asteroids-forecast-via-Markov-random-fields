@@ -29,6 +29,7 @@ library(e1071)
 library(MASS)
 library(infotheo)
 library(varrank)
+library(minet)
 
 #Data Loading
 
@@ -214,7 +215,7 @@ plot(as(commonedges.asteroids ,"igraph"),vertex.color="orange",vertex.label.dist
 
 bf<-minForest(Asteroids_FINAL_double)
 plot(bf,cex.vert.label=0.6,numIter=6000,col.labels=c("red"),vert.hl=c(21),col.hl=c("blue"),energy=TRUE)
-mbG<-stepw(model=bf,data=Asteroids_FINAL_double,threshold=1)
+mbG<-stepw(model=bf,data=Asteroids_FINAL_double)
 plot(mbG,cex.vert.label=0.6,numIter=6000,col.labels=c("red"),vert.hl=c(21),col.hl=c("blue"),energy=TRUE)
 
 
@@ -224,6 +225,10 @@ plot(aa2)
 
 
 plot(as(aa2 ,"igraph"),vertex.color="red",vertex.label.dist=2,alpha=TRUE,vertex.label.cex=0.5,vertex.size=10,edge.color="black",edge.size=2,layout=layout_with_fr(as(aa2,'igraph')), vertex.label.family='Helvetica')
+
+
+
+
 
 
 #Mixed interaction analysis
@@ -277,14 +282,18 @@ phi_Asteroids<-performance(pred_numeric, "phi")
 
 phi_Asteroids@y.values[[1]][2]
 
-pippo<-plot(roc_svm.perf,cex.lab=1.5,yaxis.cex.axis=1.5,xaxis.cex.axis=1.5)
-abline(a=0, b= 1)
+
 
 df <- data.frame (roc_mgm.perf@x.values,roc_mgm.perf@y.values)
 
 colnames(df)<-c("FPR", "TPR")
 
 ggplot(df,aes(FPR,TPR))+geom_point(color="red")+geom_line(color="red")+ggtitle("ROC CURVE")+theme_bw()+theme(axis.text=element_text(size=16),axis.title=element_text(size=14,face="bold"))
+
+mim <- build.mim(Asteroids_FINAL[,-1])
+graph_mu<-aracne(mim)
+plot(graph_from_graphnel( as( graph_mu ,"graphNEL")),layout=layout_with_fr(as(graph_mu,'igraph')) )
+
 
 
 
@@ -339,13 +348,23 @@ colnames(rfor.predict)<-c("Predict","Test")
 
 caret::confusionMatrix(table(rfor.predict))
 
-fourfoldplot(table(rfor.predict), color = c("red","darkgreen"),main = "Random Forest",conf.level = 0)
+fourfoldplot(table(rfor.predict), color = c("red","darkgreen"),conf.level = 0)
 
 pred_for<-prediction(as.numeric(rfor.predict$Predict),as.numeric(rfor.predict$Test))
 
 roc_for.perf <- performance(pred_for, measure = "tpr", x.measure = "fpr")
 
+phi_Asteroids<-performance(pred_for, "phi")
+phi_Asteroids@y.values[[1]]
+
 autoplot(roc_for.perf)+theme_bw()
+
+df <- data.frame (roc_for.perf@x.values,roc_for.perf@y.values)
+
+colnames(df)<-c("FPR", "TPR")
+
+ggplot(df,aes(FPR,TPR))+geom_point(color="red")+geom_line(color="red")+ggtitle("ROC CURVE")+theme_bw()+theme(axis.text=element_text(size=16),axis.title=element_text(size=14,face="bold"))
+
 
 
 #SVM
@@ -374,7 +393,7 @@ colnames(svm_fin_full)<-c("Predict","Test")
 
 caret::confusionMatrix(table(svm_fin_full))
 
-fourfoldplot(table(svm_fin_full), color = c("red","darkgreen"),conf.level = 0, margin = 1, main = "SVM_FULL")
+fourfoldplot(table(svm_fin_full), color = c("red","darkgreen"),conf.level = 0, margin = 1)
 
 pred_svm_full<-prediction(as.numeric(svm_fin_full$Predict),as.numeric(svm_fin_full$Test))
 
@@ -382,10 +401,19 @@ roc_svm_full.perf <- performance(pred_svm_full, measure = "tpr", x.measure = "fp
 
 phi_svm_full<-performance(pred_svm_full, "mi")
 
+phi_Asteroids<-performance(pred_svm_full, "phi")
+phi_Asteroids@y.values[[1]]
+
+
 phi_svm_full@y.values
 
 autoplot(roc_svm_full.perf)+theme_bw()
 
+df <- data.frame (roc_svm_full.perf@x.values,roc_svm_full.perf@y.values)
+
+colnames(df)<-c("FPR", "TPR")
+
+ggplot(df,aes(FPR,TPR))+geom_point(color="red")+geom_line(color="red")+ggtitle("ROC CURVE")+theme_bw()+theme(axis.text=element_text(size=16),axis.title=element_text(size=14,face="bold"))
 
 
 #QDA
@@ -403,7 +431,7 @@ colnames(qda_fin)<-c("Predict","Test")
 
 caret::confusionMatrix(table(qda_fin))
 
-fourfoldplot(table(qda_fin), color = c("red","darkgreen"),conf.level = 0, margin = 1, main = "QDA")
+fourfoldplot(table(qda_fin), color = c("red","darkgreen"),conf.level = 0, margin = 1)
 
 pred_qda<-prediction(as.numeric(qda_fin$Predict),as.numeric(qda_fin$Test))
 
@@ -411,9 +439,15 @@ roc_qda.perf <- performance(pred_qda, measure = "tpr", x.measure = "fpr")
 
 phi_qda<-performance(pred_qda, "phi")
 
-plot(phi_qda)
+phi_qda
 
 autoplot(roc_qda.perf)+theme_bw()
+
+df <- data.frame (roc_qda.perf @x.values,roc_qda.perf @y.values)
+
+colnames(df)<-c("FPR", "TPR")
+
+ggplot(df,aes(FPR,TPR))+geom_point(color="red")+geom_line(color="red")+ggtitle("ROC CURVE")+theme_bw()+theme(axis.text=element_text(size=16),axis.title=element_text(size=14,face="bold"))
 
 
 #Logistic
@@ -432,6 +466,22 @@ logistic.prob["T"]<-as.factor(Asteroids_FINAL_double[-Asteroids_FINAL_double_tra
 colnames(logistic.prob)<-c("P","T")
 
 
-fourfoldplot(table(logistic.prob), color = c("red","darkgreen"), main = "Logistic",conf.level = 0,margin = 1)
+fourfoldplot(table(logistic.prob), color = c("red","darkgreen"),conf.level = 0,margin = 1)
 
 caret::confusionMatrix(table(logistic.prob))
+
+pred_log<-prediction(as.numeric(logistic.prob$P),as.numeric(logistic.prob$T))
+
+pred_log.perf <- performance(pred_log, measure = "tpr", x.measure = "fpr")
+
+phi_log<-performance(pred_log, "phi")
+
+phi_log
+
+df <- data.frame (roc_qda.perf @x.values,roc_qda.perf @y.values)
+
+colnames(df)<-c("FPR", "TPR")
+
+ggplot(df,aes(FPR,TPR))+geom_point(color="red")+geom_line(color="red")+ggtitle("ROC CURVE")+theme_bw()+theme(axis.text=element_text(size=16),axis.title=element_text(size=14,face="bold"))
+
+

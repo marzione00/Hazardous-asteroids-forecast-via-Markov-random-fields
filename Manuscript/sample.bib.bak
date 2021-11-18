@@ -184,6 +184,7 @@ howpublished = {\url{https://cran.r-project.org/web/packages/caret/caret.pdf}}
   year={2005},
   publisher={Oxford University Press}
 }
+
 @book{ggplot2,
     author = {Hadley Wickham},
     title = {ggplot2: Elegant Graphics for Data Analysis},
@@ -193,5 +194,52 @@ howpublished = {\url{https://cran.r-project.org/web/packages/caret/caret.pdf}}
     url = {https://ggplot2.tidyverse.org},
   }
 
+@article{de2009high,
+  title={High-dimensional graphical model search with graphd R package},
+  author={de Abreu, Gabriel CG and Labouriau, Rodrigo and Edwards, David},
+  journal={arXiv preprint arXiv:0909.1234},
+  year={2009}
+}
 
+  @Article{rfor,
+    title = {Classification and Regression by randomForest},
+    author = {Andy Liaw and Matthew Wiener},
+    journal = {R News},
+    year = {2002},
+    volume = {2},
+    number = {3},
+    pages = {18-22},
+    url = {https://CRAN.R-project.org/doc/Rnews/},
+  }
   
+  @article{dimitriadou2008misc,
+  title={Misc functions of the Department of Statistics (e1071), TU Wien},
+  author={Dimitriadou, Evgenia and Hornik, Kurt and Leisch, Friedrich and Meyer, David and Weingessel, Andreas},
+  journal={R package},
+  volume={1},
+  pages={5--24},
+  year={2008}
+}
+  
+  
+    @Book{MASS,
+    title = {Modern Applied Statistics with S},
+    author = {W. N. Venables and B. D. Ripley},
+    publisher = {Springer},
+    edition = {Fourth},
+    address = {New York},
+    year = {2002},
+    note = {ISBN 0-387-95457-0},
+    url = {https://www.stats.ox.ac.uk/pub/MASS4/},
+  }
+  
+  
+  @Manual{stats,
+    title = {R: A Language and Environment for Statistical Computing},
+    author = {{R Core Team}},
+    organization = {R Foundation for Statistical Computing},
+    address = {Vienna, Austria},
+    year = {2013},
+    note = {{ISBN} 3-900051-07-0},
+    url = {http://www.R-project.org/},
+  }

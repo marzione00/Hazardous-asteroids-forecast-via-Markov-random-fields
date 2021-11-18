@@ -25,6 +25,17 @@ Gabor Csardi and Tamas Nepusz.
 \newblock The igraph software package for complex network research.
 \newblock {\em InterJournal}, Complex Systems:1695, 2006.
 
+\bibitem{de2009high}
+Gabriel~CG de~Abreu, Rodrigo Labouriau, and David Edwards.
+\newblock High-dimensional graphical model search with graphd r package.
+\newblock {\em arXiv preprint arXiv:0909.1234}, 2009.
+
+\bibitem{dimitriadou2008misc}
+Evgenia Dimitriadou, Kurt Hornik, Friedrich Leisch, David Meyer, and Andreas
+  Weingessel.
+\newblock Misc functions of the department of statistics (e1071), tu wien.
+\newblock {\em R package}, 1:5--24, 2008.
+
 \bibitem{qgraph}
 Sacha Epskamp, Ang\'elique O.~J. Cramer, Lourens~J. Waldorp, Verena~D.
   Schmittmann, and Denny Borsboom.
@@ -74,6 +85,11 @@ S{\'e}bastien L{\^e}, Julie Josse, and Fran{\c{c}}ois Husson.
 \newblock Factominer: an r package for multivariate analysis.
 \newblock {\em Journal of statistical software}, 25(1):1--18, 2008.
 
+\bibitem{rfor}
+Andy Liaw and Matthew Wiener.
+\newblock Classification and regression by randomforest.
+\newblock {\em R News}, 2(3):18--22, 2002.
+
 \bibitem{mackay2003information}
 David~JC MacKay.
 \newblock {\em Information theory, inference and learning algorithms}.
@@ -96,6 +112,12 @@ Hanchuan Peng, Fuhui Long, and Chris Ding.
 \newblock {\em IEEE Transactions on pattern analysis and machine intelligence},
   27(8):1226--1238, 2005.
 
+\bibitem{stats}
+{R Core Team}.
+\newblock {\em R: A Language and Environment for Statistical Computing}.
+\newblock R Foundation for Statistical Computing, Vienna, Austria, 2013.
+\newblock {ISBN} 3-900051-07-0.
+
 \bibitem{russell2010artificial}
 S.~Russell, S.J. Russell, P.~Norvig, and E.~Davis.
 \newblock {\em Artificial Intelligence: A Modern Approach}.
@@ -105,6 +127,12 @@ S.~Russell, S.J. Russell, P.~Norvig, and E.~Davis.
 Tobias Sing, Oliver Sander, Niko Beerenwinkel, and Thomas Lengauer.
 \newblock Rocr: visualizing classifier performance in r.
 \newblock {\em Bioinformatics}, 21(20):3940--3941, 2005.
+
+\bibitem{MASS}
+W.~N. Venables and B.~D. Ripley.
+\newblock {\em Modern Applied Statistics with S}.
+\newblock Springer, New York, fourth edition, 2002.
+\newblock ISBN 0-387-95457-0.
 
 \bibitem{ggplot2}
 Hadley Wickham.

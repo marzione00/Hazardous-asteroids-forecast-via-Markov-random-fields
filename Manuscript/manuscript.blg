@@ -3,7 +3,7 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: manuscript.aux
 Reallocating 'name_of_file' (item size: 1) to 6 items.
 The style file: plain.bst
-Illegal, another \bibstyle command---line 198 of file manuscript.aux
+Illegal, another \bibstyle command---line 239 of file manuscript.aux
  : \bibstyle
  :          {unsrt}
 I'm skipping whatever remains of this command
@@ -14,45 +14,45 @@ Warning--to sort, need author or key in cneos+nasa
 Warning--to sort, need author or key in glasso
 Warning--to sort, need author or key in mgm
 Warning--to sort, need author or key in caret
-You've used 24 entries,
+You've used 29 entries,
             2118 wiz_defined-function locations,
-            614 strings with 7121 characters,
-and the built_in function-call counts, 6329 in all, are:
-= -- 597
-> -- 288
+            644 strings with 7833 characters,
+and the built_in function-call counts, 7783 in all, are:
+= -- 740
+> -- 367
 < -- 0
-+ -- 117
-- -- 92
-* -- 394
-:= -- 1052
-add.period$ -- 64
-call.type$ -- 24
-change.case$ -- 104
++ -- 148
+- -- 118
+* -- 491
+:= -- 1312
+add.period$ -- 81
+call.type$ -- 29
+change.case$ -- 131
 chr.to.int$ -- 0
-cite$ -- 29
-duplicate$ -- 251
-empty$ -- 554
-format.name$ -- 92
-if$ -- 1328
+cite$ -- 34
+duplicate$ -- 304
+empty$ -- 659
+format.name$ -- 118
+if$ -- 1623
 int.to.chr$ -- 0
-int.to.str$ -- 24
-missing$ -- 28
-newline$ -- 113
-num.names$ -- 38
-pop$ -- 164
+int.to.str$ -- 29
+missing$ -- 33
+newline$ -- 140
+num.names$ -- 48
+pop$ -- 188
 preamble$ -- 1
-purify$ -- 94
+purify$ -- 117
 quote$ -- 0
-skip$ -- 175
+skip$ -- 209
 stack$ -- 0
-substring$ -- 293
-swap$ -- 24
+substring$ -- 349
+swap$ -- 30
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 78
+type$ -- 96
 warning$ -- 5
-while$ -- 53
-width$ -- 26
-write$ -- 227
+while$ -- 66
+width$ -- 31
+write$ -- 286
 (There was 1 error message)
