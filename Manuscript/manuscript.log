@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.2.22)  19 NOV 2021 11:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.2.22)  19 NOV 2021 18:55
 entering extended mode
 **./manuscript.tex
 (manuscript.tex
@@ -2002,11 +2002,7 @@ LaTeX Font Info:    Trying to load font information for T1+pplj on input line 1
 39.
  (C:\Program Files\MiKTeX 2.9\tex/latex/psnfss\t1pplj.fd
 File: t1pplj.fd 2004/09/06 font definitions for T1/pplj.
-) (manuscript.aux
-
-LaTeX Warning: Label `RF_Importance' multiply defined.
-
-)
+) (manuscript.aux)
 \openout1 = `manuscript.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 139.
@@ -2031,7 +2027,8 @@ Package scrbase Info: activating english \contentsname on input line 139.
 Package scrbase Info: activating english \listfigurename on input line 139.
 Package scrbase Info: activating english \listtablename on input line 139.
 \c@lstlisting=\count378
- (C:\Program Files\MiKTeX 2.9\tex/context/base/mkii\supp-pdf.mkii
+
+(C:\Program Files\MiKTeX 2.9\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count379
 \scratchdimen=\dimen347
@@ -2744,13 +2741,22 @@ Overfull \hbox (5.81458pt too wide) in paragraph at lines 705--705
 
 [34
 
-]
-<Figures/Area_dynamics.png, id=627, 708.39656pt x 359.84438pt>
+] [35]
+<Figures/Area_dynamics.png, id=650, 708.39656pt x 359.84438pt>
 File: Figures/Area_dynamics.png Graphic file (type png)
 <use Figures/Area_dynamics.png>
-Package pdftex.def Info: Figures/Area_dynamics.png  used on input line 768.
+Package pdftex.def Info: Figures/Area_dynamics.png  used on input line 814.
 (pdftex.def)             Requested size: 336.0pt x 170.68076pt.
- (manuscript.bbl [35 <./Figures/Area_dynamics.png>]
+<Figures/Conics.png, id=654, 595.47469pt x 574.39594pt>
+File: Figures/Conics.png Graphic file (type png)
+<use Figures/Conics.png>
+Package pdftex.def Info: Figures/Conics.png  used on input line 822.
+(pdftex.def)             Requested size: 336.0pt x 324.10483pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+(manuscript.bbl [36 <./Figures/Area_dynamics.png>] [37 <./Figures/Conics.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 4--5
 [][][]$\T1/fvm/m/n/12 https : / / www . kaggle . com / shrutimehta /
  []
@@ -2778,7 +2784,7 @@ Underfull \hbox (badness 1888) in paragraph at lines 34--38
 []\T1/pplj/m/n/12 Evgenia Dim-i-tri-adou, Kurt Hornik, Friedrich Leisch,
  []
 
-[36
+[38
 
 ]
 Underfull \hbox (badness 1173) in paragraph at lines 109--114
@@ -2791,46 +2797,43 @@ Underfull \hbox (badness 1337) in paragraph at lines 127--130
 []\T1/pplj/m/n/12 Tobias Sing, Oliver Sander, Niko Beeren-winkel, and
  []
 
-[37]) [38] (manuscript.aux)
-
-LaTeX Warning: There were multiply-defined labels.
-
- ) 
+[39]) [40] (manuscript.aux) ) 
 Here is how much of TeX's memory you used:
- 39403 strings out of 479334
- 767485 string characters out of 2865057
+ 39424 strings out of 479334
+ 767803 string characters out of 2865057
  1436747 words of memory out of 3000000
- 55745 multiletter control sequences out of 15000+200000
+ 55755 multiletter control sequences out of 15000+200000
  563754 words of font info for 292 fonts, out of 3000000 for 9000
  1142 hyphenation exceptions out of 8191
  128i,23n,130p,10607b,893s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc} <C:\Users\Marzio\Ap
-pData\Local\MiKTeX\2.9\fonts/pk/ljfour/public/mathabx/dpi720\mathb12.pk> <C:\Us
-ers\Marzio\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/public/mathabx/dpi600\matha
-7.pk> <C:\Users\Marzio\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/public/mathabx/
-dpi720\mathx10.pk> <C:\Users\Marzio\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/pu
-blic/mathabx/dpi600\matha9.pk> <C:\Users\Marzio\AppData\Local\MiKTeX\2.9\fonts/
-pk/ljfour/public/mathabx/dpi600\matha12.pk>{C:/Program Files/MiKTeX 2.9/fonts/e
-nc/dvips/iwona/ec-iwona-sc.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/iwo
-na/ec-iwona.enc} <C:\Users\Marzio\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jkna
-ppen/ec/dpi600\ecrm1200.pk><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
-onts/euler/eufm10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
-euler/eurb10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/euler
-/eurb7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/euler/eurm1
-0.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/euler/eurm7.pfb>
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/euler/eusm10.pfb><C:/P
-rogram Files/MiKTeX 2.9/fonts/type1/public/fpl/fplbj8a.pfb><C:/Program Files/Mi
-KTeX 2.9/fonts/type1/public/mathpazo/fplmbb.pfb><C:/Program Files/MiKTeX 2.9/fo
-nts/type1/public/fpl/fplrc8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
-c/fpl/fplrij8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/bera/fvmr8a.pfb><C:
-/Program Files/MiKTeX 2.9/fonts/type1/nowacki/iwona/iwonab.pfb><C:/Program File
-s/MiKTeX 2.9/fonts/type1/nowacki/iwona/iwonar.pfb><C:/Program Files/MiKTeX 2.9/
-fonts/type1/urw/palatino/uplb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/ur
-w/palatino/uplbi8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/up
-lr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on manuscript.pdf (39 pages, 890784 bytes).
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/
+8r.enc} <C:\Users\Marzio\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/public/mathab
+x/dpi720\mathb12.pk> <C:\Users\Marzio\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/
+public/mathabx/dpi600\matha7.pk> <C:\Users\Marzio\AppData\Local\MiKTeX\2.9\font
+s/pk/ljfour/public/mathabx/dpi720\mathx10.pk> <C:\Users\Marzio\AppData\Local\Mi
+KTeX\2.9\fonts/pk/ljfour/public/mathabx/dpi600\matha9.pk> <C:\Users\Marzio\AppD
+ata\Local\MiKTeX\2.9\fonts/pk/ljfour/public/mathabx/dpi600\matha12.pk>{C:/Progr
+am Files/MiKTeX 2.9/fonts/enc/dvips/iwona/ec-iwona-sc.enc}{C:/Program Files/MiK
+TeX 2.9/fonts/enc/dvips/iwona/ec-iwona.enc} <C:\Users\Marzio\AppData\Local\MiKT
+eX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk><C:/Program Files/MiKTeX 
+2.9/fonts/type1/public/amsfonts/euler/eufm10.pfb><C:/Program Files/MiKTeX 2.9/f
+onts/type1/public/amsfonts/euler/eurb10.pfb><C:/Program Files/MiKTeX 2.9/fonts/
+type1/public/amsfonts/euler/eurb7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
+public/amsfonts/euler/eurm10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
+c/amsfonts/euler/eurm7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
+onts/euler/eusm10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/fpl/fplbj
+8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/mathpazo/fplmbb.pfb><C:/
+Program Files/MiKTeX 2.9/fonts/type1/public/fpl/fplrc8a.pfb><C:/Program Files/M
+iKTeX 2.9/fonts/type1/public/fpl/fplrij8a.pfb><C:/Program Files/MiKTeX 2.9/font
+s/type1/bera/fvmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/nowacki/iwona/
+iwonab.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/nowacki/iwona/iwonar.pfb><C
+:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplb8a.pfb><C:/Program File
+s/MiKTeX 2.9/fonts/type1/urw/palatino/uplbi8a.pfb><C:/Program Files/MiKTeX 2.9/
+fonts/type1/urw/palatino/uplr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/ur
+w/palatino/uplri8a.pfb>
+Output written on manuscript.pdf (41 pages, 977779 bytes).
 PDF statistics:
- 869 PDF objects out of 1000 (max. 8388607)
- 144 named destinations out of 1000 (max. 500000)
- 38220 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 901 PDF objects out of 1000 (max. 8388607)
+ 154 named destinations out of 1000 (max. 500000)
+ 38225 words of extra memory for PDF output out of 42996 (max. 10000000)
 

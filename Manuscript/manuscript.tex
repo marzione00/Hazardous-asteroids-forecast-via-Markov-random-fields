@@ -730,6 +730,7 @@ It can be seen that the $\textbf{r}$ and $\cdot\textbf{r}$ lies always in the sa
 
 \begin{equation}
 \dot{\textbf{r}}=\dot{r}\hat{\textbf{r}}+r\dot{\theta}\hat{\boldsymbol{\theta}}
+\label{eq_dyn_nop}
 \end{equation}
 
 \begin{equation}
@@ -748,28 +749,85 @@ where $\textbf{z}$ is a vector perpendicural to the plane, whose module is equal
 h=r^{2}\dot{\theta}
 \end{equation}
 
-If we consider the motion of the body $m_{2}$ in the time interval $\delta t$ we have that the area $\delta A$ illustrated in Fig will be \cite{murray1999solar}:
+If we consider the motion of the body $m_{2}$ in the time interval $\delta t$ we have that the area $\delta A$ illustrated in Fig \ref{Area_dynamics} will be \cite{murray1999solar}:
 
 \begin{equation}
 \delta A \approx \dfrac{1}{2} r(r+dr)\sin(\delta\theta) \approx  \dfrac{1}{2} r^{2}\delta\theta
 \end{equation}
 
-where the Taylor expansion at first order was used. Therfore 
+where the Taylor expansion at first order was used. Therfore  \cite{murray1999solar}:
 
 \begin{equation}
 \dfrac{dA}{dt}=\dfrac{1}{2}r^{2}\dfrac{d\theta}{dt}=\dfrac{1}{2}h
 \end{equation}
 
-but we know that $h$ is constant, therefore the first derivative, is constant. This is the $2^{th}$ Kepler law
+but we know that $h$ is constant, therefore the first derivative, is constant. This is the $2^{th}$ Kepler law. The Eq. \ref{eq_dyn_nop} in polar coordinates  \cite{murray1999solar}:
+
+\begin{equation}
+\ddot{r}-r\dot{\theta}^{2}=-\frac{\mu}{r^{2}}
+\end{equation}
+
+This differential equation can be rewritten as an armonic oscillator with the  substitutions $u=\dfrac{1}{r}$ $h=r^{2}\dot{\theta}$ \cite{murray1999solar}:
+
+\begin{equation}
+\dot{r}=-\frac{1}{u}\dfrac{du}{d\theta}\dot{\theta}=-h\frac{du}{d\theta}
+\end{equation}
+
+\begin{equation}
+\ddot{r}=-h\dfrac{d^{2}u}{d\theta^{2}}\dot{\theta}=-h^{2}u^{2}\frac{d^{2}u}{d\theta^{2}}
+\end{equation}
+
+\begin{equation}
+\dfrac{d^{2}u}{d\theta^{2}}+u=\frac{\mu}{h^{2}}
+\end{equation}
+
+\begin{equation}
+u=\frac{\mu}{h^{2}}\left[1+e\cos(\theta-\phi\right]
+\end{equation}
+
+where the integration constants e and $\phi$ are respectively the amplitude and the phase. Therefore we have \cite{murray1999solar}:
+
+\begin{equation}
+r=\dfrac{p}{1+e\cos(\theta-\phi}
+\end{equation}
+
+In this form we can recognize in e the eccentricity and p is the semilatus rectum \cite{murray1999solar}:
+
+\begin{equation}
+p=\frac{h^{2}}{\mu}
+\end{equation}
+
+Depening on the eccentricity we have four possibile conics
+
+\begin{itemize}
+\item circle:  e=0 \quad $p=a$
+\item ellipse: 0<e<1 \quad $p=a$
+\item parabola: e=1 \quad $p=2q$
+\item hyperbola: e>1 \quad $p=a(e^{2}-1)$
+\end{itemize}
+
+in which a is the semi-major axis of the conic. The shape of these orbits is reported in Fig. \ref{Conics}.
 
 
 \begin{figure}[h]
 \begin{center}
 \includegraphics[width=1\textwidth]{Figures/Area_dynamics.png}
 \caption{The portion of area $\delta A$ obtained when the position vector moves with an angle $\delta\theta$. Image taken from \cite{murray1999solar}}
-\label{RF_Importance}
+\label{Area_dynamics}
 \end{center}
 \end{figure}
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=1\textwidth]{Figures/Conics.png}
+\caption{The four possible orbits as obtained from a sectionof a cone. Image taken from \cite{murray1999solar}}
+\label{Conics}
+\end{center}
+\end{figure}
+
+
+
+
 
 \bibliographystyle{unsrt}
 
