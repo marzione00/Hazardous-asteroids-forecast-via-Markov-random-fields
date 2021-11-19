@@ -677,7 +677,6 @@ Given the mgm model as the one obtained with the probabilistic graphical methods
 
 
 \begin{table}[]
-\label{phi_values}
 \caption{$\phi$ factor for a selected set of ML algorithms as compared with the mgm}
 \begin{center}
 \begin{tabular}{c|c}
@@ -687,9 +686,9 @@ SVM       & 0.7111 \\ \hline
 logistic  & 0.6173 \\ \hline
 mgm       & 0.5997 \\ \hline
 QDA       & 0.5562 
-
 \end{tabular}
 \end{center}
+\label{phi_values}
 \end{table}
 
 \begin{figure}[h]
@@ -705,6 +704,72 @@ QDA       & 0.5562
 
 \chapter{Appendix A: Concepts of celestial mechanics}
 
+In this Appendix is dedicated to review the basics concepts of celestial dynamics, following the Murray approach \cite{murray1999solar}, that are needed to understand the features of the dataset and their connections. Lets start by considering two masses $m_{1}$ and $m_{2}$, which in the present case will be respectively the planet Earth and the asteroid. Their position will be given, respectively, by two vectors $\textbf{r}_{1}$ and $\textbf{r}_{2}$ considering the origin $O$ bounded in to an inertial space. Furthermore we can define also the relative position with the vector $\textbf{r}=\textbf{r}_{2}-\textbf{r}_{1}$. Since we suppose that the masses are not interacting with the electromagnetic force, these will be bounded only by the gravitational interaction which is given by the Newton law \cite{murray1999solar}:
+
+
+\begin{equation}
+\textbf{F}_{1}=\mathcal{G} \cdot \frac{m_{1}m_{2}}{r^{3}}\textbf{r}=m_{1} \ddot{\textbf{r}}_{1}
+\end{equation}
+
+\begin{equation}
+\textbf{F}_{2}=-\mathcal{G} \cdot \frac{m_{1}m_{2}}{r^{3}}\textbf{r}=m_{1} \ddot{\textbf{r}}_{2}
+\end{equation}
+
+where $\mathcal{G}$ is universal gravitational constant, and the second equivalence is given by the second Newton law $\textbf{F}=m\cdot \textbf{a}$ in which $\textbf{a}$ is the acceleration calculated as the second derivative of the position vector \textbf{r}. Setting $\ddot{\textbf{r}}=\ddot{\textbf{r}}_{2}-\ddot{\textbf{r}}_{1}$ (thus we consider the motion of the second item with respect to the first one) and $\mu=\mathcal{G}(m_{1}+m_{2})$ the following differential equation will be obtained from the previous two ones \cite{murray1999solar}:
+
+\begin{equation}
+\dfrac{d^{2}\textbf{r}}{dt^{2}}+\mu\dfrac{\textbf{r}}{r^{3}}=0
+\end{equation}
+
+
+It can be seen that the $\textbf{r}$ and $\cdot\textbf{r}$ lies always in the same plane: this is because the product vector $\textbf{r} \times \ddot{ \textbf{r}}=0$, thus if one integrates she will get that the product vector $\textbf{r} \times \textbf{r}=\textbf{h}$ where \textbf{h} is a constant vector. Furthermore the problem can be simplified by using polar coordinates  $\hat{\textbf{r}}$ and $\hat{\boldsymbol{\theta}}$. Indeed since the position, speed and acceleration in polar coordinates have the following form \cite{murray1999solar}:
+
+\begin{equation}
+\textbf{r}=r\hat{\textbf{r}}
+\end{equation}
+
+\begin{equation}
+\dot{\textbf{r}}=\dot{r}\hat{\textbf{r}}+r\dot{\theta}\hat{\boldsymbol{\theta}}
+\end{equation}
+
+\begin{equation}
+\ddot{\textbf{r}}=\left(\ddot{r}-r\dot{\theta}^{2}\right)\hat{\textbf{r}}+\left[\dfrac{1}{r}\frac{d}{dt}\left(r^{2}\dot{\theta}\right)\right]\hat{\boldsymbol{\theta}}
+\end{equation}
+
+Using these coordinates in the product vector between the speed and the position the following equation will be obtained \cite{murray1999solar}:
+
+\begin{equation}
+\textbf{h}=r^{2}\dot{\theta}\hat{\textbf{z}}
+\end{equation}
+
+where $\textbf{z}$ is a vector perpendicural to the plane, whose module is equal to 
+
+\begin{equation}
+h=r^{2}\dot{\theta}
+\end{equation}
+
+If we consider the motion of the body $m_{2}$ in the time interval $\delta t$ we have that the area $\delta A$ illustrated in Fig will be \cite{murray1999solar}:
+
+\begin{equation}
+\delta A \approx \dfrac{1}{2} r(r+dr)\sin(\delta\theta) \approx  \dfrac{1}{2} r^{2}\delta\theta
+\end{equation}
+
+where the Taylor expansion at first order was used. Therfore 
+
+\begin{equation}
+\dfrac{dA}{dt}=\dfrac{1}{2}r^{2}\dfrac{d\theta}{dt}=\dfrac{1}{2}h
+\end{equation}
+
+but we know that $h$ is constant, therefore the first derivative, is constant. This is the $2^{th}$ Kepler law
+
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=1\textwidth]{Figures/Area_dynamics.png}
+\caption{The portion of area $\delta A$ obtained when the position vector moves with an angle $\delta\theta$. Image taken from \cite{murray1999solar}}
+\label{RF_Importance}
+\end{center}
+\end{figure}
 
 \bibliographystyle{unsrt}
 
