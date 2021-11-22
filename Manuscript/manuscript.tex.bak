@@ -782,16 +782,16 @@ This differential equation can be rewritten as an armonic oscillator with the  s
 \end{equation}
 
 \begin{equation}
-u=\frac{\mu}{h^{2}}\left[1+e\cos(\theta-\phi\right]
+u=\frac{\mu}{h^{2}}\left[1+e\cos(\theta-\phi)\right]
 \end{equation}
 
 where the integration constants e and $\phi$ are respectively the amplitude and the phase. Therefore we have \cite{murray1999solar}:
 
 \begin{equation}
-r=\dfrac{p}{1+e\cos(\theta-\phi}
+r=\dfrac{p}{1+e\cos(\theta-\phi)}
 \end{equation}
 
-In this form we can recognize in e the eccentricity and p is the semilatus rectum \cite{murray1999solar}:
+In this form we can recognize in $e$ the \textcolor{red}{eccentricity} and $p$ is the semilatus rectum \cite{murray1999solar}:
 
 \begin{equation}
 p=\frac{h^{2}}{\mu}
@@ -806,7 +806,7 @@ Depening on the eccentricity we have four possible conics \cite{murray1999solar}
 \item hyperbola: $e>1$ \quad $p=a(e^{2}-1)$
 \end{itemize}
 
-in which $a$ is the semi-major axis of the conic. The shape of these orbits is reported in Fig. \ref{Elliptical_orbit}. All the asteroids considered here an eccentricity $0<e<1$, therefore they have an elliptical orbits in which the earth lies in to one of the two focal point. It is worth nothing that this is the first Kepler law.  Looking to Fig. we can define the point of minimum distance between $m_{1}$ and the orbiting body as the pericentre or perihelion, and the maximum distance as the apocentre or the aphelion. The semi-major axis, here denoted as $b$ on the other side is defined as the distance between the pericentre and the apocentre. Using the following identity \cite{murray1999solar}:
+in which $a$ is the semi-major axis of the conic. The shape of these orbits is reported in Fig. \ref{Elliptical_orbit}. All the asteroids considered here an eccentricity $0<e<1$, therefore they have an elliptical orbits in which the earth lies in to one of the two focal point. It is worth nothing that this is the first Kepler law.  Looking to Fig. we can define the point of minimum distance between $m_{1}$ and the orbiting body as the pericentre or \textcolor{red}{perihelion}, and the maximum distance as the apocentre or the aphelion. The \textcolor{red}{semi-major axis}, here denoted as $b$ on the other side is defined as the distance between the pericentre and the apocentre. Using the following identity \cite{murray1999solar}:
 
 \begin{equation}
 b^{2}=a^{2}(1-e^{2})
@@ -819,7 +819,7 @@ r=\frac{a(1-e^{2}}{1+e\cdot cos(\theta-\phi}
 \label{eq-mot}
 \end{equation}
 
-Furthermore the third Kepler law, can be quickly obtained considering the area swept in one orbital period T (the time needed to complete a full round of the orbit) $A=\pi ab$. Since we know that this area is equal to $hT/2$ and $h^{2}=\mu a(1-e^{2})$ \cite{murray1999solar}:
+Furthermore the third Kepler law, can be quickly obtained considering the area swept in one \textcolor{red}{orbital period} T (the time needed to complete a full round of the orbit) $A=\pi ab$. Since we know that this area is equal to $hT/2$ and $h^{2}=\mu a(1-e^{2})$ \cite{murray1999solar}:
 
 \begin{equation}
 T^{2}=\dfrac{4\pi^{2}}{\mu}a^{3}
@@ -841,7 +841,7 @@ Therefore \cite{murray1999solar}:
 
 \cite{murray1999solar}:
 
-We see that the two orbital parameters $T'$ and $a'$ are independent with respect to orbiting mass. This statement can be extended to the other orbital parameters by considering the previous approximation $m$,$m'<<m_{c}$. This is why we expect that the mass/volume of the asteoroid can not be conditionally dependant to the orbital parameters. It is useful to define also the mean motion (feature that is also present in the asteroids dataset) as \cite{murray1999solar}:
+We see that the two orbital parameters $T'$ and $a'$ are independent with respect to orbiting mass. This statement can be extended to the other orbital parameters by considering the previous approximation $m$,$m'<<m_{c}$. This is why we expect that the mass/volume of the asteoroid can not be conditionally dependant to the orbital parameters. It is useful to define also the \textcolor{red}{mean motion} (feature that is also present in the asteroids dataset) as \cite{murray1999solar}:
 
 \begin{equation}
 n=\frac{2\pi}{T}
@@ -871,7 +871,7 @@ whose integration gives \cite{murray1999solar}:
 \label{energy_cons}
 \end{equation}
 
-In which $v^{2}=\dot{\textbf{r}}\cdot\dot{\textbf{r}}$, and C the integration costant. This expression express the energy conservation: on the left side we have the vis-via term (basically the kinetic energy without the mass), on the right side the potential energy (rescaled with the reduced mass). Lets come back to Eq. \ref{eq-mot}, and make the following substitution $f=\theta-\phi$, which is called the true anomaly. If we differentiate it we will obtain \cite{murray1999solar}:
+In which $v^{2}=\dot{\textbf{r}}\cdot\dot{\textbf{r}}$, and C the integration costant. This expression express the energy conservation: on the left side we have the \textit{vis-viva} term (basically the kinetic energy without the mass), on the right side the potential energy (rescaled with $\mu$). Lets come back to Eq. \ref{eq-mot}, and make the following substitution $f=\theta-\phi$, which is called the true anomaly. If we differentiate it we will obtain \cite{murray1999solar}:
 
 \begin{equation}
 \dot{r}=\frac{r\dot{f}e\sin f}{1+e\cos f}
@@ -913,7 +913,7 @@ v_{perihelion}=na\sqrt{\dfrac{1+e}{1-e}}
 v_{aphelion}=na\sqrt{\dfrac{1-e}{1+e}}
 \end{equation}
 
-Another quantity that is contained in the asteroids dataset, and is useful to describe their orbits is the mean anomaly. This is defined as \cite{murray1999solar}:
+Another quantity that is contained in the asteroids dataset, and is useful to describe their orbits is the \textcolor{red}{mean anomaly}. This is defined as \cite{murray1999solar}:
 
 \begin{equation}
 M=n(t-\tau)
@@ -932,11 +932,13 @@ Such boundaries should be intended as periodic for multiple of the orbital perio
 M=E-e\sin E
 \end{equation}
 
-Finally as move on to space, other two angles are necessary for the description of an orbit: these are shown in Fig. \ref{Inclination} and are the inclination of the orbit (I) and the longitude of the ascending node $\Omega$. Given this quantities the Tisserard invariant can be calculated as \cite{murray1999solar}:
+Finally as move on to space, other two angles are necessary for the description of an orbit: these are shown in Fig. \ref{Inclination} and are the \textcolor{red}{inclination} of the orbit (I) and the \textcolor{red}{longitude of the ascending node} $\Omega$. Given this quantities the Tisserard invariant can be calculated as \cite{murray1999solar}:
 
 \begin{equation}
-M=E-e\sin E
+T_{P}=\frac{a_{p}}{a}+2\cos I\sqrt{\dfrac{a}{a_{p}}(1-e^{2})}
 \end{equation}
+
+If Jupiter is considered as perturbing body, we have the \textcolor{red}{Juptier Tisserard Invariant}. The underlying reason for this choice is to distinguish the Jupiter family comets ($2<T_{j}<3$) and the asteroids $T_{j}<2$. 
 
 \begin{figure}[h]
 \begin{center}
@@ -978,6 +980,7 @@ M=E-e\sin E
 \label{Inclination}
 \end{center}
 \end{figure}
+
 
 
 
