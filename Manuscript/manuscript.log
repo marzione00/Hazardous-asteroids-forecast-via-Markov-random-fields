@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.2.22)  19 NOV 2021 18:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.2.22)  22 NOV 2021 12:13
 entering extended mode
 **./manuscript.tex
 (manuscript.tex
@@ -2741,22 +2741,48 @@ Overfull \hbox (5.81458pt too wide) in paragraph at lines 705--705
 
 [34
 
-] [35]
-<Figures/Area_dynamics.png, id=650, 708.39656pt x 359.84438pt>
+] [35] [36] [37] [38]
+<Figures/Area_dynamics.png, id=710, 708.39656pt x 359.84438pt>
 File: Figures/Area_dynamics.png Graphic file (type png)
 <use Figures/Area_dynamics.png>
-Package pdftex.def Info: Figures/Area_dynamics.png  used on input line 814.
+Package pdftex.def Info: Figures/Area_dynamics.png  used on input line 945.
 (pdftex.def)             Requested size: 336.0pt x 170.68076pt.
-<Figures/Conics.png, id=654, 595.47469pt x 574.39594pt>
+<Figures/Conics.png, id=714, 595.47469pt x 574.39594pt>
 File: Figures/Conics.png Graphic file (type png)
 <use Figures/Conics.png>
-Package pdftex.def Info: Figures/Conics.png  used on input line 822.
+Package pdftex.def Info: Figures/Conics.png  used on input line 953.
 (pdftex.def)             Requested size: 336.0pt x 324.10483pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-(manuscript.bbl [36 <./Figures/Area_dynamics.png>] [37 <./Figures/Conics.png>]
+<Figures/Elliptical_orbit.png, id=717, 931.98187pt x 632.3625pt>
+File: Figures/Elliptical_orbit.png Graphic file (type png)
+<use Figures/Elliptical_orbit.png>
+Package pdftex.def Info: Figures/Elliptical_orbit.png  used on input line 961.
+(pdftex.def)             Requested size: 336.0pt x 227.9784pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Figures/Mean_anomaly.png, id=720, 912.40875pt x 418.56375pt>
+File: Figures/Mean_anomaly.png Graphic file (type png)
+<use Figures/Mean_anomaly.png>
+Package pdftex.def Info: Figures/Mean_anomaly.png  used on input line 969.
+(pdftex.def)             Requested size: 336.0pt x 154.13806pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<Figures/Inclination.png, id=723, 835.62187pt x 573.64313pt>
+File: Figures/Inclination.png Graphic file (type png)
+<use Figures/Inclination.png>
+Package pdftex.def Info: Figures/Inclination.png  used on input line 978.
+(pdftex.def)             Requested size: 336.0pt x 230.6611pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+(manuscript.bbl [39 <./Figures/Area_dynamics.png>] [40 <./Figures/Conics.png> <
+./Figures/Elliptical_orbit.png>] [41 <./Figures/Mean_anomaly.png> <./Figures/In
+clination.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 4--5
 [][][]$\T1/fvm/m/n/12 https : / / www . kaggle . com / shrutimehta /
  []
@@ -2784,7 +2810,7 @@ Underfull \hbox (badness 1888) in paragraph at lines 34--38
 []\T1/pplj/m/n/12 Evgenia Dim-i-tri-adou, Kurt Hornik, Friedrich Leisch,
  []
 
-[38
+[42
 
 ]
 Underfull \hbox (badness 1173) in paragraph at lines 109--114
@@ -2797,12 +2823,12 @@ Underfull \hbox (badness 1337) in paragraph at lines 127--130
 []\T1/pplj/m/n/12 Tobias Sing, Oliver Sander, Niko Beeren-winkel, and
  []
 
-[39]) [40] (manuscript.aux) ) 
+[43]) [44] (manuscript.aux) ) 
 Here is how much of TeX's memory you used:
- 39424 strings out of 479334
- 767803 string characters out of 2865057
+ 39479 strings out of 479334
+ 768793 string characters out of 2865057
  1436747 words of memory out of 3000000
- 55755 multiletter control sequences out of 15000+200000
+ 55780 multiletter control sequences out of 15000+200000
  563754 words of font info for 292 fonts, out of 3000000 for 9000
  1142 hyphenation exceptions out of 8191
  128i,23n,130p,10607b,893s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2831,9 +2857,9 @@ iwonab.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/nowacki/iwona/iwonar.pfb><C
 s/MiKTeX 2.9/fonts/type1/urw/palatino/uplbi8a.pfb><C:/Program Files/MiKTeX 2.9/
 fonts/type1/urw/palatino/uplr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/ur
 w/palatino/uplri8a.pfb>
-Output written on manuscript.pdf (41 pages, 977779 bytes).
+Output written on manuscript.pdf (45 pages, 1120367 bytes).
 PDF statistics:
- 901 PDF objects out of 1000 (max. 8388607)
- 154 named destinations out of 1000 (max. 500000)
- 38225 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 991 PDF objects out of 1000 (max. 8388607)
+ 181 named destinations out of 1000 (max. 500000)
+ 38240 words of extra memory for PDF output out of 42996 (max. 10000000)
 

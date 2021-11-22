@@ -704,7 +704,7 @@ QDA       & 0.5562
 
 \chapter{Appendix A: Concepts of celestial mechanics}
 
-In this Appendix is dedicated to review the basics concepts of celestial dynamics, following the Murray approach \cite{murray1999solar}, that are needed to understand the features of the dataset and their connections. Lets start by considering two masses $m_{1}$ and $m_{2}$, which in the present case will be respectively the planet Earth and the asteroid. Their position will be given, respectively, by two vectors $\textbf{r}_{1}$ and $\textbf{r}_{2}$ considering the origin $O$ bounded in to an inertial space. Furthermore we can define also the relative position with the vector $\textbf{r}=\textbf{r}_{2}-\textbf{r}_{1}$. Since we suppose that the masses are not interacting with the electromagnetic force, these will be bounded only by the gravitational interaction which is given by the Newton law \cite{murray1999solar}:
+This Appendix is dedicated to review the basics concepts of celestial dynamics, following the Murray approach \cite{murray1999solar}, that are needed to understand the features of the dataset and their connections. Lets start by considering two masses $m_{1}$ and $m_{2}$, which in the present case will be respectively the planet Earth and the asteroid. Their position will be given, respectively, by two vectors $\textbf{r}_{1}$ and $\textbf{r}_{2}$ considering the origin $O$ bounded in to an inertial space. Furthermore we can define also the relative position with the vector $\textbf{r}=\textbf{r}_{2}-\textbf{r}_{1}$. Since we suppose that the masses are not interacting with the electromagnetic force, these will be bounded only by the gravitational interaction which is given by the Newton law \cite{murray1999solar}:
 
 
 \begin{equation}
@@ -797,17 +797,148 @@ In this form we can recognize in e the eccentricity and p is the semilatus rectu
 p=\frac{h^{2}}{\mu}
 \end{equation}
 
-Depening on the eccentricity we have four possibile conics
+Depening on the eccentricity we have four possible conics \cite{murray1999solar}:
 
 \begin{itemize}
-\item circle:  e=0 \quad $p=a$
-\item ellipse: 0<e<1 \quad $p=a$
-\item parabola: e=1 \quad $p=2q$
-\item hyperbola: e>1 \quad $p=a(e^{2}-1)$
+\item circle:  $e=0$ \quad $p=a$
+\item ellipse: $0<e<1$ \quad $p=a$
+\item parabola: $e=1$ \quad $p=2q$
+\item hyperbola: $e>1$ \quad $p=a(e^{2}-1)$
 \end{itemize}
 
-in which a is the semi-major axis of the conic. The shape of these orbits is reported in Fig. \ref{Conics}.
+in which $a$ is the semi-major axis of the conic. The shape of these orbits is reported in Fig. \ref{Elliptical_orbit}. All the asteroids considered here an eccentricity $0<e<1$, therefore they have an elliptical orbits in which the earth lies in to one of the two focal point. It is worth nothing that this is the first Kepler law.  Looking to Fig. we can define the point of minimum distance between $m_{1}$ and the orbiting body as the pericentre or perihelion, and the maximum distance as the apocentre or the aphelion. The semi-major axis, here denoted as $b$ on the other side is defined as the distance between the pericentre and the apocentre. Using the following identity \cite{murray1999solar}:
 
+\begin{equation}
+b^{2}=a^{2}(1-e^{2})
+\end{equation}
+
+we get \cite{murray1999solar}:
+
+\begin{equation}
+r=\frac{a(1-e^{2}}{1+e\cdot cos(\theta-\phi}
+\label{eq-mot}
+\end{equation}
+
+Furthermore the third Kepler law, can be quickly obtained considering the area swept in one orbital period T (the time needed to complete a full round of the orbit) $A=\pi ab$. Since we know that this area is equal to $hT/2$ and $h^{2}=\mu a(1-e^{2})$ \cite{murray1999solar}:
+
+\begin{equation}
+T^{2}=\dfrac{4\pi^{2}}{\mu}a^{3}
+\end{equation}
+
+If we have two bodies, of masses $m$ and $m'$, that orbit around the Earth $m_{c}$, we can use the previous equation to obtain \cite{murray1999solar}:
+
+\begin{equation}
+\frac{m_{c}+m}{m_{c}+m'}=\left(\frac{a}{a'}\right)\left(\frac{T'}{T}\right)^{2}
+\end{equation}
+
+But since $m$,$m'<<m_{c}$ \cite{murray1999solar}:
+
+\begin{equation}
+(a/a')^{3}\approx(T/T')^{2}
+\end{equation}
+
+Therefore \cite{murray1999solar}:
+
+\cite{murray1999solar}:
+
+We see that the two orbital parameters $T'$ and $a'$ are independent with respect to orbiting mass. This statement can be extended to the other orbital parameters by considering the previous approximation $m$,$m'<<m_{c}$. This is why we expect that the mass/volume of the asteoroid can not be conditionally dependant to the orbital parameters. It is useful to define also the mean motion (feature that is also present in the asteroids dataset) as \cite{murray1999solar}:
+
+\begin{equation}
+n=\frac{2\pi}{T}
+\end{equation}
+
+Therefore \cite{murray1999solar}:
+
+\begin{equation}
+\mu=n^{2}a^{3}
+\end{equation}
+
+\begin{equation}
+h=na^{2}\sqrt{1-e^{2}}=\sqrt{\mu a(1-e^{2})}
+\label{eq_h}
+\end{equation}
+
+From which we can see that the angular velocity $\ddot{f}$ is function of the longitude. We are now going more in deep with this statement. Lets come back to the Eq. \ref{eq-mot}, this can be rewritten as \cite{murray1999solar}:
+
+\begin{equation}
+\dot{\textbf{r}}\cdot\ddot{\textbf{r}}+\mu\dfrac{\dot{r}}{r^{2}}=0
+\end{equation}
+
+whose integration gives \cite{murray1999solar}:
+
+\begin{equation}
+\frac{1}{2}v^{2}-\frac{\mu}{r}=C
+\label{energy_cons}
+\end{equation}
+
+In which $v^{2}=\dot{\textbf{r}}\cdot\dot{\textbf{r}}$, and C the integration costant. This expression express the energy conservation: on the left side we have the vis-via term (basically the kinetic energy without the mass), on the right side the potential energy (rescaled with the reduced mass). Lets come back to Eq. \ref{eq-mot}, and make the following substitution $f=\theta-\phi$, which is called the true anomaly. If we differentiate it we will obtain \cite{murray1999solar}:
+
+\begin{equation}
+\dot{r}=\frac{r\dot{f}e\sin f}{1+e\cos f}
+\end{equation}
+
+
+Remembering the the definition of $h=r^{2}\ddot{f}$, from Eq. \ref{eq_h} we have  \cite{murray1999solar}:
+
+\begin{equation}
+\dot{r}=\frac{na}{\sqrt{1-e^{2}}}e\sin f
+\end{equation}
+
+\begin{equation}
+r\dot{f}=\frac{na}{\sqrt{1-e^{2}}}\left(1+e\cos f\right)
+\end{equation}
+
+Therefore \cite{murray1999solar}:
+
+
+\begin{equation}
+\begin{split}
+v^{2}&=\dfrac{n^{2}a^{2}}{1-e^{2}}\left(1+2e\cos f +e^{2}\right)= \\
+&=\dfrac{n^{2}a^{2}}{1-e^{2}}\left(\dfrac{2a(1-e^{2})}{r}-(1-e^{2})\right)
+\end{split}
+\end{equation}
+
+\begin{equation}
+v^{2}=\mu\left(\frac{2}{r}-\dfrac{1}{a}\right)
+\end{equation}
+
+
+From which we get that the velocity of the asteroid is maximum at the perihelion, and minimum at the aphelion. Their values that are equal respectively to \cite{murray1999solar}:
+
+\begin{equation}
+v_{perihelion}=na\sqrt{\dfrac{1+e}{1-e}}
+\end{equation}
+
+\begin{equation}
+v_{aphelion}=na\sqrt{\dfrac{1-e}{1+e}}
+\end{equation}
+
+Another quantity that is contained in the asteroids dataset, and is useful to describe their orbits is the mean anomaly. This is defined as \cite{murray1999solar}:
+
+\begin{equation}
+M=n(t-\tau)
+\end{equation}
+
+where $\tau$, the time of pericentre passage, increases linearly with time at a costant rate equal to the mean motion. Furthermore is bounded by the following relations for the perihelion and aphelion \cite{murray1999solar}:
+
+\begin{itemize}
+\item $M=f=0$\quad$t=\tau$\quad Perihelion
+\item $M=f=\pi$\quad$t=\tau+T/2$ \quad Aphelion
+\end{itemize}
+
+Such boundaries should be intended as periodic for multiple of the orbital period T. The geometrical interpretation of the angle associated to the mean anomaly is given in Fig. \ref{Mean_anomaly}. It can be proven (see \cite{murray1999solar}) that the value of this angle, which describe the position of the orbiting item, is given by the following expression, know as Kepler equation \cite{murray1999solar}:
+
+\begin{equation}
+M=E-e\sin E
+\end{equation}
+
+Finally as move on to space, other two angles are necessary for the description of an orbit: these are shown in Fig. \ref{Inclination} and are the inclination of the orbit (I) and the longitude of the ascending node $\Omega$. Given this quantities the Tisserard invariant can be calculated as \cite{murray1999solar}:
+
+\begin{equation}
+T_{P}=\frac{a_{p}}{a}+2\cos I\sqrt{\dfrac{a}{a_{p}}(1-e^{2})}
+\end{equation}
+
+If Jupiter is considered as perturbing body, we have the Juptier Tisserard Invariant. The underlying reason for this choice is to distinguish the Jupiter family comets ($2<T_{j}<3$) and the asteroids $T_{j}<2$. 
 
 \begin{figure}[h]
 \begin{center}
@@ -822,6 +953,31 @@ in which a is the semi-major axis of the conic. The shape of these orbits is rep
 \includegraphics[width=1\textwidth]{Figures/Conics.png}
 \caption{The four possible orbits as obtained from a sectionof a cone. Image taken from \cite{murray1999solar}}
 \label{Conics}
+\end{center}
+\end{figure}
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=1\textwidth]{Figures/Elliptical_orbit.png}
+\caption{Main features of an elliptical orbit. Image taken from \cite{murray1999solar}}
+\label{Elliptical_orbit}
+\end{center}
+\end{figure}
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=1\textwidth]{Figures/Mean_anomaly.png}
+\caption{The geometrical interpretation of mean anomaly: on the left panel a) is reported how the circumscribed circle should be draw, while on the right panel b) it is shown how the angle associated with the mean anomaly should be interpreted and its relation with the true anomaly angle f. Image taken from \cite{murray1999solar}}
+\label{Mean_anomaly}
+\end{center}
+\end{figure}
+
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=1\textwidth]{Figures/Inclination.png}
+\caption{The parameters that are necessary for the description of an orbit in three dimension. Image taken from \cite{murray1999solar}}
+\label{Inclination}
 \end{center}
 \end{figure}
 
