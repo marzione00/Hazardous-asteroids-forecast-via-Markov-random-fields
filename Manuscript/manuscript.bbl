@@ -1,5 +1,8 @@
 \begin{thebibliography}{10}
 
+\bibitem{ml_interpretability}
+\url{https://towardsdatascience.com/the-balance-accuracy-vs-interpretability-1b3861408062}.
+
 \bibitem{kaggle_dataset}
 \url{https://www.kaggle.com/shrutimehta/nasa-asteroids-classification}.
 
@@ -14,6 +17,11 @@
 
 \bibitem{caret}
 \url{https://cran.r-project.org/web/packages/caret/caret.pdf}.
+
+\bibitem{burbine2016asteroids}
+Thomas~H Burbine.
+\newblock {\em Asteroids}, volume~17.
+\newblock Cambridge University Press, 2016.
 
 \bibitem{cover2006elements}
 T.M. Cover and J.A. Thomas.
@@ -36,6 +44,11 @@ Evgenia Dimitriadou, Kurt Hornik, Friedrich Leisch, David Meyer, and Andreas
 \newblock Misc functions of the department of statistics (e1071), tu wien.
 \newblock {\em R package}, 1:5--24, 2008.
 
+\bibitem{doshi2017towards}
+Finale Doshi-Velez and Been Kim.
+\newblock Towards a rigorous science of interpretable machine learning.
+\newblock {\em arXiv preprint arXiv:1702.08608}, 2017.
+
 \bibitem{qgraph}
 Sacha Epskamp, Ang\'elique O.~J. Cramer, Lourens~J. Waldorp, Verena~D.
   Schmittmann, and Denny Borsboom.
@@ -52,6 +65,14 @@ Richard~P Feynman, Tony Hey, and Robin~W Allen.
 Jerome Friedman, Trevor Hastie, and Robert Tibshirani.
 \newblock Sparse inverse covariance estimation with the graphical lasso.
 \newblock {\em Biostatistics}, 9(3):432--441, 2008.
+
+\bibitem{gilpin2018explaining}
+Leilani~H Gilpin, David Bau, Ben~Z Yuan, Ayesha Bajwa, Michael Specter, and
+  Lalana Kagal.
+\newblock Explaining explanations: An overview of interpretability of machine
+  learning.
+\newblock In {\em 2018 IEEE 5th International Conference on data science and
+  advanced analytics (DSAA)}, pages 80--89. IEEE, 2018.
 
 \bibitem{haslbeck2015mgm}
 Jonas Haslbeck and Lourens~J Waldorp.
@@ -128,6 +149,11 @@ Tobias Sing, Oliver Sander, Niko Beerenwinkel, and Thomas Lengauer.
 \newblock Rocr: visualizing classifier performance in r.
 \newblock {\em Bioinformatics}, 21(20):3940--3941, 2005.
 
+\bibitem{tarski1953undecidable}
+Alfred Tarski, Andrzej Mostowski, and Raphael~Mitchel Robinson.
+\newblock {\em Undecidable theories}, volume~13.
+\newblock Elsevier, 1953.
+
 \bibitem{MASS}
 W.~N. Venables and B.~D. Ripley.
 \newblock {\em Modern Applied Statistics with S}.
@@ -144,5 +170,10 @@ Sheng-Jhih Wu and Moody~T Chu.
 \newblock Markov chains with memory, tensor formulation, and the dynamics of
   power iteration.
 \newblock {\em Applied Mathematics and Computation}, 303:226--239, 2017.
+
+\bibitem{zee2013einstein}
+Anthony Zee.
+\newblock {\em Einstein gravity in a nutshell}, volume~14.
+\newblock Princeton University Press, 2013.
 
 \end{thebibliography}

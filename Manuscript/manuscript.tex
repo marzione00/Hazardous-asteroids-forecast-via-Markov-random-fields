@@ -203,7 +203,7 @@ Abstract
 
 \chapter{Theoretical Framework}
 
-In this section we are going to review the theoretical concepts that underlies to the probabilistic methods here used:  we will expose them following the approaches of Murphy \cite{murphy2012machine},  Koller et al. \cite{koller2009probabilistic}, H{\o}jsgaardand \cite{hojsgaard2012graphical} et al.  and Russel et al. \cite{russell2010artificial}.  Furthermore we will provide also a rapid overview of the main concepts of information theory,  following the Cover \cite{cover2006elements} and MacKay \cite{mackay2003information} approaches ,  since we used some of its concepts in the preliminary analysis of the dataset.  On the other side the concepts related to the celestial mechanics here used will be described, following the Murray approach \cite{murray1999solar} into the Appendix A
+In this section we are going to review the theoretical concepts that underlies to the probabilistic methods here used:  we will expose them following the approaches of Murphy \cite{murphy2012machine},  Koller et al. \cite{koller2009probabilistic}, H{\o}jsgaardand \cite{hojsgaard2012graphical} et al.  and Russel et al. \cite{russell2010artificial}.  Furthermore we will provide also a rapid overview of the main concepts of information theory,  following the Cover \cite{cover2006elements} and MacKay \cite{mackay2003information} approaches,  since we used some of its concepts in the preliminary analysis of the dataset. Finally we concluded this chapter with a rapid overview about the concept of algorithm intepretability, which together with the accuracy and the confusion matrix, is necessary for the assessment of a ML performances. On the other side the concepts related to the celestial mechanics here used will be described, following the Murray approach \cite{murray1999solar} into the Appendix A
 
 \section{Markov random fields}
 
@@ -429,10 +429,56 @@ I(X_{1},X_{2},...,X_{n};Y)=\sum^{n}_{i=1}I(X_{i};Y|X_{i-1},X_{i-2},...,X_{1})
 \end{equation}
 Finally we would report the data process inequality theorem that connects the information theory with the Markov chain: if we have a Markov chains, $X\rightarrow Y \rightarrow Z$  then $I(X;Y)\geq I(X;Z) $. As for the Gibbs inequality, the underlying idea is that no clever manipulation of the data can improve the inference that can be made on them \cite{cover2006elements,mackay2003information}. Otherwise we would have a clear violation of the second principle of thermodynamics (see for instance the Maxwell's demon \cite{feynman2018feynman})
 
+\section{Algorithm intepretability}
+
+Beside the accuracy and other features that are connected with the confusion matrix, another important feature is the algorithm intepretability. This feature, at a first instance, is connected on how much the algorithm provide explanation to a human on how it choose a forecast instead of another one, or in other word how much the algorithm is not a blackbox. Apart from all legal problems connected with an algorithm that is a blackbox\footnote{Think for instance the conditions imposed by the GDPR (e.g the right to explanation)}, in the author opinion results provided by such algorithm cannot be considered scientific, since the scientific method also require to provide an explanation and not simply almost correct forecast. Following the \cite{tarski1953undecidable} argument, which is root on mathematical logic, it can be said that the a formal theory T into S if and only if S is able to proof the theorem of T in its own language. On the other side we would also that an algorithm, as an explanation, is complete: we expect that it will be also able to make correct forecasts. However as shown by \cite{doshi2017towards} and by \cite{gilpin2018explaining}  the intepretability of an algorithm is linked with its incompleteness. This is something that is nested both in formal system as algorithms or scientific theories. For instance lets consider the fall of object: at first glance one can consider the only the items on Earth, in this case the acceleration is constant and it is a very simple theory; but as one moves to consider also the interaction within planets a much more complicate law should be considered (for which the previous case is a particular one). The first one is largely explainable but not poorly complete, the second one more difficult to explain but more complete. Therefore, in principle, the evaluation of an algorithm performances should be considered not only in to one dimension, the accuracy, but also by considering its intepretability as shown in Fig. \ref{ML_intepretability}
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=1\textwidth]{Figures/ML_intepretability.png}
+\caption{Different ML algorithms classified by their interpretability and by their accuracy. Image taken from \cite{ml_interpretability}}
+\label{ML_intepretability}
+\end{center}
+\end{figure}
+
 
 \chapter{Dataset description}
 
-The asteroid dataset was retrieved from Kaggle \cite{kaggle_dataset}, which reports into an more user-friendly mode the dataset of The Center for Near-Earth Object Studies (CNEOS) \cite{cneos+nasa}, a NASA research center. Among the 40 features there were present in the dataset we excluded the ones that were clearly redundant (such as the distance quantity evaluated in miles instead of kilometres), the ones that were connected only to the other name of the asteroid, the one connected to the name of the orbit and the one connected with the orbiting planet, since for all it was the Earth. Thus the features obtained were reduced to 22. Their enumeration and their description will be postponed to Appendix A, since a description of them cannot be disjoint with celestial mechanics concepts. Since only the 16 \% of the asteroids were hazardous, we considered to reduce the number of the non-hazardous in order to improve the portion of the hazardous ones. For this purpose we constructed a database in which the proportion hazardous/not hazardous was 1:5: thus all the hazardous one were included, while the not-hazardous were randomly selected \footnote{The author is aware that in principle the proportion should be much less unbalanced, however the tool that has to be paid for this operation is an overall reduction of the cases in the dataset that lowers the performances of the algorithms here used. The proportion here used was a trade-off for these two contrasting facts}. Furthermore, concerning the continuous measures, the dataset was standardised and demeaned. 
+The asteroid dataset was retrieved from Kaggle \cite{kaggle_dataset}, which reports into an more user-friendly mode the dataset of The Center for Near-Earth Object Studies (CNEOS) \cite{cneos+nasa}, a NASA research center. Among the 40 features there were present in the dataset we excluded the ones that were clearly redundant (such as the distance quantity evaluated in miles instead of kilometres), the ones that were connected only to the other name of the asteroid, the one connected to the name of the orbit and the one connected with the orbiting planet, since for all it was the Earth. Thus the features obtained were reduced to 22. Their description will be postponed to Appendix A, since a description of them cannot be disjoint with celestial mechanics concepts. Their enumeration is provided in Tab. \ref{tab_features}. Since only the 16 \% of the asteroids were hazardous, we considered to reduce the number of the non-hazardous in order to improve the portion of the hazardous ones. For this purpose we constructed a database in which the proportion hazardous/not hazardous was 1:5: thus all the hazardous one were included, while the not-hazardous were randomly selected \footnote{The author is aware that in principle the proportion should be much less unbalanced, however the tool that has to be paid for this operation is an overall reduction of the cases in the dataset that lowers the performances of the algorithms here used. The proportion here used was a trade-off for these two contrasting facts}. Furthermore, concerning the continuous measures, the dataset was standardised and demeaned. 
+
+
+\begin{table}[]
+\caption{The features used for the present analysis. The unit of measure are reported in the original dataset \cite{kaggle_dataset}.}
+\begin{center}
+\begin{tabular}{c|c}
+\hline
+\textbf{Features}             & \textbf{Type}        \\ \hline
+Neo Reference ID              & not used             \\ \hline
+Absolute Magnitude            & Continuous           \\ \hline
+Est Dia in KM (min)           & Continuous           \\ \hline
+Est Dia in KM (max)           & Continuous           \\ \hline
+Close Approach Date           & Continuous           \\ \hline
+Epoch Date Close Approach     & Continuous           \\ \hline
+Relative\_Velocity            & Continuous           \\ \hline
+Miss\_Dist                    & Continuous           \\ \hline
+Min\_Orbit\_Intersection      & Continuous           \\ \hline
+Jupiter\_Tisserand\_Invariant & Continuous           \\ \hline
+Epoch\_Osculation             & Continuous           \\ \hline
+Eccentricity                  & Continuous           \\ \hline
+Semi Major Axis               & Continuous           \\ \hline
+Inclination                   & Continuous           \\ \hline
+Asc Node Longitude            & Continuous           \\ \hline
+Orbital Period                & Continuous           \\ \hline
+Perihelion Distance           & Continuous           \\ \hline
+Perihelion Arg                & Continuous           \\ \hline
+Perihelion Time               & Continuous           \\ \hline
+Mean\_Anomaly                 & Continuous           \\ \hline
+Mean\_Motion                  & Continuous           \\ \hline
+Hazardous                     & Categorical (Binary)
+\end{tabular}
+\end{center}
+\label{tab_features}
+\end{table}
 
 
 \chapter{Results}
@@ -702,9 +748,13 @@ QDA       & 0.5562
 
 \chapter{Conclusions}
 
-\chapter{Appendix A: Concepts of celestial mechanics}
+\chapter{Appendix A: Concepts of astronomy}
 
-This Appendix is dedicated to review the basics concepts of celestial dynamics, following the Murray approach \cite{murray1999solar}, that are needed to understand the features of the dataset and their connections. Lets start by considering two masses $m_{1}$ and $m_{2}$, which in the present case will be respectively the planet Earth and the asteroid. Their position will be given, respectively, by two vectors $\textbf{r}_{1}$ and $\textbf{r}_{2}$ considering the origin $O$ bounded in to an inertial space. Furthermore we can define also the relative position with the vector $\textbf{r}=\textbf{r}_{2}-\textbf{r}_{1}$. Since we suppose that the masses are not interacting with the electromagnetic force, these will be bounded only by the gravitational interaction which is given by the Newton law \cite{murray1999solar}:
+This Appendix is dedicated to review the basics concepts of celestial dynamics, following the Murray approach \cite{murray1999solar}, that are needed to understand the features of the dataset and their connections. The first part will be dedicatated to the features that are connected with the orbital parameters, while the second one to the parameters that are connected with the observation of the asteroids
+
+\section{Celestial mechanics}
+
+Lets start by considering two masses $m_{1}$ and $m_{2}$, which in the present case will be respectively the planet Earth and the asteroid. Their position will be given, respectively, by two vectors $\textbf{r}_{1}$ and $\textbf{r}_{2}$ considering the origin $O$ bounded in to an inertial space. Furthermore we can define also the relative position with the vector $\textbf{r}=\textbf{r}_{2}-\textbf{r}_{1}$. Since we suppose that the masses are not interacting with the electromagnetic force, these will be bounded only by the gravitational interaction which is given by the Newton law \cite{murray1999solar}:
 
 
 \begin{equation}
@@ -722,7 +772,7 @@ where $\mathcal{G}$ is universal gravitational constant, and the second equivale
 \end{equation}
 
 
-It can be seen that the $\textbf{r}$ and $\cdot\textbf{r}$ lies always in the same plane: this is because the product vector $\textbf{r} \times \ddot{ \textbf{r}}=0$, thus if one integrates she will get that the product vector $\textbf{r} \times \textbf{r}=\textbf{h}$ where \textbf{h} is a constant vector. Furthermore the problem can be simplified by using polar coordinates  $\hat{\textbf{r}}$ and $\hat{\boldsymbol{\theta}}$. Indeed since the position, speed and acceleration in polar coordinates have the following form \cite{murray1999solar}:
+It can be seen that the $\textbf{r}$ and $\dot{\textbf{r}}$ lies always in the same plane: this is because the product vector $\textbf{r} \times \ddot{ \textbf{r}}=0$, thus if one integrates she will get that the product vector $\textbf{r} \times \textbf{r}=\textbf{h}$ where \textbf{h} is a constant vector. Furthermore the problem can be simplified by using polar coordinates  $\hat{\textbf{r}}$ and $\hat{\boldsymbol{\theta}}$. In this case speed and acceleration have the following form \cite{murray1999solar}:
 
 \begin{equation}
 \textbf{r}=r\hat{\textbf{r}}
@@ -737,13 +787,13 @@ It can be seen that the $\textbf{r}$ and $\cdot\textbf{r}$ lies always in the sa
 \ddot{\textbf{r}}=\left(\ddot{r}-r\dot{\theta}^{2}\right)\hat{\textbf{r}}+\left[\dfrac{1}{r}\frac{d}{dt}\left(r^{2}\dot{\theta}\right)\right]\hat{\boldsymbol{\theta}}
 \end{equation}
 
-Using these coordinates in the product vector between the speed and the position the following equation will be obtained \cite{murray1999solar}:
+Therefore the product vector between the speed and the position will have the following form \cite{murray1999solar}:
 
 \begin{equation}
 \textbf{h}=r^{2}\dot{\theta}\hat{\textbf{z}}
 \end{equation}
 
-where $\textbf{z}$ is a vector perpendicural to the plane, whose module is equal to 
+where $\textbf{z}$ is a vector perpendicural to the plane, whose module is equal to \cite{murray1999solar}:
 
 \begin{equation}
 h=r^{2}\dot{\theta}
@@ -761,7 +811,7 @@ where the Taylor expansion at first order was used. Therfore  \cite{murray1999so
 \dfrac{dA}{dt}=\dfrac{1}{2}r^{2}\dfrac{d\theta}{dt}=\dfrac{1}{2}h
 \end{equation}
 
-but we know that $h$ is constant, therefore the first derivative, is constant. This is the $2^{th}$ Kepler law. The Eq. \ref{eq_dyn_nop} in polar coordinates  \cite{murray1999solar}:
+but we know that $h$ is constant, therefore the first derivative, is constant. This is the $2^{th}$ Kepler law. Lets come back to the Eq. \ref{eq_dyn_nop}, if one recast it in polar coordinates, the following form will be obtained \cite{murray1999solar}:
 
 \begin{equation}
 \ddot{r}-r\dot{\theta}^{2}=-\frac{\mu}{r^{2}}
@@ -806,7 +856,7 @@ Depening on the eccentricity we have four possible conics \cite{murray1999solar}
 \item hyperbola: $e>1$ \quad $p=a(e^{2}-1)$
 \end{itemize}
 
-in which $a$ is the semi-major axis of the conic. The shape of these orbits is reported in Fig. \ref{Elliptical_orbit}. All the asteroids considered here an eccentricity $0<e<1$, therefore they have an elliptical orbits in which the earth lies in to one of the two focal point. It is worth nothing that this is the first Kepler law.  Looking to Fig. we can define the point of minimum distance between $m_{1}$ and the orbiting body as the pericentre or \textcolor{red}{perihelion}, and the maximum distance as the apocentre or the aphelion. The \textcolor{red}{semi-major axis}, here denoted as $b$ on the other side is defined as the distance between the pericentre and the apocentre. Using the following identity \cite{murray1999solar}:
+in which $a$ is the semi-major axis of the conic. The shape of these orbits is reported in Fig. \ref{Elliptical_orbit}. All the asteroids considered here an eccentricity $0<e<1$, therefore they have an elliptical orbits in which the earth lies in to one of the two focal point. It is worth nothing that this is the first Kepler law.  Looking to Fig. \ref{Elliptical_orbit} we can define the point of minimum distance between $m_{1}$ and the orbiting body as the pericentre or \textcolor{red}{perihelion}, and the maximum distance as the apocentre or the aphelion. The \textcolor{red}{semi-major axis}, here denoted as $b$ on the other side is defined as the distance between the pericentre and the apocentre. Using the following identity \cite{murray1999solar}:
 
 \begin{equation}
 b^{2}=a^{2}(1-e^{2})
@@ -939,6 +989,45 @@ T_{P}=\frac{a_{p}}{a}+2\cos I\sqrt{\dfrac{a}{a_{p}}(1-e^{2})}
 \end{equation}
 
 If Jupiter is considered as perturbing body, we have the \textcolor{red}{Juptier Tisserard Invariant}. The underlying reason for this choice is to distinguish the Jupiter family comets ($2<T_{j}<3$) and the asteroids $T_{j}<2$. 
+
+
+\section{Observation}
+
+The luminosity of an asteroid can be quantified with the concepts of magnitude. It is worth pointing out that asteroids have no intrinsic luminosity, but instead reflects the radiation, usually not uniformly since they have no atmosphere, of stars or other celestial bodies with intrinsic luminosity. 
+First of all, before defining the concept of magnitude is useful to provide the concept of radiation flux. In our case it can be though as the number of photons \footnote{One can think, at first approximation, photons as packet of energy associated to the emitted light. A more formal and complete description can be found in \cite{feynman2018feynman} } that moves across a sphere centred on the light source and with radius equal to the observer distance \cite{burbine2016asteroids}:
+
+\begin{equation}
+\Phi=\frac{L}{4\pi r^{2}}
+\end{equation}
+
+As one can note there is a dependence from $1/r^{2}$ which is given by the fact that the electromagnetic radiation, as for gravitational force, is spherically symmetric\footnote{A formal argument of this point can be found in \cite{zee2013einstein}}. On this basis, it is possible to define the relative magnitude as \cite{burbine2016asteroids}:
+
+\begin{equation}
+m=-2.5\log_{10}\Phi+C
+\end{equation}
+
+This definition is useful for the evaluation for the comparison between two light sources (e.g. two stars), since in this case we have \cite{burbine2016asteroids}:
+
+\begin{equation}
+m_{1}-m_{2}=-2.5\log_{10}\frac{\Phi_{1}}{\Phi_{2}}
+\end{equation}
+
+Finally the \textcolor{red}{Absolute magnitude} $M$ can be defined as the magnitude that the item will have if it is put at 1 AU\footnote{Astronomic Units, the distance between Earth and Sun: 1.49\cdot 10^{11} m} or 10 parsec \footnote{3,08\cdot 10^{16} m. The physical meaning of this measure can be found in \cite{burbine2016asteroids}} from the observer. Therefore  \cite{burbine2016asteroids}:
+
+\begin{equation}
+M-m=-2.5\log_{10}\frac{\Phi\cdot d^{2} }{\Phi\cdot 10^{2}}
+\end{equation}
+
+where $d$ is the light source distance in parsec. Rearranging the terms we have \cite{burbine2016asteroids}:
+
+\begin{equation}
+M-m=-5\log_{10}\frac{ d^{2} }{10}+C
+\end{equation}
+
+\begin{equation}
+M=m+5-5log_{10}d
+\end{equation}
+
 
 \begin{figure}[h]
 \begin{center}
