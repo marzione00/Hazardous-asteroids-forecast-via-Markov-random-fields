@@ -1,5 +1,11 @@
 \begin{thebibliography}{10}
 
+\bibitem{vesta_source}
+\url{https://www.nasa.gov/sites/default/files/images/685735main_pia15678-43_full.jpg}.
+
+\bibitem{Tunguska_source}
+\url{https://commons.wikimedia.org/wiki/File:Tunguska.png}.
+
 \bibitem{ml_interpretability}
 \url{https://towardsdatascience.com/the-balance-accuracy-vs-interpretability-1b3861408062}.
 
@@ -20,6 +26,12 @@
 
 \bibitem{nasa_classification}
 \url{https://cneos.jpl.nasa.gov/about/neo_groups.html}.
+
+\bibitem{orbits-of-potentially-hazardous}
+\url{https://www.jpl.nasa.gov/images/orbits-of-potentially-hazardous-asteroids-phas}.
+
+\bibitem{esahubble}
+\url{https://esahubble.org/images/heic1715c/}.
 
 \bibitem{burbine2016asteroids}
 Thomas~H Burbine.

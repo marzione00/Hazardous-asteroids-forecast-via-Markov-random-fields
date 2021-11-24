@@ -172,6 +172,22 @@
 %\listoftables % Print the list of tables
 
 \newpage
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=0.6\textwidth]{Figures/vesta_asteroid.jpg}
+\captionsetup{labelformat=empty}
+\caption{A NASA image of asteroid Vesta as taken by the spacecraft Dawn. Vesta is one of the biggest asteroid in the asteroid belt of solar system (its volume is equal to $7,5\cdot10^{7}$ km$^{3}$. Image taken from \cite{vesta_source}}
+\end{center}
+\end{figure}
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=0.6\textwidth]{Figures/Tunguska.png}
+\captionsetup{labelformat=empty}
+\caption{A picture provided by the Soviet Academy of Science in 1927 of Podkamennaya Tunguska. This place was hit, in 1908, by an asteroid of 50-60 m. Such asteroid flattened almost 80 million trees over an area of 2,150 km$^{2}$. The explosion intensity was near to 12 megatons: for reference the modern US nuclear bomb are in the range of 0.3 kilotons to 1.2 megatons. The Hiroshima bomb was nearly to 15 kilotons. Image taken from \cite{Tunguska_source}}
+\end{center}
+\end{figure}
+\newpage
+
 
 \epigraph{
 \textit{This day may possibly be my last: but the laws of probability, so true in general, so fallacious in particular, still allow about fifteen years. }\\Edward Gibbon (1737-1794)
@@ -750,7 +766,7 @@ QDA       & 0.5562
 
 \chapter{Appendix A: Concepts of astronomy}
 
-This Appendix is dedicated to review the basics concepts of celestial dynamics, following the Murray approach \cite{murray1999solar}, that are needed to understand the features of the dataset and their connections. The first part will be dedicatated to the features that are connected with the orbital parameters, while the second one to the parameters that are connected with the observation of the asteroids
+This Appendix is dedicated to review the basics concepts of astronomy that are needed to understand the features of the dataset and the theoretical framework in which these are involved. First the basic concepts of celestial mechanics will be recap following the Murray approach \cite{murray1999solar}: these will provide a description of the orbital parameters of the dataset. Then the concepts connected to the observation of the asteroids will be reviewed following the Burbine textboox \cite{burbine2016asteroids}. Finally, using the previous definition, the classification of the asteroids and in particular the definition of their hazardousness will be provided following the Center for Near-Earth Object Studies (CNEOS) statements \cite{nasa_classification}. 
 
 \section{Celestial mechanics}
 
@@ -1032,8 +1048,8 @@ M=m+5-5log_{10}d
 
 \section{Classification}
 
-The solar system is composed not only by planets and the Sun, but also by a plethora of small bodies\footnote{Small with respect to the size of planets} whose orbit can be near to the Earth \cite{burbine2016asteroids}. In particular if the orbit of these items is near less then 1.3 AU such items are called near-Earth object (NEO). Such items are of three type: comets, meteoroids and asteroids. The first one are icy bodies that moving near the sun melts and release gases giving coloured tails. Meteroids are small \footnote{With respect to asteroids} rocky/metallic items with a diameter less than 1 meter. Asteroids, on the other side, are items with a diameter larger than 1 m \cite{burbine2016asteroids}. The first two items are excluded from the present analysis.  
-The near asteroids are classified, as shown in Fig. \ref{neo_orbit_types}, according to their semi-major axis (a), perihelion distance (q), and aphelion distance (Q). Here we report the Center for Near-Earth Object Studies (CNEOS) definition \cite{nasa_classification}:
+The solar system is composed not only by planets and the Sun, but also, as shown in Fig. \ref{Orbit_asteorids}, by a plethora of small bodies\footnote{Small with respect to the size of planets} whose orbit can be near to the Earth \cite{burbine2016asteroids}. In particular if the orbit of these items is near less then 1.3 AU such items are called near-Earth object (NEO). Such items are of three type: comets, meteoroids and asteroids. The first one are icy bodies that moving near the sun melts and release gases giving coloured tails. Meteroids are small \footnote{With respect to asteroids} rocky/metallic items with a diameter less than 1 meter. Asteroids, on the other side, are items with a diameter larger than 1 m \cite{burbine2016asteroids}. The first two items are excluded from the present analysis.  
+The near asteroids, which are mostly located on the sites reported in Fig. \ref{heic1715c}, are classified, as shown in Fig. \ref{neo_orbit_types}, according to their semi-major axis (a), perihelion distance (q), and aphelion distance (Q). Here we report the CNEOS definition \cite{nasa_classification}:
 
 \begin{itemize}
 \item \textbf{Atiras} $a < 1.0$ au $Q < 0.983$ au\quad \textit{NEAs whose orbits are contained entirely with the orbit of the Earth (named after asteroid 163693 Atira)}
@@ -1048,6 +1064,7 @@ Beside this classification, there is the one which involve the hazardousness of 
 \item \textbf{Potentially Hazardous Asteroids}: MOID $\leq 0.05$ au $M \leq22.0$ \textit{NEAs whose Minimum Orbit Intersection Distance (MOID) with the Earth is 0.05 au or less and whose absolute magnitude (M) is 22.0 or brighter}
 \end{itemize}
 
+On the basis of this definition, the asteroids contained in the dataset here analysed are classified as hazardous or not. 
 
 \begin{figure}[h]
 \begin{center}
@@ -1081,12 +1098,28 @@ Beside this classification, there is the one which involve the hazardousness of 
 \end{center}
 \end{figure}
 
-
 \begin{figure}[h]
 \begin{center}
 \includegraphics[width=1\textwidth]{Figures/Inclination.png}
 \caption{The parameters that are necessary for the description of an orbit in three dimension. Image taken from \cite{murray1999solar}}
 \label{Inclination}
+\end{center}
+\end{figure}
+
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=1\textwidth]{Figures/Orbit_asteorids.png}
+\caption{Orbits of potentially hazardous asteorids. Image taken from \cite{orbits-of-potentially-hazardous}}
+\label{Orbit_asteorids}
+\end{center}
+\end{figure}
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=1\textwidth]{Figures/heic1715c.jpg}
+\caption{Location of the solar system asteroids belt. Image taken from \cite{esahubble}}
+\label{heic1715c}
 \end{center}
 \end{figure}
 
