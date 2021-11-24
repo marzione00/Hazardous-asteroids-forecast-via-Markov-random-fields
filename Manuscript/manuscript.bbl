@@ -18,6 +18,9 @@
 \bibitem{caret}
 \url{https://cran.r-project.org/web/packages/caret/caret.pdf}.
 
+\bibitem{nasa_classification}
+\url{https://cneos.jpl.nasa.gov/about/neo_groups.html}.
+
 \bibitem{burbine2016asteroids}
 Thomas~H Burbine.
 \newblock {\em Asteroids}, volume~17.

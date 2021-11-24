@@ -14,4 +14,5 @@
 \contentsline {chapter}{\numberline {6}{Appendix A: Concepts of astronomy}}{37}{chapter.6}%
 \contentsline {section}{\numberline {6.1}{Celestial mechanics}}{37}{section.6.1}%
 \contentsline {section}{\numberline {6.2}{Observation}}{42}{section.6.2}%
+\contentsline {section}{\numberline {6.3}{Classification}}{44}{section.6.3}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
