@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.2.22)  24 NOV 2021 17:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.2.22)  24 NOV 2021 17:32
 entering extended mode
 **./manuscript.tex
 (manuscript.tex
@@ -2780,13 +2780,13 @@ I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 [44]
-Overfull \hbox (7.11469pt too wide) in paragraph at lines 1058--1059
+Overfull \hbox (7.11469pt too wide) in paragraph at lines 1057--1058
 \T1/pplj/m/it/12 NEAs with or-bits ex-te-rior to Earth's but in-te-rior to Mars
 ' (named
  []
 
 
-Overfull \hbox (10.07866pt too wide) in paragraph at lines 1064--1065
+Overfull \hbox (10.07866pt too wide) in paragraph at lines 1063--1064
 \U/zeur/m/n/12 22\T1/pplj/m/n/12 .\U/zeur/m/n/12 0$ \T1/pplj/m/it/12 NEAs whose
  Min-i-mum Or-bit In-ter-sec-tion Dis-tance (MOID)
  []
@@ -2794,7 +2794,7 @@ Overfull \hbox (10.07866pt too wide) in paragraph at lines 1064--1065
 <Figures/Area_dynamics.png, id=803, 708.39656pt x 359.84438pt>
 File: Figures/Area_dynamics.png Graphic file (type png)
 <use Figures/Area_dynamics.png>
-Package pdftex.def Info: Figures/Area_dynamics.png  used on input line 1071.
+Package pdftex.def Info: Figures/Area_dynamics.png  used on input line 1070.
 (pdftex.def)             Requested size: 336.0pt x 170.68076pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -2802,7 +2802,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <Figures/Conics.png, id=807, 595.47469pt x 574.39594pt>
 File: Figures/Conics.png Graphic file (type png)
 <use Figures/Conics.png>
-Package pdftex.def Info: Figures/Conics.png  used on input line 1079.
+Package pdftex.def Info: Figures/Conics.png  used on input line 1078.
 (pdftex.def)             Requested size: 336.0pt x 324.10483pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -2810,7 +2810,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <Figures/Elliptical_orbit.png, id=810, 931.98187pt x 632.3625pt>
 File: Figures/Elliptical_orbit.png Graphic file (type png)
 <use Figures/Elliptical_orbit.png>
-Package pdftex.def Info: Figures/Elliptical_orbit.png  used on input line 1087.
+Package pdftex.def Info: Figures/Elliptical_orbit.png  used on input line 1086.
 
 (pdftex.def)             Requested size: 336.0pt x 227.9784pt.
 
@@ -2819,7 +2819,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <Figures/Mean_anomaly.png, id=813, 912.40875pt x 418.56375pt>
 File: Figures/Mean_anomaly.png Graphic file (type png)
 <use Figures/Mean_anomaly.png>
-Package pdftex.def Info: Figures/Mean_anomaly.png  used on input line 1095.
+Package pdftex.def Info: Figures/Mean_anomaly.png  used on input line 1094.
 (pdftex.def)             Requested size: 336.0pt x 154.13806pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -2827,7 +2827,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <Figures/Inclination.png, id=816, 835.62187pt x 573.64313pt>
 File: Figures/Inclination.png Graphic file (type png)
 <use Figures/Inclination.png>
-Package pdftex.def Info: Figures/Inclination.png  used on input line 1103.
+Package pdftex.def Info: Figures/Inclination.png  used on input line 1102.
 (pdftex.def)             Requested size: 336.0pt x 230.6611pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -2835,7 +2835,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <Figures/Orbit_asteorids.png, id=819, 2055.68pt x 2055.68pt>
 File: Figures/Orbit_asteorids.png Graphic file (type png)
 <use Figures/Orbit_asteorids.png>
-Package pdftex.def Info: Figures/Orbit_asteorids.png  used on input line 1112.
+Package pdftex.def Info: Figures/Orbit_asteorids.png  used on input line 1111.
 (pdftex.def)             Requested size: 336.0pt x 335.97311pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -2843,7 +2843,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <Figures/heic1715c.jpg, id=822, 2204.235pt x 2300.8359pt>
 File: Figures/heic1715c.jpg Graphic file (type jpg)
 <use Figures/heic1715c.jpg>
-Package pdftex.def Info: Figures/heic1715c.jpg  used on input line 1120.
+Package pdftex.def Info: Figures/heic1715c.jpg  used on input line 1119.
 (pdftex.def)             Requested size: 336.0pt x 350.69266pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -2851,7 +2851,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <Figures/neo_orbit_types.jpg, id=825, 824.3598pt x 554.5518pt>
 File: Figures/neo_orbit_types.jpg Graphic file (type jpg)
 <use Figures/neo_orbit_types.jpg>
-Package pdftex.def Info: Figures/neo_orbit_types.jpg  used on input line 1128.
+Package pdftex.def Info: Figures/neo_orbit_types.jpg  used on input line 1127.
 (pdftex.def)             Requested size: 336.0pt x 226.03075pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -2964,7 +2964,7 @@ owacki/iwona/iwonar.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/u
 plb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplbi8a.pfb><C:
 /Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program Files
 /MiKTeX 2.9/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on manuscript.pdf (56 pages, 7196948 bytes).
+Output written on manuscript.pdf (56 pages, 7197155 bytes).
 PDF statistics:
  1156 PDF objects out of 1200 (max. 8388607)
  220 named destinations out of 1000 (max. 500000)
