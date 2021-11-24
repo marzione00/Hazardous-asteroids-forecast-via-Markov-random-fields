@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.2.22)  24 NOV 2021 10:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.2.22)  24 NOV 2021 12:14
 entering extended mode
 **./manuscript.tex
 (manuscript.tex
@@ -2769,60 +2769,70 @@ l.1015 ...ween Earth and Sun: 1.49\cdot 10^{11} m}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-<Figures/Area_dynamics.png, id=765, 708.39656pt x 359.84438pt>
+[43]
+Overfull \hbox (7.11469pt too wide) in paragraph at lines 1042--1043
+\T1/pplj/m/it/12 NEAs with or-bits ex-te-rior to Earth's but in-te-rior to Mars
+' (named
+ []
+
+
+Overfull \hbox (10.07866pt too wide) in paragraph at lines 1048--1049
+\U/zeur/m/n/12 22\T1/pplj/m/n/12 .\U/zeur/m/n/12 0$ \T1/pplj/m/it/12 NEAs whose
+ Min-i-mum Or-bit In-ter-sec-tion Dis-tance (MOID)
+ []
+
+<Figures/Area_dynamics.png, id=783, 708.39656pt x 359.84438pt>
 File: Figures/Area_dynamics.png Graphic file (type png)
 <use Figures/Area_dynamics.png>
-Package pdftex.def Info: Figures/Area_dynamics.png  used on input line 1034.
+Package pdftex.def Info: Figures/Area_dynamics.png  used on input line 1054.
 (pdftex.def)             Requested size: 336.0pt x 170.68076pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Figures/Conics.png, id=769, 595.47469pt x 574.39594pt>
+<Figures/Conics.png, id=787, 595.47469pt x 574.39594pt>
 File: Figures/Conics.png Graphic file (type png)
 <use Figures/Conics.png>
-Package pdftex.def Info: Figures/Conics.png  used on input line 1042.
+Package pdftex.def Info: Figures/Conics.png  used on input line 1062.
 (pdftex.def)             Requested size: 336.0pt x 324.10483pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Figures/Elliptical_orbit.png, id=772, 931.98187pt x 632.3625pt>
+<Figures/Elliptical_orbit.png, id=790, 931.98187pt x 632.3625pt>
 File: Figures/Elliptical_orbit.png Graphic file (type png)
 <use Figures/Elliptical_orbit.png>
-Package pdftex.def Info: Figures/Elliptical_orbit.png  used on input line 1050.
+Package pdftex.def Info: Figures/Elliptical_orbit.png  used on input line 1070.
 
 (pdftex.def)             Requested size: 336.0pt x 227.9784pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Figures/Mean_anomaly.png, id=775, 912.40875pt x 418.56375pt>
+<Figures/Mean_anomaly.png, id=793, 912.40875pt x 418.56375pt>
 File: Figures/Mean_anomaly.png Graphic file (type png)
 <use Figures/Mean_anomaly.png>
-Package pdftex.def Info: Figures/Mean_anomaly.png  used on input line 1058.
+Package pdftex.def Info: Figures/Mean_anomaly.png  used on input line 1078.
 (pdftex.def)             Requested size: 336.0pt x 154.13806pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Figures/Inclination.png, id=778, 835.62187pt x 573.64313pt>
+<Figures/Inclination.png, id=796, 835.62187pt x 573.64313pt>
 File: Figures/Inclination.png Graphic file (type png)
 <use Figures/Inclination.png>
-Package pdftex.def Info: Figures/Inclination.png  used on input line 1067.
+Package pdftex.def Info: Figures/Inclination.png  used on input line 1087.
 (pdftex.def)             Requested size: 336.0pt x 230.6611pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[43]
-<Figures/neo_orbit_types.jpg, id=798, 824.3598pt x 554.5518pt>
+<Figures/neo_orbit_types.jpg, id=799, 824.3598pt x 554.5518pt>
 File: Figures/neo_orbit_types.jpg Graphic file (type jpg)
 <use Figures/neo_orbit_types.jpg>
-Package pdftex.def Info: Figures/neo_orbit_types.jpg  used on input line 1088.
+Package pdftex.def Info: Figures/neo_orbit_types.jpg  used on input line 1095.
 (pdftex.def)             Requested size: 336.0pt x 226.03075pt.
-
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-(manuscript.bbl [44 <./Figures/Area_dynamics.png>] [45 <./Figures/Conics.png> <
-./Figures/Elliptical_orbit.png>] [46 <./Figures/Mean_anomaly.png> <./Figures/In
-clination.png>] [47 <./Figures/neo_orbit_types.jpg>]
+(manuscript.bbl [44] [45 <./Figures/Area_dynamics.png> <./Figures/Conics.png>]
+[46 <./Figures/Elliptical_orbit.png> <./Figures/Mean_anomaly.png>] [47 <./Figur
+es/Inclination.png> <./Figures/neo_orbit_types.jpg>]
 Underfull \hbox (badness 10000) in paragraph at lines 4--5
 [][][]$\T1/fvm/m/n/12 https : / / towardsdatascience . com /
  []
@@ -2909,9 +2919,9 @@ ar.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplb8a.pfb><C:/Pro
 gram Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplbi8a.pfb><C:/Program Files/Mi
 KTeX 2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts
 /type1/urw/palatino/uplri8a.pfb>
-Output written on manuscript.pdf (51 pages, 1769344 bytes).
+Output written on manuscript.pdf (51 pages, 1772694 bytes).
 PDF statistics:
- 1091 PDF objects out of 1200 (max. 8388607)
+ 1093 PDF objects out of 1200 (max. 8388607)
  207 named destinations out of 1000 (max. 500000)
  39818 words of extra memory for PDF output out of 42996 (max. 10000000)
 
