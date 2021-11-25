@@ -6,6 +6,9 @@
 \bibitem{Tunguska_source}
 \url{https://commons.wikimedia.org/wiki/File:Tunguska.png}.
 
+\bibitem{Perihelion_precession}
+\url{https://commons.wikimedia.org/wiki/File:Perihelion_precession.svg}.
+
 \bibitem{ml_interpretability}
 \url{https://towardsdatascience.com/the-balance-accuracy-vs-interpretability-1b3861408062}.
 
@@ -130,6 +133,11 @@ Andy Liaw and Matthew Wiener.
 David~JC MacKay.
 \newblock {\em Information theory, inference and learning algorithms}.
 \newblock Cambridge university press, 2003.
+
+\bibitem{martin_2004}
+Richard~M. Martin.
+\newblock {\em Electronic Structure: Basic Theory and Practical Methods}.
+\newblock Cambridge University Press, 2004.
 
 \bibitem{murphy2012machine}
 Kevin~P Murphy.
