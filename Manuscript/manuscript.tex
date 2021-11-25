@@ -511,7 +511,7 @@ Hazardous                     & Categorical (Binary)
 \end{table}
 
 
-\chapter{Results}
+\chapter{Results and discussion}
 
 This chapter is organized in the following way: first we are going to report the results concerning the preliminary analysis performed on the dataset. This include the factor analysis of mixed data and the mutual information analysis of the continuous variables of asteroids vs their hazard. Then it will follow the analysis of the dataset performed with the probabilistic methods: after a preliminary analysis on the continuous variables, the mixed interaction model as well the minforest model obtained for the whole dataset will be presented and discussed. Finally the probabilistic models previously obtained will be compared with the outputs and the performances of four machine learning algorithm (Random Forest, Support vector machines Quadratic Discriminant Analysis and Logistic regression).
 
@@ -777,6 +777,9 @@ QDA       & 0.5562
 
 
 \chapter{Conclusions}
+
+The Glasso (with a penalizing parameter $\rho=0.3$) and the mgm algorithms provided graphical models that correctly capture the physical connections of the dataset feature. In particular for both models we saw that the no one of the orbital parameters are conditionally dependent with respect to the diameter of the asteroid, as stated by theory. Furthermore the mgm model is able to provide forecasts about the hazardousness of the asteroids with performances that are almost equal or better  than the logistic and QDA algorithms. On the other side the fact that its performances are lower with respect to the RF and SVM is definitely compensated by its interpretability. 
+
 
 \chapter{Appendix A: Concepts of astronomy}
 
