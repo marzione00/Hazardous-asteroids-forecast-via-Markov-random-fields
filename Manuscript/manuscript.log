@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.2.22)  25 NOV 2021 12:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.2.22)  26 NOV 2021 17:51
 entering extended mode
 **./manuscript.tex
 (manuscript.tex
@@ -2271,12 +2271,6 @@ Overfull \hbox (5.25374pt too wide) in paragraph at lines 234--234
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/iwona/m/sc/17.28'.
 (microtype)             Ignoring protrusion settings for this character.
-
-Overfull \hbox (5.62625pt too wide) in paragraph at lines 252--254
-[]\T1/pplj/m/n/12 where V is the num-ber of vari-ables and 1:V stands for $[]$.
-
- []
-
 [9
 
 ]
@@ -2285,16 +2279,16 @@ Package microtype Info: Character `029' is missing
 (microtype)             Ignoring protrusion settings for this character.
  [10] [11]
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <9> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 326.
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 321.
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <7> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 326.
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 321.
 LaTeX Font Info:    Trying to load font information for U+fplmbb on input line 
-367.
+362.
  (C:\Program Files\MiKTeX 2.9\tex/latex/psnfss\ufplmbb.fd
 File: ufplmbb.fd 2003/10/30 Fontinst v1.914 font definitions for U/fplmbb.
 )
 ! Extra }, or forgotten $.
-l.367 ...tbf{y})p(\textbf{y}|\boldsymbol{\theta})}
+l.362 ...tbf{y})p(\textbf{y}|\boldsymbol{\theta})}
                                                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2306,7 +2300,7 @@ deleted material, e.g., by typing `I$}'.
 ! Missing \right. inserted.
 <inserted text> 
                 \right .
-l.420 ...=Pr\left\lbrace X=x \rbrace\; x \in \chi$
+l.415 ...=Pr\left\lbrace X=x \rbrace\; x \in \chi$
                                                    we define the entropy of ...
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2314,17 +2308,11 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-
-Overfull \hbox (8.68796pt too wide) in paragraph at lines 420--421
-[]\T1/pplj/m/n/12 Given an en-sem-ble of ran-dom vari-able, we can find the amo
-unt
- []
-
 [14]
 ! Undefined control sequence.
 <argument> ...g \begin {split} I(X;Y)&=\sum \sump 
                                                   (x,y)\log \dfrac {p(x,y)}{...
-l.454 \end{split}
+l.449 \end{split}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2335,7 +2323,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <argument> ...g \begin {split} I(X;Y)&=\sum \sump 
                                                   (x,y)\log \dfrac {p(x,y)}{...
-l.454 \end{split}
+l.449 \end{split}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2347,24 +2335,21 @@ and I'll forget about whatever was undefined.
 <Figures/ML_intepretability.png, id=269, 826.08624pt x 429.605pt>
 File: Figures/ML_intepretability.png Graphic file (type png)
 <use Figures/ML_intepretability.png>
-Package pdftex.def Info: Figures/ML_intepretability.png  used on input line 468
+Package pdftex.def Info: Figures/ML_intepretability.png  used on input line 463
 .
 (pdftex.def)             Requested size: 336.0pt x 174.73636pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
+ [16]
 Chapter 3.
-[16] [17 <./Figures/ML_intepretability.png (PNG copy)>]
+[17 <./Figures/ML_intepretability.png (PNG copy)>]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 480.
+               Default added (so using `tbp') on input line 475.
 
 Chapter 4.
 [18
 
 ] [19]
-Overfull \hbox (1.07498pt too wide) in paragraph at lines 514--514
+Overfull \hbox (1.07498pt too wide) in paragraph at lines 509--509
 |[]\T1/iwona/m/n/17.28/160ls RESULTS AND DIS-CUS-SION| 
  []
 
@@ -2375,11 +2360,11 @@ Overfull \hbox (1.07498pt too wide) in paragraph at lines 514--514
 File: Figures/DENSITY_Perihelion_Distance.pdf Graphic file (type pdf)
 <use Figures/DENSITY_Perihelion_Distance.pdf>
 Package pdftex.def Info: Figures/DENSITY_Perihelion_Distance.pdf  used on input
- line 537.
+ line 532.
 (pdftex.def)             Requested size: 151.19897pt x 193.99136pt.
 
 ! Undefined control sequence.
-l.538     \subcaption
+l.533     \subcaption
                      { \begin{center}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2391,10 +2376,10 @@ and I'll forget about whatever was undefined.
 File: Figures/DENSITY_Eccentricity.pdf Graphic file (type pdf)
 <use Figures/DENSITY_Eccentricity.pdf>
 Package pdftex.def Info: Figures/DENSITY_Eccentricity.pdf  used on input line 5
-45.
+40.
 (pdftex.def)             Requested size: 151.19897pt x 193.99136pt.
 ! Undefined control sequence.
-l.546     \subcaption
+l.541     \subcaption
                      { \begin{center}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2406,10 +2391,10 @@ and I'll forget about whatever was undefined.
 File: Figures/DENSITY_Min_orbit_intersection.pdf Graphic file (type pdf)
 <use Figures/DENSITY_Min_orbit_intersection.pdf>
 Package pdftex.def Info: Figures/DENSITY_Min_orbit_intersection.pdf  used on in
-put line 553.
+put line 548.
 (pdftex.def)             Requested size: 151.19897pt x 193.99136pt.
 ! Undefined control sequence.
-l.554     \subcaption
+l.549     \subcaption
                      { \begin{center}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2421,10 +2406,10 @@ and I'll forget about whatever was undefined.
 File: Figures/DENSITY_Absolute_magnitude.pdf Graphic file (type pdf)
 <use Figures/DENSITY_Absolute_magnitude.pdf>
 Package pdftex.def Info: Figures/DENSITY_Absolute_magnitude.pdf  used on input 
-line 561.
+line 556.
 (pdftex.def)             Requested size: 151.19897pt x 193.99136pt.
 ! Undefined control sequence.
-l.562     \subcaption
+l.557     \subcaption
                      { \begin{center}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2433,19 +2418,19 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Overfull \hbox (2.65201pt too wide) in paragraph at lines 535--567
+Overfull \hbox (2.65201pt too wide) in paragraph at lines 530--562
 [][] [] 
  []
 
 
-Overfull \hbox (2.65201pt too wide) in paragraph at lines 535--567
+Overfull \hbox (2.65201pt too wide) in paragraph at lines 530--562
 [] [] 
  []
 
 <Figures/FAMD.pdf, id=326, 410.53375pt x 413.545pt>
 File: Figures/FAMD.pdf Graphic file (type pdf)
 <use Figures/FAMD.pdf>
-Package pdftex.def Info: Figures/FAMD.pdf  used on input line 574.
+Package pdftex.def Info: Figures/FAMD.pdf  used on input line 569.
 (pdftex.def)             Requested size: 336.0pt x 338.46544pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -2454,7 +2439,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 File: Figures/FAMD_Quantitative variables.pdf Graphic file (type pdf)
 <use Figures/FAMD_Quantitative variables.pdf>
 Package pdftex.def Info: Figures/FAMD_Quantitative variables.pdf  used on input
- line 582.
+ line 577.
 (pdftex.def)             Requested size: 336.0pt x 338.46544pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -2463,7 +2448,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 File: Figures/FAMD_Individuals_(c).pdf Graphic file (type pdf)
 <use Figures/FAMD_Individuals_(c).pdf>
 Package pdftex.def Info: Figures/FAMD_Individuals_(c).pdf  used on input line 5
-90.
+85.
 (pdftex.def)             Requested size: 336.0pt x 338.46544pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -2475,22 +2460,22 @@ ve variables.pdf>] [25 <./Figures/FAMD_Individuals_(c).pdf>]
 <Figures/Mutual_information.pdf, id=415, 844.15375pt x 597.23125pt>
 File: Figures/Mutual_information.pdf Graphic file (type pdf)
 <use Figures/Mutual_information.pdf>
-Package pdftex.def Info: Figures/Mutual_information.pdf  used on input line 599
+Package pdftex.def Info: Figures/Mutual_information.pdf  used on input line 594
 .
 (pdftex.def)             Requested size: 588.0pt x 416.0177pt.
 
 
-LaTeX Warning: Float too large for page by 117.29773pt on input line 603.
+LaTeX Warning: Float too large for page by 117.29773pt on input line 598.
 
 [26 <./Figures/Mutual_information.pdf>]
 <Figures/GLASSO_0.1.pdf, id=431, 409.53pt x 319.1925pt>
 File: Figures/GLASSO_0.1.pdf Graphic file (type pdf)
 <use Figures/GLASSO_0.1.pdf>
-Package pdftex.def Info: Figures/GLASSO_0.1.pdf  used on input line 614.
+Package pdftex.def Info: Figures/GLASSO_0.1.pdf  used on input line 609.
 (pdftex.def)             Requested size: 151.19897pt x 117.8461pt.
 
 ! Undefined control sequence.
-l.615     \subcaption
+l.610     \subcaption
                      {$\rho$=0.1}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2501,10 +2486,10 @@ and I'll forget about whatever was undefined.
 <Figures/GLASSO_0.2.pdf, id=432, 409.53pt x 319.1925pt>
 File: Figures/GLASSO_0.2.pdf Graphic file (type pdf)
 <use Figures/GLASSO_0.2.pdf>
-Package pdftex.def Info: Figures/GLASSO_0.2.pdf  used on input line 620.
+Package pdftex.def Info: Figures/GLASSO_0.2.pdf  used on input line 615.
 (pdftex.def)             Requested size: 151.19897pt x 117.8461pt.
 ! Undefined control sequence.
-l.621     \subcaption
+l.616     \subcaption
                      {$\rho$=0.2}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2515,10 +2500,10 @@ and I'll forget about whatever was undefined.
 <Figures/GLASSO_0.3.pdf, id=433, 409.53pt x 319.1925pt>
 File: Figures/GLASSO_0.3.pdf Graphic file (type pdf)
 <use Figures/GLASSO_0.3.pdf>
-Package pdftex.def Info: Figures/GLASSO_0.3.pdf  used on input line 626.
+Package pdftex.def Info: Figures/GLASSO_0.3.pdf  used on input line 621.
 (pdftex.def)             Requested size: 151.19897pt x 117.8461pt.
 ! Undefined control sequence.
-l.627     \subcaption
+l.622     \subcaption
                      {$\rho$=0.3}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2529,10 +2514,10 @@ and I'll forget about whatever was undefined.
 <Figures/GLASSO_0.4.pdf, id=434, 409.53pt x 319.1925pt>
 File: Figures/GLASSO_0.4.pdf Graphic file (type pdf)
 <use Figures/GLASSO_0.4.pdf>
-Package pdftex.def Info: Figures/GLASSO_0.4.pdf  used on input line 632.
+Package pdftex.def Info: Figures/GLASSO_0.4.pdf  used on input line 627.
 (pdftex.def)             Requested size: 151.19897pt x 117.8461pt.
 ! Undefined control sequence.
-l.633     \subcaption
+l.628     \subcaption
                      {$\rho$=0.4}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2541,7 +2526,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Overfull \hbox (2.65201pt too wide) in paragraph at lines 612--636
+Overfull \hbox (2.65201pt too wide) in paragraph at lines 607--631
 [][] [] 
  []
 
@@ -2553,7 +2538,7 @@ Overfull \hbox (2.65201pt too wide) in paragraph at lines 612--636
 <Figures/mgm.pdf, id=491, 410.53375pt x 413.545pt>
 File: Figures/mgm.pdf Graphic file (type pdf)
 <use Figures/mgm.pdf>
-Package pdftex.def Info: Figures/mgm.pdf  used on input line 644.
+Package pdftex.def Info: Figures/mgm.pdf  used on input line 639.
 (pdftex.def)             Requested size: 336.0pt x 338.46544pt.
 
 
@@ -2562,7 +2547,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <Figures/mgm_confusion.pdf, id=498, 410.53375pt x 413.545pt>
 File: Figures/mgm_confusion.pdf Graphic file (type pdf)
 <use Figures/mgm_confusion.pdf>
-Package pdftex.def Info: Figures/mgm_confusion.pdf  used on input line 652.
+Package pdftex.def Info: Figures/mgm_confusion.pdf  used on input line 647.
 (pdftex.def)             Requested size: 336.0pt x 338.46544pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -2570,7 +2555,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <Figures/ROC_mgm.pdf, id=505, 410.53375pt x 413.545pt>
 File: Figures/ROC_mgm.pdf Graphic file (type pdf)
 <use Figures/ROC_mgm.pdf>
-Package pdftex.def Info: Figures/ROC_mgm.pdf  used on input line 660.
+Package pdftex.def Info: Figures/ROC_mgm.pdf  used on input line 655.
 (pdftex.def)             Requested size: 336.0pt x 338.46544pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -2580,11 +2565,11 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <Figures/mmod.pdf, id=549, 844.15375pt x 597.23125pt>
 File: Figures/mmod.pdf Graphic file (type pdf)
 <use Figures/mmod.pdf>
-Package pdftex.def Info: Figures/mmod.pdf  used on input line 669.
+Package pdftex.def Info: Figures/mmod.pdf  used on input line 664.
 (pdftex.def)             Requested size: 504.0pt x 356.5827pt.
 
 
-LaTeX Warning: Float too large for page by 72.14278pt on input line 673.
+LaTeX Warning: Float too large for page by 72.14278pt on input line 668.
 
 [33 <./Figures/mmod.pdf>]
 
@@ -2594,7 +2579,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.676 \begin
+l.671 \begin
             {landscape}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -2603,20 +2588,20 @@ or  <return>  to continue without it.
 <Figures/minforest.pdf, id=563, 844.15375pt x 597.23125pt>
 File: Figures/minforest.pdf Graphic file (type pdf)
 <use Figures/minforest.pdf>
-Package pdftex.def Info: Figures/minforest.pdf  used on input line 679.
+Package pdftex.def Info: Figures/minforest.pdf  used on input line 674.
 (pdftex.def)             Requested size: 504.0pt x 356.5827pt.
 
-LaTeX Warning: Float too large for page by 72.14278pt on input line 683.
+LaTeX Warning: Float too large for page by 72.14278pt on input line 678.
 
 [34 <./Figures/minforest.pdf>]
 <Figures/RF_confusion.pdf, id=586, 410.53375pt x 413.545pt>
 File: Figures/RF_confusion.pdf Graphic file (type pdf)
 <use Figures/RF_confusion.pdf>
-Package pdftex.def Info: Figures/RF_confusion.pdf  used on input line 697.
+Package pdftex.def Info: Figures/RF_confusion.pdf  used on input line 692.
 (pdftex.def)             Requested size: 151.19897pt x 152.3025pt.
 
 ! Undefined control sequence.
-l.698     \subcaption
+l.693     \subcaption
                      {Random Forest}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2627,10 +2612,10 @@ and I'll forget about whatever was undefined.
 <Figures/SVM_confusion.pdf, id=587, 410.53375pt x 413.545pt>
 File: Figures/SVM_confusion.pdf Graphic file (type pdf)
 <use Figures/SVM_confusion.pdf>
-Package pdftex.def Info: Figures/SVM_confusion.pdf  used on input line 703.
+Package pdftex.def Info: Figures/SVM_confusion.pdf  used on input line 698.
 (pdftex.def)             Requested size: 151.19897pt x 152.3025pt.
 ! Undefined control sequence.
-l.704     \subcaption
+l.699     \subcaption
                      {SVM}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2641,10 +2626,10 @@ and I'll forget about whatever was undefined.
 <Figures/QDA_confusion.pdf, id=588, 410.53375pt x 413.545pt>
 File: Figures/QDA_confusion.pdf Graphic file (type pdf)
 <use Figures/QDA_confusion.pdf>
-Package pdftex.def Info: Figures/QDA_confusion.pdf  used on input line 709.
+Package pdftex.def Info: Figures/QDA_confusion.pdf  used on input line 704.
 (pdftex.def)             Requested size: 151.19897pt x 152.3025pt.
 ! Undefined control sequence.
-l.710     \subcaption
+l.705     \subcaption
                      {QDA}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2655,11 +2640,11 @@ and I'll forget about whatever was undefined.
 <Figures/Logisic_confusion.pdf, id=589, 410.53375pt x 413.545pt>
 File: Figures/Logisic_confusion.pdf Graphic file (type pdf)
 <use Figures/Logisic_confusion.pdf>
-Package pdftex.def Info: Figures/Logisic_confusion.pdf  used on input line 715.
+Package pdftex.def Info: Figures/Logisic_confusion.pdf  used on input line 710.
 
 (pdftex.def)             Requested size: 151.19897pt x 152.3025pt.
 ! Undefined control sequence.
-l.716     \subcaption
+l.711     \subcaption
                      {Logistic}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2668,17 +2653,17 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Overfull \hbox (2.65201pt too wide) in paragraph at lines 695--719
+Overfull \hbox (2.65201pt too wide) in paragraph at lines 690--714
 [][] [] 
  []
 
 <Figures/ROC_RF.pdf, id=594, 410.53375pt x 413.545pt>
 File: Figures/ROC_RF.pdf Graphic file (type pdf)
 <use Figures/ROC_RF.pdf>
-Package pdftex.def Info: Figures/ROC_RF.pdf  used on input line 727.
+Package pdftex.def Info: Figures/ROC_RF.pdf  used on input line 722.
 (pdftex.def)             Requested size: 151.19897pt x 152.3025pt.
 ! Undefined control sequence.
-l.728     \subcaption
+l.723     \subcaption
                      {Random Forest}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2689,10 +2674,10 @@ and I'll forget about whatever was undefined.
 <Figures/ROC_SVM.pdf, id=595, 410.53375pt x 413.545pt>
 File: Figures/ROC_SVM.pdf Graphic file (type pdf)
 <use Figures/ROC_SVM.pdf>
-Package pdftex.def Info: Figures/ROC_SVM.pdf  used on input line 733.
+Package pdftex.def Info: Figures/ROC_SVM.pdf  used on input line 728.
 (pdftex.def)             Requested size: 151.19897pt x 152.3025pt.
 ! Undefined control sequence.
-l.734     \subcaption
+l.729     \subcaption
                      {SVM}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2703,10 +2688,10 @@ and I'll forget about whatever was undefined.
 <Figures/ROC_QDA.pdf, id=596, 410.53375pt x 413.545pt>
 File: Figures/ROC_QDA.pdf Graphic file (type pdf)
 <use Figures/ROC_QDA.pdf>
-Package pdftex.def Info: Figures/ROC_QDA.pdf  used on input line 739.
+Package pdftex.def Info: Figures/ROC_QDA.pdf  used on input line 734.
 (pdftex.def)             Requested size: 151.19897pt x 152.3025pt.
 ! Undefined control sequence.
-l.740     \subcaption
+l.735     \subcaption
                      {QDA}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2717,10 +2702,10 @@ and I'll forget about whatever was undefined.
 <Figures/ROC_logistic.pdf, id=597, 410.53375pt x 413.545pt>
 File: Figures/ROC_logistic.pdf Graphic file (type pdf)
 <use Figures/ROC_logistic.pdf>
-Package pdftex.def Info: Figures/ROC_logistic.pdf  used on input line 745.
+Package pdftex.def Info: Figures/ROC_logistic.pdf  used on input line 740.
 (pdftex.def)             Requested size: 151.19897pt x 152.3025pt.
 ! Undefined control sequence.
-l.746     \subcaption
+l.741     \subcaption
                      {Logistic}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2729,14 +2714,14 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Overfull \hbox (2.65201pt too wide) in paragraph at lines 725--749
+Overfull \hbox (2.65201pt too wide) in paragraph at lines 720--744
 [][] [] 
  []
 
 ! Extra }, or forgotten \endgroup.
 \@endfloatbox ...pagefalse \outer@nobreak \egroup 
                                                   \color@endbox 
-l.751   \end{figure}
+l.746   \end{figure}
                     
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2746,12 +2731,12 @@ deleted material, e.g., by typing `I$}'.
 
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 755.
+               Default added (so using `tbp') on input line 750.
 
 <Figures/RF_Importance.pdf, id=600, 410.53375pt x 413.545pt>
 File: Figures/RF_Importance.pdf Graphic file (type pdf)
 <use Figures/RF_Importance.pdf>
-Package pdftex.def Info: Figures/RF_Importance.pdf  used on input line 772.
+Package pdftex.def Info: Figures/RF_Importance.pdf  used on input line 767.
 (pdftex.def)             Requested size: 336.0pt x 338.46544pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -2770,7 +2755,7 @@ Chapter 6.
 [39
 
 ]
-Overfull \hbox (5.81458pt too wide) in paragraph at lines 784--784
+Overfull \hbox (5.81458pt too wide) in paragraph at lines 779--779
 |[]\T1/iwona/m/n/17.28/160ls APPENDIX A: CON-CEPTS OF
  []
 
@@ -2780,29 +2765,29 @@ Overfull \hbox (5.81458pt too wide) in paragraph at lines 784--784
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1048 ...ween Earth and Sun: 1.49\cdot 10^{11} m}
+l.1043 ...ween Earth and Sun: 1.49\cdot 10^{11} m}
                                                    or 10 parsec \footnote{$3...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
-(Font)              scaled to size 6.46004pt on input line 1048.
+(Font)              scaled to size 6.46004pt on input line 1043.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1048 ...ween Earth and Sun: 1.49\cdot 10^{11} m}
+l.1043 ...ween Earth and Sun: 1.49\cdot 10^{11} m}
                                                    or 10 parsec \footnote{$3...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 [46]
-Overfull \hbox (7.11469pt too wide) in paragraph at lines 1074--1075
+Overfull \hbox (7.11469pt too wide) in paragraph at lines 1069--1070
 \T1/pplj/m/it/12 NEAs with or-bits ex-te-rior to Earth's but in-te-rior to Mars
 ' (named
  []
 
 
-Overfull \hbox (10.07866pt too wide) in paragraph at lines 1080--1081
+Overfull \hbox (10.07866pt too wide) in paragraph at lines 1075--1076
 \U/zeur/m/n/12 22\T1/pplj/m/n/12 .\U/zeur/m/n/12 0$ \T1/pplj/m/it/12 NEAs whose
  Min-i-mum Or-bit In-ter-sec-tion Dis-tance (MOID)
  []
@@ -2810,7 +2795,7 @@ Overfull \hbox (10.07866pt too wide) in paragraph at lines 1080--1081
 <Figures/Area_dynamics.png, id=822, 708.39656pt x 359.84438pt>
 File: Figures/Area_dynamics.png Graphic file (type png)
 <use Figures/Area_dynamics.png>
-Package pdftex.def Info: Figures/Area_dynamics.png  used on input line 1087.
+Package pdftex.def Info: Figures/Area_dynamics.png  used on input line 1082.
 (pdftex.def)             Requested size: 336.0pt x 170.68076pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -2818,7 +2803,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <Figures/Conics.png, id=825, 595.47469pt x 574.39594pt>
 File: Figures/Conics.png Graphic file (type png)
 <use Figures/Conics.png>
-Package pdftex.def Info: Figures/Conics.png  used on input line 1095.
+Package pdftex.def Info: Figures/Conics.png  used on input line 1090.
 (pdftex.def)             Requested size: 336.0pt x 324.10483pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -2826,7 +2811,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <Figures/Elliptical_orbit.png, id=828, 931.98187pt x 632.3625pt>
 File: Figures/Elliptical_orbit.png Graphic file (type png)
 <use Figures/Elliptical_orbit.png>
-Package pdftex.def Info: Figures/Elliptical_orbit.png  used on input line 1103.
+Package pdftex.def Info: Figures/Elliptical_orbit.png  used on input line 1098.
 
 (pdftex.def)             Requested size: 336.0pt x 227.9784pt.
 
@@ -2835,7 +2820,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <Figures/Mean_anomaly.png, id=831, 912.40875pt x 418.56375pt>
 File: Figures/Mean_anomaly.png Graphic file (type png)
 <use Figures/Mean_anomaly.png>
-Package pdftex.def Info: Figures/Mean_anomaly.png  used on input line 1111.
+Package pdftex.def Info: Figures/Mean_anomaly.png  used on input line 1106.
 (pdftex.def)             Requested size: 336.0pt x 154.13806pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -2843,7 +2828,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <Figures/Inclination.png, id=834, 835.62187pt x 573.64313pt>
 File: Figures/Inclination.png Graphic file (type png)
 <use Figures/Inclination.png>
-Package pdftex.def Info: Figures/Inclination.png  used on input line 1119.
+Package pdftex.def Info: Figures/Inclination.png  used on input line 1114.
 (pdftex.def)             Requested size: 336.0pt x 230.6611pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -2851,7 +2836,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <Figures/Orbit_asteorids.png, id=837, 2055.68pt x 2055.68pt>
 File: Figures/Orbit_asteorids.png Graphic file (type png)
 <use Figures/Orbit_asteorids.png>
-Package pdftex.def Info: Figures/Orbit_asteorids.png  used on input line 1128.
+Package pdftex.def Info: Figures/Orbit_asteorids.png  used on input line 1123.
 (pdftex.def)             Requested size: 336.0pt x 335.97311pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -2859,7 +2844,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <Figures/heic1715c.jpg, id=840, 2204.235pt x 2300.8359pt>
 File: Figures/heic1715c.jpg Graphic file (type jpg)
 <use Figures/heic1715c.jpg>
-Package pdftex.def Info: Figures/heic1715c.jpg  used on input line 1136.
+Package pdftex.def Info: Figures/heic1715c.jpg  used on input line 1131.
 (pdftex.def)             Requested size: 336.0pt x 350.69266pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -2867,7 +2852,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <Figures/neo_orbit_types.jpg, id=843, 824.3598pt x 554.5518pt>
 File: Figures/neo_orbit_types.jpg Graphic file (type jpg)
 <use Figures/neo_orbit_types.jpg>
-Package pdftex.def Info: Figures/neo_orbit_types.jpg  used on input line 1144.
+Package pdftex.def Info: Figures/neo_orbit_types.jpg  used on input line 1139.
 (pdftex.def)             Requested size: 336.0pt x 226.03075pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -2985,7 +2970,7 @@ owacki/iwona/iwonar.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/u
 plb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplbi8a.pfb><C:
 /Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program Files
 /MiKTeX 2.9/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on manuscript.pdf (58 pages, 7444879 bytes).
+Output written on manuscript.pdf (58 pages, 7444891 bytes).
 PDF statistics:
  1177 PDF objects out of 1200 (max. 8388607)
  225 named destinations out of 1000 (max. 500000)
