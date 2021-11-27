@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.2.22)  27 NOV 2021 12:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.2.22)  27 NOV 2021 15:17
 entering extended mode
 **./manuscript.tex
 (manuscript.tex
@@ -2234,27 +2234,12 @@ LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
 (Font)              scaled to size 6.80005pt on input line 187.
 LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
 (Font)              scaled to size 5.10004pt on input line 187.
-
-
-LaTeX Warning: Citation `vesta_source' on page 2 undefined on input line 187.
-
-
-LaTeX Warning: Citation `vesta_source' on page 2 undefined on input line 187.
-
-<Figures/Tunguska.png, id=43, 1184.425pt x 782.925pt>
+<Figures/Tunguska.png, id=45, 1184.425pt x 782.925pt>
 File: Figures/Tunguska.png Graphic file (type png)
 <use Figures/Tunguska.png>
 Package pdftex.def Info: Figures/Tunguska.png  used on input line 192.
 (pdftex.def)             Requested size: 201.60205pt x 133.2508pt.
-
-LaTeX Warning: Citation `Tunguska_source' on page 2 undefined on input line 194
-.
-
-
-LaTeX Warning: Citation `Tunguska_source' on page 2 undefined on input line 194
-.
-
-[2 <./Figures/vesta_asteroid.jpg> <./Figures/Tunguska.png>]
+ [2 <./Figures/vesta_asteroid.jpg> <./Figures/Tunguska.png>]
 Overfull \hbox (34.0pt too wide) in paragraph at lines 203--203
  []$
  []
@@ -2262,7 +2247,11 @@ Overfull \hbox (34.0pt too wide) in paragraph at lines 203--203
 [3] [4]
 Package tocbasic Info: character protrusion at toc deactivated on input line 21
 5.
- (manuscript.toc)
+ (manuscript.toc
+Package microtype Info: Character `029' is missing
+(microtype)             in font `T1/pplj/m/sc/12'.
+(microtype)             Ignoring protrusion settings for this character.
+)
 \tf@toc=\write4
 \openout4 = `manuscript.toc'.
 
@@ -2270,30 +2259,15 @@ Package tocbasic Info: character protrusion at toc deactivated on input line 21
 
 ]
 Chapter 1.
-
-LaTeX Warning: Citation `martin_2004' on page 6 undefined on input line 228.
-
-
-LaTeX Warning: Citation `zee2013einstein' on page 6 undefined on input line 228
-.
-
 [6
 
 ]
-<Figures/Perihelion_precession2.png, id=78, 1668.9853pt x 1541.76pt>
+<Figures/Perihelion_precession2.png, id=117, 1668.9853pt x 1541.76pt>
 File: Figures/Perihelion_precession2.png Graphic file (type png)
 <use Figures/Perihelion_precession2.png>
 Package pdftex.def Info: Figures/Perihelion_precession2.png  used on input line
  233.
 (pdftex.def)             Requested size: 336.0pt x 310.36972pt.
-
-
-LaTeX Warning: Citation `Perihelion_precession' on page 7 undefined on input li
-ne 234.
-
-
-LaTeX Warning: Citation `Perihelion_precession' on page 7 undefined on input li
-ne 234.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -2304,119 +2278,23 @@ Overfull \hbox (5.25374pt too wide) in paragraph at lines 242--242
 |[]\T1/iwona/m/n/17.28/160ls THEORETICAL FRAME-WORK| 
  []
 
-
-LaTeX Warning: Citation `murphy2012machine' on page 9 undefined on input line 2
-44.
-
-
-LaTeX Warning: Citation `koller2009probabilistic' on page 9 undefined on input 
-line 244.
-
-
-LaTeX Warning: Citation `hojsgaard2012graphical' on page 9 undefined on input l
-ine 244.
-
-
-LaTeX Warning: Citation `russell2010artificial' on page 9 undefined on input li
-ne 244.
-
-
-LaTeX Warning: Citation `cover2006elements' on page 9 undefined on input line 2
-44.
-
-
-LaTeX Warning: Citation `mackay2003information' on page 9 undefined on input li
-ne 244.
-
-
-LaTeX Warning: Citation `murray1999solar' on page 9 undefined on input line 244
-.
-
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/iwona/m/sc/17.28'.
 (microtype)             Ignoring protrusion settings for this character.
-
-LaTeX Warning: Citation `murphy2012machine' on page 9 undefined on input line 2
-48.
-
-
-LaTeX Warning: Citation `murphy2012machine' on page 9 undefined on input line 2
-52.
-
-
-LaTeX Warning: Citation `wu2017markov' on page 9 undefined on input line 256.
-
-
-LaTeX Warning: Citation `murphy2012machine' on page 9 undefined on input line 2
-56.
-
-
-LaTeX Warning: Citation `murphy2012machine' on page 9 undefined on input line 2
-62.
-
 [9
 
 ]
-
-LaTeX Warning: Citation `wu2017markov' on page 10 undefined on input line 268.
-
-
-LaTeX Warning: Citation `murphy2012machine' on page 10 undefined on input line 
-268.
-
-
-LaTeX Warning: Citation `murphy2012machine' on page 10 undefined on input line 
-282.
-
-
-LaTeX Warning: Citation `murphy2012machine' on page 10 undefined on input line 
-288.
-
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/iwona/m/sc/12'.
 (microtype)             Ignoring protrusion settings for this character.
-[10]
-
-LaTeX Warning: Citation `murphy2012machine' on page 11 undefined on input line 
-294.
-
-
-LaTeX Warning: Citation `murphy2012machine' on page 11 undefined on input line 
-311.
-
-
-LaTeX Warning: Citation `murphy2012machine' on page 11 undefined on input line 
-317.
-
-
-LaTeX Warning: Citation `murphy2012machine' on page 11 undefined on input line 
-323.
-
-[11]
+ [10] [11]
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <9> not available
 (Font)              Font shape `U/lasy/m/n' tried instead on input line 329.
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <7> not available
 (Font)              Font shape `U/lasy/m/n' tried instead on input line 329.
-
-
-LaTeX Warning: Citation `murphy2012machine' on page 12 undefined on input line 
-329.
-
-
-LaTeX Warning: Citation `murphy2012machine' on page 12 undefined on input line 
-335.
-
-
-LaTeX Warning: Citation `murphy2012machine' on page 12 undefined on input line 
-353.
-
-
-LaTeX Warning: Citation `murphy2012machine' on page 12 undefined on input line 
-359.
-
 LaTeX Font Info:    Trying to load font information for U+fplmbb on input line 
 370.
-(C:\Program Files\MiKTeX 2.9\tex/latex/psnfss\ufplmbb.fd
+ (C:\Program Files\MiKTeX 2.9\tex/latex/psnfss\ufplmbb.fd
 File: ufplmbb.fd 2003/10/30 Fontinst v1.914 font definitions for U/fplmbb.
 )
 ! Extra }, or forgotten $.
@@ -2428,52 +2306,7 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-[12]
-
-LaTeX Warning: Citation `murphy2012machine' on page 13 undefined on input line 
-378.
-
-
-LaTeX Warning: Citation `murphy2012machine' on page 13 undefined on input line 
-384.
-
-
-LaTeX Warning: Citation `murphy2012machine' on page 13 undefined on input line 
-390.
-
-
-LaTeX Warning: Citation `koller2009probabilistic' on page 13 undefined on input
- line 390.
-
-
-LaTeX Warning: Citation `hojsgaard2012graphical' on page 13 undefined on input 
-line 390.
-
-
-LaTeX Warning: Citation `hojsgaard2012graphical' on page 13 undefined on input 
-line 400.
-
-
-LaTeX Warning: Citation `hojsgaard2012graphical' on page 13 undefined on input 
-line 409.
-
-[13]
-
-LaTeX Warning: Citation `hojsgaard2012graphical' on page 14 undefined on input 
-line 420.
-
-
-LaTeX Warning: Citation `cover2006elements' on page 14 undefined on input line 
-423.
-
-
-LaTeX Warning: Citation `mackay2003information' on page 14 undefined on input l
-ine 423.
-
-
-LaTeX Warning: Citation `cover2006elements' on page 14 undefined on input line 
-423.
-
+[12] [13]
 ! Missing \right. inserted.
 <inserted text> 
                 \right .
@@ -2485,43 +2318,7 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-
-LaTeX Warning: Citation `cover2006elements' on page 14 undefined on input line 
-423.
-
-
-LaTeX Warning: Citation `cover2006elements' on page 14 undefined on input line 
-427.
-
 [14]
-
-LaTeX Warning: Citation `cover2006elements' on page 15 undefined on input line 
-435.
-
-
-LaTeX Warning: Citation `cover2006elements' on page 15 undefined on input line 
-439.
-
-
-LaTeX Warning: Citation `cover2006elements' on page 15 undefined on input line 
-443.
-
-
-LaTeX Warning: Citation `mackay2003information' on page 15 undefined on input l
-ine 443.
-
-
-LaTeX Warning: Citation `cover2006elements' on page 15 undefined on input line 
-447.
-
-
-LaTeX Warning: Citation `mackay2003information' on page 15 undefined on input l
-ine 447.
-
-
-LaTeX Warning: Citation `cover2006elements' on page 15 undefined on input line 
-451.
-
 ! Undefined control sequence.
 <argument> ...g \begin {split} I(X;Y)&=\sum \sump 
                                                   (x,y)\log \dfrac {p(x,y)}{...
@@ -2543,71 +2340,20 @@ of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
-
-
-LaTeX Warning: Citation `cover2006elements' on page 15 undefined on input line 
-459.
-
-
-LaTeX Warning: Citation `cover2006elements' on page 15 undefined on input line 
-463.
-
-
-LaTeX Warning: Citation `mackay2003information' on page 15 undefined on input l
-ine 463.
-
-
-LaTeX Warning: Citation `feynman2018feynman' on page 15 undefined on input line
- 463.
 
 [15]
-
-LaTeX Warning: Citation `tarski1953undecidable' on page 16 undefined on input l
-ine 467.
-
-
-LaTeX Warning: Citation `doshi2017towards' on page 16 undefined on input line 4
-67.
-
-
-LaTeX Warning: Citation `gilpin2018explaining' on page 16 undefined on input li
-ne 467.
-
-<Figures/ML_intepretability.png, id=171, 826.08624pt x 429.605pt>
+<Figures/ML_intepretability.png, id=271, 826.08624pt x 429.605pt>
 File: Figures/ML_intepretability.png Graphic file (type png)
 <use Figures/ML_intepretability.png>
 Package pdftex.def Info: Figures/ML_intepretability.png  used on input line 471
 .
 (pdftex.def)             Requested size: 336.0pt x 174.73636pt.
-
-LaTeX Warning: Citation `ml_interpretability' on page 16 undefined on input lin
-e 472.
-
-
-LaTeX Warning: Citation `ml_interpretability' on page 16 undefined on input lin
-e 472.
-
-[16]
+ [16]
 Chapter 3.
 [17 <./Figures/ML_intepretability.png (PNG copy)>]
 
-LaTeX Warning: Citation `kaggle_dataset' on page 18 undefined on input line 480
-.
-
-
-LaTeX Warning: Citation `cneos+nasa' on page 18 undefined on input line 480.
-
-
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 483.
-
-
-LaTeX Warning: Citation `kaggle_dataset' on page 18 undefined on input line 484
-.
-
-
-LaTeX Warning: Citation `kaggle_dataset' on page 18 undefined on input line 484
-.
 
 Chapter 4.
 [18
@@ -2617,31 +2363,16 @@ Overfull \hbox (1.07498pt too wide) in paragraph at lines 517--517
 |[]\T1/iwona/m/n/17.28/160ls RESULTS AND DIS-CUS-SION| 
  []
 
-
-LaTeX Warning: Citation `le2008factominer' on page 20 undefined on input line 5
-23.
-
-
-LaTeX Warning: Citation `kratzer2018varrank' on page 20 undefined on input line
- 523.
-
 [20
 
 ]
-
-LaTeX Warning: Citation `kratzer2018varrank' on page 21 undefined on input line
- 528.
-
-
-LaTeX Warning: Citation `peng2005feature' on page 21 undefined on input line 53
-4.
-
-<Figures/DENSITY_Perihelion_Distance.pdf, id=210, 319.1925pt x 409.53pt>
+<Figures/DENSITY_Perihelion_Distance.pdf, id=324, 319.1925pt x 409.53pt>
 File: Figures/DENSITY_Perihelion_Distance.pdf Graphic file (type pdf)
 <use Figures/DENSITY_Perihelion_Distance.pdf>
 Package pdftex.def Info: Figures/DENSITY_Perihelion_Distance.pdf  used on input
  line 540.
 (pdftex.def)             Requested size: 151.19897pt x 193.99136pt.
+
 ! Undefined control sequence.
 l.541     \subcaption
                      { \begin{center}
@@ -2651,7 +2382,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<Figures/DENSITY_Eccentricity.pdf, id=211, 319.1925pt x 409.53pt>
+<Figures/DENSITY_Eccentricity.pdf, id=325, 319.1925pt x 409.53pt>
 File: Figures/DENSITY_Eccentricity.pdf Graphic file (type pdf)
 <use Figures/DENSITY_Eccentricity.pdf>
 Package pdftex.def Info: Figures/DENSITY_Eccentricity.pdf  used on input line 5
@@ -2666,7 +2397,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<Figures/DENSITY_Min_orbit_intersection.pdf, id=212, 319.1925pt x 409.53pt>
+<Figures/DENSITY_Min_orbit_intersection.pdf, id=326, 319.1925pt x 409.53pt>
 File: Figures/DENSITY_Min_orbit_intersection.pdf Graphic file (type pdf)
 <use Figures/DENSITY_Min_orbit_intersection.pdf>
 Package pdftex.def Info: Figures/DENSITY_Min_orbit_intersection.pdf  used on in
@@ -2681,7 +2412,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<Figures/DENSITY_Absolute_magnitude.pdf, id=213, 319.1925pt x 409.53pt>
+<Figures/DENSITY_Absolute_magnitude.pdf, id=327, 319.1925pt x 409.53pt>
 File: Figures/DENSITY_Absolute_magnitude.pdf Graphic file (type pdf)
 <use Figures/DENSITY_Absolute_magnitude.pdf>
 Package pdftex.def Info: Figures/DENSITY_Absolute_magnitude.pdf  used on input 
@@ -2706,53 +2437,29 @@ Overfull \hbox (2.65201pt too wide) in paragraph at lines 538--570
 [] [] 
  []
 
-<Figures/FAMD.pdf, id=214, 410.53375pt x 413.545pt>
+<Figures/FAMD.pdf, id=328, 410.53375pt x 413.545pt>
 File: Figures/FAMD.pdf Graphic file (type pdf)
 <use Figures/FAMD.pdf>
 Package pdftex.def Info: Figures/FAMD.pdf  used on input line 577.
 (pdftex.def)             Requested size: 336.0pt x 338.46544pt.
 
-LaTeX Warning: Citation `le2008factominer' on page 21 undefined on input line 5
-78.
-
-
-LaTeX Warning: Citation `le2008factominer' on page 21 undefined on input line 5
-78.
-
-
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Figures/FAMD_Quantitative variables.pdf, id=215, 410.53375pt x 413.545pt>
+<Figures/FAMD_Quantitative variables.pdf, id=331, 410.53375pt x 413.545pt>
 File: Figures/FAMD_Quantitative variables.pdf Graphic file (type pdf)
 <use Figures/FAMD_Quantitative variables.pdf>
 Package pdftex.def Info: Figures/FAMD_Quantitative variables.pdf  used on input
  line 585.
 (pdftex.def)             Requested size: 336.0pt x 338.46544pt.
 
-LaTeX Warning: Citation `le2008factominer' on page 21 undefined on input line 5
-86.
-
-
-LaTeX Warning: Citation `le2008factominer' on page 21 undefined on input line 5
-86.
-
-
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Figures/FAMD_Individuals_(c).pdf, id=216, 410.53375pt x 413.545pt>
+<Figures/FAMD_Individuals_(c).pdf, id=334, 410.53375pt x 413.545pt>
 File: Figures/FAMD_Individuals_(c).pdf Graphic file (type pdf)
 <use Figures/FAMD_Individuals_(c).pdf>
 Package pdftex.def Info: Figures/FAMD_Individuals_(c).pdf  used on input line 5
 93.
 (pdftex.def)             Requested size: 336.0pt x 338.46544pt.
-
-LaTeX Warning: Citation `le2008factominer' on page 21 undefined on input line 5
-94.
-
-
-LaTeX Warning: Citation `le2008factominer' on page 21 undefined on input line 5
-94.
-
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -2760,7 +2467,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 icity.pdf> <./Figures/DENSITY_Min_orbit_intersection.pdf> <./Figures/DENSITY_Ab
 solute_magnitude.pdf>] [23 <./Figures/FAMD.pdf>] [24 <./Figures/FAMD_Quantitati
 ve variables.pdf>] [25 <./Figures/FAMD_Individuals_(c).pdf>]
-<Figures/Mutual_information.pdf, id=295, 844.15375pt x 597.23125pt>
+<Figures/Mutual_information.pdf, id=417, 844.15375pt x 597.23125pt>
 File: Figures/Mutual_information.pdf Graphic file (type pdf)
 <use Figures/Mutual_information.pdf>
 Package pdftex.def Info: Figures/Mutual_information.pdf  used on input line 602
@@ -2768,29 +2475,15 @@ Package pdftex.def Info: Figures/Mutual_information.pdf  used on input line 602
 (pdftex.def)             Requested size: 588.0pt x 416.0177pt.
 
 
-LaTeX Warning: Citation `kratzer2018varrank' on page 26 undefined on input line
- 603.
-
-
-LaTeX Warning: Citation `kratzer2018varrank' on page 26 undefined on input line
- 603.
-
-
 LaTeX Warning: Float too large for page by 117.29773pt on input line 606.
 
 [26 <./Figures/Mutual_information.pdf>]
-
-LaTeX Warning: Citation `friedman2008sparse' on page 27 undefined on input line
- 613.
-
-
-LaTeX Warning: Citation `glasso' on page 27 undefined on input line 613.
-
-<Figures/GLASSO_0.1.pdf, id=307, 409.53pt x 319.1925pt>
+<Figures/GLASSO_0.1.pdf, id=433, 409.53pt x 319.1925pt>
 File: Figures/GLASSO_0.1.pdf Graphic file (type pdf)
 <use Figures/GLASSO_0.1.pdf>
 Package pdftex.def Info: Figures/GLASSO_0.1.pdf  used on input line 617.
 (pdftex.def)             Requested size: 151.19897pt x 117.8461pt.
+
 ! Undefined control sequence.
 l.618     \subcaption
                      {$\rho$=0.1}
@@ -2800,7 +2493,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<Figures/GLASSO_0.2.pdf, id=308, 409.53pt x 319.1925pt>
+<Figures/GLASSO_0.2.pdf, id=434, 409.53pt x 319.1925pt>
 File: Figures/GLASSO_0.2.pdf Graphic file (type pdf)
 <use Figures/GLASSO_0.2.pdf>
 Package pdftex.def Info: Figures/GLASSO_0.2.pdf  used on input line 623.
@@ -2814,7 +2507,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<Figures/GLASSO_0.3.pdf, id=309, 409.53pt x 319.1925pt>
+<Figures/GLASSO_0.3.pdf, id=435, 409.53pt x 319.1925pt>
 File: Figures/GLASSO_0.3.pdf Graphic file (type pdf)
 <use Figures/GLASSO_0.3.pdf>
 Package pdftex.def Info: Figures/GLASSO_0.3.pdf  used on input line 629.
@@ -2828,7 +2521,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<Figures/GLASSO_0.4.pdf, id=310, 409.53pt x 319.1925pt>
+<Figures/GLASSO_0.4.pdf, id=436, 409.53pt x 319.1925pt>
 File: Figures/GLASSO_0.4.pdf Graphic file (type pdf)
 <use Figures/GLASSO_0.4.pdf>
 Package pdftex.def Info: Figures/GLASSO_0.4.pdf  used on input line 635.
@@ -2847,144 +2540,43 @@ Overfull \hbox (2.65201pt too wide) in paragraph at lines 615--639
 [][] [] 
  []
 
-
-LaTeX Warning: Citation `friedman2008sparse' on page 27 undefined on input line
- 639.
-
-
-LaTeX Warning: Citation `glasso' on page 27 undefined on input line 639.
-
-
-LaTeX Warning: Citation `igraph' on page 27 undefined on input line 639.
-
-
-LaTeX Warning: Citation `friedman2008sparse' on page 27 undefined on input line
- 639.
-
-
-LaTeX Warning: Citation `glasso' on page 27 undefined on input line 639.
-
-
-LaTeX Warning: Citation `igraph' on page 27 undefined on input line 639.
-
-
-LaTeX Warning: Citation `mgm' on page 27 undefined on input line 642.
-
-
-LaTeX Warning: Citation `haslbeck2015mgm' on page 27 undefined on input line 64
-2.
-
-
-LaTeX Warning: Citation `kuhn2008building' on page 27 undefined on input line 6
-42.
-
-
-LaTeX Warning: Citation `caret' on page 27 undefined on input line 642.
-
-
-LaTeX Warning: Citation `hojsgaard2012graphical' on page 27 undefined on input 
-line 642.
-
-
-LaTeX Warning: Citation `de2009high' on page 27 undefined on input line 642.
-
 [27
 
 
 ] [28 <./Figures/GLASSO_0.1.pdf> <./Figures/GLASSO_0.2.pdf> <./Figures/GLASSO_0
 .3.pdf> <./Figures/GLASSO_0.4.pdf>]
-<Figures/mgm.pdf, id=349, 410.53375pt x 413.545pt>
+<Figures/mgm.pdf, id=493, 410.53375pt x 413.545pt>
 File: Figures/mgm.pdf Graphic file (type pdf)
 <use Figures/mgm.pdf>
 Package pdftex.def Info: Figures/mgm.pdf  used on input line 647.
 (pdftex.def)             Requested size: 336.0pt x 338.46544pt.
 
 
-LaTeX Warning: Citation `mgm' on page 29 undefined on input line 648.
-
-
-LaTeX Warning: Citation `haslbeck2015mgm' on page 29 undefined on input line 64
-8.
-
-
-LaTeX Warning: Citation `qgraph' on page 29 undefined on input line 648.
-
-
-LaTeX Warning: Citation `mgm' on page 29 undefined on input line 648.
-
-
-LaTeX Warning: Citation `haslbeck2015mgm' on page 29 undefined on input line 64
-8.
-
-
-LaTeX Warning: Citation `qgraph' on page 29 undefined on input line 648.
-
-
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Figures/mgm_confusion.pdf, id=350, 410.53375pt x 413.545pt>
+<Figures/mgm_confusion.pdf, id=500, 410.53375pt x 413.545pt>
 File: Figures/mgm_confusion.pdf Graphic file (type pdf)
 <use Figures/mgm_confusion.pdf>
 Package pdftex.def Info: Figures/mgm_confusion.pdf  used on input line 655.
 (pdftex.def)             Requested size: 336.0pt x 338.46544pt.
 
-LaTeX Warning: Citation `kuhn2008building' on page 29 undefined on input line 6
-56.
-
-
-LaTeX Warning: Citation `caret' on page 29 undefined on input line 656.
-
-
-LaTeX Warning: Citation `kuhn2008building' on page 29 undefined on input line 6
-56.
-
-
-LaTeX Warning: Citation `caret' on page 29 undefined on input line 656.
-
-
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Figures/ROC_mgm.pdf, id=353, 410.53375pt x 413.545pt>
+<Figures/ROC_mgm.pdf, id=507, 410.53375pt x 413.545pt>
 File: Figures/ROC_mgm.pdf Graphic file (type pdf)
 <use Figures/ROC_mgm.pdf>
 Package pdftex.def Info: Figures/ROC_mgm.pdf  used on input line 663.
 (pdftex.def)             Requested size: 336.0pt x 338.46544pt.
 
-LaTeX Warning: Citation `sing2005rocr' on page 29 undefined on input line 664.
-
-
-LaTeX Warning: Citation `ggplot2' on page 29 undefined on input line 664.
-
-
-LaTeX Warning: Citation `sing2005rocr' on page 29 undefined on input line 664.
-
-
-LaTeX Warning: Citation `ggplot2' on page 29 undefined on input line 664.
-
-
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [29] [30 <./Figures/mgm.pdf>] [31 <./Figures/mgm_confusion.pdf>] [32 <./Figures
 /ROC_mgm.pdf>]
-<Figures/mmod.pdf, id=389, 844.15375pt x 597.23125pt>
+<Figures/mmod.pdf, id=551, 844.15375pt x 597.23125pt>
 File: Figures/mmod.pdf Graphic file (type pdf)
 <use Figures/mmod.pdf>
 Package pdftex.def Info: Figures/mmod.pdf  used on input line 672.
 (pdftex.def)             Requested size: 504.0pt x 356.5827pt.
-
-
-LaTeX Warning: Citation `hojsgaard2012graphical' on page 33 undefined on input 
-line 673.
-
-
-LaTeX Warning: Citation `igraph' on page 33 undefined on input line 673.
-
-
-LaTeX Warning: Citation `hojsgaard2012graphical' on page 33 undefined on input 
-line 673.
-
-
-LaTeX Warning: Citation `igraph' on page 33 undefined on input line 673.
 
 
 LaTeX Warning: Float too large for page by 72.14278pt on input line 676.
@@ -3003,51 +2595,21 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-<Figures/minforest.pdf, id=399, 844.15375pt x 597.23125pt>
+<Figures/minforest.pdf, id=565, 844.15375pt x 597.23125pt>
 File: Figures/minforest.pdf Graphic file (type pdf)
 <use Figures/minforest.pdf>
 Package pdftex.def Info: Figures/minforest.pdf  used on input line 682.
 (pdftex.def)             Requested size: 504.0pt x 356.5827pt.
 
-LaTeX Warning: Citation `de2009high' on page 34 undefined on input line 683.
-
-
-LaTeX Warning: Citation `qgraph' on page 34 undefined on input line 683.
-
-
-LaTeX Warning: Citation `de2009high' on page 34 undefined on input line 683.
-
-
-LaTeX Warning: Citation `qgraph' on page 34 undefined on input line 683.
-
-
 LaTeX Warning: Float too large for page by 72.14278pt on input line 686.
 
 [34 <./Figures/minforest.pdf>]
-
-LaTeX Warning: Citation `rfor' on page 35 undefined on input line 694.
-
-
-LaTeX Warning: Citation `dimitriadou2008misc' on page 35 undefined on input lin
-e 694.
-
-
-LaTeX Warning: Citation `MASS' on page 35 undefined on input line 694.
-
-
-LaTeX Warning: Citation `stats' on page 35 undefined on input line 694.
-
-
-Overfull \hbox (9.29996pt too wide) in paragraph at lines 694--695
-\T1/pplj/m/n/12 For-est pack-age [[]]), the sup-port vec-tor ma-chines (as im-p
-le-mented
- []
-
-<Figures/RF_confusion.pdf, id=414, 410.53375pt x 413.545pt>
+<Figures/RF_confusion.pdf, id=588, 410.53375pt x 413.545pt>
 File: Figures/RF_confusion.pdf Graphic file (type pdf)
 <use Figures/RF_confusion.pdf>
 Package pdftex.def Info: Figures/RF_confusion.pdf  used on input line 700.
 (pdftex.def)             Requested size: 151.19897pt x 152.3025pt.
+
 ! Undefined control sequence.
 l.701     \subcaption
                      {Random Forest}
@@ -3057,7 +2619,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<Figures/SVM_confusion.pdf, id=415, 410.53375pt x 413.545pt>
+<Figures/SVM_confusion.pdf, id=589, 410.53375pt x 413.545pt>
 File: Figures/SVM_confusion.pdf Graphic file (type pdf)
 <use Figures/SVM_confusion.pdf>
 Package pdftex.def Info: Figures/SVM_confusion.pdf  used on input line 706.
@@ -3071,7 +2633,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<Figures/QDA_confusion.pdf, id=416, 410.53375pt x 413.545pt>
+<Figures/QDA_confusion.pdf, id=590, 410.53375pt x 413.545pt>
 File: Figures/QDA_confusion.pdf Graphic file (type pdf)
 <use Figures/QDA_confusion.pdf>
 Package pdftex.def Info: Figures/QDA_confusion.pdf  used on input line 712.
@@ -3085,7 +2647,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<Figures/Logisic_confusion.pdf, id=417, 410.53375pt x 413.545pt>
+<Figures/Logisic_confusion.pdf, id=591, 410.53375pt x 413.545pt>
 File: Figures/Logisic_confusion.pdf Graphic file (type pdf)
 <use Figures/Logisic_confusion.pdf>
 Package pdftex.def Info: Figures/Logisic_confusion.pdf  used on input line 718.
@@ -3105,21 +2667,7 @@ Overfull \hbox (2.65201pt too wide) in paragraph at lines 698--722
 [][] [] 
  []
 
-
-LaTeX Warning: Citation `kuhn2008building' on page 35 undefined on input line 7
-22.
-
-
-LaTeX Warning: Citation `caret' on page 35 undefined on input line 722.
-
-
-LaTeX Warning: Citation `kuhn2008building' on page 35 undefined on input line 7
-22.
-
-
-LaTeX Warning: Citation `caret' on page 35 undefined on input line 722.
-
-<Figures/ROC_RF.pdf, id=418, 410.53375pt x 413.545pt>
+<Figures/ROC_RF.pdf, id=596, 410.53375pt x 413.545pt>
 File: Figures/ROC_RF.pdf Graphic file (type pdf)
 <use Figures/ROC_RF.pdf>
 Package pdftex.def Info: Figures/ROC_RF.pdf  used on input line 730.
@@ -3133,7 +2681,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<Figures/ROC_SVM.pdf, id=419, 410.53375pt x 413.545pt>
+<Figures/ROC_SVM.pdf, id=597, 410.53375pt x 413.545pt>
 File: Figures/ROC_SVM.pdf Graphic file (type pdf)
 <use Figures/ROC_SVM.pdf>
 Package pdftex.def Info: Figures/ROC_SVM.pdf  used on input line 736.
@@ -3147,7 +2695,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<Figures/ROC_QDA.pdf, id=420, 410.53375pt x 413.545pt>
+<Figures/ROC_QDA.pdf, id=598, 410.53375pt x 413.545pt>
 File: Figures/ROC_QDA.pdf Graphic file (type pdf)
 <use Figures/ROC_QDA.pdf>
 Package pdftex.def Info: Figures/ROC_QDA.pdf  used on input line 742.
@@ -3161,7 +2709,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<Figures/ROC_logistic.pdf, id=421, 410.53375pt x 413.545pt>
+<Figures/ROC_logistic.pdf, id=599, 410.53375pt x 413.545pt>
 File: Figures/ROC_logistic.pdf Graphic file (type pdf)
 <use Figures/ROC_logistic.pdf>
 Package pdftex.def Info: Figures/ROC_logistic.pdf  used on input line 748.
@@ -3180,14 +2728,6 @@ Overfull \hbox (2.65201pt too wide) in paragraph at lines 728--752
 [][] [] 
  []
 
-
-LaTeX Warning: Citation `kuhn2008building' on page 35 undefined on input line 7
-52.
-
-
-LaTeX Warning: Citation `kuhn2008building' on page 35 undefined on input line 7
-52.
-
 ! Extra }, or forgotten \endgroup.
 \@endfloatbox ...pagefalse \outer@nobreak \egroup 
                                                   \color@endbox 
@@ -3203,23 +2743,11 @@ deleted material, e.g., by typing `I$}'.
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 758.
 
-<Figures/RF_Importance.pdf, id=422, 410.53375pt x 413.545pt>
+<Figures/RF_Importance.pdf, id=602, 410.53375pt x 413.545pt>
 File: Figures/RF_Importance.pdf Graphic file (type pdf)
 <use Figures/RF_Importance.pdf>
 Package pdftex.def Info: Figures/RF_Importance.pdf  used on input line 775.
 (pdftex.def)             Requested size: 336.0pt x 338.46544pt.
-
-LaTeX Warning: Citation `rfor' on page 35 undefined on input line 776.
-
-
-LaTeX Warning: Citation `ggplot2' on page 35 undefined on input line 776.
-
-
-LaTeX Warning: Citation `rfor' on page 35 undefined on input line 776.
-
-
-LaTeX Warning: Citation `ggplot2' on page 35 undefined on input line 776.
-
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -3241,194 +2769,9 @@ Overfull \hbox (5.81458pt too wide) in paragraph at lines 787--787
 |[]\T1/iwona/m/n/17.28/160ls APPENDIX A: CON-CEPTS OF
  []
 
-
-LaTeX Warning: Citation `murray1999solar' on page 40 undefined on input line 78
-9.
-
-
-LaTeX Warning: Citation `burbine2016asteroids' on page 40 undefined on input li
-ne 789.
-
-
-LaTeX Warning: Citation `nasa_classification' on page 40 undefined on input lin
-e 789.
-
-
-LaTeX Warning: Citation `murray1999solar' on page 40 undefined on input line 79
-3.
-
-
-LaTeX Warning: Citation `murray1999solar' on page 40 undefined on input line 80
-4.
-
 [40
 
-]
-
-LaTeX Warning: Citation `murray1999solar' on page 41 undefined on input line 81
-1.
-
-
-LaTeX Warning: Citation `murray1999solar' on page 41 undefined on input line 82
-6.
-
-
-LaTeX Warning: Citation `murray1999solar' on page 41 undefined on input line 83
-2.
-
-
-LaTeX Warning: Reference `Area_dynamics' on page 41 undefined on input line 838
-.
-
-
-LaTeX Warning: Citation `murray1999solar' on page 41 undefined on input line 83
-8.
-
-
-LaTeX Warning: Citation `murray1999solar' on page 41 undefined on input line 84
-4.
-
-
-LaTeX Warning: Citation `murray1999solar' on page 41 undefined on input line 85
-0.
-
-
-LaTeX Warning: Citation `murray1999solar' on page 41 undefined on input line 85
-6.
-
-[41]
-
-LaTeX Warning: Citation `murray1999solar' on page 42 undefined on input line 87
-4.
-
-
-LaTeX Warning: Citation `murray1999solar' on page 42 undefined on input line 88
-0.
-
-
-LaTeX Warning: Citation `murray1999solar' on page 42 undefined on input line 88
-6.
-
-
-LaTeX Warning: Reference `Elliptical_orbit' on page 42 undefined on input line 
-895.
-
-
-LaTeX Warning: Reference `Elliptical_orbit' on page 42 undefined on input line 
-895.
-
-
-LaTeX Warning: Citation `murray1999solar' on page 42 undefined on input line 89
-5.
-
-
-LaTeX Warning: Citation `murray1999solar' on page 42 undefined on input line 90
-1.
-
-[42]
-
-LaTeX Warning: Citation `murray1999solar' on page 43 undefined on input line 90
-8.
-
-
-LaTeX Warning: Citation `murray1999solar' on page 43 undefined on input line 91
-4.
-
-
-LaTeX Warning: Citation `murray1999solar' on page 43 undefined on input line 92
-0.
-
-
-LaTeX Warning: Citation `murray1999solar' on page 43 undefined on input line 92
-6.
-
-
-LaTeX Warning: Citation `murray1999solar' on page 43 undefined on input line 92
-8.
-
-
-LaTeX Warning: Citation `murray1999solar' on page 43 undefined on input line 93
-0.
-
-
-LaTeX Warning: Citation `murray1999solar' on page 43 undefined on input line 93
-6.
-
-
-LaTeX Warning: Citation `murray1999solar' on page 43 undefined on input line 94
-7.
-
-[43]
-
-LaTeX Warning: Citation `murray1999solar' on page 44 undefined on input line 95
-3.
-
-
-LaTeX Warning: Citation `murray1999solar' on page 44 undefined on input line 96
-0.
-
-
-LaTeX Warning: Citation `murray1999solar' on page 44 undefined on input line 96
-7.
-
-
-LaTeX Warning: Citation `murray1999solar' on page 44 undefined on input line 97
-7.
-
-
-LaTeX Warning: Citation `murray1999solar' on page 44 undefined on input line 99
-2.
-
-[44]
-
-LaTeX Warning: Citation `murray1999solar' on page 45 undefined on input line 10
-02.
-
-
-LaTeX Warning: Citation `murray1999solar' on page 45 undefined on input line 10
-08.
-
-
-LaTeX Warning: Reference `Mean_anomaly' on page 45 undefined on input line 1015
-.
-
-
-LaTeX Warning: Citation `murray1999solar' on page 45 undefined on input line 10
-15.
-
-
-LaTeX Warning: Citation `murray1999solar' on page 45 undefined on input line 10
-15.
-
-
-LaTeX Warning: Reference `Inclination' on page 45 undefined on input line 1021.
-
-
-
-LaTeX Warning: Citation `murray1999solar' on page 45 undefined on input line 10
-21.
-
-
-LaTeX Warning: Citation `feynman2018feynman' on page 45 undefined on input line
- 1033.
-
-
-LaTeX Warning: Citation `burbine2016asteroids' on page 45 undefined on input li
-ne 1033.
-
-[45]
-
-LaTeX Warning: Citation `zee2013einstein' on page 46 undefined on input line 10
-39.
-
-
-LaTeX Warning: Citation `burbine2016asteroids' on page 46 undefined on input li
-ne 1039.
-
-
-LaTeX Warning: Citation `burbine2016asteroids' on page 46 undefined on input li
-ne 1045.
-
+] [41] [42] [43] [44] [45]
 ! Missing $ inserted.
 <inserted text> 
                 $
@@ -3447,41 +2790,6 @@ l.1051 ...ween Earth and Sun: 1.49\cdot 10^{11} m}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-
-LaTeX Warning: Citation `burbine2016asteroids' on page 46 undefined on input li
-ne 1051.
-
-
-LaTeX Warning: Citation `burbine2016asteroids' on page 46 undefined on input li
-ne 1051.
-
-
-LaTeX Warning: Citation `burbine2016asteroids' on page 46 undefined on input li
-ne 1057.
-
-
-LaTeX Warning: Reference `Orbit_asteorids' on page 46 undefined on input line 1
-071.
-
-
-LaTeX Warning: Citation `burbine2016asteroids' on page 46 undefined on input li
-ne 1071.
-
-
-LaTeX Warning: Citation `burbine2016asteroids' on page 46 undefined on input li
-ne 1071.
-
-
-LaTeX Warning: Reference `heic1715c' on page 46 undefined on input line 1071.
-
-
-LaTeX Warning: Reference `neo_orbit_types' on page 46 undefined on input line 1
-071.
-
-
-LaTeX Warning: Citation `nasa_classification' on page 46 undefined on input lin
-e 1071.
-
 [46]
 Overfull \hbox (7.11469pt too wide) in paragraph at lines 1077--1078
 \T1/pplj/m/it/12 NEAs with or-bits ex-te-rior to Earth's but in-te-rior to Mars
@@ -3489,146 +2797,90 @@ Overfull \hbox (7.11469pt too wide) in paragraph at lines 1077--1078
  []
 
 
-LaTeX Warning: Citation `nasa_classification' on page 47 undefined on input lin
-e 1080.
-
-
 Overfull \hbox (10.07866pt too wide) in paragraph at lines 1083--1084
 \U/zeur/m/n/12 22\T1/pplj/m/n/12 .\U/zeur/m/n/12 0$ \T1/pplj/m/it/12 NEAs whose
  Min-i-mum Or-bit In-ter-sec-tion Dis-tance (MOID)
  []
 
-<Figures/Area_dynamics.png, id=580, 708.39656pt x 359.84438pt>
+<Figures/Area_dynamics.png, id=824, 708.39656pt x 359.84438pt>
 File: Figures/Area_dynamics.png Graphic file (type png)
 <use Figures/Area_dynamics.png>
 Package pdftex.def Info: Figures/Area_dynamics.png  used on input line 1090.
 (pdftex.def)             Requested size: 336.0pt x 170.68076pt.
 
-LaTeX Warning: Citation `murray1999solar' on page 47 undefined on input line 10
-91.
-
-
-LaTeX Warning: Citation `murray1999solar' on page 47 undefined on input line 10
-91.
-
-
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Figures/Conics.png, id=581, 595.47469pt x 574.39594pt>
+<Figures/Conics.png, id=827, 595.47469pt x 574.39594pt>
 File: Figures/Conics.png Graphic file (type png)
 <use Figures/Conics.png>
 Package pdftex.def Info: Figures/Conics.png  used on input line 1098.
 (pdftex.def)             Requested size: 336.0pt x 324.10483pt.
 
-LaTeX Warning: Citation `murray1999solar' on page 47 undefined on input line 10
-99.
-
-
-LaTeX Warning: Citation `murray1999solar' on page 47 undefined on input line 10
-99.
-
-
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Figures/Elliptical_orbit.png, id=582, 931.98187pt x 632.3625pt>
+<Figures/Elliptical_orbit.png, id=830, 931.98187pt x 632.3625pt>
 File: Figures/Elliptical_orbit.png Graphic file (type png)
 <use Figures/Elliptical_orbit.png>
 Package pdftex.def Info: Figures/Elliptical_orbit.png  used on input line 1106.
 
 (pdftex.def)             Requested size: 336.0pt x 227.9784pt.
 
-LaTeX Warning: Citation `murray1999solar' on page 47 undefined on input line 11
-07.
-
-
-LaTeX Warning: Citation `murray1999solar' on page 47 undefined on input line 11
-07.
-
-
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Figures/Mean_anomaly.png, id=583, 912.40875pt x 418.56375pt>
+<Figures/Mean_anomaly.png, id=833, 912.40875pt x 418.56375pt>
 File: Figures/Mean_anomaly.png Graphic file (type png)
 <use Figures/Mean_anomaly.png>
 Package pdftex.def Info: Figures/Mean_anomaly.png  used on input line 1114.
 (pdftex.def)             Requested size: 336.0pt x 154.13806pt.
 
-LaTeX Warning: Citation `murray1999solar' on page 47 undefined on input line 11
-15.
-
-
-LaTeX Warning: Citation `murray1999solar' on page 47 undefined on input line 11
-15.
-
-
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Figures/Inclination.png, id=584, 835.62187pt x 573.64313pt>
+<Figures/Inclination.png, id=836, 835.62187pt x 573.64313pt>
 File: Figures/Inclination.png Graphic file (type png)
 <use Figures/Inclination.png>
 Package pdftex.def Info: Figures/Inclination.png  used on input line 1122.
 (pdftex.def)             Requested size: 336.0pt x 230.6611pt.
 
-LaTeX Warning: Citation `murray1999solar' on page 47 undefined on input line 11
-23.
-
-
-LaTeX Warning: Citation `murray1999solar' on page 47 undefined on input line 11
-23.
-
-
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Figures/Orbit_asteorids.png, id=585, 2055.68pt x 2055.68pt>
+<Figures/Orbit_asteorids.png, id=839, 2055.68pt x 2055.68pt>
 File: Figures/Orbit_asteorids.png Graphic file (type png)
 <use Figures/Orbit_asteorids.png>
 Package pdftex.def Info: Figures/Orbit_asteorids.png  used on input line 1131.
 (pdftex.def)             Requested size: 336.0pt x 335.97311pt.
 
-LaTeX Warning: Citation `orbits-of-potentially-hazardous' on page 47 undefined 
-on input line 1132.
-
-
-LaTeX Warning: Citation `orbits-of-potentially-hazardous' on page 47 undefined 
-on input line 1132.
-
-
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Figures/heic1715c.jpg, id=586, 2204.235pt x 2300.8359pt>
+<Figures/heic1715c.jpg, id=842, 2204.235pt x 2300.8359pt>
 File: Figures/heic1715c.jpg Graphic file (type jpg)
 <use Figures/heic1715c.jpg>
 Package pdftex.def Info: Figures/heic1715c.jpg  used on input line 1139.
 (pdftex.def)             Requested size: 336.0pt x 350.69266pt.
 
-LaTeX Warning: Citation `esahubble' on page 47 undefined on input line 1140.
-
-
-LaTeX Warning: Citation `esahubble' on page 47 undefined on input line 1140.
-
-
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Figures/neo_orbit_types.jpg, id=587, 824.3598pt x 554.5518pt>
+<Figures/neo_orbit_types.jpg, id=845, 824.3598pt x 554.5518pt>
 File: Figures/neo_orbit_types.jpg Graphic file (type jpg)
 <use Figures/neo_orbit_types.jpg>
 Package pdftex.def Info: Figures/neo_orbit_types.jpg  used on input line 1147.
 (pdftex.def)             Requested size: 336.0pt x 226.03075pt.
 
-LaTeX Warning: Citation `nasa_classification' on page 47 undefined on input lin
-e 1148.
-
-
-LaTeX Warning: Citation `nasa_classification' on page 47 undefined on input lin
-e 1148.
-
-
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-(manuscript.bbl [47] [48 <./Figures/Area_dynamics.png>] [49 <./Figures/Conics.p
-ng> <./Figures/Elliptical_orbit.png>] [50 <./Figures/Mean_anomaly.png> <./Figur
-es/Inclination.png>] [51 <./Figures/Orbit_asteorids.png>] [52 <./Figures/heic17
-15c.jpg>] [53 <./Figures/neo_orbit_types.jpg>]
+Chapter 7.
+[47] [48 <./Figures/Area_dynamics.png> <./Figures/Conics.png>] [49 <./Figures/E
+lliptical_orbit.png> <./Figures/Mean_anomaly.png>] [50 <./Figures/Inclination.p
+ng>] [51 <./Figures/Orbit_asteorids.png>] [52 <./Figures/heic1715c.jpg>]
+[53 <./Figures/neo_orbit_types.jpg>] (Script_FINAL.R [54
+
+] [55] [56] [57]
+[58] [59] [60] [61]
+LaTeX Font Info:    Trying to load font information for TS1+pplj on input line 
+263.
+ (C:\Program Files\MiKTeX 2.9\tex/latex/psnfss\ts1pplj.fd
+File: ts1pplj.fd 2004/09/06 font definitions for TS1/pplj.
+)
+[62] [63] [64] [65]) (manuscript.bbl [66]
 Underfull \hbox (badness 10000) in paragraph at lines 4--5
 [][][]$\T1/fvm/m/n/12 https : / / www . nasa . gov / sites / default / files / 
 images /
@@ -3684,14 +2936,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 34--35
 [][][]$\T1/fvm/m/n/12 https : / / www . jpl . nasa . gov / images /
  []
 
-[54
+[67
 
 ]
 Underfull \hbox (badness 1888) in paragraph at lines 60--64
 []\T1/pplj/m/n/12 Evgenia Dim-i-tri-adou, Kurt Hornik, Friedrich Leisch,
  []
 
-[55]
+[68]
 Underfull \hbox (badness 1173) in paragraph at lines 153--158
 \T1/pplj/m/it/12 Trans-ac-tions on pat-tern anal-y-sis and ma-chine in-tel-li-g
 ence\T1/pplj/m/n/12 ,
@@ -3702,57 +2954,46 @@ Underfull \hbox (badness 1337) in paragraph at lines 171--174
 []\T1/pplj/m/n/12 Tobias Sing, Oliver Sander, Niko Beeren-winkel, and
  []
 
-[56]) [57] (manuscript.aux
-
-Package mparhack Warning: Marginpars may have changed.
-(mparhack)                Rerun to get them right.
-
-)
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+[69]) [70] (manuscript.aux) ) 
 Here is how much of TeX's memory you used:
- 39664 strings out of 479334
- 772347 string characters out of 2865057
- 1441570 words of memory out of 3000000
- 55890 multiletter control sequences out of 15000+200000
- 573617 words of font info for 319 fonts, out of 3000000 for 9000
+ 41544 strings out of 479334
+ 793802 string characters out of 2865057
+ 1778570 words of memory out of 3000000
+ 57381 multiletter control sequences out of 15000+200000
+ 571606 words of font info for 314 fonts, out of 3000000 for 9000
  1142 hyphenation exceptions out of 8191
- 128i,23n,130p,10607b,893s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc} <C:\Users\Marzio\Ap
-pData\Local\MiKTeX\2.9\fonts/pk/ljfour/public/mathabx/dpi600\matha10.pk> <C:\Us
-ers\Marzio\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/public/mathabx/dpi720\mathb
-12.pk> <C:\Users\Marzio\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/public/mathabx
-/dpi600\matha7.pk> <C:\Users\Marzio\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/pu
-blic/mathabx/dpi720\mathx10.pk> <C:\Users\Marzio\AppData\Local\MiKTeX\2.9\fonts
-/pk/ljfour/public/mathabx/dpi600\matha9.pk> <C:\Users\Marzio\AppData\Local\MiKT
-eX\2.9\fonts/pk/ljfour/public/mathabx/dpi600\matha12.pk>{C:/Program Files/MiKTe
-X 2.9/fonts/enc/dvips/iwona/ec-iwona-sc.enc} <C:\Users\Marzio\AppData\Local\MiK
-TeX\2.9\fonts/pk/ljfour/public/mathabx/dpi657\matha10.pk>{C:/Program Files/MiKT
-eX 2.9/fonts/enc/dvips/iwona/ec-iwona.enc} <C:\Users\Marzio\AppData\Local\MiKTe
-X\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk><C:/Program Files/MiKTeX 2
-.9/fonts/type1/public/amsfonts/euler/eufm10.pfb><C:/Program Files/MiKTeX 2.9/fo
-nts/type1/public/amsfonts/euler/eurb10.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
-ype1/public/amsfonts/euler/eurb7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
-ublic/amsfonts/euler/eurm10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
-/amsfonts/euler/eurm7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfo
-nts/euler/eusm10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/fpl/fplbj8
-a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/mathpazo/fplmbb.pfb><C:/P
-rogram Files/MiKTeX 2.9/fonts/type1/public/fpl/fplrc8a.pfb><C:/Program Files/Mi
-KTeX 2.9/fonts/type1/public/fpl/fplrij8a.pfb><C:/Program Files/MiKTeX 2.9/fonts
-/type1/bera/fvmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/nowacki/iwona/i
-wonab.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/nowacki/iwona/iwonar.pfb><C:
-/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplb8a.pfb><C:/Program Files
-/MiKTeX 2.9/fonts/type1/urw/palatino/uplbi8a.pfb><C:/Program Files/MiKTeX 2.9/f
-onts/type1/urw/palatino/uplr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw
-/palatino/uplri8a.pfb>
-Output written on manuscript.pdf (58 pages, 7410014 bytes).
+ 128i,23n,130p,10607b,3179s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/
+8r.enc} <C:\Users\Marzio\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/public/mathab
+x/dpi600\matha10.pk> <C:\Users\Marzio\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/
+public/mathabx/dpi720\mathb12.pk> <C:\Users\Marzio\AppData\Local\MiKTeX\2.9\fon
+ts/pk/ljfour/public/mathabx/dpi600\matha7.pk> <C:\Users\Marzio\AppData\Local\Mi
+KTeX\2.9\fonts/pk/ljfour/public/mathabx/dpi720\mathx10.pk> <C:\Users\Marzio\App
+Data\Local\MiKTeX\2.9\fonts/pk/ljfour/public/mathabx/dpi600\matha9.pk> <C:\User
+s\Marzio\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/public/mathabx/dpi600\matha12
+.pk>{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/iwona/ec-iwona-sc.enc} <C:\Use
+rs\Marzio\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/public/mathabx/dpi657\matha1
+0.pk>{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/iwona/ec-iwona.enc} <C:\Users
+\Marzio\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk
+><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/euler/eufm10.pfb><C:/
+Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/euler/eurb10.pfb><C:/Progr
+am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/euler/eurb7.pfb><C:/Program Fil
+es/MiKTeX 2.9/fonts/type1/public/amsfonts/euler/eurm10.pfb><C:/Program Files/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/euler/eurm7.pfb><C:/Program Files/MiKTeX 2
+.9/fonts/type1/public/amsfonts/euler/eusm10.pfb><C:/Program Files/MiKTeX 2.9/fo
+nts/type1/public/fpl/fplbj8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
+c/mathpazo/fplmbb.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/fpl/fplrc
+8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/fpl/fplrij8a.pfb><C:/Pro
+gram Files/MiKTeX 2.9/fonts/type1/bera/fvmr8a.pfb><C:/Program Files/MiKTeX 2.9/
+fonts/type1/nowacki/iwona/iwonab.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/n
+owacki/iwona/iwonar.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfont
+s/latxfont/lcircle1.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/u
+plb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplbi8a.pfb><C:
+/Program Files/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a.pfb><C:/Program Files
+/MiKTeX 2.9/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on manuscript.pdf (71 pages, 7547268 bytes).
 PDF statistics:
- 968 PDF objects out of 1000 (max. 8388607)
- 226 named destinations out of 1000 (max. 500000)
+ 1688 PDF objects out of 1728 (max. 8388607)
+ 611 named destinations out of 1000 (max. 500000)
  40363 words of extra memory for PDF output out of 42996 (max. 10000000)
 
