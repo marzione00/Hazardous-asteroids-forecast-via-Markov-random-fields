@@ -6,17 +6,20 @@
 \bibitem{Tunguska_source}
 \url{https://commons.wikimedia.org/wiki/File:Tunguska.png}.
 
+\bibitem{feynmanlectures}
+\url{https://www.feynmanlectures.caltech.edu/}.
+
+\bibitem{cneos+nasa}
+\url{https://cneos.jpl.nasa.gov/}.
+
+\bibitem{kaggle_dataset}
+\url{https://www.kaggle.com/shrutimehta/nasa-asteroids-classification}.
+
 \bibitem{Perihelion_precession}
 \url{https://commons.wikimedia.org/wiki/File:Perihelion_precession.svg}.
 
 \bibitem{ml_interpretability}
 \url{https://towardsdatascience.com/the-balance-accuracy-vs-interpretability-1b3861408062}.
-
-\bibitem{kaggle_dataset}
-\url{https://www.kaggle.com/shrutimehta/nasa-asteroids-classification}.
-
-\bibitem{cneos+nasa}
-\url{https://cneos.jpl.nasa.gov/}.
 
 \bibitem{glasso}
 \url{https://cran.r-project.org/web/packages/glasso/glasso.pdf}.
