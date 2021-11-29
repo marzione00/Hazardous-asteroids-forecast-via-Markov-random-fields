@@ -142,6 +142,11 @@ Richard~M. Martin.
 \newblock {\em Electronic Structure: Basic Theory and Practical Methods}.
 \newblock Cambridge University Press, 2004.
 
+\bibitem{meinshausen2006high}
+Nicolai Meinshausen and Peter B{\"u}hlmann.
+\newblock High-dimensional graphs and variable selection with the lasso.
+\newblock {\em The annals of statistics}, 34(3):1436--1462, 2006.
+
 \bibitem{murphy2012machine}
 Kevin~P Murphy.
 \newblock {\em Machine learning: a probabilistic perspective}.

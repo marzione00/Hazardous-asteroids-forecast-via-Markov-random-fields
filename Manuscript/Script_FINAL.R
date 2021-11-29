@@ -135,6 +135,13 @@ mbG<-stepw(model=bf,data=Asteroids_FINAL_double)
 plot(mbG,cex.vert.label=0.6,numIter=6000,col.labels=c("red"),vert.hl=c(21),col.hl=c("blue"),energy=TRUE)
 
 
+#mmod model
+mmod_model<-mmod(~.^1.,data=Asteroids_FINAL[,2:22])
+mmod_model_st<-stepwise(mmod_model,k=log(nrow(Asteroids_FINAL[,2:22])),direction="forward",details=1)
+plot(as(mmod_model_st ,"igraph"),vertex.color="red",vertex.label.dist=2,alpha=TRUE,vertex.label.cex=0.5,vertex.size=10,edge.color="black",edge.size=2,layout=layout_with_fr(as(mmod_model_st,'igraph')), vertex.label.family='Helvetica')
+
+
+
 #Mixed interaction analysis with mgm
 
 

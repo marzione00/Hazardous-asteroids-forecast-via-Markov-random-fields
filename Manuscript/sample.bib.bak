@@ -328,3 +328,14 @@ https://commons.wikimedia.org/wiki/File:Perihelion_precession.svg
 @misc{Perihelion_precession,
 howpublished = {\url{https://commons.wikimedia.org/wiki/File:Perihelion_precession.svg}}
 }
+
+@article{meinshausen2006high,
+  title={High-dimensional graphs and variable selection with the lasso},
+  author={Meinshausen, Nicolai and B{\"u}hlmann, Peter},
+  journal={The annals of statistics},
+  volume={34},
+  number={3},
+  pages={1436--1462},
+  year={2006},
+  publisher={Institute of Mathematical Statistics}
+}

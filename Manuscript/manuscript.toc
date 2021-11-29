@@ -2,18 +2,17 @@
 \vspace {-\cftbeforepartskip }
 \contentsline {chapter}{\numberline {1}{Introduction}}{6}{chapter.1}%
 \contentsline {chapter}{\numberline {2}{Theoretical Framework}}{9}{chapter.2}%
-\contentsline {section}{\numberline {2.1}{Markov random fields}}{9}{section.2.1}%
-\contentsline {section}{\numberline {2.2}{Information theory}}{14}{section.2.2}%
-\contentsline {section}{\numberline {2.3}{Algorithm intepretability}}{16}{section.2.3}%
-\contentsline {chapter}{\numberline {3}{Dataset description}}{18}{chapter.3}%
-\contentsline {chapter}{\numberline {4}{Results and discussion}}{20}{chapter.4}%
-\contentsline {section}{\numberline {4.1}{Preliminary analysis}}{20}{section.4.1}%
-\contentsline {section}{\numberline {4.2}{Probabilistic models}}{27}{section.4.2}%
-\contentsline {section}{\numberline {4.3}{Machine learning algorithms}}{35}{section.4.3}%
-\contentsline {chapter}{\numberline {5}{Conclusions}}{39}{chapter.5}%
-\contentsline {chapter}{\numberline {6}{Appendix A: Concepts of astronomy}}{40}{chapter.6}%
-\contentsline {section}{\numberline {6.1}{Celestial mechanics}}{40}{section.6.1}%
-\contentsline {section}{\numberline {6.2}{Observation}}{45}{section.6.2}%
-\contentsline {section}{\numberline {6.3}{Classification}}{47}{section.6.3}%
-\contentsline {chapter}{\numberline {7}{Appendix B: R code}}{54}{chapter.7}%
+\contentsline {section}{\numberline {2.1}{Information theory}}{13}{section.2.1}%
+\contentsline {section}{\numberline {2.2}{Algorithm intepretability}}{15}{section.2.2}%
+\contentsline {chapter}{\numberline {3}{Dataset description}}{17}{chapter.3}%
+\contentsline {chapter}{\numberline {4}{Results and discussion}}{19}{chapter.4}%
+\contentsline {section}{\numberline {4.1}{Preliminary analysis}}{19}{section.4.1}%
+\contentsline {section}{\numberline {4.2}{Probabilistic models}}{26}{section.4.2}%
+\contentsline {section}{\numberline {4.3}{Machine learning algorithms}}{34}{section.4.3}%
+\contentsline {chapter}{\numberline {5}{Conclusions}}{38}{chapter.5}%
+\contentsline {chapter}{\numberline {6}{Appendix A: Concepts of astronomy}}{39}{chapter.6}%
+\contentsline {section}{\numberline {6.1}{Celestial mechanics}}{39}{section.6.1}%
+\contentsline {section}{\numberline {6.2}{Observation}}{44}{section.6.2}%
+\contentsline {section}{\numberline {6.3}{Classification}}{46}{section.6.3}%
+\contentsline {chapter}{\numberline {7}{Appendix B: R code}}{53}{chapter.7}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
