@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.3.28)  30 NOV 2021 15:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.3.28)  30 NOV 2021 16:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2955,10 +2955,16 @@ Chapter 7.
 [49] [50 <./Figures/Area_dynamics.png> <./Figures/Conics.png>] [51 <./Figures/E
 lliptical_orbit.png> <./Figures/Mean_anomaly.png>] [52 <./Figures/Inclination.p
 ng>] [53 <./Figures/Orbit_asteorids.png>] [54 <./Figures/heic1715c.jpg>]
-[55 <./Figures/neo_orbit_types.jpg>] (./Script_FINAL.R [56
+[55 <./Figures/neo_orbit_types.jpg>]
+Overfull \hbox (20.90393pt too wide) in paragraph at lines 1183--1184
+\T1/pplj/m/n/12 am-ples pro-vided in the pack-ages doc-u-men-ta-tion, the Prof.
+Nicolussi
+ []
 
-] [57] [58] [59]
-[60] [61] [62] [63] [64] [65] [66] [67]) (./manuscript.bbl [68]
+(./Script_FINAL.R [56
+
+] [57] [58] [59] [60] [61] [62] [63] [64] [65] [66]
+[67]) (./manuscript.bbl [68]
 Underfull \hbox (badness 10000) in paragraph at lines 4--5
 [][][]$\T1/fvm/m/n/12 https : / / www . nasa . gov / sites / default / files / 
 images /
@@ -3057,7 +3063,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1199.
 Here is how much of TeX's memory you used:
  39484 strings out of 480994
  770632 string characters out of 5912142
- 1550964 words of memory out of 5000000
+ 1557964 words of memory out of 5000000
  53388 multiletter control sequences out of 15000+600000
  700201 words of font info for 310 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
@@ -3091,10 +3097,10 @@ w/palatino/uplb8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/palat
 ino/uplbi8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/palatino/up
 lr8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/palatino/uplri8a.p
 fb>
-Output written on manuscript.pdf (73 pages, 7492700 bytes).
+Output written on manuscript.pdf (73 pages, 7492927 bytes).
 PDF statistics:
- 1667 PDF objects out of 1728 (max. 8388607)
- 1421 compressed objects within 15 object streams
+ 1668 PDF objects out of 1728 (max. 8388607)
+ 1422 compressed objects within 15 object streams
  624 named destinations out of 1000 (max. 500000)
  39861 words of extra memory for PDF output out of 42996 (max. 10000000)
 
