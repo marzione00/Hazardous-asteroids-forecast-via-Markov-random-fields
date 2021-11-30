@@ -201,6 +201,12 @@
 \textit{This day may possibly be my last: but the laws of probability, so true in general, so fallacious in particular, still allow about fifteen years. }\\Edward Gibbon (1737-1794)
 }
 
+\epigraph{
+\textit{In its efforts to learn as much as possible about nature, modern physics has found that certain things can never be “known” with certainty. Much of our knowledge must always remain uncertain. The most we can know is in terms of probabilities.}\\Richard P. Feynman (1918-1988)
+}
+
+
+
 \newpage
 
 \section*{Abstract} The machine learning algorithms provide a promising approach to classify and predict natural or social phenomena. Differently to the theoretical approach, in which the laws that describe particular phenomena are derived from general assumptions using a mathematical language (e.g., a symmetry, the principle of energy conservation, the three Newton laws, the second principle of thermodynamics \cite{feynmanlectures}), the machine learning algorithms start from very general assumptions/expressions and then their parameters are optimized with the likehood maximization\cite{russell2010artificial,murphy2012machine}. The first approach allows obtaining interpretable predictions, the second one good forecast with a reduced effort. However, the toll that has to be paid in this case is the low interpretability \cite{russell2010artificial,murphy2012machine}. Since they provide the list of conditional independences/dependencies, the graphical methods represent a good compromise between the need for interpretability and the forecasts obtained without developing a general theory. In order to prove the validity of this statement, I considered a dataset for which the theory that interconnects its features was known: in particular, I chose the asteroids hazardousness as provided by CNEOS \cite{cneos+nasa} and published on Kaggle \cite{kaggle_dataset}. The outcomes of the probabilistic methods for predicting the asteroid hazardousness were compared with the ones provided by the theory and with the ones of Random Forest (RF), Support Vector Machines (SVM), and Logistic Regression and Quadric Discriminant analysis (QDA). The results show that the forecast performances of probabilistic methods are better than QDA and almost equal to the logistic regression but lower to RF and SVM. However, since the list of conditional dependencies correctly reflects the laws of celestial mechanics \cite{murray1999solar}, it can be said that in this case, the probabilistic methods provide an interpretable and correct explanation of their mechanism. Therefore, contrary to other machine learning algorithms, such methods can be fully validated scientifically.
@@ -546,7 +552,7 @@ This chapter is organized in the following way: first, I will report the results
 
 \section{Preliminary analysis}
 
-The first inspection that was performed on the dataset was related to the density distributions of a selection of continuous features that are known, from the celestial mechanics, to be important for the prediction of the asteroids dangerousness. These are reported in Fig. \ref{Density_relevant}. Next we moved on a more systematic analysis with FADM and mutual information. In Fig. \ref{FADM},\ref{FAMD_Quantitative variables} and \ref{FAMD_Individuals_(c)} are reported the main achivements of FADM (performed with FactoMineR package \cite{le2008factominer}): in particular from the correlation circle in Fig. \ref{FAMD_Quantitative variables} the different correlations that are given by the celestial mechanics laws can be recognized: for instance, see that there is strong anti-correlation of the mean motion with the semi-major axis. This is due to the Kepler law discussed in Appendix A. Furthermore we see that that the mean motion is correctly almost independent with respect to the the diameter (max or min) of  the asteroid. As explained in Appendix A this is an another result of Newton gravitation theory for a two body interaction: the mean motion of an asteroid, as long as the the mass of it is much lower with respect to the sun, is independent from its mass. On the other side the fact that relative velocity is correlated with the diameter is a spurios correlation. At this point one can ask why the mean motion and the relative velocity are orthogonal: this point will be clarified from a theoretical point of view in appendix A and also with graphical models. Briefly the motion of an object on an ellipse as seen from a focus is not uniform: this is faster as the two bodies approaches. Beside this inspection a further analysis based on the concept of mutual information (summarized in the previous chapter) was performed: its result is reported in Fig. \ref{Mutual_information}. This figure summarize the ranking of the features considered in the dataset for the dangerousness classification of the asteroids according to the following expression \cite{kratzer2018varrank}
+The first inspection that was performed on the dataset was related to the density distributions of a selection of continuous features that are known, from the celestial mechanics, to be important for the prediction of the asteroids dangerousness. These are reported in Fig. \ref{Density_relevant}. Next we moved on a more systematic analysis with FADM and mutual information. In Fig. \ref{FADM},\ref{FAMD_Quantitative variables} and \ref{FAMD_Individuals_(c)} are reported the main achivements of FADM (performed with FactoMineR package \cite{le2008factominer}): in particular from the correlation circle in Fig. \ref{FAMD_Quantitative variables} the different correlations that are given by the celestial mechanics laws can be recognized: for instance, see that there is strong anti-correlation of the mean motion with the semi-major axis. This is due to the Kepler laws discussed in Appendix A. Furthermore we see that that the mean motion is correctly almost independent with respect to the the diameter (max or min) of  the asteroid. As explained in Appendix A this is an another result of Newton gravitation theory for a two body interaction: the mean motion of an asteroid, as long as the the mass of it is much lower with respect to the sun, is independent from its mass. On the other side the fact that relative velocity is correlated with the diameter is a spurios correlation. At this point one can ask why the mean motion and the relative velocity are orthogonal: this point will be clarified from a theoretical point of view in appendix A and also with graphical models. Briefly the motion of an object on an ellipse as seen from a focus is not uniform: this is faster as the two bodies approaches. Beside this inspection a further analysis based on the concept of mutual information (summarized in the previous chapter) was performed: its result is reported in Fig. \ref{Mutual_information}. This figure summarize the ranking of the features considered in the dataset for the dangerousness classification of the asteroids according to the following expression \cite{kratzer2018varrank}
 
 \begin{equation}
 g(\alpha,\textbf{C},\textbf{S},f_{i})=MI(f_{i};\textbf{C})-\sum_{f_{s}\in S}\alpha(f_{i},f_{s},\textbf{C},\textbf{S})MI(f_{i};f_{s})
@@ -589,7 +595,7 @@ following the Peng. et al approach \cite{peng2005feature}. It can be seen that t
     \centering
     \includegraphics[width=.9\linewidth]{Figures/DENSITY_Absolute_magnitude.pdf}
     \subcaption{ \begin{center}
-    d) Semi Major Axis
+    d) Absolute magnitude
     \end{center}}
     \vspace{4ex}
   \end{minipage}
@@ -949,10 +955,6 @@ But since $m$,$m'<<m_{c}$ \cite{murray1999solar}:
 \begin{equation}
 (a/a')^{3}\approx(T/T')^{2}
 \end{equation}
-
-Therefore \cite{murray1999solar}:
-
-\cite{murray1999solar}:
 
 We see that the two orbital parameters $T'$ and $a'$ are independent to orbiting mass. This statement can be extended to the other orbital parameters by considering the previous approximation $m$,$m'<<m_{c}$. This is why we expect that the mass/volume of the asteroid can not be conditionally dependant on the orbital parameters. It is useful to define also the \textcolor{red}{mean motion} (feature that is also present in the asteroids dataset) as \cite{murray1999solar}:
 
