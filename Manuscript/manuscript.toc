@@ -10,9 +10,10 @@
 \contentsline {section}{\numberline {4.1}{Preliminary analysis}}{22}{section.4.1}%
 \contentsline {section}{\numberline {4.2}{Probabilistic models}}{29}{section.4.2}%
 \contentsline {section}{\numberline {4.3}{Machine learning algorithms}}{37}{section.4.3}%
-\contentsline {chapter}{\numberline {5}{Conclusions}}{41}{chapter.5}%
+\contentsline {chapter}{\numberline {5}{Conclusions and Outlook}}{41}{chapter.5}%
 \contentsline {chapter}{\numberline {6}{Appendix A: Concepts of astronomy}}{42}{chapter.6}%
 \contentsline {section}{\numberline {6.1}{Celestial mechanics}}{42}{section.6.1}%
 \contentsline {section}{\numberline {6.2}{Observation}}{47}{section.6.2}%
 \contentsline {section}{\numberline {6.3}{Classification}}{49}{section.6.3}%
 \contentsline {chapter}{\numberline {7}{Appendix B: R code}}{56}{chapter.7}%
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

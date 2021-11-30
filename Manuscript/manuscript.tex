@@ -813,9 +813,9 @@ QDA       & 0.5562
 \end{figure}
 
 
-\chapter{Conclusions}
+\chapter{Conclusions and Outlook}
 
-The GLASSO (with a penalizing parameter $\rho=0.3$) and the mgm algorithms provided graphical models that correctly capture the physical connections of the dataset feature. In particular, for both models, it can be seen that no one of the orbital parameters is conditionally dependent on the diameter of the asteroid, as stated by theory. Furthermore, the mgm model can provide forecasts about the hazardousness of the asteroids with almost equal or better performances than the logistic and QDA algorithms.  On the other hand, despite the mgm performances being lower than the RF and SVM, its interpretability is higher.  Such a feature compensates the mgm forecast performances gap.
+The GLASSO (with a penalizing parameter $\rho=0.3$) and the mgm algorithms provided graphical models that correctly capture the physical connections of the dataset feature. In particular, for both models, it can be seen that no one of the orbital parameters is conditionally dependent on the diameter of the asteroid, as stated by theory. Furthermore, the mgm model can provide forecasts about the hazardousness of the asteroids with almost equal or better performances than the logistic and QDA algorithms.  On the other hand, despite the mgm performances being lower than the RF and SVM, its interpretability is higher.  Such a feature compensates the mgm forecast performances gap. As a future outlook I consider to extend this analysis for phisical phenomena for which there is no deterministic theory but a probabilistic one. For instance one can considere the c Solar Flares, Earthquakes and Vulcanos Eruption
 
 \chapter{Appendix A: Concepts of astronomy}
 
@@ -953,7 +953,7 @@ If we have two bodies, of masses $m$ and $m'$, that orbit around the Earth $m_{c
 But since $m$,$m'<<m_{c}$ \cite{murray1999solar}:
 
 \begin{equation}
-(a/a')^{3}\approx(T/T')^{2}
+\frac{m_{c}+m'}{m_{c}+m}\approx\dfrac{m}{m_{c}}=\left(a/a'\right)^{3}\left( T/T'\right)^{2}
 \end{equation}
 
 We see that the two orbital parameters $T'$ and $a'$ are independent to orbiting mass. This statement can be extended to the other orbital parameters by considering the previous approximation $m$,$m'<<m_{c}$. This is why we expect that the mass/volume of the asteroid can not be conditionally dependant on the orbital parameters. It is useful to define also the \textcolor{red}{mean motion} (feature that is also present in the asteroids dataset) as \cite{murray1999solar}:
