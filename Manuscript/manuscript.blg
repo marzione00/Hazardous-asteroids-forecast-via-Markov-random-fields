@@ -1,13 +1,15 @@
-This is BibTeX, Version 0.99d
+This is BibTeX, Version 0.99d (TeX Live 2019)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: manuscript.aux
-Reallocating 'name_of_file' (item size: 1) to 6 items.
 The style file: plain.bst
-Illegal, another \bibstyle command---line 394 of file manuscript.aux
+White space in argument---line 255 of file manuscript.aux
+ : \citation{MASin
+ :                 reverseS}
+I'm skipping whatever remains of this command
+Illegal, another \bibstyle command---line 409 of file manuscript.aux
  : \bibstyle
  :          {unsrt}
 I'm skipping whatever remains of this command
-Reallocating 'name_of_file' (item size: 1) to 11 items.
 Database file #1: sample.bib
 Warning--to sort, need author or key in vesta_source
 Warning--to sort, need author or key in Tunguska_source
@@ -15,6 +17,7 @@ Warning--to sort, need author or key in feynmanlectures
 Warning--to sort, need author or key in cneos+nasa
 Warning--to sort, need author or key in kaggle_dataset
 Warning--to sort, need author or key in Perihelion_precession
+Warning--to sort, need author or key in physics-reality
 Warning--to sort, need author or key in ml_interpretability
 Warning--to sort, need author or key in glasso
 Warning--to sort, need author or key in mgm
@@ -24,43 +27,43 @@ Warning--to sort, need author or key in orbits-of-potentially-hazardous
 Warning--to sort, need author or key in esahubble
 You've used 44 entries,
             2118 wiz_defined-function locations,
-            697 strings with 9532 characters,
-and the built_in function-call counts, 11077 in all, are:
-= -- 1043
-> -- 473
+            691 strings with 9492 characters,
+and the built_in function-call counts, 10954 in all, are:
+= -- 1029
+> -- 461
 < -- 4
-+ -- 195
-- -- 150
-* -- 661
-:= -- 1778
-add.period$ -- 111
++ -- 191
+- -- 146
+* -- 651
+:= -- 1744
+add.period$ -- 108
 call.type$ -- 44
-change.case$ -- 180
+change.case$ -- 177
 chr.to.int$ -- 0
-cite$ -- 57
-duplicate$ -- 450
-empty$ -- 1015
-format.name$ -- 150
-if$ -- 2370
+cite$ -- 58
+duplicate$ -- 445
+empty$ -- 1016
+format.name$ -- 146
+if$ -- 2350
 int.to.chr$ -- 0
 int.to.str$ -- 44
-missing$ -- 44
-newline$ -- 199
-num.names$ -- 62
-pop$ -- 311
+missing$ -- 42
+newline$ -- 196
+num.names$ -- 60
+pop$ -- 314
 preamble$ -- 1
-purify$ -- 163
+purify$ -- 161
 quote$ -- 0
-skip$ -- 339
+skip$ -- 341
 stack$ -- 0
 substring$ -- 479
 swap$ -- 56
 text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 148
-warning$ -- 13
-while$ -- 85
+type$ -- 150
+warning$ -- 14
+while$ -- 83
 width$ -- 46
-write$ -- 402
-(There was 1 error message)
+write$ -- 393
+(There were 2 error messages)

@@ -18,6 +18,9 @@
 \bibitem{Perihelion_precession}
 \url{https://commons.wikimedia.org/wiki/File:Perihelion_precession.svg}.
 
+\bibitem{physics-reality}
+\url{https://www.amacad.org/publication/physics-reality}.
+
 \bibitem{ml_interpretability}
 \url{https://towardsdatascience.com/the-balance-accuracy-vs-interpretability-1b3861408062}.
 
@@ -184,12 +187,6 @@ Tobias Sing, Oliver Sander, Niko Beerenwinkel, and Thomas Lengauer.
 Alfred Tarski, Andrzej Mostowski, and Raphael~Mitchel Robinson.
 \newblock {\em Undecidable theories}, volume~13.
 \newblock Elsevier, 1953.
-
-\bibitem{MASS}
-W.~N. Venables and B.~D. Ripley.
-\newblock {\em Modern Applied Statistics with S}.
-\newblock Springer, New York, fourth edition, 2002.
-\newblock ISBN 0-387-95457-0.
 
 \bibitem{ggplot2}
 Hadley Wickham.
