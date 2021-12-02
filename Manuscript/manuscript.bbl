@@ -160,12 +160,32 @@ Carl~D Murray and Stanley~F Dermott.
 \newblock {\em Solar system dynamics}.
 \newblock Cambridge university press, 1999.
 
+\bibitem{nicolis1989exploring}
+Gregoire Nicolis and Ilya Prigogine.
+\newblock Exploring complexity an introduction.
+\newblock 1989.
+
 \bibitem{peng2005feature}
 Hanchuan Peng, Fuhui Long, and Chris Ding.
 \newblock Feature selection based on mutual information criteria of
   max-dependency, max-relevance, and min-redundancy.
 \newblock {\em IEEE Transactions on pattern analysis and machine intelligence},
   27(8):1226--1238, 2005.
+
+\bibitem{prigogine1978time}
+Ilya Prigogine.
+\newblock Time, structure, and fluctuations.
+\newblock {\em Science}, 201(4358):777--785, 1978.
+
+\bibitem{prigogine2017non}
+Ilya Prigogine.
+\newblock {\em Non-equilibrium statistical mechanics}.
+\newblock Courier Dover Publications, 2017.
+
+\bibitem{prigogine1997end}
+Ilya Prigogine and Isabelle Stengers.
+\newblock {\em The end of certainty}.
+\newblock Simon and Schuster, 1997.
 
 \bibitem{stats}
 {R Core Team}.
@@ -182,6 +202,22 @@ S.~Russell, S.J. Russell, P.~Norvig, and E.~Davis.
 Tobias Sing, Oliver Sander, Niko Beerenwinkel, and Thomas Lengauer.
 \newblock Rocr: visualizing classifier performance in r.
 \newblock {\em Bioinformatics}, 21(20):3940--3941, 2005.
+
+\bibitem{sornette1989self}
+Anne Sornette and Didier Sornette.
+\newblock Self-organized criticality and earthquakes.
+\newblock {\em EPL (Europhysics Letters)}, 9(3):197, 1989.
+
+\bibitem{sornette2006critical}
+Didier Sornette.
+\newblock {\em Critical phenomena in natural sciences: chaos, fractals,
+  selforganization and disorder: concepts and tools}.
+\newblock Springer Science \& Business Media, 2006.
+
+\bibitem{sparks2003forecasting}
+R~Steve~J Sparks.
+\newblock Forecasting volcanic eruptions.
+\newblock {\em Earth and Planetary Science Letters}, 210(1-2):1--15, 2003.
 
 \bibitem{tarski1953undecidable}
 Alfred Tarski, Andrzej Mostowski, and Raphael~Mitchel Robinson.

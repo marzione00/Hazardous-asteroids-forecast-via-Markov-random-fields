@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.2.22)  30 NOV 2021 18:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.2.22)  2 DEC 2021 11:44
 entering extended mode
 **./manuscript.tex
 (manuscript.tex
@@ -2476,18 +2476,13 @@ o-
  []
 
 [16]
-Overfull \hbox (6.43192pt too wide) in paragraph at lines 483--484
-\T1/pplj/m/n/12 Therefore, in prin-ci-ple, the eval-u-a-tion of al-go-rithm per
--for-mances
- []
-
 <Figures/Information_theory_connections.jpg, id=291, 542.77782pt x 505.89pt>
 File: Figures/Information_theory_connections.jpg Graphic file (type jpg)
 <use Figures/Information_theory_connections.jpg>
 Package pdftex.def Info: Figures/Information_theory_connections.jpg  used on in
 put line 487.
 (pdftex.def)             Requested size: 336.0pt x 313.17767pt.
-[17]
+ [17]
 <Figures/Entropy_MI.png, id=298, 491.58656pt x 502.87875pt>
 File: Figures/Entropy_MI.png Graphic file (type png)
 <use Figures/Entropy_MI.png>
@@ -2523,8 +2518,8 @@ Overfull \hbox (1.07498pt too wide) in paragraph at lines 549--549
 
 [22
 
-]
-<Figures/DENSITY_Perihelion_Distance.pdf, id=349, 319.1925pt x 409.53pt>
+] [23]
+<Figures/DENSITY_Perihelion_Distance.pdf, id=358, 319.1925pt x 409.53pt>
 File: Figures/DENSITY_Perihelion_Distance.pdf Graphic file (type pdf)
 <use Figures/DENSITY_Perihelion_Distance.pdf>
 Package pdftex.def Info: Figures/DENSITY_Perihelion_Distance.pdf  used on input
@@ -2540,7 +2535,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<Figures/DENSITY_Eccentricity.pdf, id=350, 319.1925pt x 409.53pt>
+<Figures/DENSITY_Eccentricity.pdf, id=359, 319.1925pt x 409.53pt>
 File: Figures/DENSITY_Eccentricity.pdf Graphic file (type pdf)
 <use Figures/DENSITY_Eccentricity.pdf>
 Package pdftex.def Info: Figures/DENSITY_Eccentricity.pdf  used on input line 5
@@ -2555,7 +2550,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<Figures/DENSITY_Min_orbit_intersection.pdf, id=351, 319.1925pt x 409.53pt>
+<Figures/DENSITY_Min_orbit_intersection.pdf, id=360, 319.1925pt x 409.53pt>
 File: Figures/DENSITY_Min_orbit_intersection.pdf Graphic file (type pdf)
 <use Figures/DENSITY_Min_orbit_intersection.pdf>
 Package pdftex.def Info: Figures/DENSITY_Min_orbit_intersection.pdf  used on in
@@ -2570,7 +2565,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<Figures/DENSITY_Absolute_magnitude.pdf, id=352, 319.1925pt x 409.53pt>
+<Figures/DENSITY_Absolute_magnitude.pdf, id=361, 319.1925pt x 409.53pt>
 File: Figures/DENSITY_Absolute_magnitude.pdf Graphic file (type pdf)
 <use Figures/DENSITY_Absolute_magnitude.pdf>
 Package pdftex.def Info: Figures/DENSITY_Absolute_magnitude.pdf  used on input 
@@ -2595,7 +2590,7 @@ Overfull \hbox (2.65201pt too wide) in paragraph at lines 570--602
 [] [] 
  []
 
-<Figures/FAMD.pdf, id=353, 410.53375pt x 413.545pt>
+<Figures/FAMD.pdf, id=362, 410.53375pt x 413.545pt>
 File: Figures/FAMD.pdf Graphic file (type pdf)
 <use Figures/FAMD.pdf>
 Package pdftex.def Info: Figures/FAMD.pdf  used on input line 609.
@@ -2603,7 +2598,7 @@ Package pdftex.def Info: Figures/FAMD.pdf  used on input line 609.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Figures/FAMD_Quantitative variables.pdf, id=356, 410.53375pt x 413.545pt>
+<Figures/FAMD_Quantitative variables.pdf, id=365, 410.53375pt x 413.545pt>
 File: Figures/FAMD_Quantitative variables.pdf Graphic file (type pdf)
 <use Figures/FAMD_Quantitative variables.pdf>
 Package pdftex.def Info: Figures/FAMD_Quantitative variables.pdf  used on input
@@ -2612,7 +2607,7 @@ Package pdftex.def Info: Figures/FAMD_Quantitative variables.pdf  used on input
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Figures/FAMD_Individuals_(c).pdf, id=359, 410.53375pt x 413.545pt>
+<Figures/FAMD_Individuals_(c).pdf, id=368, 410.53375pt x 413.545pt>
 File: Figures/FAMD_Individuals_(c).pdf Graphic file (type pdf)
 <use Figures/FAMD_Individuals_(c).pdf>
 Package pdftex.def Info: Figures/FAMD_Individuals_(c).pdf  used on input line 6
@@ -2621,11 +2616,11 @@ Package pdftex.def Info: Figures/FAMD_Individuals_(c).pdf  used on input line 6
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[23] [24 <./Figures/DENSITY_Perihelion_Distance.pdf> <./Figures/DENSITY_Eccentr
+[24] [25 <./Figures/DENSITY_Perihelion_Distance.pdf> <./Figures/DENSITY_Eccentr
 icity.pdf> <./Figures/DENSITY_Min_orbit_intersection.pdf> <./Figures/DENSITY_Ab
-solute_magnitude.pdf>] [25 <./Figures/FAMD.pdf>] [26 <./Figures/FAMD_Quantitati
-ve variables.pdf>] [27 <./Figures/FAMD_Individuals_(c).pdf>]
-<Figures/Mutual_information.pdf, id=442, 844.15375pt x 597.23125pt>
+solute_magnitude.pdf>] [26 <./Figures/FAMD.pdf>] [27 <./Figures/FAMD_Quantitati
+ve variables.pdf>] [28 <./Figures/FAMD_Individuals_(c).pdf>]
+<Figures/Mutual_information.pdf, id=446, 844.15375pt x 597.23125pt>
 File: Figures/Mutual_information.pdf Graphic file (type pdf)
 <use Figures/Mutual_information.pdf>
 Package pdftex.def Info: Figures/Mutual_information.pdf  used on input line 634
@@ -2635,13 +2630,13 @@ Package pdftex.def Info: Figures/Mutual_information.pdf  used on input line 634
 
 LaTeX Warning: Float too large for page by 117.29773pt on input line 638.
 
-[28 <./Figures/Mutual_information.pdf>]
+[29 <./Figures/Mutual_information.pdf>]
 Overfull \hbox (9.49197pt too wide) in paragraph at lines 643--644
 \T1/pplj/m/n/12 spect-ing the re-la-tions be-tween con-tin-u-ous vari-ables in 
 the dataset.
  []
 
-<Figures/GLASSO_0.1.pdf, id=458, 409.53pt x 319.1925pt>
+<Figures/GLASSO_0.1.pdf, id=462, 409.53pt x 319.1925pt>
 File: Figures/GLASSO_0.1.pdf Graphic file (type pdf)
 <use Figures/GLASSO_0.1.pdf>
 Package pdftex.def Info: Figures/GLASSO_0.1.pdf  used on input line 648.
@@ -2655,7 +2650,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<Figures/GLASSO_0.2.pdf, id=459, 409.53pt x 319.1925pt>
+<Figures/GLASSO_0.2.pdf, id=463, 409.53pt x 319.1925pt>
 File: Figures/GLASSO_0.2.pdf Graphic file (type pdf)
 <use Figures/GLASSO_0.2.pdf>
 Package pdftex.def Info: Figures/GLASSO_0.2.pdf  used on input line 654.
@@ -2669,7 +2664,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<Figures/GLASSO_0.3.pdf, id=460, 409.53pt x 319.1925pt>
+<Figures/GLASSO_0.3.pdf, id=464, 409.53pt x 319.1925pt>
 File: Figures/GLASSO_0.3.pdf Graphic file (type pdf)
 <use Figures/GLASSO_0.3.pdf>
 Package pdftex.def Info: Figures/GLASSO_0.3.pdf  used on input line 660.
@@ -2683,7 +2678,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<Figures/GLASSO_0.4.pdf, id=461, 409.53pt x 319.1925pt>
+<Figures/GLASSO_0.4.pdf, id=465, 409.53pt x 319.1925pt>
 File: Figures/GLASSO_0.4.pdf Graphic file (type pdf)
 <use Figures/GLASSO_0.4.pdf>
 Package pdftex.def Info: Figures/GLASSO_0.4.pdf  used on input line 666.
@@ -2702,12 +2697,12 @@ Overfull \hbox (2.65201pt too wide) in paragraph at lines 646--670
 [][] [] 
  []
 
-[29
+[30
 
 
-] [30 <./Figures/GLASSO_0.1.pdf> <./Figures/GLASSO_0.2.pdf> <./Figures/GLASSO_0
+] [31 <./Figures/GLASSO_0.1.pdf> <./Figures/GLASSO_0.2.pdf> <./Figures/GLASSO_0
 .3.pdf> <./Figures/GLASSO_0.4.pdf>]
-<Figures/mgm.pdf, id=521, 410.53375pt x 413.545pt>
+<Figures/mgm.pdf, id=525, 410.53375pt x 413.545pt>
 File: Figures/mgm.pdf Graphic file (type pdf)
 <use Figures/mgm.pdf>
 Package pdftex.def Info: Figures/mgm.pdf  used on input line 681.
@@ -2716,7 +2711,7 @@ Package pdftex.def Info: Figures/mgm.pdf  used on input line 681.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Figures/mgm_confusion.pdf, id=528, 410.53375pt x 413.545pt>
+<Figures/mgm_confusion.pdf, id=532, 410.53375pt x 413.545pt>
 File: Figures/mgm_confusion.pdf Graphic file (type pdf)
 <use Figures/mgm_confusion.pdf>
 Package pdftex.def Info: Figures/mgm_confusion.pdf  used on input line 689.
@@ -2724,7 +2719,7 @@ Package pdftex.def Info: Figures/mgm_confusion.pdf  used on input line 689.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Figures/ROC_mgm.pdf, id=535, 410.53375pt x 413.545pt>
+<Figures/ROC_mgm.pdf, id=539, 410.53375pt x 413.545pt>
 File: Figures/ROC_mgm.pdf Graphic file (type pdf)
 <use Figures/ROC_mgm.pdf>
 Package pdftex.def Info: Figures/ROC_mgm.pdf  used on input line 697.
@@ -2732,9 +2727,9 @@ Package pdftex.def Info: Figures/ROC_mgm.pdf  used on input line 697.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[31] [32 <./Figures/mgm.pdf>] [33 <./Figures/mgm_confusion.pdf>] [34 <./Figures
+[32] [33 <./Figures/mgm.pdf>] [34 <./Figures/mgm_confusion.pdf>] [35 <./Figures
 /ROC_mgm.pdf>]
-<Figures/mmod.pdf, id=578, 844.15375pt x 597.23125pt>
+<Figures/mmod.pdf, id=582, 844.15375pt x 597.23125pt>
 File: Figures/mmod.pdf Graphic file (type pdf)
 <use Figures/mmod.pdf>
 Package pdftex.def Info: Figures/mmod.pdf  used on input line 706.
@@ -2743,7 +2738,7 @@ Package pdftex.def Info: Figures/mmod.pdf  used on input line 706.
 
 LaTeX Warning: Float too large for page by 72.14278pt on input line 710.
 
-[35 <./Figures/mmod.pdf>]
+[36 <./Figures/mmod.pdf>]
 
 ! LaTeX Error: There's no line here to end.
 
@@ -2757,7 +2752,7 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-<Figures/minforest.pdf, id=592, 844.15375pt x 597.23125pt>
+<Figures/minforest.pdf, id=597, 844.15375pt x 597.23125pt>
 File: Figures/minforest.pdf Graphic file (type pdf)
 <use Figures/minforest.pdf>
 Package pdftex.def Info: Figures/minforest.pdf  used on input line 716.
@@ -2765,12 +2760,12 @@ Package pdftex.def Info: Figures/minforest.pdf  used on input line 716.
 
 LaTeX Warning: Float too large for page by 72.14278pt on input line 720.
 
-[36 <./Figures/minforest.pdf>]
+[37 <./Figures/minforest.pdf>]
 
-LaTeX Warning: Citation `MASin reverseS' on page 37 undefined on input line 726
+LaTeX Warning: Citation `MASin reverseS' on page 38 undefined on input line 726
 .
 
-<Figures/RF_confusion.pdf, id=615, 410.53375pt x 413.545pt>
+<Figures/RF_confusion.pdf, id=619, 410.53375pt x 413.545pt>
 File: Figures/RF_confusion.pdf Graphic file (type pdf)
 <use Figures/RF_confusion.pdf>
 Package pdftex.def Info: Figures/RF_confusion.pdf  used on input line 734.
@@ -2784,7 +2779,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<Figures/SVM_confusion.pdf, id=616, 410.53375pt x 413.545pt>
+<Figures/SVM_confusion.pdf, id=620, 410.53375pt x 413.545pt>
 File: Figures/SVM_confusion.pdf Graphic file (type pdf)
 <use Figures/SVM_confusion.pdf>
 Package pdftex.def Info: Figures/SVM_confusion.pdf  used on input line 740.
@@ -2798,7 +2793,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<Figures/QDA_confusion.pdf, id=617, 410.53375pt x 413.545pt>
+<Figures/QDA_confusion.pdf, id=621, 410.53375pt x 413.545pt>
 File: Figures/QDA_confusion.pdf Graphic file (type pdf)
 <use Figures/QDA_confusion.pdf>
 Package pdftex.def Info: Figures/QDA_confusion.pdf  used on input line 746.
@@ -2812,7 +2807,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<Figures/Logisic_confusion.pdf, id=618, 410.53375pt x 413.545pt>
+<Figures/Logisic_confusion.pdf, id=622, 410.53375pt x 413.545pt>
 File: Figures/Logisic_confusion.pdf Graphic file (type pdf)
 <use Figures/Logisic_confusion.pdf>
 Package pdftex.def Info: Figures/Logisic_confusion.pdf  used on input line 752.
@@ -2832,7 +2827,7 @@ Overfull \hbox (2.65201pt too wide) in paragraph at lines 732--756
 [][] [] 
  []
 
-<Figures/ROC_RF.pdf, id=623, 410.53375pt x 413.545pt>
+<Figures/ROC_RF.pdf, id=627, 410.53375pt x 413.545pt>
 File: Figures/ROC_RF.pdf Graphic file (type pdf)
 <use Figures/ROC_RF.pdf>
 Package pdftex.def Info: Figures/ROC_RF.pdf  used on input line 764.
@@ -2846,7 +2841,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<Figures/ROC_SVM.pdf, id=624, 410.53375pt x 413.545pt>
+<Figures/ROC_SVM.pdf, id=628, 410.53375pt x 413.545pt>
 File: Figures/ROC_SVM.pdf Graphic file (type pdf)
 <use Figures/ROC_SVM.pdf>
 Package pdftex.def Info: Figures/ROC_SVM.pdf  used on input line 770.
@@ -2860,7 +2855,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<Figures/ROC_QDA.pdf, id=625, 410.53375pt x 413.545pt>
+<Figures/ROC_QDA.pdf, id=629, 410.53375pt x 413.545pt>
 File: Figures/ROC_QDA.pdf Graphic file (type pdf)
 <use Figures/ROC_QDA.pdf>
 Package pdftex.def Info: Figures/ROC_QDA.pdf  used on input line 776.
@@ -2874,7 +2869,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<Figures/ROC_logistic.pdf, id=626, 410.53375pt x 413.545pt>
+<Figures/ROC_logistic.pdf, id=630, 410.53375pt x 413.545pt>
 File: Figures/ROC_logistic.pdf Graphic file (type pdf)
 <use Figures/ROC_logistic.pdf>
 Package pdftex.def Info: Figures/ROC_logistic.pdf  used on input line 782.
@@ -2913,7 +2908,7 @@ deleted material, e.g., by typing `I$}'.
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 792.
 
-<Figures/RF_Importance.pdf, id=629, 410.53375pt x 413.545pt>
+<Figures/RF_Importance.pdf, id=633, 410.53375pt x 413.545pt>
 File: Figures/RF_Importance.pdf Graphic file (type pdf)
 <use Figures/RF_Importance.pdf>
 Package pdftex.def Info: Figures/RF_Importance.pdf  used on input line 809.
@@ -2922,30 +2917,30 @@ Package pdftex.def Info: Figures/RF_Importance.pdf  used on input line 809.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 Chapter 5.
-[37
+[38
 
 
 
 
-] [38 <./Figures/RF_confusion.pdf> <./Figures/SVM_confusion.pdf> <./Figures/QDA
-_confusion.pdf> <./Figures/Logisic_confusion.pdf>] [39 <./Figures/ROC_RF.pdf> <
+] [39 <./Figures/RF_confusion.pdf> <./Figures/SVM_confusion.pdf> <./Figures/QDA
+_confusion.pdf> <./Figures/Logisic_confusion.pdf>] [40 <./Figures/ROC_RF.pdf> <
 ./Figures/ROC_SVM.pdf> <./Figures/ROC_QDA.pdf> <./Figures/ROC_logistic.pdf>] [4
-0 <./Figures/RF_Importance.pdf>]
+1 <./Figures/RF_Importance.pdf>]
 Overfull \hbox (27.42697pt too wide) in paragraph at lines 816--816
 |[]\T1/iwona/m/n/17.28/160ls CONCLUSIONS AND OUT-LOOK| 
  []
 
 Chapter 6.
-[41
+[42
 
 ]
 Overfull \hbox (5.81458pt too wide) in paragraph at lines 820--820
 |[]\T1/iwona/m/n/17.28/160ls APPENDIX A: CON-CEPTS OF
  []
 
-[42
+[43
 
-] [43] [44] [45] [46] [47]
+] [44] [45] [46] [47] [48]
 ! Missing $ inserted.
 <inserted text> 
                 $
@@ -2964,7 +2959,7 @@ l.1080 ...ween Earth and Sun: 1.49\cdot 10^{11} m}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-[48]
+[49]
 Overfull \hbox (7.11469pt too wide) in paragraph at lines 1106--1107
 \T1/pplj/m/it/12 NEAs with or-bits ex-te-rior to Earth's but in-te-rior to Mars
 ' (named
@@ -2976,7 +2971,7 @@ Overfull \hbox (10.07866pt too wide) in paragraph at lines 1112--1113
  Min-i-mum Or-bit In-ter-sec-tion Dis-tance (MOID)
  []
 
-<Figures/Area_dynamics.png, id=848, 708.39656pt x 359.84438pt>
+<Figures/Area_dynamics.png, id=866, 708.39656pt x 359.84438pt>
 File: Figures/Area_dynamics.png Graphic file (type png)
 <use Figures/Area_dynamics.png>
 Package pdftex.def Info: Figures/Area_dynamics.png  used on input line 1122.
@@ -2984,7 +2979,7 @@ Package pdftex.def Info: Figures/Area_dynamics.png  used on input line 1122.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Figures/Conics.png, id=851, 595.47469pt x 574.39594pt>
+<Figures/Conics.png, id=869, 595.47469pt x 574.39594pt>
 File: Figures/Conics.png Graphic file (type png)
 <use Figures/Conics.png>
 Package pdftex.def Info: Figures/Conics.png  used on input line 1130.
@@ -2992,7 +2987,7 @@ Package pdftex.def Info: Figures/Conics.png  used on input line 1130.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Figures/Elliptical_orbit.png, id=854, 931.98187pt x 632.3625pt>
+<Figures/Elliptical_orbit.png, id=872, 931.98187pt x 632.3625pt>
 File: Figures/Elliptical_orbit.png Graphic file (type png)
 <use Figures/Elliptical_orbit.png>
 Package pdftex.def Info: Figures/Elliptical_orbit.png  used on input line 1138.
@@ -3001,7 +2996,7 @@ Package pdftex.def Info: Figures/Elliptical_orbit.png  used on input line 1138.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Figures/Mean_anomaly.png, id=857, 912.40875pt x 418.56375pt>
+<Figures/Mean_anomaly.png, id=875, 912.40875pt x 418.56375pt>
 File: Figures/Mean_anomaly.png Graphic file (type png)
 <use Figures/Mean_anomaly.png>
 Package pdftex.def Info: Figures/Mean_anomaly.png  used on input line 1146.
@@ -3009,7 +3004,7 @@ Package pdftex.def Info: Figures/Mean_anomaly.png  used on input line 1146.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Figures/Inclination.png, id=860, 835.62187pt x 573.64313pt>
+<Figures/Inclination.png, id=878, 835.62187pt x 573.64313pt>
 File: Figures/Inclination.png Graphic file (type png)
 <use Figures/Inclination.png>
 Package pdftex.def Info: Figures/Inclination.png  used on input line 1154.
@@ -3017,7 +3012,7 @@ Package pdftex.def Info: Figures/Inclination.png  used on input line 1154.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Figures/Orbit_asteorids.png, id=863, 2055.68pt x 2055.68pt>
+<Figures/Orbit_asteorids.png, id=881, 2055.68pt x 2055.68pt>
 File: Figures/Orbit_asteorids.png Graphic file (type png)
 <use Figures/Orbit_asteorids.png>
 Package pdftex.def Info: Figures/Orbit_asteorids.png  used on input line 1163.
@@ -3025,7 +3020,7 @@ Package pdftex.def Info: Figures/Orbit_asteorids.png  used on input line 1163.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Figures/heic1715c.jpg, id=866, 2204.235pt x 2300.8359pt>
+<Figures/heic1715c.jpg, id=884, 2204.235pt x 2300.8359pt>
 File: Figures/heic1715c.jpg Graphic file (type jpg)
 <use Figures/heic1715c.jpg>
 Package pdftex.def Info: Figures/heic1715c.jpg  used on input line 1171.
@@ -3033,7 +3028,7 @@ Package pdftex.def Info: Figures/heic1715c.jpg  used on input line 1171.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<Figures/neo_orbit_types.jpg, id=869, 824.3598pt x 554.5518pt>
+<Figures/neo_orbit_types.jpg, id=887, 824.3598pt x 554.5518pt>
 File: Figures/neo_orbit_types.jpg Graphic file (type jpg)
 <use Figures/neo_orbit_types.jpg>
 Package pdftex.def Info: Figures/neo_orbit_types.jpg  used on input line 1179.
@@ -3042,25 +3037,25 @@ Package pdftex.def Info: Figures/neo_orbit_types.jpg  used on input line 1179.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 Chapter 7.
-[49] [50 <./Figures/Area_dynamics.png> <./Figures/Conics.png>] [51 <./Figures/E
-lliptical_orbit.png> <./Figures/Mean_anomaly.png>] [52 <./Figures/Inclination.p
-ng>] [53 <./Figures/Orbit_asteorids.png>] [54 <./Figures/heic1715c.jpg>]
-[55 <./Figures/neo_orbit_types.jpg>]
+[50] [51 <./Figures/Area_dynamics.png> <./Figures/Conics.png>] [52 <./Figures/E
+lliptical_orbit.png> <./Figures/Mean_anomaly.png>] [53 <./Figures/Inclination.p
+ng>] [54 <./Figures/Orbit_asteorids.png>] [55 <./Figures/heic1715c.jpg>]
+[56 <./Figures/neo_orbit_types.jpg>]
 Overfull \hbox (20.90393pt too wide) in paragraph at lines 1185--1186
 \T1/pplj/m/n/12 am-ples pro-vided in the pack-ages doc-u-men-ta-tion, the Prof.
 Nicolussi
  []
 
-(Script_FINAL.R [56
+(Script_FINAL.R [57
 
-] [57] [58] [59] [60] [61] [62] [63]
+] [58] [59] [60] [61] [62] [63] [64]
 LaTeX Font Info:    Trying to load font information for TS1+pplj on input line 
 270.
 
 (C:\Program Files\MiKTeX 2.9\tex/latex/psnfss\ts1pplj.fd
 File: ts1pplj.fd 2004/09/06 font definitions for TS1/pplj.
-) [64] [65] [66]
-[67]) (manuscript.bbl [68]
+) [65] [66] [67]
+[68]) (manuscript.bbl [69]
 Underfull \hbox (badness 10000) in paragraph at lines 4--5
 [][][]$\T1/fvm/m/n/12 https : / / www . nasa . gov / sites / default / files / 
 images /
@@ -3121,39 +3116,53 @@ Underfull \hbox (badness 10000) in paragraph at lines 40--41
 [][][]$\T1/fvm/m/n/12 https : / / www . jpl . nasa . gov / images /
  []
 
-[69
+[70
 
 ]
 Underfull \hbox (badness 1888) in paragraph at lines 66--70
 []\T1/pplj/m/n/12 Evgenia Dim-i-tri-adou, Kurt Hornik, Friedrich Leisch,
  []
 
-[70]
+[71]
 Underfull \hbox (badness 3396) in paragraph at lines 149--152
 []\T1/pplj/m/n/12 Nicolai Mein-shausen and Pe-ter Bühlmann.  High-
  []
 
 
-Underfull \hbox (badness 1173) in paragraph at lines 164--169
+Underfull \hbox (badness 1173) in paragraph at lines 169--174
 \T1/pplj/m/it/12 Trans-ac-tions on pat-tern anal-y-sis and ma-chine in-tel-li-g
 ence\T1/pplj/m/n/12 ,
  []
 
 
-Underfull \hbox (badness 1337) in paragraph at lines 182--185
+Underfull \hbox (badness 3895) in paragraph at lines 181--184
+[]\T1/pplj/m/n/12 Ilya Pri-gogine.  \T1/pplj/m/it/12 Non-equilibrium sta-tis-ti
+-cal me-chan-ics\T1/pplj/m/n/12 .
+ []
+
+[72]
+Underfull \hbox (badness 1337) in paragraph at lines 202--205
 []\T1/pplj/m/n/12 Tobias Sing, Oliver Sander, Niko Beeren-winkel, and
  []
 
-[71]) [72] (manuscript.aux)
+) [73] (manuscript.aux
+
+Package mparhack Warning: Marginpars may have changed.
+(mparhack)                Rerun to get them right.
+
+)
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 42118 strings out of 479334
- 803256 string characters out of 2865057
- 1820963 words of memory out of 3000000
- 57936 multiletter control sequences out of 15000+200000
+ 42134 strings out of 479334
+ 803578 string characters out of 2865057
+ 1819963 words of memory out of 3000000
+ 57944 multiletter control sequences out of 15000+200000
  571606 words of font info for 314 fonts, out of 3000000 for 9000
  1142 hyphenation exceptions out of 8191
  128i,23n,130p,10607b,3227s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -3185,9 +3194,9 @@ wonab.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/nowacki/iwona/iwonar.pfb><C:
 /MiKTeX 2.9/fonts/type1/urw/palatino/uplbi8a.pfb><C:/Program Files/MiKTeX 2.9/f
 onts/type1/urw/palatino/uplr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw
 /palatino/uplri8a.pfb>
-Output written on manuscript.pdf (73 pages, 7654258 bytes).
+Output written on manuscript.pdf (74 pages, 7659963 bytes).
 PDF statistics:
- 1727 PDF objects out of 1728 (max. 8388607)
- 624 named destinations out of 1000 (max. 500000)
+ 1747 PDF objects out of 2073 (max. 8388607)
+ 632 named destinations out of 1000 (max. 500000)
  40373 words of extra memory for PDF output out of 42996 (max. 10000000)
 
