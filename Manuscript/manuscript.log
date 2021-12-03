@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.2.22)  2 DEC 2021 11:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2021.2.22)  3 DEC 2021 08:58
 entering extended mode
 **./manuscript.tex
 (manuscript.tex
@@ -3145,23 +3145,15 @@ Underfull \hbox (badness 1337) in paragraph at lines 202--205
 []\T1/pplj/m/n/12 Tobias Sing, Oliver Sander, Niko Beeren-winkel, and
  []
 
-) [73] (manuscript.aux
-
-Package mparhack Warning: Marginpars may have changed.
-(mparhack)                Rerun to get them right.
-
-)
+) [73] (manuscript.aux)
 
 LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
  42134 strings out of 479334
  803578 string characters out of 2865057
- 1819963 words of memory out of 3000000
+ 1820963 words of memory out of 3000000
  57944 multiletter control sequences out of 15000+200000
  571606 words of font info for 314 fonts, out of 3000000 for 9000
  1142 hyphenation exceptions out of 8191
@@ -3194,7 +3186,7 @@ wonab.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/nowacki/iwona/iwonar.pfb><C:
 /MiKTeX 2.9/fonts/type1/urw/palatino/uplbi8a.pfb><C:/Program Files/MiKTeX 2.9/f
 onts/type1/urw/palatino/uplr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw
 /palatino/uplri8a.pfb>
-Output written on manuscript.pdf (74 pages, 7659963 bytes).
+Output written on manuscript.pdf (74 pages, 7659969 bytes).
 PDF statistics:
  1747 PDF objects out of 2073 (max. 8388607)
  632 named destinations out of 1000 (max. 500000)
