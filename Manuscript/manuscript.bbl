@@ -224,6 +224,12 @@ Alfred Tarski, Andrzej Mostowski, and Raphael~Mitchel Robinson.
 \newblock {\em Undecidable theories}, volume~13.
 \newblock Elsevier, 1953.
 
+\bibitem{MASS}
+W.~N. Venables and B.~D. Ripley.
+\newblock {\em Modern Applied Statistics with S}.
+\newblock Springer, New York, fourth edition, 2002.
+\newblock ISBN 0-387-95457-0.
+
 \bibitem{ggplot2}
 Hadley Wickham.
 \newblock {\em ggplot2: Elegant Graphics for Data Analysis}.

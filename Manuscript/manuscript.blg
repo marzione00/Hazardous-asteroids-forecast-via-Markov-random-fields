@@ -3,17 +3,12 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: manuscript.aux
 Reallocating 'name_of_file' (item size: 1) to 6 items.
 The style file: plain.bst
-White space in argument---line 256 of file manuscript.aux
- : \citation{MASin
- :                 reverseS}
-I'm skipping whatever remains of this command
-Illegal, another \bibstyle command---line 417 of file manuscript.aux
+Illegal, another \bibstyle command---line 426 of file manuscript.aux
  : \bibstyle
  :          {unsrt}
 I'm skipping whatever remains of this command
 Reallocating 'name_of_file' (item size: 1) to 11 items.
 Database file #1: sample.bib
-Warning--I didn't find a database entry for ""
 Warning--to sort, need author or key in vesta_source
 Warning--to sort, need author or key in Tunguska_source
 Warning--to sort, need author or key in feynmanlectures
@@ -29,45 +24,45 @@ Warning--to sort, need author or key in nasa_classification
 Warning--to sort, need author or key in orbits-of-potentially-hazardous
 Warning--to sort, need author or key in esahubble
 Warning--empty journal in nicolis1989exploring
-You've used 51 entries,
+You've used 52 entries,
             2118 wiz_defined-function locations,
-            728 strings with 10297 characters,
-and the built_in function-call counts, 12727 in all, are:
-= -- 1199
-> -- 528
+            736 strings with 10408 characters,
+and the built_in function-call counts, 12999 in all, are:
+= -- 1226
+> -- 541
 < -- 4
-+ -- 219
-- -- 166
-* -- 753
-:= -- 2053
-add.period$ -- 129
-call.type$ -- 51
-change.case$ -- 205
++ -- 224
+- -- 170
+* -- 768
+:= -- 2101
+add.period$ -- 133
+call.type$ -- 52
+change.case$ -- 210
 chr.to.int$ -- 0
-cite$ -- 66
-duplicate$ -- 524
-empty$ -- 1173
-format.name$ -- 166
-if$ -- 2716
+cite$ -- 67
+duplicate$ -- 536
+empty$ -- 1195
+format.name$ -- 170
+if$ -- 2774
 int.to.chr$ -- 0
-int.to.str$ -- 51
-missing$ -- 52
-newline$ -- 231
-num.names$ -- 74
-pop$ -- 353
+int.to.str$ -- 52
+missing$ -- 54
+newline$ -- 237
+num.names$ -- 76
+pop$ -- 359
 preamble$ -- 1
-purify$ -- 185
+purify$ -- 189
 quote$ -- 0
-skip$ -- 390
+skip$ -- 397
 stack$ -- 0
-substring$ -- 565
-swap$ -- 62
+substring$ -- 570
+swap$ -- 63
 text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 172
+type$ -- 174
 warning$ -- 15
-while$ -- 102
-width$ -- 53
-write$ -- 465
-(There were 2 error messages)
+while$ -- 104
+width$ -- 54
+write$ -- 479
+(There was 1 error message)
