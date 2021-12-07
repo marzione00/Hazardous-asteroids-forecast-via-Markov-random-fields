@@ -17,28 +17,76 @@
   <!ELEMENT infile (#PCDATA)>
   <!ELEMENT outfile (#PCDATA)>
   <!ELEMENT file (#PCDATA)>
-\space \space <!ATTLIST requests
-\space \space \space \space version CDATA #REQUIRED
-\space \space >
-\space \space <!ATTLIST internal
-\space \space \space \space package CDATA #REQUIRED
-\space \space \space \space priority (9) #REQUIRED
-\space \space \space \space active (0 | 1) #REQUIRED
-\space \space >
-\space \space <!ATTLIST external
-\space \space \space \space package CDATA #REQUIRED
-\space \space \space \space priority (1 | 2 | 3 | 4 | 5 | 6 | 7 | 8) #REQUIRED
-\space \space \space \space active (0 | 1) #REQUIRED
-\space \space >
-\space \space <!ATTLIST provides
-\space \space \space \space type (static | dynamic | editable) #REQUIRED
-\space \space >
-\space \space <!ATTLIST requires
-\space \space \space \space type (static | dynamic | editable) #REQUIRED
-\space \space >
-\space \space <!ATTLIST file
-\space \space \space \space type CDATA #IMPLIED
-\space \space >
+  <!ATTLIST requests
+    version CDATA #REQUIRED
+  >
+  <!ATTLIST internal
+    package CDATA #REQUIRED
+    priority (9) #REQUIRED
+    active (0 | 1) #REQUIRED
+  >
+  <!ATTLIST external
+    package CDATA #REQUIRED
+    priority (1 | 2 | 3 | 4 | 5 | 6 | 7 | 8) #REQUIRED
+    active (0 | 1) #REQUIRED
+  >
+  <!ATTLIST provides
+    type (static | dynamic | editable) #REQUIRED
+  >
+  <!ATTLIST requires
+    type (static | dynamic | editable) #REQUIRED
+  >
+  <!ATTLIST file
+    type CDATA #IMPLIED
+  >
 ]>
 <requests version="1.0">
+  <internal package="biblatex" priority="9" active="0">
+    <generic>latex</generic>
+    <provides type="dynamic">
+      <file>Presentation.aux</file>
+      <file>Presentation-blx.bib</file>
+    </provides>
+    <requires type="dynamic">
+      <file>Presentation.bbl</file>
+    </requires>
+    <requires type="static">
+      <file>blx-dm.def</file>
+      <file>blx-compat.def</file>
+      <file>blx-bibtex.def</file>
+      <file>biblatex.def</file>
+      <file>standard.bbx</file>
+      <file>numeric.bbx</file>
+      <file>numeric.cbx</file>
+      <file>biblatex.cfg</file>
+      <file>english.lbx</file>
+    </requires>
+  </internal>
+  <external package="biblatex" priority="5" active="0">
+    <generic>bibtex</generic>
+    <cmdline>
+      <binary>bibtex</binary>
+      <option>-min-crossrefs 2</option>
+      <infile>Presentation</infile>
+    </cmdline>
+    <input>
+      <file>Presentation.aux</file>
+    </input>
+    <output>
+      <file>Presentation.bbl</file>
+    </output>
+    <provides type="dynamic">
+      <file>Presentation.bbl</file>
+    </provides>
+    <requires type="dynamic">
+      <file>Presentation.aux</file>
+      <file>Presentation-blx.bib</file>
+    </requires>
+    <requires type="editable">
+      <file>bibliography.bib</file>
+    </requires>
+    <requires type="static">
+      <file>biblatex.bst</file>
+    </requires>
+  </external>
 </requests>
