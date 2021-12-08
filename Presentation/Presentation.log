@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.12.5)  8 DEC 2021 16:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.12.5)  8 DEC 2021 16:35
 entering extended mode
 **./Presentation.tex
 (Presentation.tex
@@ -1202,7 +1202,7 @@ Package biblatex Info: Reference segment=0 on input line 29.
 File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 )
 (Presentation.nav)
-Overfull \hbox (11.06712pt too wide) detected at line 29
+Overfull \hbox (6.04pt too wide) detected at line 29
   [] [][] [][][][][][][][][][][][][][][] [][][][] [][][][][] [][][][][][][] [][
 ][][][][][] [][] [][][][][][][][][][][][][][][][] []  
  []
@@ -1217,7 +1217,7 @@ File: Pic/Intro.jpg Graphic file (type jpg)
 Package pdftex.def Info: Pic/Intro.jpg  used on input line 33.
 (pdftex.def)             Requested size: 364.19536pt x 204.85924pt.
 
-Overfull \hbox (11.06712pt too wide) has occurred while \output is active
+Overfull \hbox (6.04pt too wide) has occurred while \output is active
   [] [][] [][][][][][][][][][][][][][][] [][][][] [][][][][] [][][][][][][] [][
 ][][][][][] [][] [][][][][][][][][][][][][][][][] []  
  []
@@ -1225,7 +1225,7 @@ Overfull \hbox (11.06712pt too wide) has occurred while \output is active
 [1{C:/Users/Marzio/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
 
  <./Pic/Intro.jpg>]
-Overfull \hbox (11.06712pt too wide) has occurred while \output is active
+Overfull \hbox (6.04pt too wide) has occurred while \output is active
   [] [][] [][][][][][][][][][][][][][][] [][][][] [][][][][] [][][][][][][] [][
 ][][][][][] [][] [][][][][][][][][][][][][][][][] []  
  []
@@ -1251,7 +1251,7 @@ ut line 81.
 File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/ma
 thkerncmss.
 )
-Overfull \hbox (11.06712pt too wide) has occurred while \output is active
+Overfull \hbox (6.04pt too wide) has occurred while \output is active
   [] [][] [][][][][][][][][][][][][][][] [][][][] [][][][][] [][][][][][][] [][
 ][][][][][] [][] [][][][][][][][][][][][][][][][] []  
  []
@@ -1269,7 +1269,7 @@ LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <6> not available
 (Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 108.
 
 
-Overfull \hbox (11.06712pt too wide) has occurred while \output is active
+Overfull \hbox (6.04pt too wide) has occurred while \output is active
   [] [][] [][][][][][][][][][][][][][][] [][][][] [][][][][] [][][][][][][] [][
 ][][][][][] [][] [][][][][][][][][][][][][][][][] []  
  []
@@ -1283,7 +1283,7 @@ File: Pic/Area_dynamics.png Graphic file (type png)
 Package pdftex.def Info: Pic/Area_dynamics.png  used on input line 134.
 (pdftex.def)             Requested size: 92.1879pt x 46.82533pt.
 
-Overfull \hbox (11.06712pt too wide) has occurred while \output is active
+Overfull \hbox (6.04pt too wide) has occurred while \output is active
   [] [][] [][][][][][][][][][][][][][][] [][][][] [][][][][] [][][][][][][] [][
 ][][][][][] [][] [][][][][][][][][][][][][][][][] []  
  []
@@ -1291,7 +1291,7 @@ Overfull \hbox (11.06712pt too wide) has occurred while \output is active
 [5
 
  <./Pic/Area_dynamics.png>]
-Overfull \hbox (11.06712pt too wide) has occurred while \output is active
+Overfull \hbox (6.04pt too wide) has occurred while \output is active
   [] [][] [][][][][][][][][][][][][][][] [][][][] [][][][][] [][][][][][][] [][
 ][][][][][] [][] [][][][][][][][][][][][][][][][] []  
  []
@@ -1310,7 +1310,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{Area_dynamics
                    \relax 
 l.193 \end{frame}
                  
-Overfull \hbox (11.06712pt too wide) has occurred while \output is active
+Overfull \hbox (6.04pt too wide) has occurred while \output is active
   [] [][] [][][][][][][][][][][][][][][] [][][][] [][][][][] [][][][][][][] [][
 ][][][][][] [][] [][][][][][][][][][][][][][][][] []  
  []
@@ -1329,7 +1329,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{Area_dynamics
                    \relax 
 l.236 \end{frame}
                  
-Overfull \hbox (11.06712pt too wide) has occurred while \output is active
+Overfull \hbox (6.04pt too wide) has occurred while \output is active
   [] [][] [][][][][][][][][][][][][][][] [][][][] [][][][][] [][][][][][][] [][
 ][][][][][] [][] [][][][][][][][][][][][][][][][] []  
  []
@@ -1360,7 +1360,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Overfull \hbox (11.06712pt too wide) has occurred while \output is active
+Overfull \hbox (6.04pt too wide) has occurred while \output is active
   [] [][] [][][][][][][][][][][][][][][] [][][][] [][][][][] [][][][][][][] [][
 ][][][][][] [][] [][][][][][][][][][][][][][][][] []  
  []
@@ -1368,7 +1368,7 @@ Overfull \hbox (11.06712pt too wide) has occurred while \output is active
 [9
 
 ]
-Overfull \hbox (11.06712pt too wide) has occurred while \output is active
+Overfull \hbox (6.04pt too wide) has occurred while \output is active
   [] [][] [][][][][][][][][][][][][][][] [][][][] [][][][][] [][][][][][][] [][
 ][][][][][] [][] [][][][][][][][][][][][][][][][] []  
  []
@@ -1387,7 +1387,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{Area_dynamics
                    \relax 
 l.323 \end{frame}
                  
-Overfull \hbox (11.06712pt too wide) has occurred while \output is active
+Overfull \hbox (6.04pt too wide) has occurred while \output is active
   [] [][] [][][][][][][][][][][][][][][] [][][][] [][][][][] [][][][][][][] [][
 ][][][][][] [][] [][][][][][][][][][][][][][][][] []  
  []
@@ -1406,7 +1406,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{Area_dynamics
                    \relax 
 l.344 \end{frame}
                  
-Overfull \hbox (11.06712pt too wide) has occurred while \output is active
+Overfull \hbox (6.04pt too wide) has occurred while \output is active
   [] [][] [][][][][][][][][][][][][][][] [][][][] [][][][][] [][][][][][][] [][
 ][][][][][] [][] [][][][][][][][][][][][][][][][] []  
  []
@@ -1414,7 +1414,7 @@ Overfull \hbox (11.06712pt too wide) has occurred while \output is active
 [12
 
  <./Pic/Inclination.png>]
-Overfull \hbox (11.06712pt too wide) has occurred while \output is active
+Overfull \hbox (6.04pt too wide) has occurred while \output is active
   [] [][] [][][][][][][][][][][][][][][] [][][][] [][][][][] [][][][][][][] [][
 ][][][][][] [][] [][][][][][][][][][][][][][][][] []  
  []
@@ -1422,7 +1422,7 @@ Overfull \hbox (11.06712pt too wide) has occurred while \output is active
 [13
 
 ]
-Overfull \hbox (11.06712pt too wide) has occurred while \output is active
+Overfull \hbox (6.04pt too wide) has occurred while \output is active
   [] [][] [][][][][][][][][][][][][][][] [][][][] [][][][][] [][][][][][][] [][
 ][][][][][] [][] [][][][][][][][][][][][][][][][] []  
  []
@@ -1445,7 +1445,7 @@ Overfull \vbox (27.38727pt too high) detected at line 392
  []
 
 
-Overfull \hbox (11.06712pt too wide) has occurred while \output is active
+Overfull \hbox (6.04pt too wide) has occurred while \output is active
   [] [][] [][][][][][][][][][][][][][][] [][][][] [][][][][] [][][][][][][] [][
 ][][][][][] [][] [][][][][][][][][][][][][][][][] []  
  []
@@ -1453,7 +1453,7 @@ Overfull \hbox (11.06712pt too wide) has occurred while \output is active
 [15
 
  <./Pic/neo_orbit_types.jpg>]
-Overfull \hbox (11.06712pt too wide) has occurred while \output is active
+Overfull \hbox (6.04pt too wide) has occurred while \output is active
   [] [][] [][][][][][][][][][][][][][][] [][][][] [][][][][] [][][][][][][] [][
 ][][][][][] [][] [][][][][][][][][][][][][][][][] []  
  []
@@ -1461,7 +1461,7 @@ Overfull \hbox (11.06712pt too wide) has occurred while \output is active
 [16
 
 ]
-Overfull \hbox (11.06712pt too wide) has occurred while \output is active
+Overfull \hbox (6.04pt too wide) has occurred while \output is active
   [] [][] [][][][][][][][][][][][][][][] [][][][] [][][][][] [][][][][][][] [][
 ][][][][][] [][] [][][][][][][][][][][][][][][][] []  
  []
@@ -1469,7 +1469,7 @@ Overfull \hbox (11.06712pt too wide) has occurred while \output is active
 [17
 
 ]
-Overfull \hbox (11.06712pt too wide) has occurred while \output is active
+Overfull \hbox (6.04pt too wide) has occurred while \output is active
   [] [][] [][][][][][][][][][][][][][][] [][][][] [][][][][] [][][][][][][] [][
 ][][][][][] [][] [][][][][][][][][][][][][][][][] []  
  []
@@ -1482,7 +1482,7 @@ Overfull \hbox (11.06712pt too wide) has occurred while \output is active
                    \relax 
 l.470 \end{frame}
                  
-Overfull \hbox (11.06712pt too wide) has occurred while \output is active
+Overfull \hbox (6.04pt too wide) has occurred while \output is active
   [] [][] [][][][][][][][][][][][][][][] [][][][] [][][][][] [][][][][][][] [][
 ][][][][][] [][] [][][][][][][][][][][][][][][][] []  
  []
@@ -1570,7 +1570,7 @@ Overfull \vbox (17.31902pt too high) detected at line 496
  []
 
 
-Overfull \hbox (11.06712pt too wide) has occurred while \output is active
+Overfull \hbox (6.04pt too wide) has occurred while \output is active
   [] [][] [][][][][][][][][][][][][][][] [][][][] [][][][][] [][][][][][][] [][
 ][][][][][] [][] [][][][][][][][][][][][][][][][] []  
  []
@@ -1659,7 +1659,7 @@ Overfull \vbox (17.31902pt too high) detected at line 520
  []
 
 
-Overfull \hbox (11.06712pt too wide) has occurred while \output is active
+Overfull \hbox (6.04pt too wide) has occurred while \output is active
   [] [][] [][][][][][][][][][][][][][][] [][][][] [][][][][] [][][][][][][] [][
 ][][][][][] [][] [][][][][][][][][][][][][][][][] []  
  []
@@ -1680,7 +1680,7 @@ Package pdftex.def Info: Pic/FAMD_Quantitative variables.pdf  used on input lin
 e 541.
 (pdftex.def)             Requested size: 153.64493pt x 154.76979pt.
 
-Overfull \hbox (11.06712pt too wide) has occurred while \output is active
+Overfull \hbox (6.04pt too wide) has occurred while \output is active
   [] [][] [][][][][][][][][][][][][][][] [][][][] [][][][][] [][][][][][][] [][
 ][][][][][] [][] [][][][][][][][][][][][][][][][] []  
  []
@@ -1694,7 +1694,7 @@ File: Pic/Mutual_information.pdf Graphic file (type pdf)
 Package pdftex.def Info: Pic/Mutual_information.pdf  used on input line 550.
 (pdftex.def)             Requested size: 276.559pt x 195.66528pt.
 
-Overfull \hbox (11.06712pt too wide) has occurred while \output is active
+Overfull \hbox (6.04pt too wide) has occurred while \output is active
   [] [][] [][][][][][][][][][][][][][][] [][][][] [][][][][] [][][][][][][] [][
 ][][][][][] [][] [][][][][][][][][][][][][][][][] []  
  []
@@ -1777,7 +1777,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Overfull \hbox (11.06712pt too wide) has occurred while \output is active
+Overfull \hbox (6.04pt too wide) has occurred while \output is active
   [] [][] [][][][][][][][][][][][][][][] [][][][] [][][][][] [][][][][][][] [][
 ][][][][][] [][] [][][][][][][][][][][][][][][][] []  
  []
@@ -1860,7 +1860,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Overfull \hbox (11.06712pt too wide) has occurred while \output is active
+Overfull \hbox (6.04pt too wide) has occurred while \output is active
   [] [][] [][][][][][][][][][][][][][][] [][][][] [][][][][] [][][][][][][] [][
 ][][][][][] [][] [][][][][][][][][][][][][][][][] []  
  []
@@ -1874,7 +1874,7 @@ File: Pic/mgm.pdf Graphic file (type pdf)
 Package pdftex.def Info: Pic/mgm.pdf  used on input line 600.
 (pdftex.def)             Requested size: 184.3758pt x 185.72752pt.
 
-Overfull \hbox (11.06712pt too wide) has occurred while \output is active
+Overfull \hbox (6.04pt too wide) has occurred while \output is active
   [] [][] [][][][][][][][][][][][][][][] [][][][] [][][][][] [][][][][][][] [][
 ][][][][][] [][] [][][][][][][][][][][][][][][][] []  
  []
@@ -1893,7 +1893,7 @@ n already used, duplicate ignored
                    \relax 
 l.609 \end{frame}
                  
-Overfull \hbox (11.06712pt too wide) has occurred while \output is active
+Overfull \hbox (6.04pt too wide) has occurred while \output is active
   [] [][] [][][][][][][][][][][][][][][] [][][][] [][][][][] [][][][][][][] [][
 ][][][][][] [][] [][][][][][][][][][][][][][][][] []  
  []
@@ -1912,7 +1912,7 @@ n already used, duplicate ignored
                    \relax 
 l.618 \end{frame}
                  
-Overfull \hbox (11.06712pt too wide) has occurred while \output is active
+Overfull \hbox (6.04pt too wide) has occurred while \output is active
   [] [][] [][][][][][][][][][][][][][][] [][][][] [][][][][] [][][][][][][] [][
 ][][][][][] [][] [][][][][][][][][][][][][][][][] []  
  []
@@ -1973,7 +1973,7 @@ File: Pic/ROC_mgm.pdf Graphic file (type pdf)
 Package pdftex.def Info: Pic/ROC_mgm.pdf  used on input line 632.
 (pdftex.def)             Requested size: 153.64493pt x 154.76979pt.
 
-Overfull \hbox (11.06712pt too wide) has occurred while \output is active
+Overfull \hbox (6.04pt too wide) has occurred while \output is active
   [] [][] [][][][][][][][][][][][][][][] [][][][] [][][][][] [][][][][][][] [][
 ][][][][][] [][] [][][][][][][][][][][][][][][][] []  
  []
@@ -2034,7 +2034,7 @@ File: Pic/ROC_RF.pdf Graphic file (type pdf)
 Package pdftex.def Info: Pic/ROC_RF.pdf  used on input line 646.
 (pdftex.def)             Requested size: 153.64493pt x 154.76979pt.
 
-Overfull \hbox (11.06712pt too wide) has occurred while \output is active
+Overfull \hbox (6.04pt too wide) has occurred while \output is active
   [] [][] [][][][][][][][][][][][][][][] [][][][] [][][][][] [][][][][][][] [][
 ][][][][][] [][] [][][][][][][][][][][][][][][][] []  
  []
@@ -2073,7 +2073,7 @@ Overfull \vbox (7.25371pt too high) detected at line 652
  []
 
 
-Overfull \hbox (11.06712pt too wide) has occurred while \output is active
+Overfull \hbox (6.04pt too wide) has occurred while \output is active
   [] [][] [][][][][][][][][][][][][][][] [][][][] [][][][][] [][][][][][][] [][
 ][][][][][] [][] [][][][][][][][][][][][][][][][] []  
  []
@@ -2134,7 +2134,7 @@ File: Pic/ROC_SVM.pdf Graphic file (type pdf)
 Package pdftex.def Info: Pic/ROC_SVM.pdf  used on input line 665.
 (pdftex.def)             Requested size: 153.64493pt x 154.76979pt.
 
-Overfull \hbox (11.06712pt too wide) has occurred while \output is active
+Overfull \hbox (6.04pt too wide) has occurred while \output is active
   [] [][] [][][][][][][][][][][][][][][] [][][][] [][][][][] [][][][][][][] [][
 ][][][][][] [][] [][][][][][][][][][][][][][][][] []  
  []
@@ -2195,7 +2195,7 @@ File: Pic/ROC_QDA.pdf Graphic file (type pdf)
 Package pdftex.def Info: Pic/ROC_QDA.pdf  used on input line 678.
 (pdftex.def)             Requested size: 153.64493pt x 154.76979pt.
 
-Overfull \hbox (11.06712pt too wide) has occurred while \output is active
+Overfull \hbox (6.04pt too wide) has occurred while \output is active
   [] [][] [][][][][][][][][][][][][][][] [][][][] [][][][][] [][][][][][][] [][
 ][][][][][] [][] [][][][][][][][][][][][][][][][] []  
  []
@@ -2256,7 +2256,7 @@ File: Pic/ROC_Logistic.pdf Graphic file (type pdf)
 Package pdftex.def Info: Pic/ROC_Logistic.pdf  used on input line 691.
 (pdftex.def)             Requested size: 153.64493pt x 154.76979pt.
 
-Overfull \hbox (11.06712pt too wide) has occurred while \output is active
+Overfull \hbox (6.04pt too wide) has occurred while \output is active
   [] [][] [][][][][][][][][][][][][][][] [][][][] [][][][][] [][][][][][][] [][
 ][][][][][] [][] [][][][][][][][][][][][][][][][] []  
  []
@@ -2264,7 +2264,7 @@ Overfull \hbox (11.06712pt too wide) has occurred while \output is active
 [34
 
  <./Pic/Logisic_confusion.pdf> <./Pic/ROC_Logistic.pdf>]
-Overfull \hbox (11.06712pt too wide) has occurred while \output is active
+Overfull \hbox (6.04pt too wide) has occurred while \output is active
   [] [][] [][][][][][][][][][][][][][][] [][][][] [][][][][] [][][][][][][] [][
 ][][][][][] [][] [][][][][][][][][][][][][][][][] []  
  []
@@ -2272,7 +2272,7 @@ Overfull \hbox (11.06712pt too wide) has occurred while \output is active
 [35
 
 ]
-Overfull \hbox (11.06712pt too wide) has occurred while \output is active
+Overfull \hbox (6.04pt too wide) has occurred while \output is active
   [] [][] [][][][][][][][][][][][][][][] [][][][] [][][][][] [][][][][][][] [][
 ][][][][][] [][] [][][][][][][][][][][][][][][][] []  
  []
@@ -2280,7 +2280,7 @@ Overfull \hbox (11.06712pt too wide) has occurred while \output is active
 [36
 
 ]
-Overfull \hbox (11.06712pt too wide) has occurred while \output is active
+Overfull \hbox (6.04pt too wide) has occurred while \output is active
   [] [][] [][][][][][][][][][][][][][][] [][][][] [][][][][] [][][][][][][] [][
 ][][][][][] [][] [][][][][][][][][][][][][][][][] []  
  []
@@ -2309,7 +2309,7 @@ File: Pic/ROC/ROC_B_R.png Graphic file (type png)
 Package pdftex.def Info: Pic/ROC/ROC_B_R.png  used on input line 758.
 (pdftex.def)             Requested size: 76.82246pt x 69.81583pt.
 
-Overfull \hbox (11.06712pt too wide) has occurred while \output is active
+Overfull \hbox (6.04pt too wide) has occurred while \output is active
   [] [][] [][][][][][][][][][][][][][][] [][][][] [][][][][] [][][][][][][] [][
 ][][][][][] [][] [][][][][][][][][][][][][][][][] []  
  []
@@ -2339,7 +2339,7 @@ File: Pic/ROC/ROC_D_R.png Graphic file (type png)
 Package pdftex.def Info: Pic/ROC/ROC_D_R.png  used on input line 778.
 (pdftex.def)             Requested size: 76.82246pt x 69.65042pt.
 
-Overfull \hbox (11.06712pt too wide) has occurred while \output is active
+Overfull \hbox (6.04pt too wide) has occurred while \output is active
   [] [][] [][][][][][][][][][][][][][][] [][][][] [][][][][] [][][][][][][] [][
 ][][][][][] [][] [][][][][][][][][][][][][][][][] []  
  []
@@ -2348,7 +2348,7 @@ Overfull \hbox (11.06712pt too wide) has occurred while \output is active
 
  <./Pic/ROC/ROC_C.png (PNG copy)> <./Pic/ROC/ROC_D.png (PNG copy)> <./Pic/ROC/R
 OC_C_R.png (PNG copy)> <./Pic/ROC/ROC_D_R.png (PNG copy)>]
-Overfull \hbox (11.06712pt too wide) has occurred while \output is active
+Overfull \hbox (6.04pt too wide) has occurred while \output is active
   [] [][] [][][][][][][][][][][][][][][] [][][][] [][][][][] [][][][][][][] [][
 ][][][][][] [][] [][][][][][][][][][][][][][][][] []  
  []
@@ -2505,7 +2505,7 @@ the current column of the current alignment.
 Try to go on, since this might almost work.
 
 
-Overfull \hbox (11.06712pt too wide) has occurred while \output is active
+Overfull \hbox (6.04pt too wide) has occurred while \output is active
   [] [][] [][][][][][][][][][][][][][][] [][][][] [][][][][] [][][][][][][] [][
 ][][][][][] [][] [][][][][][][][][][][][][][][][] []  
  []
@@ -2513,7 +2513,7 @@ Overfull \hbox (11.06712pt too wide) has occurred while \output is active
 [41
 
 ]
-Overfull \hbox (11.06712pt too wide) has occurred while \output is active
+Overfull \hbox (6.04pt too wide) has occurred while \output is active
   [] [][] [][][][][][][][][][][][][][][] [][][][] [][][][][] [][][][][][][] [][
 ][][][][][] [][] [][][][][][][][][][][][][][][][] []  
  []
@@ -2521,7 +2521,7 @@ Overfull \hbox (11.06712pt too wide) has occurred while \output is active
 [42
 
 ]
-Overfull \hbox (11.06712pt too wide) has occurred while \output is active
+Overfull \hbox (6.04pt too wide) has occurred while \output is active
   [] [][] [][][][][][][][][][][][][][][] [][][][] [][][][][] [][][][][][][] [][
 ][][][][][] [][] [][][][][][][][][][][][][][][][] []  
  []
@@ -2529,7 +2529,7 @@ Overfull \hbox (11.06712pt too wide) has occurred while \output is active
 [43
 
 ]
-Overfull \hbox (11.06712pt too wide) has occurred while \output is active
+Overfull \hbox (6.04pt too wide) has occurred while \output is active
   [] [][] [][][][][][][][][][][][][][][] [][][][] [][][][][] [][][][][][][] [][
 ][][][][][] [][] [][][][][][][][][][][][][][][][] []  
  []
@@ -2537,7 +2537,7 @@ Overfull \hbox (11.06712pt too wide) has occurred while \output is active
 [44
 
 ]
-Overfull \hbox (11.06712pt too wide) has occurred while \output is active
+Overfull \hbox (6.04pt too wide) has occurred while \output is active
   [] [][] [][][][][][][][][][][][][][][] [][][][] [][][][][] [][][][][][][] [][
 ][][][][][] [][] [][][][][][][][][][][][][][][][] []  
  []
@@ -2545,7 +2545,7 @@ Overfull \hbox (11.06712pt too wide) has occurred while \output is active
 [45
 
 ]
-Overfull \hbox (11.06712pt too wide) has occurred while \output is active
+Overfull \hbox (6.04pt too wide) has occurred while \output is active
   [] [][] [][][][][][][][][][][][][][][] [][][][] [][][][][] [][][][][][][] [][
 ][][][][][] [][] [][][][][][][][][][][][][][][][] []  
  []
@@ -2553,7 +2553,7 @@ Overfull \hbox (11.06712pt too wide) has occurred while \output is active
 [46
 
 ]
-Overfull \hbox (11.06712pt too wide) has occurred while \output is active
+Overfull \hbox (6.04pt too wide) has occurred while \output is active
   [] [][] [][][][][][][][][][][][][][][] [][][][] [][][][][] [][][][][][][] [][
 ][][][][][] [][] [][][][][][][][][][][][][][][][] []  
  []
@@ -2589,7 +2589,7 @@ Overfull \vbox (1.57211pt too high) detected at line 927
  []
 
 
-Overfull \hbox (11.06712pt too wide) has occurred while \output is active
+Overfull \hbox (6.04pt too wide) has occurred while \output is active
   [] [][] [][][][][][][][][][][][][][][] [][][][] [][][][][] [][][][][][][] [][
 ][][][][][] [][] [][][][][][][][][][][][][][][][] []  
  []
@@ -2597,7 +2597,7 @@ Overfull \hbox (11.06712pt too wide) has occurred while \output is active
 [48
 
 ]
-Overfull \hbox (11.06712pt too wide) has occurred while \output is active
+Overfull \hbox (6.04pt too wide) has occurred while \output is active
   [] [][] [][][][][][][][][][][][][][][] [][][][] [][][][][] [][][][][][][] [][
 ][][][][][] [][] [][][][][][][][][][][][][][][][] []  
  []
@@ -2605,7 +2605,7 @@ Overfull \hbox (11.06712pt too wide) has occurred while \output is active
 [49
 
 ]
-Overfull \hbox (11.06712pt too wide) has occurred while \output is active
+Overfull \hbox (6.04pt too wide) has occurred while \output is active
   [] [][] [][][][][][][][][][][][][][][] [][][][] [][][][][] [][][][][][][] [][
 ][][][][][] [][] [][][][][][][][][][][][][][][][] []  
  []
@@ -2636,7 +2636,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Overfull \hbox (11.06712pt too wide) has occurred while \output is active
+Overfull \hbox (6.04pt too wide) has occurred while \output is active
   [] [][] [][][][][][][][][][][][][][][] [][][][] [][][][][] [][][][][][][] [][
 ][][][][][] [][] [][][][][][][][][][][][][][][][] []  
  []
@@ -2644,7 +2644,7 @@ Overfull \hbox (11.06712pt too wide) has occurred while \output is active
 [51
 
 ]
-Overfull \hbox (11.06712pt too wide) has occurred while \output is active
+Overfull \hbox (6.04pt too wide) has occurred while \output is active
   [] [][] [][][][][][][][][][][][][][][] [][][][] [][][][][] [][][][][][][] [][
 ][][][][][] [][] [][][][][][][][][][][][][][][][] []  
  []
@@ -2669,7 +2669,7 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `Presentation.out' has not changed.
-(rerunfilecheck)             Checksum: EA4BEA90401747D0B65A44A321F40B18;877.
+(rerunfilecheck)             Checksum: A5665B3D0BB964A4070DF0875C015231;867.
 Package logreq Info: Writing requests to 'Presentation.run.xml'.
 \openout1 = `Presentation.run.xml'.
 
@@ -2677,7 +2677,7 @@ Package logreq Info: Writing requests to 'Presentation.run.xml'.
 Here is how much of TeX's memory you used:
  30656 strings out of 478681
  604648 string characters out of 2854493
- 1096838 words of memory out of 3000000
+ 1096835 words of memory out of 3000000
  48029 multiletter control sequences out of 15000+600000
  421736 words of font info for 87 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -2698,7 +2698,7 @@ s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX
 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts
 /type1/public/amsfonts/cm/cmtt10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
 ublic/amsfonts/symbols/msbm10.pfb>
-Output written on Presentation.pdf (52 pages, 2515895 bytes).
+Output written on Presentation.pdf (52 pages, 2515659 bytes).
 PDF statistics:
  3833 PDF objects out of 4296 (max. 8388607)
  129 named destinations out of 1000 (max. 500000)

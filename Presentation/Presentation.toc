@@ -9,7 +9,7 @@
 \defcounter {refsection}{0}\relax 
 \beamer@sectionintoc {4}{Prelim. analysis}{20}{0}{4}
 \defcounter {refsection}{0}\relax 
-\beamer@sectionintoc {5}{Prob. models}{24}{0}{5}
+\beamer@sectionintoc {5}{Prob. mod.}{24}{0}{5}
 \defcounter {refsection}{0}\relax 
 \beamer@sectionintoc {6}{Other ML alg.}{30}{0}{6}
 \defcounter {refsection}{0}\relax 
