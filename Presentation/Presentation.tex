@@ -173,12 +173,12 @@ $e$ is \textcolor{red}{eccentricity}
 
 \begin{itemize}
 \item circle:  $e=0$ \quad $p=a$
-\item ellipse: $0<e<1$ \quad $p=b$
+\item ellipse: $0<e<1$ \quad $p=a(1-e^{2})$
 \item parabola: $e=1$ \quad $p=2q$
 \item hyperbola: $e>1$ \quad $p=a(e^{2}-1)$
 \end{itemize}
 \begin{center}
-$b$ is the  \textcolor{red}{semi-major axis} of the conic
+$a$ is the  \textcolor{red}{semi-major axis} of the conic
 \end{center}
 \column{0.4\textwidth}
 \begin{figure}[h]
@@ -193,6 +193,19 @@ $b$ is the  \textcolor{red}{semi-major axis} of the conic
 \end{frame}
 
 \begin{frame}{Celestial mechanics \cite{murray1999solar}: $3^{th}$ Kepler law}
+\begin{columns}
+\column{0.4\textwidth}
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=\textwidth ]{Pic/Elliptical_orbit.png}
+\caption{\cite{murray1999solar}}
+\label{Area_dynamics}
+\end{center}
+\end{figure}
+
+
+\column{0.6\textwidth}
 \begin{equation}
 b^{2}=a^{2}(1-e^{2})
 \end{equation}
@@ -204,16 +217,22 @@ r=\frac{a(1-e^{2})}{1+e\cdot cos(\theta-\phi)}
 \end{equation}
 
 \begin{center}
-Area swept in one \textcolor{red}{orbital period} T $ \implies A=\pi ab$
+Area swept in one \textcolor{red}{orbital period} T 
+\end{center} 
+\begin{center}
+$A=\pi ab$
+\end{center} 
+\begin{center}
 We know that: $hT/2 \quad h^{2}=\mu a(1-e^{2})$ 
 \end{center}
-
+\begin{center}
 Therefore 
-
+\end{center}
 \begin{equation}
 T^{2}=\dfrac{4\pi^{2}}{\mu}a^{3}
 \end{equation}
 
+\end{columns}
 \end{frame}
 
 \begin{frame}{$3^{th}$ Kepler law}
@@ -234,6 +253,10 @@ And therefore
 \begin{equation}
 T'\approx a'^{3/2}
 \end{equation}
+
+\begin{center}
+The mass of the asteroid is not involve
+\end{center}d
 
 
 \end{frame}
@@ -263,6 +286,16 @@ v_{aphelion}=na\sqrt{\dfrac{1-e}{1+e}}
 
 
 \begin{frame}{Orbital parameters}
+\begin{columns}
+\column{0.4\textwidth}
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=\textwidth ]{Pic/Mean_anomaly.png}
+\caption{\cite{murray1999solar}}
+\label{Area_dynamics}
+\end{center}
+\end{figure}
+\column{0.6\textwidth}
 \begin{center}
 \textcolor{red}{Mean anomaly}
 \end{center}
@@ -280,18 +313,233 @@ M=n(t-\tau)
 \begin{equation}
 M=E-e\sin E
 \end{equation}
-
 \begin{center}
 \textcolor{red}{Jupiter Tisserard invariant }
 \end{center}
-
-
-
 \begin{equation}
 T_{P}=\frac{a_{p}}{a}+2\cos I\sqrt{\dfrac{a}{a_{p}}(1-e^{2})}
 \end{equation}
+\end{columns}
+\end{frame}
+
+
+\begin{frame}{Orbital parameters}
+\begin{columns}
+\column{0.4\textwidth}
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=\textwidth ]{Pic/Inclination.png}
+\caption{\cite{murray1999solar}}
+\label{Area_dynamics}
+\end{center}
+\end{figure}
+\column{0.6\textwidth}
+\begin{center}
+I: \textcolor{red}{inclination} of the orbit
+\end{center}
+\begin{center}
+$\Omega$: \textcolor{red}{longitude of the ascending node}
+\end{center}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Magnitude}
+\begin{equation}
+\Phi=\frac{L}{4\pi r^{2}}
+\end{equation}
+\begin{equation}
+m=-2.5\log_{10}\Phi+C
+\end{equation}
+\begin{equation}
+m_{1}-m_{2}=-2.5\log_{10}\frac{\Phi_{1}}{\Phi_{2}}
+\end{equation}
+\begin{equation}
+M-m=-2.5\log_{10}\frac{\Phi\cdot d^{2} }{\Phi\cdot 10^{2}}
+\end{equation}
+\begin{equation}
+M=m+5-5log_{10}d
+\end{equation}
+Where $\Phi$ is the flux for a sphere of radius r, m the relative magnitude and M the \textcolor{red}{Absolute magnitude}
+\end{frame}
+
+\begin{frame}{Magnitude}
+\begin{equation}
+\Phi=\frac{L}{4\pi r^{2}}
+\end{equation}
+\begin{equation}
+m=-2.5\log_{10}\Phi+C
+\end{equation}
+\begin{equation}
+m_{1}-m_{2}=-2.5\log_{10}\frac{\Phi_{1}}{\Phi_{2}}
+\end{equation}
+\begin{equation}
+M-m=-2.5\log_{10}\frac{\Phi\cdot d^{2} }{\Phi\cdot 10^{2}}
+\end{equation}
+\begin{equation}
+M=m+5-5log_{10}d
+\end{equation}
+Where $\Phi$ is the flux for a sphere of radius r, m the relative magnitude and M the \textcolor{red}{Absolute magnitude}
+\end{frame}
+
+\begin{frame}{Classification}
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=\textwidth]{Pic/neo_orbit_types.jpg}
+\caption{\cite{nasa_classification}}
+\label{Area_dynamics}
+\end{center}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Classification}
+\begin{itemize}
+\item \textbf{Potentially Hazardous Asteroids}: MOID $\leq 0.05$ au $M \leq22.0$ \textit{NEAs whose Minimum Orbit Intersection Distance (MOID) with the Earth is 0.05 au or less and whose absolute magnitude (M) is 22.0 or brighter}
+\end{itemize}
+\end{frame}
+
+\section{Dataset}
+
+\begin{frame}{Classification}
+\begin{itemize}
+
+
+\item The asteroid dataset was retrieved from Kaggle \cite{kaggle_dataset}, which reports into a more machine readable form the dataset of The Center for Near-Earth Object Studies (CNEOS) \cite{cneos+nasa}, a NASA research centre.
+
+\item 3552 Asteroids
+
+\item Among the 40 the features, the ones connected only to the other name of
+the asteroid, or connected only to the name of the orbit and
+the one connected with the orbiting planet ( since for all it was
+the Earth) were discarted
+
+\item The proportion hazardous/not hazardous was set 1:5  
+
+\item The continuous measures were standardised and demeaned
+
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Features}
+\begin{table}[]
+\begin{center}
+\begin{tabular}{c|c}
+\hline
+\textbf{Features}             & \textbf{Type}        \\ \hline
+Neo Reference ID              & not used             \\ \hline
+Absolute Magnitude            & Continuous           \\ \hline
+Est Dia in KM (min)           & Continuous           \\ \hline
+Est Dia in KM (max)           & Continuous           \\ \hline
+Close Approach Date           & Continuous           \\ \hline
+Epoch Date Close Approach     & Continuous           \\ \hline
+Relative\_Velocity            & Continuous           \\ \hline
+Miss\_Dist                    & Continuous           \\ \hline
+Min\_Orbit\_Intersection      & Continuous           \\ \hline
+Jupiter\_Tisserand\_Invariant & Continuous           \\ \hline
+Epoch\_Osculation             & Continuous           \\ \hline
+Eccentricity                  & Continuous           \\ \hline
+
+\end{tabular}
+\end{center}
+\label{tab_features}
+\end{table}
 
 \end{frame}
+
+
+\begin{frame}{Features}
+\begin{table}[]
+\begin{center}
+\begin{tabular}{c|c}
+\hline
+\textbf{Features}             & \textbf{Type}        \\ \hline
+Semi Major Axis               & Continuous           \\ \hline
+Inclination                   & Continuous           \\ \hline
+Asc Node Longitude            & Continuous           \\ \hline
+Orbital Period                & Continuous           \\ \hline
+Perihelion Distance           & Continuous           \\ \hline
+Perihelion Arg                & Continuous           \\ \hline
+Perihelion Time               & Continuous           \\ \hline
+Mean\_Anomaly                 & Continuous           \\ \hline
+Mean\_Motion                  & Continuous           \\ \hline
+Hazardous                     & Categorical (Binary)
+\end{tabular}
+\end{center}
+\label{tab_features}
+\end{table}
+
+\end{frame}
+
+
+\section{Preliminary analysis}
+
+\begin{frame}
+\begin{columns}
+\column{0.5\textwidth}
+  \begin{figure}[b]{\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Pic/DENSITY_Perihelion_Distance.pdf}
+    \subcaption{ \begin{center}
+    a) Perihelion Distance
+    \end{center}}
+    \vspace{4ex}
+  \end{figure} 
+\column{0.5\textwidth}
+  \begin{figure}[b]{\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Pic/DENSITY_Eccentricity.pdf}
+    \subcaption{ \begin{center}
+    b) Eccentricity
+    \end{center}}
+    \vspace{4ex}
+  \end{figure}
+\end{columns}
+\end{frame}
+
+\begin{frame}
+\begin{columns}  
+
+\column{0.5\textwidth}
+    \begin{figure}[b]{\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Pic/DENSITY_Min_orbit_intersection.pdf}
+    \subcaption{ \begin{center}
+    c) Min orbit intersection
+    \end{center}}
+    \vspace{4ex}
+  \end{figure}
+  \column{0.5\textwidth}
+  \begin{figure}[b]{\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Pic/DENSITY_Absolute_magnitude.pdf}
+    \subcaption{ \begin{center}
+    d) Absolute magnitude
+    \end{center}}
+    \vspace{4ex}
+  \end{figure}
+\end{columns}
+\end{frame}
+
+
+\begin{frame}{FAMD}
+\begin{columns}  
+
+\column{0.5\textwidth}
+    \begin{figure}[h]
+\begin{center}
+\includegraphics[width=1\textwidth]{Pic/FAMD.pdf}
+\label{FADM}
+\end{center}
+\end{figure}
+  \column{0.5\textwidth}
+ \begin{figure}[h]
+\begin{center}
+\includegraphics[width=1\textwidth]{Pic/FAMD_Quantitative variables.pdf}
+\label{FAMD_Quantitative variables}
+\end{center}
+\end{figure}
+\end{columns}
+\end{frame}
+
 
 \begin{frame}[t,allowframebreaks]
 \frametitle{References}

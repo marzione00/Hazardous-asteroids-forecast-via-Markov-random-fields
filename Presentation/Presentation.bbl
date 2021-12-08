@@ -17,6 +17,18 @@
 \endgroup
 
 \datalist[entry]{nty/global//global/global}
+  \entry{nasa_classification}{misc}{}
+  \field{howpublished}{\url{https://cneos.jpl.nasa.gov/about/neo_groups.html}}
+  \endentry
+
+  \entry{kaggle_dataset}{misc}{}
+  \field{howpublished}{\url{https://www.kaggle.com/shrutimehta/nasa-asteroids-classification}}
+  \endentry
+
+  \entry{cneos+nasa}{misc}{}
+    \field{howpublished}{\url{https://cneos.jpl.nasa.gov/}}
+  \endentry
+
   \entry{murray1999solar}{book}{}
     \name{author}{2}{}{%
       {{hash=MCD}{%

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.12.5)  7 DEC 2021 19:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.12.5)  8 DEC 2021 11:07
 entering extended mode
 **./Presentation.tex
 (Presentation.tex
@@ -968,6 +968,21 @@ File: l3backend-pdftex.def 2021-10-18 L3 backend support: PDF output (pdfTeX)
 
 LaTeX Warning: Label `Area_dynamics' multiply defined.
 
+
+LaTeX Warning: Label `Area_dynamics' multiply defined.
+
+
+LaTeX Warning: Label `Area_dynamics' multiply defined.
+
+
+LaTeX Warning: Label `Area_dynamics' multiply defined.
+
+
+LaTeX Warning: Label `Area_dynamics' multiply defined.
+
+
+LaTeX Warning: Label `tab_features' multiply defined.
+
 )
 \openout1 = `Presentation.aux'.
 
@@ -1184,7 +1199,7 @@ File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 Overfull \vbox (42.69214pt too high) detected at line 33
  []
 
-<Pic/Intro.jpg, id=59, 1445.4pt x 813.0375pt>
+<Pic/Intro.jpg, id=80, 1445.4pt x 813.0375pt>
 File: Pic/Intro.jpg Graphic file (type jpg)
 <use Pic/Intro.jpg>
 Package pdftex.def Info: Pic/Intro.jpg  used on input line 33.
@@ -1227,7 +1242,7 @@ LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <6> not available
  [4
 
 ]
-<Pic/Area_dynamics.png, id=153, 708.39656pt x 359.84438pt>
+<Pic/Area_dynamics.png, id=237, 708.39656pt x 359.84438pt>
 File: Pic/Area_dynamics.png Graphic file (type png)
 <use Pic/Area_dynamics.png>
 Package pdftex.def Info: Pic/Area_dynamics.png  used on input line 134.
@@ -1237,7 +1252,7 @@ Package pdftex.def Info: Pic/Area_dynamics.png  used on input line 134.
  <./Pic/Area_dynamics.png>] [6
 
 ]
-<Pic/Conics.png, id=196, 595.47469pt x 574.39594pt>
+<Pic/Conics.png, id=306, 595.47469pt x 574.39594pt>
 File: Pic/Conics.png Graphic file (type png)
 <use Pic/Conics.png>
 Package pdftex.def Info: Pic/Conics.png  used on input line 193.
@@ -1249,16 +1264,27 @@ pdfTeX warning (ext4): destination with the same identifier (name{Area_dynamics
 l.193 \end{frame}
                   [7
 
- <./Pic/Conics.png>] [8
+ <./Pic/Conics.png>]
+<Pic/Elliptical_orbit.png, id=341, 931.98187pt x 632.3625pt>
+File: Pic/Elliptical_orbit.png Graphic file (type png)
+<use Pic/Elliptical_orbit.png>
+Package pdftex.def Info: Pic/Elliptical_orbit.png  used on input line 236.
+(pdftex.def)             Requested size: 122.91406pt x 83.39684pt.
+pdfTeX warning (ext4): destination with the same identifier (name{Area_dynamics
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.236 \end{frame}
+                  [8
 
-]
+ <./Pic/Elliptical_orbit.png>]
 
-LaTeX Warning: Command \' invalid in math mode on input line 239.
+LaTeX Warning: Command \' invalid in math mode on input line 262.
 
 ! Please use \mathaccent for accents in math mode.
 \add@accent ... \let \ignorespaces \relax \accent 
                                                   #1 #2\egroup \ifmmode \els...
-l.239 \end{frame}
+l.262 \end{frame}
                  
 I'm changing \accent to \mathaccent here; wish me luck.
 (Accents are not the same in formulas as they are in text.)
@@ -1266,7 +1292,7 @@ I'm changing \accent to \mathaccent here; wish me luck.
 ! Undefined control sequence.
 \beamer@doifinframe ...n} (a\a ')^{3}\approx (T\T 
                                                   ')^{2} \end {equation} \pa...
-l.239 \end{frame}
+l.262 \end{frame}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1278,9 +1304,247 @@ and I'll forget about whatever was undefined.
 
 ] [10
 
-] [11
+]
+<Pic/Mean_anomaly.png, id=438, 912.40875pt x 418.56375pt>
+File: Pic/Mean_anomaly.png Graphic file (type png)
+<use Pic/Mean_anomaly.png>
+Package pdftex.def Info: Pic/Mean_anomaly.png  used on input line 323.
+(pdftex.def)             Requested size: 122.91406pt x 56.38231pt.
+pdfTeX warning (ext4): destination with the same identifier (name{Area_dynamics
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.323 \end{frame}
+                  [11
 
-] [12
+ <./Pic/Mean_anomaly.png>]
+<Pic/Inclination.png, id=471, 835.62187pt x 573.64313pt>
+File: Pic/Inclination.png Graphic file (type png)
+<use Pic/Inclination.png>
+Package pdftex.def Info: Pic/Inclination.png  used on input line 344.
+(pdftex.def)             Requested size: 122.91406pt x 84.37091pt.
+pdfTeX warning (ext4): destination with the same identifier (name{Area_dynamics
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.344 \end{frame}
+                  [12
+
+ <./Pic/Inclination.png>] [13
+
+] [14
+
+]
+<Pic/neo_orbit_types.jpg, id=565, 824.3598pt x 554.5518pt>
+File: Pic/neo_orbit_types.jpg Graphic file (type jpg)
+<use Pic/neo_orbit_types.jpg>
+Package pdftex.def Info: Pic/neo_orbit_types.jpg  used on input line 392.
+(pdftex.def)             Requested size: 307.28987pt x 206.71252pt.
+pdfTeX warning (ext4): destination with the same identifier (name{Area_dynamics
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.392 \end{frame}
+                 
+Overfull \vbox (27.38727pt too high) detected at line 392
+ []
+
+[15
+
+ <./Pic/neo_orbit_types.jpg>] [16
+
+] [17
+
+] [18
+
+]pdfTeX warning (ext4): destination with the same identifier (name{tab_features
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.470 \end{frame}
+                  [19
+
+]
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+l.496 \end{frame}
+                 
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   }
+l.496 \end{frame}
+                 
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+<Pic/DENSITY_Perihelion_Distance.pdf, id=725, 319.1925pt x 409.53pt>
+File: Pic/DENSITY_Perihelion_Distance.pdf Graphic file (type pdf)
+<use Pic/DENSITY_Perihelion_Distance.pdf>
+Package pdftex.def Info: Pic/DENSITY_Perihelion_Distance.pdf  used on input lin
+e 496.
+(pdftex.def)             Requested size: 153.64493pt x 197.12831pt.
+! Undefined control sequence.
+\beamer@doifinframe ..._Distance.pdf} \subcaption 
+                                                  { \begin {center} a) Perih...
+l.496 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+l.496 \end{frame}
+                 
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   }
+l.496 \end{frame}
+                 
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+<Pic/DENSITY_Eccentricity.pdf, id=726, 319.1925pt x 409.53pt>
+File: Pic/DENSITY_Eccentricity.pdf Graphic file (type pdf)
+<use Pic/DENSITY_Eccentricity.pdf>
+Package pdftex.def Info: Pic/DENSITY_Eccentricity.pdf  used on input line 496.
+(pdftex.def)             Requested size: 153.64493pt x 197.12831pt.
+! Undefined control sequence.
+\beamer@doifinframe ...entricity.pdf} \subcaption 
+                                                  { \begin {center} b) Eccen...
+l.496 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \vbox (17.31902pt too high) detected at line 496
+ []
+
+[20
+
+ <./Pic/DENSITY_Perihelion_Distance.pdf> <./Pic/DENSITY_Eccentricity.pdf>]
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+l.520 \end{frame}
+                 
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   }
+l.520 \end{frame}
+                 
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+<Pic/DENSITY_Min_orbit_intersection.pdf, id=775, 319.1925pt x 409.53pt>
+File: Pic/DENSITY_Min_orbit_intersection.pdf Graphic file (type pdf)
+<use Pic/DENSITY_Min_orbit_intersection.pdf>
+Package pdftex.def Info: Pic/DENSITY_Min_orbit_intersection.pdf  used on input 
+line 520.
+(pdftex.def)             Requested size: 153.64493pt x 197.12831pt.
+! Undefined control sequence.
+\beamer@doifinframe ...ersection.pdf} \subcaption 
+                                                  { \begin {center} c) Min o...
+l.520 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+l.520 \end{frame}
+                 
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   }
+l.520 \end{frame}
+                 
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+<Pic/DENSITY_Absolute_magnitude.pdf, id=776, 319.1925pt x 409.53pt>
+File: Pic/DENSITY_Absolute_magnitude.pdf Graphic file (type pdf)
+<use Pic/DENSITY_Absolute_magnitude.pdf>
+Package pdftex.def Info: Pic/DENSITY_Absolute_magnitude.pdf  used on input line
+ 520.
+(pdftex.def)             Requested size: 153.64493pt x 197.12831pt.
+! Undefined control sequence.
+\beamer@doifinframe ...magnitude.pdf} \subcaption 
+                                                  { \begin {center} d) Absol...
+l.520 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \vbox (17.31902pt too high) detected at line 520
+ []
+
+[21
+
+ <./Pic/DENSITY_Min_orbit_intersection.pdf> <./Pic/DENSITY_Absolute_magnitude.p
+df>]
+<Pic/FAMD.pdf, id=825, 410.53375pt x 413.545pt>
+File: Pic/FAMD.pdf Graphic file (type pdf)
+<use Pic/FAMD.pdf>
+Package pdftex.def Info: Pic/FAMD.pdf  used on input line 541.
+(pdftex.def)             Requested size: 153.64493pt x 154.76979pt.
+<Pic/FAMD_Quantitative variables.pdf, id=826, 410.53375pt x 413.545pt>
+File: Pic/FAMD_Quantitative variables.pdf Graphic file (type pdf)
+<use Pic/FAMD_Quantitative variables.pdf>
+Package pdftex.def Info: Pic/FAMD_Quantitative variables.pdf  used on input lin
+e 541.
+(pdftex.def)             Requested size: 153.64493pt x 154.76979pt.
+ [22
+
+ <./Pic/FAMD.pdf> <./Pic/FAMD_Quantitative variables.pdf>] [23
 
 ]
 \tf@nav=\write7
@@ -1292,22 +1556,23 @@ and I'll forget about whatever was undefined.
 \tf@snm=\write9
 \openout9 = `Presentation.snm'.
 
- (Presentation.aux)
+
+(Presentation.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `Presentation.out' has not changed.
-(rerunfilecheck)             Checksum: 229DE661D69DC4C4D32CE0CF4546B88B;337.
+(rerunfilecheck)             Checksum: 73256A73393816C976D09EE9AD183566;561.
 Package logreq Info: Writing requests to 'Presentation.run.xml'.
 \openout1 = `Presentation.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 30136 strings out of 478681
- 594545 string characters out of 2854493
- 1073358 words of memory out of 3000000
- 47648 multiletter control sequences out of 15000+600000
- 419526 words of font info for 79 fonts, out of 8000000 for 9000
+ 30284 strings out of 478681
+ 597951 string characters out of 2854493
+ 1079660 words of memory out of 3000000
+ 47755 multiletter control sequences out of 15000+600000
+ 419694 words of font info for 80 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,20n,122p,1861b,1701s stack positions out of 5000i,500n,10000p,200000b,80000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Pr
@@ -1320,10 +1585,11 @@ c/amsfonts/cm/cmss8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfont
 s/cm/cmssbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
 mssi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssi8.p
 fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/P
-rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on Presentation.pdf (12 pages, 800619 bytes).
+rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Fi
+les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on Presentation.pdf (23 pages, 1708764 bytes).
 PDF statistics:
- 369 PDF objects out of 1000 (max. 8388607)
- 32 named destinations out of 1000 (max. 500000)
- 154 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 978 PDF objects out of 1000 (max. 8388607)
+ 62 named destinations out of 1000 (max. 500000)
+ 220 words of extra memory for PDF output out of 10000 (max. 10000000)
 
