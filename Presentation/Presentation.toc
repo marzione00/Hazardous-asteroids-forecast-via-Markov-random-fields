@@ -8,3 +8,9 @@
 \beamer@sectionintoc {3}{Dataset}{17}{0}{3}
 \defcounter {refsection}{0}\relax 
 \beamer@sectionintoc {4}{Preliminary analysis}{20}{0}{4}
+\defcounter {refsection}{0}\relax 
+\beamer@sectionintoc {5}{Probabilistic models}{24}{0}{5}
+\defcounter {refsection}{0}\relax 
+\beamer@sectionintoc {6}{Other ML algorithms}{30}{0}{6}
+\defcounter {refsection}{0}\relax 
+\beamer@sectionintoc {7}{Conclusions}{36}{0}{7}

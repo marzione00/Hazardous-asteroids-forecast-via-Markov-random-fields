@@ -540,6 +540,186 @@ Hazardous                     & Categorical (Binary)
 \end{columns}
 \end{frame}
 
+\begin{frame}{Mutual information}
+\begin{figure}
+\begin{center}
+\includegraphics[width=0.9\textwidth]{Pic/Mutual_information.pdf}
+\label{Mutual_information}
+\end{center}
+\end{figure}
+\end{frame}
+
+\section{Probabilistic models}
+
+\begin{frame}{GLASSO}
+\begin{columns}
+\column{0.5\textwidth}
+  \begin{figure}[b]{\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Pic/GLASSO_0.1.pdf}
+    \subcaption{$\rho$=0.2 \begin{center}
+    \end{center}}
+  \end{figure} 
+  \column{0.5\textwidth}
+  \begin{figure}[b]{\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Pic/GLASSO_0.2.pdf}
+    \subcaption{$\rho$=0.2 \begin{center}
+    \end{center}}
+  \end{figure}
+\end{columns}
+\end{frame}
+
+\begin{frame}{GLASSO}
+\begin{columns}
+\column{0.5\textwidth}
+  \begin{figure}[b]{\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Pic/GLASSO_0.3.pdf}
+    \subcaption{$\rho$=0.3 \begin{center}
+    \end{center}}
+  \end{figure} 
+  \column{0.5\textwidth}
+  \begin{figure}[b]{\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{Pic/GLASSO_0.4.pdf}
+    \subcaption{$\rho$=0.4 \begin{center}
+    \end{center}}
+  \end{figure}
+\end{columns}
+\end{frame}
+
+
+\begin{frame}{Mixed interactions: mgm}
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=0.6\textwidth]{Pic/mgm.pdf}
+\label{mgm}
+\end{center}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Mixed interactions: minforest}
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=0.6\textwidth]{Pic/minforest.pdf}
+\label{mgm}
+\end{center}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Mixed interactions: mmod}
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=0.6\textwidth]{Pic/mmod.pdf}
+\label{mgm}
+\end{center}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Mixed interactions}
+The mgm model is the one that has the list of connection more coherent with the celestial mechanics laws. 
+\begin{columns}
+\column{0.5\textwidth}
+  \begin{figure}[b]{\textwidth}
+    \includegraphics[width=\textwidth]{Pic/mgm_confusion.pdf}
+  \end{figure} 
+  \column{0.5\textwidth}
+  \begin{figure}[b]{\textwidth}
+    \includegraphics[width=\textwidth]{Pic/ROC_mgm.pdf}
+  \end{figure}
+\end{columns}
+\end{frame}
+
+\section{Other ML algorithms}
+\begin{frame}{Random Forest}
+\begin{columns}
+\column{0.5\textwidth}
+  \begin{figure}[b]{\textwidth}
+    \includegraphics[width=\textwidth]{Pic/RF_confusion.pdf}
+  \end{figure} 
+  \column{0.5\textwidth}
+  \begin{figure}[b]{\textwidth}
+    \includegraphics[width=\textwidth]{Pic/ROC_RF.pdf}
+  \end{figure}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Random Forest}
+  \begin{figure}[b]{\textwidth}
+    \includegraphics[width=0.7\textwidth]{Pic/RF_Importance.pdf}
+  \end{figure} 
+\end{frame}
+
+\begin{frame}{Support Vector Machines}
+\begin{columns}
+\column{0.5\textwidth}
+  \begin{figure}[b]{\textwidth}
+    \includegraphics[width=\textwidth]{Pic/SVM_confusion.pdf}
+  \end{figure} 
+  \column{0.5\textwidth}
+  \begin{figure}[b]{\textwidth}
+    \includegraphics[width=\textwidth]{Pic/ROC_SVM.pdf}
+  \end{figure}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Quadratic Discriminant Analysis (QDA)}
+\begin{columns}
+\column{0.5\textwidth}
+  \begin{figure}[b]{\textwidth}
+    \includegraphics[width=\textwidth]{Pic/QDA_confusion.pdf}
+  \end{figure} 
+  \column{0.5\textwidth}
+  \begin{figure}[b]{\textwidth}
+    \includegraphics[width=\textwidth]{Pic/ROC_QDA.pdf}
+  \end{figure}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Logistic regression}
+\begin{columns}
+\column{0.5\textwidth}
+  \begin{figure}[b]{\textwidth}
+    \includegraphics[width=\textwidth]{Pic/Logisic_confusion.pdf}
+  \end{figure} 
+  \column{0.5\textwidth}
+  \begin{figure}[b]{\textwidth}
+    \includegraphics[width=\textwidth]{Pic/ROC_Logistic.pdf}
+  \end{figure}
+\end{columns}
+\end{frame}
+
+
+\begin{frame}{$\phi$ coefficient}
+\begin{table}[]
+\caption{$\phi$ coefficient (also known as Matthews correlation coefficient )}
+\begin{center}
+\begin{tabular}{c|c}
+Algorithm & $\phi$ \\ \hline
+RF        & 0.9876 \\ \hline
+SVM       & 0.7111 \\ \hline
+logistic  & 0.6173 \\ \hline
+mgm       & 0.5997 \\ \hline
+QDA       & 0.5562 
+\end{tabular}
+\end{center}
+\label{phi_values}
+\end{table}
+\end{frame}
+
+\section{Conclusions}
+
+\begin{frame}{forecast performances vs intepretability}
+\begin{itemize}
+\item The mgm algorithm is not the best one in term of performances, but it provides the connections between the features. On the other side, except for the variable importance in RF, the other are black box one
+\item The mgm model, as the other graphical model is open to a true scientific validation, the other not. 
+\item The probabilistic models lack in the forecast is definitely compensated by their interetability 
+\item This is meaningful since this two features are in conflict 
+\item The probabilistic models provide a good trade-off between intepretability and forecast performances, as long as one is interest to produce a really scientific result (e.g if the only aim is the forecast the RF is definitely better. However how long one can trust to the RF result ?)
+\end{itemize}
+\end{frame}
+
 
 \begin{frame}[t,allowframebreaks]
 \frametitle{References}
