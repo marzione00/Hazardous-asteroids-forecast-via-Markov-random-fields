@@ -722,50 +722,255 @@ QDA       & 0.5562
 
 \section{SI}
 
-\begin{frame}{Introduction}
+\begin{frame}
+\begin{center}
+\frametitle{$\phi$ coefficent}
+\begin{table}[]
+\begin{tabular}{c|c|c}
+\multicolumn{1}{l|}{\textbf{}} & \textbf{Actual - N} & \textbf{Actual - P} \\ \hline
+\textbf{Predicted - N}         & \#TP                & \#FN                \\ \hline
+\textbf{Predicted - P}         & \#FP                & \#TP               
+\end{tabular}
+\end{table}
+\begin{equation*}
+\phi=\dfrac{TP\times TN - FP\times FN}{\sqrt{\left(TP+FP\right)\left(TP+FN\right)\left(TN+FP\right)\left(TN+FN\right)}}
+\end{equation*}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Receiver operating characteristic}
+\begin{columns}
+\column{0.5\textwidth}
+\begin{center}
+\includegraphics[width=1\linewidth]{Pic/ROC/ROC_A.png}
+\includegraphics[width=1\linewidth]{Pic/ROC/ROC_B.png}\\
+\end{center}
+\column{0.5\textwidth}
+\begin{center}
+\includegraphics[width=0.5\linewidth]{Pic/ROC/ROC_A_R.png}
+\includegraphics[width=0.5\linewidth]{Pic/ROC/ROC_B_R.png}\\
+\end{center}
+\end{columns}
+\begin{center}
+Images taken from \cite{ROC_fig}
+\end{center}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Receiver operating characteristic}
+\begin{columns}
+\column{0.5\textwidth}
+\begin{center}
+\includegraphics[width=1\linewidth]{Pic/ROC/ROC_C.png}
+\includegraphics[width=1\linewidth]{Pic/ROC/ROC_D.png}\\
+\end{center}
+\column{0.5\textwidth}
+\begin{center}
+\includegraphics[width=0.5\linewidth]{Pic/ROC/ROC_C_R.png}
+\includegraphics[width=0.5\linewidth]{Pic/ROC/ROC_D_R.png}\\
+\end{center}
+\end{columns}
+\begin{center}
+Images taken from \cite{ROC_fig}
+\end{center}
+\end{frame}
+
+
+\begin{frame}{Factor analysis of mixed data - FAMD}
+\begin{center}
+r(z,k) correlation coefficient (z and k quantitative) \\
+\end{center}
+\begin{center}
+$\eta^{2}$(z,q) correlation ratio (z quantitative and q qualitative)
+\end{center}
+\begin{center}
+PCA $\rightarrow$ $max\sum_{k}r^{2}(z,k)$
+\end{center}
+\begin{center}
+MCA $\rightarrow$ $max\sum_{q}\eta^{2}(z,q)$
+\end{center}
+\begin{center}
+FAMD $\rightarrow$ $max\sum_{k}r^{2}(z,k)+max\sum_{q}\eta^{2}(z,q)$
+\end{center}
+\end{frame}
+
+
+\begin{frame}{mgm algorithm}
+\begin{equation}
+P(X_{s}|X_{\backslash s})=\exp\left\lbrace E_{s}(X_{\backslash s})\phi_{s}\left(X_{s}\right)+B_{s}(X_{s})-\Phi\left(X_{\backslash s}\right) \right\rbrace
+\end{equation}
+\begin{center}
+$\phi_{s}$ function of sufficient statistics $B_{s}$ base measure
+\end{center}
+
+\begin{equation}
+\begin{split}
+P(X)= & \exp \left\lbrace \sum_{s\in V}\theta_{s}\phi_{s}(X_{s})+\sum_{s\in V}\sum_{r\in N(s)}\theta_{s,r}\phi_{s}(X_{s})\phi_{r}(X_{r})+...+\\&\sum_{r_{1},...,r_{k}\in C}\theta_{r1,...,rk}\prod_{j=1}^{k}\phi_{r}_{j}\left(X_{r}_{j}\right)+\sum_{s\in V}B_{s}(X_{S})-\Phi(\theta) \right\rbrace
+\end{split}
+\end{equation}
+
+\begin{equation}
+\hat{\theta}=arg \min_{theta}\left\lbrace -\mathcal{L}(\theta,X)+\lambda ||\theta ||_{1}  \right\rbrace\quad ||\theta ||_{1}=\sum_{j=1}^{J}|\theta_{j}|
+\end{equation}
+
 
 \end{frame}
 
-\begin{frame}{Introduction}
+
+
+\begin{frame}{GLASSO}
+\begin{equation}
+L_{pen}(K,\hat{\mu})=log\det(K)-tr(K\;S)-\rho||K|| 
+\end{equation}
+\begin{center}
+$K=\Sigma^{-1}$
+\end{center}
+\begin{center}
+S: empirical covariance matrix
+\end{center}
+\end{frame}
+
+\begin{frame}{Parameters tuning}
+\begin{equation}
+p\left(\textbf{y}|\boldsymbol{\theta}\right) = \dfrac{1}{Z(\theta)}\exp \left( \sum_{c}\boldsymbol{\theta}^{T}_{c}\phi_{c}\left(\textbf{y}\right)\right)
+\end{equation}
+\begin{equation}
+\mathcal{L}\left(\boldsymbol{\theta}\right):= \frac{1}{N}\sum_{i}\log p\left(\textbf{y}_{i}|\boldsymbol{\theta}\right)=\frac{1}{N}\sum_{i}\left[\sum_{c} \boldsymbol{\theta}^{T}_{c}\phi_{c}(y_{i})-\log Z\left(\boldsymbol{\theta}\right)\right]
+\end{equation}
+\end{frame}
+
+
+\begin{frame}{Parameters tuning}
+\begin{equation}
+\frac{\partial\mathcal{L}}{\partial\boldsymbol{\theta}_{c}}=\frac{1}{N}\sum_{i}\left[\phi_{c}(y_{i})-\frac{\partial}{\partial\boldsymbol{\theta}_{c}}\log Z(\boldsymbol{\theta})\right]
+\end{equation}
+
+\begin{equation}
+\begin{split}
+\frac{\partial \log Z(\boldsymbol{\theta})}{\partial\boldsymbol{\theta}}=\mathbb{E}\left[\phi_{c}(\textbf{y})\right|\theta]= \sum_{\textbf{y}}\phi_{c}(\textbf{y})p(\textbf{y}|\boldsymbol{\theta})
+\end{split}
+\end{equation}
+\begin{equation}
+\frac{\partial\mathcal{L}}{\partial\boldsymbol{\theta}_{c}}=\left[\frac{1}{N}\sum_{i}\phi_{c}(y_{i})\right]-\mathbb{E}\left[\phi_{c}(\textbf{y})\right]
+\end{equation}
+\begin{equation}
+\frac{\partial\mathcal{L}}{\partial\boldsymbol{\theta}_{c}}=\mathbb{E}_{p_{emp}}\left[\phi_{c}(\textbf{y})\right]-\mathbb{E}_{p_{(\cdot|\boldsymbol{\theta})}}\left[\phi_{c}(\textbf{y})\right]
+\end{equation}
+\begin{equation}
+\mathbb{E}_{p_{emp}}\left[\phi_{c}(\textbf{y})\right]=\mathbb{E}_{p_{(\cdot|\boldsymbol{\theta})}}\left[\phi_{c}(\textbf{y})\right]
+\end{equation}
+\end{frame}
+
+
+\begin{frame}{mmod}
+\begin{equation}
+\begin{split}
+f(i,y)=& p(i)(2\pi)^{-q/2}det(\Sigma)^{-1/2} \\
+& exp\left[-\dfrac{1}{2}\left(y-\mu(i)\right)^{T}\Sigma^{-1}\left(y-\mu(i)\right)\right]
+\end{split}
+\label{gaussMix}
+\end{equation}
+\begin{equation}
+\begin{split}
+f(i,y) & = \exp\left\lbrace g(i)+\sum_{u}h^{u}(i)y_{u}-\dfrac{1}{2}\sum_{uv} y_{u}y_{v}k_{uv}\right\rbrace \\
+&= \exp\left\lbrace g(i)+h(i)^{T}y-\dfrac{1}{2}y^{T}Ky \right\rbrace
+\end{split}
+\end{equation}
+
+\begin{center}
+where $g(i)$, $h(i)$ and $K$ are the canonical parameters
+\end{center}
+
+\end{frame}
+\begin{frame}{mmod}
+\begin{equation}
+\begin{split}
+K=&\Sigma^{-1} \\
+h(i)=&\Sigma^{-1}\mu(i) \\
+g(i)=&\log p(i) -\frac{1}{2}\log det (\Sigma) \\
+&-\dfrac{1}{2}\mu(i)^{T}\Sigma^{-1}\mu(i)-\dfrac{q}{2}\log 2\pi
+\end{split}
+\end{equation}
+\end{frame}
+
+
+\begin{frame}{Graphical models}
+\begin{equation}
+p(x_{1},x_{2},...,x_{n})
+\end{equation}
+\begin{equation}
+p(x_{1:V})=p(x_{1})p(x_{2}|x_{1})p(x_{3}|x_{2},x_{1})...p(x_{V}|x_{1:V-1})
+\end{equation}
+\begin{equation}
+X  \perp Y| Z \iff  p(X,Y|Z) = p(X|Z)p(Y|Z)
+\end{equation}
+\begin{equation}
+p(\textbf{x}_{1:V})=p(x_{1})\prod^{V}_{t=1}p(x_{t}|x_{t-1})
+\end{equation}
+\end{frame}
+
+
+\begin{frame}{Graphical models}
+\begin{theorem}[Hammersley-Clifford]
+A positive distribution p(\textbf{y})>0 satisfies the CI properties of an indirect graph G iif p can be represented as a product of factor, one per maximal clique,  i.e.
+\begin{equation}
+p(\textbf{y}|\theta)= \dfrac{1}{Z(\theta)}\prod_{c \in C }\psi_{c}(\textbf{y}_{c}|\theta_{c})
+\end{equation}
+where C is the set of all the (maximal) cliques of G,  and Z($\theta$) is the partition function given by 
+\begin{equation}
+Z(\theta):= \sum_{y}\prod_{c\in C}\psi_{c}(\textbf{y}_{c}|\theta_{c})
+\end{equation}
+Note that this partition function is what ensures the overall distribution sums to 1
+\end{theorem}
+\end{frame}
+\begin{frame}{Graphical models}
+\begin{equation}
+p(y|\theta)=\dfrac{1}{Z(\theta)} exp\left(-\sum_{c}E(y_{c}|\theta_{c})\right)
+\end{equation}
+\begin{equation}
+\psi_{c}(y_{c}|\theta_{c})=exp\left(-E(y_{c}|\theta_{c})\right)
+\end{equation}
+\end{frame}
+
+
+\begin{frame}{Information theory}
+\begin{equation}
+H(X)=-\sum_{x \in X} p(x)log p(x)
+\end{equation}
+\begin{equation}
+H(X,Y)=-\sum_{x\in \chi}\sum_{y\in \mathcal{Y}}p(x,y)\log p(x,y)
+\end{equation}
+\begin{equation}
+\begin{split}
+H(X|Y)=& \sum_{x\in \mathcal{X} }p(x)H(Y|X=x)\\
+=& -\sum_{x\in \mathcal{X}}p(x)\sum_{y\in \mathcal{Y}}p(x,y)\log p(y|x) \\
+=& -E\log p(Y|X)
+\end{split}
+\end{equation}
+\begin{equation}
+H(X,Y)=H(X)+H(Y|X)
+\end{equation}
+\begin{equation}
+D(p||q)=\sum p(x)\log\frac{p(x)}{q(x)} \quad D(p||q)\geq 0
+\end{equation}
 
 \end{frame}
 
-\begin{frame}{Introduction}
-
-\end{frame}
-\begin{frame}{Introduction}
-
-\end{frame}
-\begin{frame}{Introduction}
-
-\end{frame}
-\begin{frame}{Introduction}
-
-\end{frame}
-
-\begin{frame}{Introduction}
-
-\end{frame}
-\begin{frame}{Introduction}
-
-\end{frame}
-\begin{frame}{Introduction}
-
-\end{frame}
-\begin{frame}{Introduction}
-
-\end{frame}
-\begin{frame}{Introduction}
-
-\end{frame}
-\begin{frame}{Introduction}
-
-\end{frame}
-\begin{frame}{Introduction}
-
-\end{frame}
-\begin{frame}{Introduction}
-
+\begin{frame}{Information theory}
+\begin{equation}
+\begin{split}
+I(X;Y)&=\sum\sump(x,y)\log\dfrac{p(x,y)}{p(x)p(y)}=D(p(x,y)||p(x)p(y)) \\
+&=H(X)-H(X|Y)=H(Y)-H(Y|X)
+\end{split}
+\end{equation}
+\begin{equation}
+I(X_{1},X_{2},...,X_{n};Y)=\sum^{n}_{i=1}I(X_{i};Y|X_{i-1},X_{i-2},...,X_{1})
+\end{equation}
+\begin{equation}
+g(\alpha,\textbf{C},\textbf{S},f_{i})=MI(f_{i};\textbf{C})-\sum_{f_{s}\in S}\alpha(f_{i},f_{s},\textbf{C},\textbf{S})MI(f_{i};f_{s})
+\end{equation}
 \end{frame}
 
 \begin{frame}{Ref}
