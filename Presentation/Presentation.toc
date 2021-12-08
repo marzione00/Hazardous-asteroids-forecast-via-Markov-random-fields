@@ -1,16 +1,18 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {english}{}\relax 
 \defcounter {refsection}{0}\relax 
-\beamer@sectionintoc {1}{Introduction}{2}{0}{1}
+\beamer@sectionintoc {1}{Intro}{2}{0}{1}
 \defcounter {refsection}{0}\relax 
 \beamer@sectionintoc {2}{Celestial mechanics}{3}{0}{2}
 \defcounter {refsection}{0}\relax 
 \beamer@sectionintoc {3}{Dataset}{17}{0}{3}
 \defcounter {refsection}{0}\relax 
-\beamer@sectionintoc {4}{Preliminary analysis}{20}{0}{4}
+\beamer@sectionintoc {4}{Prelim. analysis}{20}{0}{4}
 \defcounter {refsection}{0}\relax 
-\beamer@sectionintoc {5}{Probabilistic models}{24}{0}{5}
+\beamer@sectionintoc {5}{Prob. models}{24}{0}{5}
 \defcounter {refsection}{0}\relax 
-\beamer@sectionintoc {6}{Other ML algorithms}{30}{0}{6}
+\beamer@sectionintoc {6}{Other ML alg.}{30}{0}{6}
 \defcounter {refsection}{0}\relax 
 \beamer@sectionintoc {7}{Conclusions}{36}{0}{7}
+\defcounter {refsection}{0}\relax 
+\beamer@sectionintoc {8}{SI}{37}{0}{8}

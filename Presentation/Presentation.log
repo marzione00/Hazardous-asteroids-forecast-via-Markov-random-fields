@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.12.5)  8 DEC 2021 12:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.12.5)  8 DEC 2021 12:34
 entering extended mode
 **./Presentation.tex
 (Presentation.tex
@@ -1202,32 +1202,32 @@ Package biblatex Info: Reference segment=0 on input line 29.
 File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 )
 (Presentation.nav)
-Overfull \hbox (15.10483pt too wide) detected at line 29
+Overfull \hbox (7.08376pt too wide) detected at line 29
   [] [][] [][][][][][][][][][][][][][][] [][][][] [][][][][] [][][][][][][] [][
-][][][][][] [][] []  
+][][][][][] [][] [][][][][][][][][][][][][][][] []  
  []
 
 
 Overfull \vbox (42.69214pt too high) detected at line 33
  []
 
-<Pic/Intro.jpg, id=109, 1445.4pt x 813.0375pt>
+<Pic/Intro.jpg, id=128, 1445.4pt x 813.0375pt>
 File: Pic/Intro.jpg Graphic file (type jpg)
 <use Pic/Intro.jpg>
 Package pdftex.def Info: Pic/Intro.jpg  used on input line 33.
 (pdftex.def)             Requested size: 364.19536pt x 204.85924pt.
 
-Overfull \hbox (15.10483pt too wide) has occurred while \output is active
+Overfull \hbox (7.08376pt too wide) has occurred while \output is active
   [] [][] [][][][][][][][][][][][][][][] [][][][] [][][][][] [][][][][][][] [][
-][][][][][] [][] []  
+][][][][][] [][] [][][][][][][][][][][][][][][] []  
  []
 
 [1{C:/Users/Marzio/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
 
  <./Pic/Intro.jpg>]
-Overfull \hbox (15.10483pt too wide) has occurred while \output is active
+Overfull \hbox (7.08376pt too wide) has occurred while \output is active
   [] [][] [][][][][][][][][][][][][][][] [][][][] [][][][][] [][][][][][][] [][
-][][][][][] [][] []  
+][][][][][] [][] [][][][][][][][][][][][][][][] []  
  []
 
 [2
@@ -1251,9 +1251,9 @@ ut line 81.
 File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/ma
 thkerncmss.
 )
-Overfull \hbox (15.10483pt too wide) has occurred while \output is active
+Overfull \hbox (7.08376pt too wide) has occurred while \output is active
   [] [][] [][][][][][][][][][][][][][][] [][][][] [][][][][] [][][][][][][] [][
-][][][][][] [][] []  
+][][][][][] [][] [][][][][][][][][][][][][][][] []  
  []
 
 [3
@@ -1269,37 +1269,37 @@ LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <6> not available
 (Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 108.
 
 
-Overfull \hbox (15.10483pt too wide) has occurred while \output is active
+Overfull \hbox (7.08376pt too wide) has occurred while \output is active
   [] [][] [][][][][][][][][][][][][][][] [][][][] [][][][][] [][][][][][][] [][
-][][][][][] [][] []  
+][][][][][] [][] [][][][][][][][][][][][][][][] []  
  []
 
 [4
 
 ]
-<Pic/Area_dynamics.png, id=348, 708.39656pt x 359.84438pt>
+<Pic/Area_dynamics.png, id=441, 708.39656pt x 359.84438pt>
 File: Pic/Area_dynamics.png Graphic file (type png)
 <use Pic/Area_dynamics.png>
 Package pdftex.def Info: Pic/Area_dynamics.png  used on input line 134.
 (pdftex.def)             Requested size: 92.1879pt x 46.82533pt.
 
-Overfull \hbox (15.10483pt too wide) has occurred while \output is active
+Overfull \hbox (7.08376pt too wide) has occurred while \output is active
   [] [][] [][][][][][][][][][][][][][][] [][][][] [][][][][] [][][][][][][] [][
-][][][][][] [][] []  
+][][][][][] [][] [][][][][][][][][][][][][][][] []  
  []
 
 [5
 
  <./Pic/Area_dynamics.png>]
-Overfull \hbox (15.10483pt too wide) has occurred while \output is active
+Overfull \hbox (7.08376pt too wide) has occurred while \output is active
   [] [][] [][][][][][][][][][][][][][][] [][][][] [][][][][] [][][][][][][] [][
-][][][][][] [][] []  
+][][][][][] [][] [][][][][][][][][][][][][][][] []  
  []
 
 [6
 
 ]
-<Pic/Conics.png, id=451, 595.47469pt x 574.39594pt>
+<Pic/Conics.png, id=574, 595.47469pt x 574.39594pt>
 File: Pic/Conics.png Graphic file (type png)
 <use Pic/Conics.png>
 Package pdftex.def Info: Pic/Conics.png  used on input line 193.
@@ -1310,15 +1310,15 @@ pdfTeX warning (ext4): destination with the same identifier (name{Area_dynamics
                    \relax 
 l.193 \end{frame}
                  
-Overfull \hbox (15.10483pt too wide) has occurred while \output is active
+Overfull \hbox (7.08376pt too wide) has occurred while \output is active
   [] [][] [][][][][][][][][][][][][][][] [][][][] [][][][][] [][][][][][][] [][
-][][][][][] [][] []  
+][][][][][] [][] [][][][][][][][][][][][][][][] []  
  []
 
 [7
 
  <./Pic/Conics.png>]
-<Pic/Elliptical_orbit.png, id=503, 931.98187pt x 632.3625pt>
+<Pic/Elliptical_orbit.png, id=641, 931.98187pt x 632.3625pt>
 File: Pic/Elliptical_orbit.png Graphic file (type png)
 <use Pic/Elliptical_orbit.png>
 Package pdftex.def Info: Pic/Elliptical_orbit.png  used on input line 236.
@@ -1329,9 +1329,9 @@ pdfTeX warning (ext4): destination with the same identifier (name{Area_dynamics
                    \relax 
 l.236 \end{frame}
                  
-Overfull \hbox (15.10483pt too wide) has occurred while \output is active
+Overfull \hbox (7.08376pt too wide) has occurred while \output is active
   [] [][] [][][][][][][][][][][][][][][] [][][][] [][][][][] [][][][][][][] [][
-][][][][][] [][] []  
+][][][][][] [][] [][][][][][][][][][][][][][][] []  
  []
 
 [8
@@ -1360,23 +1360,23 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Overfull \hbox (15.10483pt too wide) has occurred while \output is active
+Overfull \hbox (7.08376pt too wide) has occurred while \output is active
   [] [][] [][][][][][][][][][][][][][][] [][][][] [][][][][] [][][][][][][] [][
-][][][][][] [][] []  
+][][][][][] [][] [][][][][][][][][][][][][][][] []  
  []
 
 [9
 
 ]
-Overfull \hbox (15.10483pt too wide) has occurred while \output is active
+Overfull \hbox (7.08376pt too wide) has occurred while \output is active
   [] [][] [][][][][][][][][][][][][][][] [][][][] [][][][][] [][][][][][][] [][
-][][][][][] [][] []  
+][][][][][] [][] [][][][][][][][][][][][][][][] []  
  []
 
 [10
 
 ]
-<Pic/Mean_anomaly.png, id=651, 912.40875pt x 418.56375pt>
+<Pic/Mean_anomaly.png, id=834, 912.40875pt x 418.56375pt>
 File: Pic/Mean_anomaly.png Graphic file (type png)
 <use Pic/Mean_anomaly.png>
 Package pdftex.def Info: Pic/Mean_anomaly.png  used on input line 323.
@@ -1387,15 +1387,15 @@ pdfTeX warning (ext4): destination with the same identifier (name{Area_dynamics
                    \relax 
 l.323 \end{frame}
                  
-Overfull \hbox (15.10483pt too wide) has occurred while \output is active
+Overfull \hbox (7.08376pt too wide) has occurred while \output is active
   [] [][] [][][][][][][][][][][][][][][] [][][][] [][][][][] [][][][][][][] [][
-][][][][][] [][] []  
+][][][][][] [][] [][][][][][][][][][][][][][][] []  
  []
 
 [11
 
  <./Pic/Mean_anomaly.png>]
-<Pic/Inclination.png, id=701, 835.62187pt x 573.64313pt>
+<Pic/Inclination.png, id=899, 835.62187pt x 573.64313pt>
 File: Pic/Inclination.png Graphic file (type png)
 <use Pic/Inclination.png>
 Package pdftex.def Info: Pic/Inclination.png  used on input line 344.
@@ -1406,31 +1406,31 @@ pdfTeX warning (ext4): destination with the same identifier (name{Area_dynamics
                    \relax 
 l.344 \end{frame}
                  
-Overfull \hbox (15.10483pt too wide) has occurred while \output is active
+Overfull \hbox (7.08376pt too wide) has occurred while \output is active
   [] [][] [][][][][][][][][][][][][][][] [][][][] [][][][][] [][][][][][][] [][
-][][][][][] [][] []  
+][][][][][] [][] [][][][][][][][][][][][][][][] []  
  []
 
 [12
 
  <./Pic/Inclination.png>]
-Overfull \hbox (15.10483pt too wide) has occurred while \output is active
+Overfull \hbox (7.08376pt too wide) has occurred while \output is active
   [] [][] [][][][][][][][][][][][][][][] [][][][] [][][][][] [][][][][][][] [][
-][][][][][] [][] []  
+][][][][][] [][] [][][][][][][][][][][][][][][] []  
  []
 
 [13
 
 ]
-Overfull \hbox (15.10483pt too wide) has occurred while \output is active
+Overfull \hbox (7.08376pt too wide) has occurred while \output is active
   [] [][] [][][][][][][][][][][][][][][] [][][][] [][][][][] [][][][][][][] [][
-][][][][][] [][] []  
+][][][][][] [][] [][][][][][][][][][][][][][][] []  
  []
 
 [14
 
 ]
-<Pic/neo_orbit_types.jpg, id=846, 824.3598pt x 554.5518pt>
+<Pic/neo_orbit_types.jpg, id=1089, 824.3598pt x 554.5518pt>
 File: Pic/neo_orbit_types.jpg Graphic file (type jpg)
 <use Pic/neo_orbit_types.jpg>
 Package pdftex.def Info: Pic/neo_orbit_types.jpg  used on input line 392.
@@ -1445,33 +1445,33 @@ Overfull \vbox (27.38727pt too high) detected at line 392
  []
 
 
-Overfull \hbox (15.10483pt too wide) has occurred while \output is active
+Overfull \hbox (7.08376pt too wide) has occurred while \output is active
   [] [][] [][][][][][][][][][][][][][][] [][][][] [][][][][] [][][][][][][] [][
-][][][][][] [][] []  
+][][][][][] [][] [][][][][][][][][][][][][][][] []  
  []
 
 [15
 
  <./Pic/neo_orbit_types.jpg>]
-Overfull \hbox (15.10483pt too wide) has occurred while \output is active
+Overfull \hbox (7.08376pt too wide) has occurred while \output is active
   [] [][] [][][][][][][][][][][][][][][] [][][][] [][][][][] [][][][][][][] [][
-][][][][][] [][] []  
+][][][][][] [][] [][][][][][][][][][][][][][][] []  
  []
 
 [16
 
 ]
-Overfull \hbox (15.10483pt too wide) has occurred while \output is active
+Overfull \hbox (7.08376pt too wide) has occurred while \output is active
   [] [][] [][][][][][][][][][][][][][][] [][][][] [][][][][] [][][][][][][] [][
-][][][][][] [][] []  
+][][][][][] [][] [][][][][][][][][][][][][][][] []  
  []
 
 [17
 
 ]
-Overfull \hbox (15.10483pt too wide) has occurred while \output is active
+Overfull \hbox (7.08376pt too wide) has occurred while \output is active
   [] [][] [][][][][][][][][][][][][][][] [][][][] [][][][][] [][][][][][][] [][
-][][][][][] [][] []  
+][][][][][] [][] [][][][][][][][][][][][][][][] []  
  []
 
 [18
@@ -1482,9 +1482,9 @@ Overfull \hbox (15.10483pt too wide) has occurred while \output is active
                    \relax 
 l.470 \end{frame}
                  
-Overfull \hbox (15.10483pt too wide) has occurred while \output is active
+Overfull \hbox (7.08376pt too wide) has occurred while \output is active
   [] [][] [][][][][][][][][][][][][][][] [][][][] [][][][][] [][][][][][][] [][
-][][][][][] [][] []  
+][][][][][] [][] [][][][][][][][][][][][][][][] []  
  []
 
 [19
@@ -1511,7 +1511,7 @@ To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
-<Pic/DENSITY_Perihelion_Distance.pdf, id=1091, 319.1925pt x 409.53pt>
+<Pic/DENSITY_Perihelion_Distance.pdf, id=1409, 319.1925pt x 409.53pt>
 File: Pic/DENSITY_Perihelion_Distance.pdf Graphic file (type pdf)
 <use Pic/DENSITY_Perihelion_Distance.pdf>
 Package pdftex.def Info: Pic/DENSITY_Perihelion_Distance.pdf  used on input lin
@@ -1549,7 +1549,7 @@ To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
-<Pic/DENSITY_Eccentricity.pdf, id=1092, 319.1925pt x 409.53pt>
+<Pic/DENSITY_Eccentricity.pdf, id=1410, 319.1925pt x 409.53pt>
 File: Pic/DENSITY_Eccentricity.pdf Graphic file (type pdf)
 <use Pic/DENSITY_Eccentricity.pdf>
 Package pdftex.def Info: Pic/DENSITY_Eccentricity.pdf  used on input line 496.
@@ -1570,9 +1570,9 @@ Overfull \vbox (17.31902pt too high) detected at line 496
  []
 
 
-Overfull \hbox (15.10483pt too wide) has occurred while \output is active
+Overfull \hbox (7.08376pt too wide) has occurred while \output is active
   [] [][] [][][][][][][][][][][][][][][] [][][][] [][][][][] [][][][][][][] [][
-][][][][][] [][] []  
+][][][][][] [][] [][][][][][][][][][][][][][][] []  
  []
 
 [20
@@ -1599,7 +1599,7 @@ To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
-<Pic/DENSITY_Min_orbit_intersection.pdf, id=1158, 319.1925pt x 409.53pt>
+<Pic/DENSITY_Min_orbit_intersection.pdf, id=1491, 319.1925pt x 409.53pt>
 File: Pic/DENSITY_Min_orbit_intersection.pdf Graphic file (type pdf)
 <use Pic/DENSITY_Min_orbit_intersection.pdf>
 Package pdftex.def Info: Pic/DENSITY_Min_orbit_intersection.pdf  used on input 
@@ -1637,7 +1637,7 @@ To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
-<Pic/DENSITY_Absolute_magnitude.pdf, id=1159, 319.1925pt x 409.53pt>
+<Pic/DENSITY_Absolute_magnitude.pdf, id=1492, 319.1925pt x 409.53pt>
 File: Pic/DENSITY_Absolute_magnitude.pdf Graphic file (type pdf)
 <use Pic/DENSITY_Absolute_magnitude.pdf>
 Package pdftex.def Info: Pic/DENSITY_Absolute_magnitude.pdf  used on input line
@@ -1659,44 +1659,44 @@ Overfull \vbox (17.31902pt too high) detected at line 520
  []
 
 
-Overfull \hbox (15.10483pt too wide) has occurred while \output is active
+Overfull \hbox (7.08376pt too wide) has occurred while \output is active
   [] [][] [][][][][][][][][][][][][][][] [][][][] [][][][][] [][][][][][][] [][
-][][][][][] [][] []  
+][][][][][] [][] [][][][][][][][][][][][][][][] []  
  []
 
 [21
 
  <./Pic/DENSITY_Min_orbit_intersection.pdf> <./Pic/DENSITY_Absolute_magnitude.p
 df>]
-<Pic/FAMD.pdf, id=1225, 410.53375pt x 413.545pt>
+<Pic/FAMD.pdf, id=1573, 410.53375pt x 413.545pt>
 File: Pic/FAMD.pdf Graphic file (type pdf)
 <use Pic/FAMD.pdf>
 Package pdftex.def Info: Pic/FAMD.pdf  used on input line 541.
 (pdftex.def)             Requested size: 153.64493pt x 154.76979pt.
-<Pic/FAMD_Quantitative variables.pdf, id=1226, 410.53375pt x 413.545pt>
+<Pic/FAMD_Quantitative variables.pdf, id=1574, 410.53375pt x 413.545pt>
 File: Pic/FAMD_Quantitative variables.pdf Graphic file (type pdf)
 <use Pic/FAMD_Quantitative variables.pdf>
 Package pdftex.def Info: Pic/FAMD_Quantitative variables.pdf  used on input lin
 e 541.
 (pdftex.def)             Requested size: 153.64493pt x 154.76979pt.
 
-Overfull \hbox (15.10483pt too wide) has occurred while \output is active
+Overfull \hbox (7.08376pt too wide) has occurred while \output is active
   [] [][] [][][][][][][][][][][][][][][] [][][][] [][][][][] [][][][][][][] [][
-][][][][][] [][] []  
+][][][][][] [][] [][][][][][][][][][][][][][][] []  
  []
 
 [22
 
  <./Pic/FAMD.pdf> <./Pic/FAMD_Quantitative variables.pdf>]
-<Pic/Mutual_information.pdf, id=1288, 844.15375pt x 597.23125pt>
+<Pic/Mutual_information.pdf, id=1651, 844.15375pt x 597.23125pt>
 File: Pic/Mutual_information.pdf Graphic file (type pdf)
 <use Pic/Mutual_information.pdf>
 Package pdftex.def Info: Pic/Mutual_information.pdf  used on input line 550.
 (pdftex.def)             Requested size: 276.559pt x 195.66528pt.
 
-Overfull \hbox (15.10483pt too wide) has occurred while \output is active
+Overfull \hbox (7.08376pt too wide) has occurred while \output is active
   [] [][] [][][][][][][][][][][][][][][] [][][][] [][][][][] [][][][][][][] [][
-][][][][][] [][] []  
+][][][][][] [][] [][][][][][][][][][][][][][][] []  
  []
 
 [23
@@ -1723,7 +1723,7 @@ To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
-<Pic/GLASSO_0.1.pdf, id=1343, 409.53pt x 319.1925pt>
+<Pic/GLASSO_0.1.pdf, id=1721, 409.53pt x 319.1925pt>
 File: Pic/GLASSO_0.1.pdf Graphic file (type pdf)
 <use Pic/GLASSO_0.1.pdf>
 Package pdftex.def Info: Pic/GLASSO_0.1.pdf  used on input line 571.
@@ -1760,7 +1760,7 @@ To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
-<Pic/GLASSO_0.2.pdf, id=1344, 409.53pt x 319.1925pt>
+<Pic/GLASSO_0.2.pdf, id=1722, 409.53pt x 319.1925pt>
 File: Pic/GLASSO_0.2.pdf Graphic file (type pdf)
 <use Pic/GLASSO_0.2.pdf>
 Package pdftex.def Info: Pic/GLASSO_0.2.pdf  used on input line 571.
@@ -1777,9 +1777,9 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Overfull \hbox (15.10483pt too wide) has occurred while \output is active
+Overfull \hbox (7.08376pt too wide) has occurred while \output is active
   [] [][] [][][][][][][][][][][][][][][] [][][][] [][][][][] [][][][][][][] [][
-][][][][][] [][] []  
+][][][][][] [][] [][][][][][][][][][][][][][][] []  
  []
 
 [24
@@ -1806,7 +1806,7 @@ To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
-<Pic/GLASSO_0.3.pdf, id=1402, 409.53pt x 319.1925pt>
+<Pic/GLASSO_0.3.pdf, id=1795, 409.53pt x 319.1925pt>
 File: Pic/GLASSO_0.3.pdf Graphic file (type pdf)
 <use Pic/GLASSO_0.3.pdf>
 Package pdftex.def Info: Pic/GLASSO_0.3.pdf  used on input line 590.
@@ -1843,7 +1843,7 @@ To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
-<Pic/GLASSO_0.4.pdf, id=1403, 409.53pt x 319.1925pt>
+<Pic/GLASSO_0.4.pdf, id=1796, 409.53pt x 319.1925pt>
 File: Pic/GLASSO_0.4.pdf Graphic file (type pdf)
 <use Pic/GLASSO_0.4.pdf>
 Package pdftex.def Info: Pic/GLASSO_0.4.pdf  used on input line 590.
@@ -1860,29 +1860,29 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Overfull \hbox (15.10483pt too wide) has occurred while \output is active
+Overfull \hbox (7.08376pt too wide) has occurred while \output is active
   [] [][] [][][][][][][][][][][][][][][] [][][][] [][][][][] [][][][][][][] [][
-][][][][][] [][] []  
+][][][][][] [][] [][][][][][][][][][][][][][][] []  
  []
 
 [25
 
  <./Pic/GLASSO_0.3.pdf> <./Pic/GLASSO_0.4.pdf>]
-<Pic/mgm.pdf, id=1462, 410.53375pt x 413.545pt>
+<Pic/mgm.pdf, id=1870, 410.53375pt x 413.545pt>
 File: Pic/mgm.pdf Graphic file (type pdf)
 <use Pic/mgm.pdf>
 Package pdftex.def Info: Pic/mgm.pdf  used on input line 600.
 (pdftex.def)             Requested size: 184.3758pt x 185.72752pt.
 
-Overfull \hbox (15.10483pt too wide) has occurred while \output is active
+Overfull \hbox (7.08376pt too wide) has occurred while \output is active
   [] [][] [][][][][][][][][][][][][][][] [][][][] [][][][][] [][][][][][][] [][
-][][][][][] [][] []  
+][][][][][] [][] [][][][][][][][][][][][][][][] []  
  []
 
 [26
 
  <./Pic/mgm.pdf>]
-<Pic/minforest.pdf, id=1516, 844.15375pt x 597.23125pt>
+<Pic/minforest.pdf, id=1939, 844.15375pt x 597.23125pt>
 File: Pic/minforest.pdf Graphic file (type pdf)
 <use Pic/minforest.pdf>
 Package pdftex.def Info: Pic/minforest.pdf  used on input line 609.
@@ -1893,15 +1893,15 @@ n already used, duplicate ignored
                    \relax 
 l.609 \end{frame}
                  
-Overfull \hbox (15.10483pt too wide) has occurred while \output is active
+Overfull \hbox (7.08376pt too wide) has occurred while \output is active
   [] [][] [][][][][][][][][][][][][][][] [][][][] [][][][][] [][][][][][][] [][
-][][][][][] [][] []  
+][][][][][] [][] [][][][][][][][][][][][][][][] []  
  []
 
 [27
 
  <./Pic/minforest.pdf>]
-<Pic/mmod.pdf, id=1569, 844.15375pt x 597.23125pt>
+<Pic/mmod.pdf, id=2007, 844.15375pt x 597.23125pt>
 File: Pic/mmod.pdf Graphic file (type pdf)
 <use Pic/mmod.pdf>
 Package pdftex.def Info: Pic/mmod.pdf  used on input line 618.
@@ -1912,9 +1912,9 @@ n already used, duplicate ignored
                    \relax 
 l.618 \end{frame}
                  
-Overfull \hbox (15.10483pt too wide) has occurred while \output is active
+Overfull \hbox (7.08376pt too wide) has occurred while \output is active
   [] [][] [][][][][][][][][][][][][][][] [][][][] [][][][][] [][][][][][][] [][
-][][][][][] [][] []  
+][][][][][] [][] [][][][][][][][][][][][][][][] []  
  []
 
 [28
@@ -1941,7 +1941,7 @@ To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
-<Pic/mgm_confusion.pdf, id=1622, 410.53375pt x 413.545pt>
+<Pic/mgm_confusion.pdf, id=2075, 410.53375pt x 413.545pt>
 File: Pic/mgm_confusion.pdf Graphic file (type pdf)
 <use Pic/mgm_confusion.pdf>
 Package pdftex.def Info: Pic/mgm_confusion.pdf  used on input line 632.
@@ -1967,15 +1967,15 @@ To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
-<Pic/ROC_mgm.pdf, id=1623, 410.53375pt x 413.545pt>
+<Pic/ROC_mgm.pdf, id=2076, 410.53375pt x 413.545pt>
 File: Pic/ROC_mgm.pdf Graphic file (type pdf)
 <use Pic/ROC_mgm.pdf>
 Package pdftex.def Info: Pic/ROC_mgm.pdf  used on input line 632.
 (pdftex.def)             Requested size: 153.64493pt x 154.76979pt.
 
-Overfull \hbox (15.10483pt too wide) has occurred while \output is active
+Overfull \hbox (7.08376pt too wide) has occurred while \output is active
   [] [][] [][][][][][][][][][][][][][][] [][][][] [][][][][] [][][][][][][] [][
-][][][][][] [][] []  
+][][][][][] [][] [][][][][][][][][][][][][][][] []  
  []
 
 [29
@@ -2002,7 +2002,7 @@ To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
-<Pic/RF_confusion.pdf, id=1682, 410.53375pt x 413.545pt>
+<Pic/RF_confusion.pdf, id=2150, 410.53375pt x 413.545pt>
 File: Pic/RF_confusion.pdf Graphic file (type pdf)
 <use Pic/RF_confusion.pdf>
 Package pdftex.def Info: Pic/RF_confusion.pdf  used on input line 646.
@@ -2028,15 +2028,15 @@ To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
-<Pic/ROC_RF.pdf, id=1683, 410.53375pt x 413.545pt>
+<Pic/ROC_RF.pdf, id=2151, 410.53375pt x 413.545pt>
 File: Pic/ROC_RF.pdf Graphic file (type pdf)
 <use Pic/ROC_RF.pdf>
 Package pdftex.def Info: Pic/ROC_RF.pdf  used on input line 646.
 (pdftex.def)             Requested size: 153.64493pt x 154.76979pt.
 
-Overfull \hbox (15.10483pt too wide) has occurred while \output is active
+Overfull \hbox (7.08376pt too wide) has occurred while \output is active
   [] [][] [][][][][][][][][][][][][][][] [][][][] [][][][][] [][][][][][][] [][
-][][][][][] [][] []  
+][][][][][] [][] [][][][][][][][][][][][][][][] []  
  []
 
 [30
@@ -2063,7 +2063,7 @@ To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
-<Pic/RF_Importance.pdf, id=1742, 410.53375pt x 413.545pt>
+<Pic/RF_Importance.pdf, id=2225, 410.53375pt x 413.545pt>
 File: Pic/RF_Importance.pdf Graphic file (type pdf)
 <use Pic/RF_Importance.pdf>
 Package pdftex.def Info: Pic/RF_Importance.pdf  used on input line 652.
@@ -2073,9 +2073,9 @@ Overfull \vbox (7.25371pt too high) detected at line 652
  []
 
 
-Overfull \hbox (15.10483pt too wide) has occurred while \output is active
+Overfull \hbox (7.08376pt too wide) has occurred while \output is active
   [] [][] [][][][][][][][][][][][][][][] [][][][] [][][][][] [][][][][][][] [][
-][][][][][] [][] []  
+][][][][][] [][] [][][][][][][][][][][][][][][] []  
  []
 
 [31
@@ -2102,7 +2102,7 @@ To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
-<Pic/SVM_confusion.pdf, id=1796, 410.53375pt x 413.545pt>
+<Pic/SVM_confusion.pdf, id=2294, 410.53375pt x 413.545pt>
 File: Pic/SVM_confusion.pdf Graphic file (type pdf)
 <use Pic/SVM_confusion.pdf>
 Package pdftex.def Info: Pic/SVM_confusion.pdf  used on input line 665.
@@ -2128,15 +2128,15 @@ To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
-<Pic/ROC_SVM.pdf, id=1797, 410.53375pt x 413.545pt>
+<Pic/ROC_SVM.pdf, id=2295, 410.53375pt x 413.545pt>
 File: Pic/ROC_SVM.pdf Graphic file (type pdf)
 <use Pic/ROC_SVM.pdf>
 Package pdftex.def Info: Pic/ROC_SVM.pdf  used on input line 665.
 (pdftex.def)             Requested size: 153.64493pt x 154.76979pt.
 
-Overfull \hbox (15.10483pt too wide) has occurred while \output is active
+Overfull \hbox (7.08376pt too wide) has occurred while \output is active
   [] [][] [][][][][][][][][][][][][][][] [][][][] [][][][][] [][][][][][][] [][
-][][][][][] [][] []  
+][][][][][] [][] [][][][][][][][][][][][][][][] []  
  []
 
 [32
@@ -2163,7 +2163,7 @@ To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
-<Pic/QDA_confusion.pdf, id=1856, 410.53375pt x 413.545pt>
+<Pic/QDA_confusion.pdf, id=2369, 410.53375pt x 413.545pt>
 File: Pic/QDA_confusion.pdf Graphic file (type pdf)
 <use Pic/QDA_confusion.pdf>
 Package pdftex.def Info: Pic/QDA_confusion.pdf  used on input line 678.
@@ -2189,15 +2189,15 @@ To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
-<Pic/ROC_QDA.pdf, id=1857, 410.53375pt x 413.545pt>
+<Pic/ROC_QDA.pdf, id=2370, 410.53375pt x 413.545pt>
 File: Pic/ROC_QDA.pdf Graphic file (type pdf)
 <use Pic/ROC_QDA.pdf>
 Package pdftex.def Info: Pic/ROC_QDA.pdf  used on input line 678.
 (pdftex.def)             Requested size: 153.64493pt x 154.76979pt.
 
-Overfull \hbox (15.10483pt too wide) has occurred while \output is active
+Overfull \hbox (7.08376pt too wide) has occurred while \output is active
   [] [][] [][][][][][][][][][][][][][][] [][][][] [][][][][] [][][][][][][] [][
-][][][][][] [][] []  
+][][][][][] [][] [][][][][][][][][][][][][][][] []  
  []
 
 [33
@@ -2224,7 +2224,7 @@ To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
-<Pic/Logisic_confusion.pdf, id=1916, 410.53375pt x 413.545pt>
+<Pic/Logisic_confusion.pdf, id=2444, 410.53375pt x 413.545pt>
 File: Pic/Logisic_confusion.pdf Graphic file (type pdf)
 <use Pic/Logisic_confusion.pdf>
 Package pdftex.def Info: Pic/Logisic_confusion.pdf  used on input line 691.
@@ -2250,42 +2250,154 @@ To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
-<Pic/ROC_Logistic.pdf, id=1917, 410.53375pt x 413.545pt>
+<Pic/ROC_Logistic.pdf, id=2445, 410.53375pt x 413.545pt>
 File: Pic/ROC_Logistic.pdf Graphic file (type pdf)
 <use Pic/ROC_Logistic.pdf>
 Package pdftex.def Info: Pic/ROC_Logistic.pdf  used on input line 691.
 (pdftex.def)             Requested size: 153.64493pt x 154.76979pt.
 
-Overfull \hbox (15.10483pt too wide) has occurred while \output is active
+Overfull \hbox (7.08376pt too wide) has occurred while \output is active
   [] [][] [][][][][][][][][][][][][][][] [][][][] [][][][][] [][][][][][][] [][
-][][][][][] [][] []  
+][][][][][] [][] [][][][][][][][][][][][][][][] []  
  []
 
 [34
 
  <./Pic/Logisic_confusion.pdf> <./Pic/ROC_Logistic.pdf>]
-Overfull \hbox (15.10483pt too wide) has occurred while \output is active
+Overfull \hbox (7.08376pt too wide) has occurred while \output is active
   [] [][] [][][][][][][][][][][][][][][] [][][][] [][][][][] [][][][][][][] [][
-][][][][][] [][] []  
+][][][][][] [][] [][][][][][][][][][][][][][][] []  
  []
 
 [35
 
 ]
-Overfull \hbox (15.10483pt too wide) has occurred while \output is active
+Overfull \hbox (7.08376pt too wide) has occurred while \output is active
   [] [][] [][][][][][][][][][][][][][][] [][][][] [][][][][] [][][][][][][] [][
-][][][][][] [][] []  
+][][][][][] [][] [][][][][][][][][][][][][][][] []  
  []
 
 [36
 
 ]
-Overfull \hbox (15.10483pt too wide) has occurred while \output is active
+Overfull \hbox (7.08376pt too wide) has occurred while \output is active
   [] [][] [][][][][][][][][][][][][][][] [][][][] [][][][][] [][][][][][][] [][
-][][][][][] [][] []  
+][][][][][] [][] [][][][][][][][][][][][][][][] []  
  []
 
 [37
+
+]
+Overfull \hbox (7.08376pt too wide) has occurred while \output is active
+  [] [][] [][][][][][][][][][][][][][][] [][][][] [][][][][] [][][][][][][] [][
+][][][][][] [][] [][][][][][][][][][][][][][][] []  
+ []
+
+[38
+
+]
+Overfull \hbox (7.08376pt too wide) has occurred while \output is active
+  [] [][] [][][][][][][][][][][][][][][] [][][][] [][][][][] [][][][][][][] [][
+][][][][][] [][] [][][][][][][][][][][][][][][] []  
+ []
+
+[39
+
+]
+Overfull \hbox (7.08376pt too wide) has occurred while \output is active
+  [] [][] [][][][][][][][][][][][][][][] [][][][] [][][][][] [][][][][][][] [][
+][][][][][] [][] [][][][][][][][][][][][][][][] []  
+ []
+
+[40
+
+]
+Overfull \hbox (7.08376pt too wide) has occurred while \output is active
+  [] [][] [][][][][][][][][][][][][][][] [][][][] [][][][][] [][][][][][][] [][
+][][][][][] [][] [][][][][][][][][][][][][][][] []  
+ []
+
+[41
+
+]
+Overfull \hbox (7.08376pt too wide) has occurred while \output is active
+  [] [][] [][][][][][][][][][][][][][][] [][][][] [][][][][] [][][][][][][] [][
+][][][][][] [][] [][][][][][][][][][][][][][][] []  
+ []
+
+[42
+
+]
+Overfull \hbox (7.08376pt too wide) has occurred while \output is active
+  [] [][] [][][][][][][][][][][][][][][] [][][][] [][][][][] [][][][][][][] [][
+][][][][][] [][] [][][][][][][][][][][][][][][] []  
+ []
+
+[43
+
+]
+Overfull \hbox (7.08376pt too wide) has occurred while \output is active
+  [] [][] [][][][][][][][][][][][][][][] [][][][] [][][][][] [][][][][][][] [][
+][][][][][] [][] [][][][][][][][][][][][][][][] []  
+ []
+
+[44
+
+]
+Overfull \hbox (7.08376pt too wide) has occurred while \output is active
+  [] [][] [][][][][][][][][][][][][][][] [][][][] [][][][][] [][][][][][][] [][
+][][][][][] [][] [][][][][][][][][][][][][][][] []  
+ []
+
+[45
+
+]
+Overfull \hbox (7.08376pt too wide) has occurred while \output is active
+  [] [][] [][][][][][][][][][][][][][][] [][][][] [][][][][] [][][][][][][] [][
+][][][][][] [][] [][][][][][][][][][][][][][][] []  
+ []
+
+[46
+
+]
+Overfull \hbox (7.08376pt too wide) has occurred while \output is active
+  [] [][] [][][][][][][][][][][][][][][] [][][][] [][][][][] [][][][][][][] [][
+][][][][][] [][] [][][][][][][][][][][][][][][] []  
+ []
+
+[47
+
+]
+Overfull \hbox (7.08376pt too wide) has occurred while \output is active
+  [] [][] [][][][][][][][][][][][][][][] [][][][] [][][][][] [][][][][][][] [][
+][][][][][] [][] [][][][][][][][][][][][][][][] []  
+ []
+
+[48
+
+]
+Overfull \hbox (7.08376pt too wide) has occurred while \output is active
+  [] [][] [][][][][][][][][][][][][][][] [][][][] [][][][][] [][][][][][][] [][
+][][][][][] [][] [][][][][][][][][][][][][][][] []  
+ []
+
+[49
+
+]
+Overfull \hbox (7.08376pt too wide) has occurred while \output is active
+  [] [][] [][][][][][][][][][][][][][][] [][][][] [][][][][] [][][][][][][] [][
+][][][][][] [][] [][][][][][][][][][][][][][][] []  
+ []
+
+[50
+
+]
+Overfull \hbox (7.08376pt too wide) has occurred while \output is active
+  [] [][] [][][][][][][][][][][][][][][] [][][][] [][][][][] [][][][][][][] [][
+][][][][][] [][] [][][][][][][][][][][][][][][] []  
+ []
+
+[51
 
 ]
 \tf@nav=\write7
@@ -2302,16 +2414,16 @@ Overfull \hbox (15.10483pt too wide) has occurred while \output is active
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `Presentation.out' has not changed.
-(rerunfilecheck)             Checksum: F09850CEBA805E1180EF20D2D276A3F6;949.
+(rerunfilecheck)             Checksum: EA4BEA90401747D0B65A44A321F40B18;877.
 Package logreq Info: Writing requests to 'Presentation.run.xml'.
 \openout1 = `Presentation.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 30501 strings out of 478681
- 602125 string characters out of 2854493
- 1086793 words of memory out of 3000000
- 47917 multiletter control sequences out of 15000+600000
+ 30551 strings out of 478681
+ 602271 string characters out of 2854493
+ 1094766 words of memory out of 3000000
+ 47938 multiletter control sequences out of 15000+600000
  421034 words of font info for 85 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,20n,122p,1861b,1701s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2328,9 +2440,9 @@ fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssi8.pfb><C:/P
 rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program F
 iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKT
 eX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on Presentation.pdf (37 pages, 2105460 bytes).
+Output written on Presentation.pdf (51 pages, 2387159 bytes).
 PDF statistics:
- 2209 PDF objects out of 2487 (max. 8388607)
- 96 named destinations out of 1000 (max. 500000)
- 339 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3673 PDF objects out of 4296 (max. 8388607)
+ 125 named destinations out of 1000 (max. 500000)
+ 347 words of extra memory for PDF output out of 10000 (max. 10000000)
 
