@@ -45,7 +45,7 @@
 
 \begin{itemize}
 \item \textbf{Final Goal} Assessment of forecasts and interpretability for different machine learning algorithms, including the probabilistic models
-\item \textbf{Method} Use a dataset for which the laws that interconnects the different features are known from general principles
+\item \textbf{Method} Use a dataset for which the laws that interconnect the different features are known from general principles
 \item \textbf{Dataset} CNEOS asteroids dataset for more than 3500 asteroids
 \item \textbf{Theoretical laws} Celestial mechanics
 \item \textbf{Algorithms involved - probabilistic models} GLASSO, mgm, minforest, mmod
@@ -57,14 +57,18 @@
 
 \section{Celestial mechanics}
 
-\begin{frame}{Celestial mechanics}
-\begin{equation}
-\textbf{F}_{1}=\mathcal{G} \cdot \frac{m_{1}m_{2}}{r^{3}}\textbf{r}=m_{1} \ddot{\textbf{r}}_{1}
-\end{equation}
+
+\begin{frame}{Celestial mechanics \cite{murray1999solar}: equations of motion}
+
+\begin{center}
+Lets Consider the interaction between a planet of mass $m_{1}$ at the  position $r_{1}$ (inertial frame) and an asteroid of mass $m_{2}$  at the position $r_{2}$
+\end{center}
+
 
 \begin{equation}
-\textbf{F}_{2}=-\mathcal{G} \cdot \frac{m_{1}m_{2}}{r^{3}}\textbf{r}=m_{1} \ddot{\textbf{r}}_{2}
+\textbf{F}_{1}=\mathcal{G} \cdot \frac{m_{1}m_{2}}{r^{3}}\textbf{r}=m_{1} \ddot{\textbf{r}}_{1}\quad \textbf{F}_{2}=-\mathcal{G} \cdot \frac{m_{1}m_{2}}{r^{3}}\textbf{r}=m_{1} \ddot{\textbf{r}}_{2}
 \end{equation}
+
  
 If we consider the motion of the second item with respect to the first one 
  
@@ -76,13 +80,16 @@ If we consider the motion of the second item with respect to the first one
 \dfrac{d^{2}\textbf{r}}{dt^{2}}+\mu\dfrac{\textbf{r}}{r^{3}}=0
 \end{equation}
 
+\begin{center}
 $\textbf{r} \times \ddot{ \textbf{r}}=0  \implies $ $\textbf{r}$  and $\dot{\textbf{r}}$ lies in the same plane
 
+\end{center}
 \end{frame}
 
-\begin{frame}{Celestial mechanics}
+\begin{frame}{Celestial mechanics \cite{murray1999solar}: equations of motion}
+\begin{center}
 With polar coordinates  $\hat{\textbf{r}}$ and $\hat{\boldsymbol{\theta}}$
-
+\end{center}
 \begin{equation}
 \textbf{r}=r\hat{\textbf{r}}
 \end{equation}
@@ -235,17 +242,17 @@ T^{2}=\dfrac{4\pi^{2}}{\mu}a^{3}
 \end{columns}
 \end{frame}
 
-\begin{frame}{$3^{th}$ Kepler law}
+\begin{frame}{Celestial mechanics \cite{murray1999solar}: $3^{th}$ Kepler law}
 
 
 \begin{equation}
-\frac{m_{c}+m}{m_{c}+m'}=\left(\frac{a}{a'}\right)\left(\frac{T'}{T}\right)^{2}
+\frac{m_{c}+m}{m_{c}+m'}=\left(\frac{a}{a'}\right)^{3}\left(\frac{T'}{T}\right)^{2}
 \end{equation}
 
 But since $m$,$m'<<m_{c}$
 
 \begin{equation}
-(a\a')^{3}\approx (T\T')^{2}
+\left(\frac{a}{a'}\right)^{3}\approx \left(\frac{T}{T'}'\right)^{2}
 \end{equation}
 
 And therefore 
@@ -255,19 +262,16 @@ T'\approx a'^{3/2}
 \end{equation}
 
 \begin{center}
-The mass of the asteroid is not involve
-\end{center}d
+\textbf{Remark:} The mass of the asteroid is \textbf{not} involved
+\end{center}
 
 
 \end{frame}
 
-\begin{frame}{Orbital parameters}
+\begin{frame}{Celestial mechanics \cite{murray1999solar}: Orbital parameters}
 \begin{center}
-\textcolor{red}{Mean motion}
+\textcolor{red}{Mean motion} $n=\frac{2\pi}{T}$
 \end{center}
-\begin{equation}
-n=\frac{2\pi}{T}
-\end{equation}
 
 \begin{equation}
 v_{perihelion}=na\sqrt{\dfrac{1+e}{1-e}}
@@ -277,7 +281,9 @@ v_{perihelion}=na\sqrt{\dfrac{1+e}{1-e}}
 v_{aphelion}=na\sqrt{\dfrac{1-e}{1+e}}
 \end{equation}
 
-
+\begin{center}
+\textbf{Remark:} The mean motion of an asteroid is different with respect to the the asteroid relative velocity (measured from Earth), since the latter is different at the perihelion an at the aphelion
+\end{center}
 
 
 
@@ -285,7 +291,7 @@ v_{aphelion}=na\sqrt{\dfrac{1-e}{1+e}}
 
 
 
-\begin{frame}{Orbital parameters}
+\begin{frame}{Celestial mechanics \cite{murray1999solar}: Orbital parameters}
 \begin{columns}
 \column{0.4\textwidth}
 \begin{figure}[h]
@@ -323,27 +329,25 @@ T_{P}=\frac{a_{p}}{a}+2\cos I\sqrt{\dfrac{a}{a_{p}}(1-e^{2})}
 \end{frame}
 
 
-\begin{frame}{Orbital parameters}
-\begin{columns}
-\column{0.4\textwidth}
+\begin{frame}{Celestial mechanics \cite{murray1999solar}: Orbital parameters}
+
 \begin{figure}[h]
 \begin{center}
-\includegraphics[width=\textwidth ]{Pic/Inclination.png}
+\includegraphics[width=0.6\textwidth ]{Pic/Inclination.png}
 \caption{\cite{murray1999solar}}
 \label{Area_dynamics}
 \end{center}
 \end{figure}
-\column{0.6\textwidth}
+
 \begin{center}
 I: \textcolor{red}{inclination} of the orbit
 \end{center}
 \begin{center}
 $\Omega$: \textcolor{red}{longitude of the ascending node}
 \end{center}
-\end{columns}
 \end{frame}
 
-\begin{frame}{Magnitude}
+\begin{frame}{Celestial mechanics \cite{murray1999solar}: Magnitude}
 \begin{equation}
 \Phi=\frac{L}{4\pi r^{2}}
 \end{equation}
@@ -362,7 +366,7 @@ M=m+5-5log_{10}d
 Where $\Phi$ is the flux for a sphere of radius r, m the relative magnitude and M the \textcolor{red}{Absolute magnitude}
 \end{frame}
 
-\begin{frame}{Magnitude}
+\begin{frame}{Celestial mechanics \cite{murray1999solar}: Magnitude}
 \begin{equation}
 \Phi=\frac{L}{4\pi r^{2}}
 \end{equation}
@@ -381,7 +385,7 @@ M=m+5-5log_{10}d
 Where $\Phi$ is the flux for a sphere of radius r, m the relative magnitude and M the \textcolor{red}{Absolute magnitude}
 \end{frame}
 
-\begin{frame}{Classification}
+\begin{frame}{Celestial mechanics \cite{nasa_classification}: Classification}
 \begin{figure}[h]
 \begin{center}
 \includegraphics[width=\textwidth]{Pic/neo_orbit_types.jpg}
@@ -391,7 +395,7 @@ Where $\Phi$ is the flux for a sphere of radius r, m the relative magnitude and 
 \end{figure}
 \end{frame}
 
-\begin{frame}{Classification}
+\begin{frame}{Celestial mechanics \cite{nasa_classification}: Classification}
 \begin{itemize}
 \item \textbf{Potentially Hazardous Asteroids}: MOID $\leq 0.05$ au $M \leq22.0$ \textit{NEAs whose Minimum Orbit Intersection Distance (MOID) with the Earth is 0.05 au or less and whose absolute magnitude (M) is 22.0 or brighter}
 \end{itemize}
@@ -399,7 +403,7 @@ Where $\Phi$ is the flux for a sphere of radius r, m the relative magnitude and 
 
 \section{Dataset}
 
-\begin{frame}{Classification}
+\begin{frame}{Dataset}
 \begin{itemize}
 
 
@@ -472,7 +476,7 @@ Hazardous                     & Categorical (Binary)
 
 \section{Prelim. analysis}
 
-\begin{frame}
+\begin{frame}{Density Plot}
 \begin{columns}
 \column{0.5\textwidth}
   \begin{figure}[b]{\textwidth}
@@ -495,7 +499,7 @@ Hazardous                     & Categorical (Binary)
 \end{columns}
 \end{frame}
 
-\begin{frame}
+\begin{frame}{Density Plot}
 \begin{columns}  
 
 \column{0.5\textwidth}
@@ -520,7 +524,7 @@ Hazardous                     & Categorical (Binary)
 \end{frame}
 
 
-\begin{frame}{FAMD}
+\begin{frame}{FAMD }
 \begin{columns}  
 
 \column{0.5\textwidth}
@@ -538,15 +542,21 @@ Hazardous                     & Categorical (Binary)
 \end{center}
 \end{figure}
 \end{columns}
+\begin{center}
+Performed with the FactoMineR package \cite{le2008factominer} 
+\end{center}
 \end{frame}
 
-\begin{frame}{Mutual information}
+\begin{frame}{Mutual information analysis}
 \begin{figure}
 \begin{center}
-\includegraphics[width=0.9\textwidth]{Pic/Mutual_information.pdf}
+\includegraphics[width=0.8\textwidth]{Pic/Mutual_information.pdf}
 \label{Mutual_information}
 \end{center}
 \end{figure}
+\begin{center}
+Performed with the varrank package \cite{kratzer2018varrank} 
+\end{center}
 \end{frame}
 
 \section{Prob. mod.}
@@ -568,6 +578,9 @@ Hazardous                     & Categorical (Binary)
     \end{center}}
   \end{figure}
 \end{columns}
+\begin{center}
+Performed with the GLASSO package \cite{glasso}
+\end{center}
 \end{frame}
 
 \begin{frame}{GLASSO}
@@ -587,6 +600,9 @@ Hazardous                     & Categorical (Binary)
     \end{center}}
   \end{figure}
 \end{columns}
+\begin{center}
+Performed with the GLASSO package \cite{glasso}
+\end{center}
 \end{frame}
 
 
@@ -597,6 +613,9 @@ Hazardous                     & Categorical (Binary)
 \label{mgm}
 \end{center}
 \end{figure}
+\begin{center}
+Performed with the mgm package \cite{haslbeck2015mgm}
+\end{center}
 \end{frame}
 
 \begin{frame}{Mixed interactions: minforest}
@@ -606,6 +625,9 @@ Hazardous                     & Categorical (Binary)
 \label{mgm}
 \end{center}
 \end{figure}
+\begin{center}
+Performed with the gRapHD package \cite{de2009high}
+\end{center}
 \end{frame}
 
 \begin{frame}{Mixed interactions: mmod}
@@ -615,6 +637,9 @@ Hazardous                     & Categorical (Binary)
 \label{mgm}
 \end{center}
 \end{figure}
+\begin{center}
+Performed with the gRim package \cite{grim}
+\end{center}
 \end{frame}
 
 \begin{frame}{Mixed interactions}
@@ -631,6 +656,8 @@ The mgm model is the one that has the list of connection more coherent with the 
 \end{columns}
 \end{frame}
 
+
+
 \section{Other ML alg.}
 \begin{frame}{Random Forest}
 \begin{columns}
@@ -643,6 +670,9 @@ The mgm model is the one that has the list of connection more coherent with the 
     \includegraphics[width=\textwidth]{Pic/ROC_RF.pdf}
   \end{figure}
 \end{columns}
+\begin{center}
+Performed with the rfor package \cite{rfor}
+\end{center}
 \end{frame}
 
 \begin{frame}{Random Forest}
@@ -973,7 +1003,8 @@ g(\alpha,\textbf{C},\textbf{S},f_{i})=MI(f_{i};\textbf{C})-\sum_{f_{s}\in S}\alp
 \end{equation}
 \end{frame}
 
-\begin{frame}{Ref}
+\begin{frame}[t,allowframebreaks]
+\frametitle{Bibliography}
 \printbibliography
 \end{frame}
 

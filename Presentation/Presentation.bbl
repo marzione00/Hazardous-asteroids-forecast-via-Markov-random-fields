@@ -29,8 +29,209 @@
     \field{howpublished}{\url{https://cneos.jpl.nasa.gov/}}
   \endentry
 
+  \entry{glasso}{misc}{}
+  \field{howpublished}{\url{https://cran.r-project.org/web/packages/glasso/glasso.pdf}}
+  \endentry
+
   \entry{ROC_fig}{misc}{}
   \field{howpublished}{\url{https://towardsdatascience.com/understanding-auc-roc-curve-68b2303cc9c5}}
+  \endentry
+
+  \entry{de2009high}{article}{}
+    \name{author}{3}{}{%
+      {{hash=dAGC}{%
+         prefix={de},
+         prefixi={d\bibinitperiod},
+         family={Abreu},
+         familyi={A\bibinitperiod},
+         given={Gabriel\bibnamedelima CG},
+         giveni={G\bibinitperiod\bibinitdelim C\bibinitperiod},
+      }}%
+      {{hash=LR}{%
+         family={Labouriau},
+         familyi={L\bibinitperiod},
+         given={Rodrigo},
+         giveni={R\bibinitperiod},
+      }}%
+      {{hash=ED}{%
+         family={Edwards},
+         familyi={E\bibinitperiod},
+         given={David},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{AGCdLRED1}
+    \strng{fullhash}{AGCdLRED1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{title}{High-dimensional graphical model search with graphd R
+  package}
+    \field{journaltitle}{arXiv preprint arXiv:0909.1234}
+    \field{year}{2009}
+  \endentry
+
+  \entry{haslbeck2015mgm}{article}{}
+    \name{author}{2}{}{%
+      {{hash=HJ}{%
+         family={Haslbeck},
+         familyi={H\bibinitperiod},
+         given={Jonas},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=WLJ}{%
+         family={Waldorp},
+         familyi={W\bibinitperiod},
+         given={Lourens\bibnamedelima J},
+         giveni={L\bibinitperiod\bibinitdelim J\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{HJWLJ1}
+    \strng{fullhash}{HJWLJ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{title}{mgm: Estimating time-varying mixed graphical models in
+  high-dimensional data}
+    \field{journaltitle}{arXiv preprint arXiv:1510.06871}
+    \field{year}{2015}
+  \endentry
+
+  \entry{grim}{book}{}
+    \name{author}{3}{}{%
+      {{hash=HS}{%
+         family={H{\o}jsgaard},
+         familyi={H\bibinitperiod},
+         given={S{\o}ren},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=ED}{%
+         family={Edwards},
+         familyi={E\bibinitperiod},
+         given={David},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=LS}{%
+         family={Lauritzen},
+         familyi={L\bibinitperiod},
+         given={Steffen},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{HSEDLS1}
+    \strng{fullhash}{HSEDLS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \verb{doi}
+    \verb 10.1007/978-1-4614-2299-0
+    \endverb
+    \field{note}{ISBN 978-1-4614-2298-3}
+    \field{title}{Graphical Models with {R}}
+    \list{location}{1}{%
+      {New York}%
+    }
+    \field{year}{2012}
+  \endentry
+
+  \entry{kratzer2018varrank}{article}{}
+    \name{author}{2}{}{%
+      {{hash=KG}{%
+         family={Kratzer},
+         familyi={K\bibinitperiod},
+         given={Gilles},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=FR}{%
+         family={Furrer},
+         familyi={F\bibinitperiod},
+         given={Reinhard},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{KGFR1}
+    \strng{fullhash}{KGFR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{K}
+    \field{sortinithash}{K}
+    \field{title}{varrank: an R package for variable ranking based on mutual
+  information with applications to observed systemic datasets}
+    \field{journaltitle}{arXiv preprint arXiv:1804.07134}
+    \field{year}{2018}
+  \endentry
+
+  \entry{le2008factominer}{article}{}
+    \name{author}{3}{}{%
+      {{hash=LS}{%
+         family={L{\^e}},
+         familyi={L\bibinitperiod},
+         given={S{\'e}bastien},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=JJ}{%
+         family={Josse},
+         familyi={J\bibinitperiod},
+         given={Julie},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=HF}{%
+         family={Husson},
+         familyi={H\bibinitperiod},
+         given={Fran{\c{c}}ois},
+         giveni={F\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LSJJHF1}
+    \strng{fullhash}{LSJJHF1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{number}{1}
+    \field{pages}{1\bibrangedash 18}
+    \field{title}{FactoMineR: an R package for multivariate analysis}
+    \field{volume}{25}
+    \field{journaltitle}{Journal of statistical software}
+    \field{year}{2008}
+  \endentry
+
+  \entry{rfor}{article}{}
+    \name{author}{2}{}{%
+      {{hash=LA}{%
+         family={Liaw},
+         familyi={L\bibinitperiod},
+         given={Andy},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=WM}{%
+         family={Wiener},
+         familyi={W\bibinitperiod},
+         given={Matthew},
+         giveni={M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{LAWM1}
+    \strng{fullhash}{LAWM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{number}{3}
+    \field{pages}{18\bibrangedash 22}
+    \field{title}{Classification and Regression by randomForest}
+    \verb{url}
+    \verb https://CRAN.R-project.org/doc/Rnews/
+    \endverb
+    \field{volume}{2}
+    \field{journaltitle}{R News}
+    \field{year}{2002}
   \endentry
 
   \entry{murray1999solar}{book}{}

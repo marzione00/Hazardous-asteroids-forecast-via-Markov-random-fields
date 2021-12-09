@@ -260,8 +260,16 @@
 \headcommand {\slideentry {9}{0}{0}{52/52}{}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {52}{52}}
-\headcommand {\beamer@partpages {1}{52}}
-\headcommand {\beamer@subsectionpages {37}{52}}
-\headcommand {\beamer@sectionpages {37}{52}}
-\headcommand {\beamer@documentpages {52}}
-\headcommand {\gdef \inserttotalframenumber {52}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {9}{0}{0}{52/53}{}{0}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@framepages {52}{53}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {9}{0}{0}{52/54}{}{0}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@framepages {52}{54}}
+\headcommand {\beamer@partpages {1}{54}}
+\headcommand {\beamer@subsectionpages {37}{54}}
+\headcommand {\beamer@sectionpages {37}{54}}
+\headcommand {\beamer@documentpages {54}}
+\headcommand {\gdef \inserttotalframenumber {54}}
