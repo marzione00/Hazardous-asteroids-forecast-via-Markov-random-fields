@@ -17,7 +17,7 @@
 
 \usepackage[backend=bibtex]{biblatex}
 \addbibresource{bibliography.bib}
-
+\newtheorem*{remark}{Remark}
 \usepackage[english]{babel}
 \usepackage[utf8x]{inputenc}
 \usebackgroundtemplate{\includegraphics[width=\paperwidth]{Pic/Intro.jpg}}
@@ -692,6 +692,9 @@ Performed with the rfor package \cite{rfor}
     \includegraphics[width=\textwidth]{Pic/ROC_SVM.pdf}
   \end{figure}
 \end{columns}
+\begin{center}
+Performed with the e1071 package \cite{dimitriadou2008misc}
+\end{center}
 \end{frame}
 
 \begin{frame}{Quadratic Discriminant Analysis (QDA)}
@@ -705,6 +708,9 @@ Performed with the rfor package \cite{rfor}
     \includegraphics[width=\textwidth]{Pic/ROC_QDA.pdf}
   \end{figure}
 \end{columns}
+\begin{center}
+Performed with the MASS package \cite{MASS}
+\end{center}
 \end{frame}
 
 \begin{frame}{Logistic regression}
@@ -718,7 +724,12 @@ Performed with the rfor package \cite{rfor}
     \includegraphics[width=\textwidth]{Pic/ROC_Logistic.pdf}
   \end{figure}
 \end{columns}
+\begin{center}
+Performed with the stats package \cite{stats}
+\end{center}
 \end{frame}
+
+
 
 
 \begin{frame}{$\phi$ coefficient}
@@ -739,6 +750,32 @@ QDA       & 0.5562
 \end{frame}
 
 \section{Conclusions}
+
+\begin{frame}{Interpretability and scientific validation}
+
+\begin{remark}[Interpretability - Tarski definition]
+The formal theory T can be translated into S if and only if S can prove the theorem of T in its language \cite{tarski1953undecidable}
+\end{remark}
+
+\end{frame}
+
+\begin{frame}{Interpretability and scientific validation}
+
+\begin{remark}[Scientific method - Einstein definition]
+Science uses the totality of the primary concepts, i.e., concepts directly connected with sense experiences, and propositions connecting them. Such a state of affairs cannot, however, satisfy a spirit which is really scientifically minded; because the totality of concepts and relations obtained in this manner is utterly lacking in logical unity. In order to supplement this deficiency, one invents a system poorer in concepts and relations, a system retaining the primary concepts and relations of the \textit{first layer} as logically derived concepts and relations. This new \textit{secondary system} pays for its higher logical unity by having elementary concepts (concepts of the second layer), which are no longer directly connected with complexes of sense experiences \cite{physics-reality}
+\end{remark}
+
+\end{frame}
+
+
+\begin{frame}{Interpretability and scientific validation}
+
+\begin{remark}[Scientific method - Einstein definition ]
+The essential thing is the aim to represent the multitude of concepts and propositions, close to experience, as propositions, logically deduced from a basis, as narrow as possible, of fundamental concepts and fundamental relations which themselves can be chosen freely (axioms) \cite{physics-reality}
+\end{remark}
+
+\end{frame}
+
 
 \begin{frame}{Conclusions: forecast performances vs intepretability}
 \begin{itemize}
@@ -837,7 +874,7 @@ $\phi_{s}$ function of sufficient statistics $B_{s}$ base measure
 
 \begin{equation}
 \begin{split}
-P(X)= & \exp \left\lbrace \sum_{s\in V}\theta_{s}\phi_{s}(X_{s})+\sum_{s\in V}\sum_{r\in N(s)}\theta_{s,r}\phi_{s}(X_{s})\phi_{r}(X_{r})+...+\\&\sum_{r_{1},...,r_{k}\in C}\theta_{r1,...,rk}\prod_{j=1}^{k}\phi_{r}_{j}\left(X_{r}_{j}\right)+\sum_{s\in V}B_{s}(X_{S})-\Phi(\theta) \right\rbrace
+P(X)= & \exp \left( \sum_{s\in V}\theta_{s}\phi_{s}(X_{s})+\sum_{s\in V}\sum_{r\in N(s)}\theta_{s,r}\phi_{s}(X_{s})\phi_{r}(X_{r})\\ +&...+\sum_{r_{1},...,r_{k}\in C}\theta_{r1,...,rk}\prod_{j=1}^{k}\phi_{r}_{j}\left(X_{r}_{j}\right)+\sum_{s\in V}B_{s}(X_{S})-\Phi(\theta) \right)
 \end{split}
 \end{equation}
 

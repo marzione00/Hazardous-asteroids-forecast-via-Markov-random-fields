@@ -33,6 +33,10 @@
   \field{howpublished}{\url{https://cran.r-project.org/web/packages/glasso/glasso.pdf}}
   \endentry
 
+  \entry{physics-reality}{misc}{}
+  \field{howpublished}{\url{https://www.amacad.org/publication/physics-reality}}
+  \endentry
+
   \entry{ROC_fig}{misc}{}
   \field{howpublished}{\url{https://towardsdatascience.com/understanding-auc-roc-curve-68b2303cc9c5}}
   \endentry
@@ -70,6 +74,53 @@
   package}
     \field{journaltitle}{arXiv preprint arXiv:0909.1234}
     \field{year}{2009}
+  \endentry
+
+  \entry{dimitriadou2008misc}{article}{}
+    \name{author}{5}{}{%
+      {{hash=DE}{%
+         family={Dimitriadou},
+         familyi={D\bibinitperiod},
+         given={Evgenia},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=HK}{%
+         family={Hornik},
+         familyi={H\bibinitperiod},
+         given={Kurt},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=LF}{%
+         family={Leisch},
+         familyi={L\bibinitperiod},
+         given={Friedrich},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=MD}{%
+         family={Meyer},
+         familyi={M\bibinitperiod},
+         given={David},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=WA}{%
+         family={Weingessel},
+         familyi={W\bibinitperiod},
+         given={Andreas},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{DE+1}
+    \strng{fullhash}{DEHKLFMDWA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{pages}{5\bibrangedash 24}
+    \field{title}{Misc functions of the Department of Statistics (e1071), TU
+  Wien}
+    \field{volume}{1}
+    \field{journaltitle}{R package}
+    \field{year}{2008}
   \endentry
 
   \entry{haslbeck2015mgm}{article}{}
@@ -260,6 +311,104 @@
     \field{sortinithash}{M}
     \field{title}{Solar system dynamics}
     \field{year}{1999}
+  \endentry
+
+  \entry{stats}{manual}{}
+    \name{author}{1}{}{%
+      {{hash=R}{%
+         family={{R Core Team}},
+         familyi={R\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {R Foundation for Statistical Computing}%
+    }
+    \strng{namehash}{R1}
+    \strng{fullhash}{R1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{R}
+    \field{sortinithash}{R}
+    \field{note}{{ISBN} 3-900051-07-0}
+    \field{title}{R: A Language and Environment for Statistical Computing}
+    \verb{url}
+    \verb http://www.R-project.org/
+    \endverb
+    \list{location}{1}{%
+      {Vienna, Austria}%
+    }
+    \field{year}{2013}
+  \endentry
+
+  \entry{tarski1953undecidable}{book}{}
+    \name{author}{3}{}{%
+      {{hash=TA}{%
+         family={Tarski},
+         familyi={T\bibinitperiod},
+         given={Alfred},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=MA}{%
+         family={Mostowski},
+         familyi={M\bibinitperiod},
+         given={Andrzej},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=RRM}{%
+         family={Robinson},
+         familyi={R\bibinitperiod},
+         given={Raphael\bibnamedelima Mitchel},
+         giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{TAMARRM1}
+    \strng{fullhash}{TAMARRM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{title}{Undecidable theories}
+    \field{volume}{13}
+    \field{year}{1953}
+  \endentry
+
+  \entry{MASS}{book}{}
+    \name{author}{2}{}{%
+      {{hash=VWN}{%
+         family={Venables},
+         familyi={V\bibinitperiod},
+         given={W.\bibnamedelima N.},
+         giveni={W\bibinitperiod\bibinitdelim N\bibinitperiod},
+      }}%
+      {{hash=RBD}{%
+         family={Ripley},
+         familyi={R\bibinitperiod},
+         given={B.\bibnamedelima D.},
+         giveni={B\bibinitperiod\bibinitdelim D\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{VWNRBD1}
+    \strng{fullhash}{VWNRBD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{V}
+    \field{sortinithash}{V}
+    \field{edition}{Fourth}
+    \field{note}{ISBN 0-387-95457-0}
+    \field{title}{Modern Applied Statistics with S}
+    \verb{url}
+    \verb https://www.stats.ox.ac.uk/pub/MASS4/
+    \endverb
+    \list{location}{1}{%
+      {New York}%
+    }
+    \field{year}{2002}
   \endentry
 \enddatalist
 \endinput
