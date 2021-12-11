@@ -8,7 +8,7 @@
 
 \mode<presentation>
 {
-  \usetheme{Darmstadt}      % or try Darmstadt, Madrid, Warsaw, ...
+  \usetheme{Madrid}      % or try Darmstadt, Madrid, Warsaw, ...
   \usecolortheme{beaver} % or try albatross, beaver, crane, ...
   \usefonttheme{default}  % or try serif, structurebold, ...
   \setbeamertemplate{navigation symbols}{}
@@ -21,7 +21,7 @@
 \usepackage[english]{babel}
 \usepackage[utf8x]{inputenc}
 \usebackgroundtemplate{\includegraphics[width=\paperwidth]{Pic/Intro.jpg}}
-\title[Hazardous asteroids forecast via Markov random fields]{Hazardous asteroids forecast via Markov random fields}
+\title[Probabilistic modeling project]{Hazardous asteroids forecast via Markov random fields}
 \subtitle{Project for the exam: Probabilistic Modelling (DSE)}
 \author{Marzio De Corato}
 \date{\today}
@@ -29,15 +29,18 @@
 \begin{document}
 
 \begin{frame}
-\vspace{+4 cm}  \titlepage
+\vspace{+4.2 cm}  \titlepage
 \end{frame}
 
 \usebackgroundtemplate{ } 
 
 % Uncomment these lines for an automatically generated outline.
-%\begin{frame}{Outline}
-%  \tableofcontents
-%\end{frame}
+\begin{frame}{Outline}
+\setcounter{tocdepth}{1}
+\begin{center}
+  \tableofcontents
+\end{center}
+\end{frame}
 
 \section{Intro}
 
@@ -56,6 +59,12 @@
 \end{frame}
 
 \section{Celestial mechanics}
+
+\begin{frame}{}
+\begin{center}
+{\Huge Celestial mechanics}
+\end{center}
+\end{frame}
 
 
 \begin{frame}{Celestial mechanics \cite{murray1999solar}: equations of motion}
@@ -403,6 +412,12 @@ Where $\Phi$ is the flux for a sphere of radius r, m the relative magnitude and 
 
 \section{Dataset}
 
+\begin{frame}{}
+\begin{center}
+{\Huge Dataset}
+\end{center}
+\end{frame}
+
 \begin{frame}{Dataset}
 \begin{itemize}
 
@@ -475,6 +490,12 @@ Hazardous                     & Categorical (Binary)
 
 
 \section{Prelim. analysis}
+
+\begin{frame}{}
+\begin{center}
+{\Huge Prelim. analysis}
+\end{center}
+\end{frame}
 
 \begin{frame}{Density Plot}
 \begin{columns}
@@ -559,7 +580,13 @@ Performed with the varrank package \cite{kratzer2018varrank}
 \end{center}
 \end{frame}
 
-\section{Prob. mod.}
+\section{Probabilistic modelling}
+
+\begin{frame}{}
+\begin{center}
+{\Huge Probabilistic modelling}
+\end{center}
+\end{frame}
 
 \begin{frame}{GLASSO}
 \begin{columns}
@@ -567,7 +594,7 @@ Performed with the varrank package \cite{kratzer2018varrank}
   \begin{figure}[b]{\textwidth}
     \centering
     \includegraphics[width=\textwidth]{Pic/GLASSO_0.1.pdf}
-    \subcaption{$\rho$=0.2 \begin{center}
+    \subcaption{$\rho$=0.1 \begin{center}
     \end{center}}
   \end{figure} 
   \column{0.5\textwidth}
@@ -658,7 +685,14 @@ The mgm model is the one that has the list of connection more coherent with the 
 
 
 
-\section{Other ML alg.}
+\section{Other ML algorithms}
+
+\begin{frame}{}
+\begin{center}
+{\Huge Other ML algorithms}
+\end{center}
+\end{frame}
+
 \begin{frame}{Random Forest}
 \begin{columns}
 \column{0.5\textwidth}
@@ -751,6 +785,12 @@ QDA       & 0.5562
 
 \section{Conclusions}
 
+\begin{frame}{}
+\begin{center}
+{\Huge Conclusions}
+\end{center}
+\end{frame}
+
 \begin{frame}{Interpretability and scientific validation}
 
 \begin{remark}[Interpretability - Tarski definition]
@@ -787,7 +827,28 @@ The essential thing is the aim to represent the multitude of concepts and propos
 \end{itemize}
 \end{frame}
 
-\section{SI}
+\begin{frame}
+
+{\Large \textit{In its efforts to learn as much as possible about nature, modern physics has found that certain things can never be “known” with certainty. Much of our knowledge must always remain uncertain. The most we can know is in terms of probabilities.} Richard P. Feynman (1918-1988)}
+\end{frame}
+
+
+
+\begin{frame}[t,allowframebreaks]
+\frametitle{Bibliography}
+\printbibliography
+\end{frame}
+
+
+\section{Supporting Info}
+
+\subsection{ROC and $\phi$ factor}
+\begin{frame}{}
+\begin{center}
+{\Huge ROC and $\phi$ factor}
+\end{center}
+\end{frame}
+
 
 \begin{frame}
 \begin{center}
@@ -845,6 +906,13 @@ Images taken from \cite{ROC_fig}
 \end{frame}
 
 
+\subsection{FAMD}
+\begin{frame}{}
+\begin{center}
+{\Huge FAMD}
+\end{center}
+\end{frame}
+
 \begin{frame}{Factor analysis of mixed data - FAMD}
 \begin{center}
 r(z,k) correlation coefficient (z and k quantitative) \\
@@ -860,6 +928,98 @@ MCA $\rightarrow$ $max\sum_{q}\eta^{2}(z,q)$
 \end{center}
 \begin{center}
 FAMD $\rightarrow$ $max\sum_{k}r^{2}(z,k)+max\sum_{q}\eta^{2}(z,q)$
+\end{center}
+\end{frame}
+
+
+
+
+\subsection{Graphical models}
+\begin{frame}{}
+\begin{center}
+{\Huge Graphical models}
+\end{center}
+\end{frame}
+
+\begin{frame}{Graphical models}
+\begin{equation}
+p(x_{1},x_{2},...,x_{n})
+\end{equation}
+\begin{equation}
+p(x_{1:V})=p(x_{1})p(x_{2}|x_{1})p(x_{3}|x_{2},x_{1})...p(x_{V}|x_{1:V-1})
+\end{equation}
+\begin{equation}
+X  \perp Y| Z \iff  p(X,Y|Z) = p(X|Z)p(Y|Z)
+\end{equation}
+\begin{equation}
+p(\textbf{x}_{1:V})=p(x_{1})\prod^{V}_{t=1}p(x_{t}|x_{t-1})
+\end{equation}
+\end{frame}
+
+\begin{frame}{Graphical models}
+\begin{theorem}[Hammersley-Clifford]
+A positive distribution p(\textbf{y})>0 satisfies the CI properties of an indirect graph G iif p can be represented as a product of factor, one per maximal clique,  i.e.
+\begin{equation}
+p(\textbf{y}|\theta)= \dfrac{1}{Z(\theta)}\prod_{c \in C }\psi_{c}(\textbf{y}_{c}|\theta_{c})
+\end{equation}
+where C is the set of all the (maximal) cliques of G,  and Z($\theta$) is the partition function given by 
+\begin{equation}
+Z(\theta):= \sum_{y}\prod_{c\in C}\psi_{c}(\textbf{y}_{c}|\theta_{c})
+\end{equation}
+Note that this partition function is what ensures the overall distribution sums to 1
+\end{theorem}
+\end{frame}
+
+
+\begin{frame}{Graphical models}
+\begin{equation}
+p(y|\theta)=\dfrac{1}{Z(\theta)} exp\left(-\sum_{c}E(y_{c}|\theta_{c})\right)
+\end{equation}
+\begin{equation}
+\psi_{c}(y_{c}|\theta_{c})=exp\left(-E(y_{c}|\theta_{c})\right)
+\end{equation}
+\end{frame}
+
+\begin{frame}{Parameters tuning}
+\begin{equation}
+\frac{\partial\mathcal{L}}{\partial\boldsymbol{\theta}_{c}}=\frac{1}{N}\sum_{i}\left[\phi_{c}(y_{i})-\frac{\partial}{\partial\boldsymbol{\theta}_{c}}\log Z(\boldsymbol{\theta})\right]
+\end{equation}
+
+\begin{equation}
+\begin{split}
+\frac{\partial \log Z(\boldsymbol{\theta})}{\partial\boldsymbol{\theta}}=\mathbb{E}\left[\phi_{c}(\textbf{y})\right|\theta]= \sum_{\textbf{y}}\phi_{c}(\textbf{y})p(\textbf{y}|\boldsymbol{\theta})
+\end{split}
+\end{equation}
+\begin{equation}
+\frac{\partial\mathcal{L}}{\partial\boldsymbol{\theta}_{c}}=\left[\frac{1}{N}\sum_{i}\phi_{c}(y_{i})\right]-\mathbb{E}\left[\phi_{c}(\textbf{y})\right]
+\end{equation}
+\begin{equation}
+\frac{\partial\mathcal{L}}{\partial\boldsymbol{\theta}_{c}}=\mathbb{E}_{p_{emp}}\left[\phi_{c}(\textbf{y})\right]-\mathbb{E}_{p_{(\cdot|\boldsymbol{\theta})}}\left[\phi_{c}(\textbf{y})\right]
+\end{equation}
+\begin{equation}
+\mathbb{E}_{p_{emp}}\left[\phi_{c}(\textbf{y})\right]=\mathbb{E}_{p_{(\cdot|\boldsymbol{\theta})}}\left[\phi_{c}(\textbf{y})\right]
+\end{equation}
+\end{frame}
+
+\begin{frame}{Parameters tuning}
+\begin{equation}
+p\left(\textbf{y}|\boldsymbol{\theta}\right) = \dfrac{1}{Z(\theta)}\exp \left( \sum_{c}\boldsymbol{\theta}^{T}_{c}\phi_{c}\left(\textbf{y}\right)\right)
+\end{equation}
+\begin{equation}
+\mathcal{L}\left(\boldsymbol{\theta}\right):= \frac{1}{N}\sum_{i}\log p\left(\textbf{y}_{i}|\boldsymbol{\theta}\right)=\frac{1}{N}\sum_{i}\left[\sum_{c} \boldsymbol{\theta}^{T}_{c}\phi_{c}(y_{i})-\log Z\left(\boldsymbol{\theta}\right)\right]
+\end{equation}
+\end{frame}
+
+
+\begin{frame}{GLASSO}
+\begin{equation}
+L_{pen}(K,\hat{\mu})=log\det(K)-tr(K\;S)-\rho||K|| 
+\end{equation}
+\begin{center}
+$K=\Sigma^{-1}$
+\end{center}
+\begin{center}
+S: empirical covariance matrix
 \end{center}
 \end{frame}
 
@@ -885,120 +1045,41 @@ P(X)= & \exp \left( \sum_{s\in V}\theta_{s}\phi_{s}(X_{s})+\sum_{s\in V}\sum_{r\
 
 \end{frame}
 
-
-
-\begin{frame}{GLASSO}
+\begin{frame}{mmod - Homogeneus Mixed Interaction (HMI) models}
 \begin{equation}
-L_{pen}(K,\hat{\mu})=log\det(K)-tr(K\;S)-\rho||K|| 
-\end{equation}
-\begin{center}
-$K=\Sigma^{-1}$
-\end{center}
-\begin{center}
-S: empirical covariance matrix
-\end{center}
-\end{frame}
-
-\begin{frame}{Parameters tuning}
-\begin{equation}
-p\left(\textbf{y}|\boldsymbol{\theta}\right) = \dfrac{1}{Z(\theta)}\exp \left( \sum_{c}\boldsymbol{\theta}^{T}_{c}\phi_{c}\left(\textbf{y}\right)\right)
-\end{equation}
-\begin{equation}
-\mathcal{L}\left(\boldsymbol{\theta}\right):= \frac{1}{N}\sum_{i}\log p\left(\textbf{y}_{i}|\boldsymbol{\theta}\right)=\frac{1}{N}\sum_{i}\left[\sum_{c} \boldsymbol{\theta}^{T}_{c}\phi_{c}(y_{i})-\log Z\left(\boldsymbol{\theta}\right)\right]
-\end{equation}
-\end{frame}
-
-
-\begin{frame}{Parameters tuning}
-\begin{equation}
-\frac{\partial\mathcal{L}}{\partial\boldsymbol{\theta}_{c}}=\frac{1}{N}\sum_{i}\left[\phi_{c}(y_{i})-\frac{\partial}{\partial\boldsymbol{\theta}_{c}}\log Z(\boldsymbol{\theta})\right]
-\end{equation}
-
-\begin{equation}
-\begin{split}
-\frac{\partial \log Z(\boldsymbol{\theta})}{\partial\boldsymbol{\theta}}=\mathbb{E}\left[\phi_{c}(\textbf{y})\right|\theta]= \sum_{\textbf{y}}\phi_{c}(\textbf{y})p(\textbf{y}|\boldsymbol{\theta})
-\end{split}
-\end{equation}
-\begin{equation}
-\frac{\partial\mathcal{L}}{\partial\boldsymbol{\theta}_{c}}=\left[\frac{1}{N}\sum_{i}\phi_{c}(y_{i})\right]-\mathbb{E}\left[\phi_{c}(\textbf{y})\right]
-\end{equation}
-\begin{equation}
-\frac{\partial\mathcal{L}}{\partial\boldsymbol{\theta}_{c}}=\mathbb{E}_{p_{emp}}\left[\phi_{c}(\textbf{y})\right]-\mathbb{E}_{p_{(\cdot|\boldsymbol{\theta})}}\left[\phi_{c}(\textbf{y})\right]
-\end{equation}
-\begin{equation}
-\mathbb{E}_{p_{emp}}\left[\phi_{c}(\textbf{y})\right]=\mathbb{E}_{p_{(\cdot|\boldsymbol{\theta})}}\left[\phi_{c}(\textbf{y})\right]
-\end{equation}
-\end{frame}
-
-
-\begin{frame}{mmod}
-\begin{equation}
-\begin{split}
-f(i,y)=& p(i)(2\pi)^{-q/2}det(\Sigma)^{-1/2} \\
-& exp\left[-\dfrac{1}{2}\left(y-\mu(i)\right)^{T}\Sigma^{-1}\left(y-\mu(i)\right)\right]
-\end{split}
+f(\textbf{i},\textbf{y})= p(\textbf{i})(2\pi)^{-q/2}det(\Sigma)^{-1/2}\exp\left[-\dfrac{1}{2}\left(\textbf{y}-\mu(\textbf{i})\right)^{T}\Sigma^{-1}\left(\textbf{y}-\mu(\textbf{i})\right)\right]
 \label{gaussMix}
 \end{equation}
+
 \begin{equation}
-\begin{split}
-f(i,y) & = \exp\left\lbrace g(i)+\sum_{u}h^{u}(i)y_{u}-\dfrac{1}{2}\sum_{uv} y_{u}y_{v}k_{uv}\right\rbrace \\
-&= \exp\left\lbrace g(i)+h(i)^{T}y-\dfrac{1}{2}y^{T}Ky \right\rbrace
-\end{split}
+f(\textbf{i},\textbf{y})=\exp\left[g(\textbf{i}) +h(\textbf{i})^{T}\textbf{y}-\frac{1}{2}y^{T}K\textbf{y}\right]
 \end{equation}
 
 \begin{center}
-where $g(i)$, $h(i)$ and $K$ are the canonical parameters
+where $K$ is the concentration matrix, $g(i)$ and $h(i)$ are the log-linear expansion of the probability $p(\textbf{i})$ (canonical parameters)
 \end{center}
 
 \end{frame}
 \begin{frame}{mmod}
+\begin{center}
+Decomposable model
+\end{center}
 \begin{equation}
-\begin{split}
-K=&\Sigma^{-1} \\
-h(i)=&\Sigma^{-1}\mu(i) \\
-g(i)=&\log p(i) -\frac{1}{2}\log det (\Sigma) \\
-&-\dfrac{1}{2}\mu(i)^{T}\Sigma^{-1}\mu(i)-\dfrac{q}{2}\log 2\pi
-\end{split}
+\hat{f}(x)=\prod_{j=1}^{k}\dfrac{\hat{f}_{C_{j}}(x_{C}_{j})}{\hat{f}_{S_{j}}(x_{S}_{j})} 
 \end{equation}
+Likehood 
+\begin{equation}
+\hat{\mathcal{L}_{s}}=\sum_{i}n(i)log\left(\dfrac{n(i)}{N}\right)-Nq\dfrac{log(2pi)}{2}-N\dfrac{log(det(S))}{2}-N\frac{q}{2}
+\end{equation}
+
 \end{frame}
 
 
-\begin{frame}{Graphical models}
-\begin{equation}
-p(x_{1},x_{2},...,x_{n})
-\end{equation}
-\begin{equation}
-p(x_{1:V})=p(x_{1})p(x_{2}|x_{1})p(x_{3}|x_{2},x_{1})...p(x_{V}|x_{1:V-1})
-\end{equation}
-\begin{equation}
-X  \perp Y| Z \iff  p(X,Y|Z) = p(X|Z)p(Y|Z)
-\end{equation}
-\begin{equation}
-p(\textbf{x}_{1:V})=p(x_{1})\prod^{V}_{t=1}p(x_{t}|x_{t-1})
-\end{equation}
-\end{frame}
-
-
-\begin{frame}{Graphical models}
-\begin{theorem}[Hammersley-Clifford]
-A positive distribution p(\textbf{y})>0 satisfies the CI properties of an indirect graph G iif p can be represented as a product of factor, one per maximal clique,  i.e.
-\begin{equation}
-p(\textbf{y}|\theta)= \dfrac{1}{Z(\theta)}\prod_{c \in C }\psi_{c}(\textbf{y}_{c}|\theta_{c})
-\end{equation}
-where C is the set of all the (maximal) cliques of G,  and Z($\theta$) is the partition function given by 
-\begin{equation}
-Z(\theta):= \sum_{y}\prod_{c\in C}\psi_{c}(\textbf{y}_{c}|\theta_{c})
-\end{equation}
-Note that this partition function is what ensures the overall distribution sums to 1
-\end{theorem}
-\end{frame}
-\begin{frame}{Graphical models}
-\begin{equation}
-p(y|\theta)=\dfrac{1}{Z(\theta)} exp\left(-\sum_{c}E(y_{c}|\theta_{c})\right)
-\end{equation}
-\begin{equation}
-\psi_{c}(y_{c}|\theta_{c})=exp\left(-E(y_{c}|\theta_{c})\right)
-\end{equation}
+\subsection{Information theory}
+\begin{frame}{}
+\begin{center}
+{\Huge Information theory}
+\end{center}
 \end{frame}
 
 
@@ -1040,10 +1121,6 @@ g(\alpha,\textbf{C},\textbf{S},f_{i})=MI(f_{i};\textbf{C})-\sum_{f_{s}\in S}\alp
 \end{equation}
 \end{frame}
 
-\begin{frame}[t,allowframebreaks]
-\frametitle{Bibliography}
-\printbibliography
-\end{frame}
 
 
 
