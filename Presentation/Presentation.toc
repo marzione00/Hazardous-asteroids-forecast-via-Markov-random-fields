@@ -23,4 +23,8 @@
 \defcounter {refsection}{0}\relax 
 \beamer@subsectionintoc {9}{3}{Graphical models}{57}{0}{8}
 \defcounter {refsection}{0}\relax 
-\beamer@subsectionintoc {9}{4}{Information theory}{68}{0}{8}
+\beamer@subsectionintoc {9}{4}{Markov random field}{60}{0}{8}
+\defcounter {refsection}{0}\relax 
+\beamer@subsectionintoc {9}{5}{Graphical model algorithms}{66}{0}{8}
+\defcounter {refsection}{0}\relax 
+\beamer@subsectionintoc {9}{6}{Information theory}{72}{0}{8}

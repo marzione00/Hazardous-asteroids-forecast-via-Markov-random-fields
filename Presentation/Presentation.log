@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.12.5)  12 DEC 2021 13:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.12.5)  12 DEC 2021 17:23
 entering extended mode
 **./Presentation.tex
 (Presentation.tex
@@ -666,6 +666,20 @@ Package: amsthm 2020/05/29 v2.20.6
 (C:\Program Files\MiKTeX 2.9\tex/latex/beamer\beamerinnerthemerounded.sty)
 (C:\Program Files\MiKTeX 2.9\tex/latex/beamer\beamerouterthemeinfolines.sty))
 (C:\Program Files\MiKTeX 2.9\tex/latex/beamer\beamercolorthemebeaver.sty)
+(C:\Program Files\MiKTeX 2.9\tex/latex/psnfss\pifont.sty
+Package: pifont 2020/03/25 PSNFSS-v9.3 Pi font support (SPQR) 
+LaTeX Font Info:    Trying to load font information for U+pzd on input line 63.
+
+
+(C:\Program Files\MiKTeX 2.9\tex/latex/psnfss\upzd.fd
+File: upzd.fd 2001/06/04 font definitions for U/pzd.
+)
+LaTeX Font Info:    Trying to load font information for U+psy on input line 64.
+
+
+(C:\Program Files\MiKTeX 2.9\tex/latex/psnfss\upsy.fd
+File: upsy.fd 2001/06/04 font definitions for U/psy.
+))
 
 ! LaTeX Error: Option clash for package hyperref.
 
@@ -2177,40 +2191,48 @@ OC_C_R.png (PNG copy)> <./Pic/ROC/ROC_D_R.png (PNG copy)>]
 
 ] [58
 
-]
-
-LaTeX Font Warning: Font shape `OT1/cmss/bx/it' undefined
-(Font)              using `OT1/cmss/b/it' instead on input line 974.
-
-
-LaTeX Font Warning: Font shape `OT1/cmss/bx/it' undefined
-(Font)              using `OT1/cmss/b/it' instead on input line 974.
-
-
-LaTeX Font Warning: Font shape `OT1/cmss/bx/it' undefined
-(Font)              using `OT1/cmss/b/it' instead on input line 974.
-
-
-LaTeX Font Warning: Font shape `OT1/cmss/bx/it' undefined
-(Font)              using `OT1/cmss/b/it' instead on input line 974.
-
-[59
+] [59
 
 ] [60
 
 ] [61
 
-] [62
+]
+
+LaTeX Font Warning: Font shape `OT1/cmss/bx/it' undefined
+(Font)              using `OT1/cmss/b/it' instead on input line 1011.
+
+
+LaTeX Font Warning: Font shape `OT1/cmss/bx/it' undefined
+(Font)              using `OT1/cmss/b/it' instead on input line 1011.
+
+
+LaTeX Font Warning: Font shape `OT1/cmss/bx/it' undefined
+(Font)              using `OT1/cmss/b/it' instead on input line 1011.
+
+
+LaTeX Font Warning: Font shape `OT1/cmss/bx/it' undefined
+(Font)              using `OT1/cmss/b/it' instead on input line 1011.
+
+[62
 
 ] [63
 
 ] [64
 
+] [65
+
+] [66
+
+] [67
+
+] [68
+
 ]
 ! Extra }, or forgotten \right.
 <template> }
             $\hfill \endtemplate 
-l.1063 \end{frame}
+l.1119 \end{frame}
                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2221,7 +2243,7 @@ deleted material, e.g., by typing `I$}'.
 ! Missing \right. inserted.
 <inserted text> 
                 \right .
-l.1063 \end{frame}
+l.1119 \end{frame}
                   
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2232,7 +2254,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.1063 \end{frame}
+l.1119 \end{frame}
                   
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2243,21 +2265,21 @@ my insertion and my current dilemma will both disappear.
 ! Double subscript.
 <argument> ...r1,...,rk}\prod _{j=1}^{k}\phi _{r}_
                                                   {j}\left (X_{r}_{j}\right ...
-l.1063 \end{frame}
+l.1119 \end{frame}
                   
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
 <argument> ..._{j=1}^{k}\phi _{r}_{j}\left (X_{r}_
                                                   {j}\right )+\sum _{s\in V}...
-l.1063 \end{frame}
+l.1119 \end{frame}
                   
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Missing } inserted.
 <inserted text> 
                 }
-l.1063 \end{frame}
+l.1119 \end{frame}
                   
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2268,14 +2290,14 @@ my insertion and my current dilemma will both disappear.
 ! Extra \right.
 <argument> ...B_{s}(X_{S})-\Phi (\theta ) \right )
                                                    \end {split}
-l.1063 \end{frame}
+l.1119 \end{frame}
                   
 I'm ignoring a \right that had no matching \left.
 
 ! Missing { inserted.
 <inserted text> 
                 {
-l.1063 \end{frame}
+l.1119 \end{frame}
                   
 I've put in what seems to be necessary to fix
 the current column of the current alignment.
@@ -2284,7 +2306,7 @@ Try to go on, since this might almost work.
 ! Extra }, or forgotten \right.
 <template> }
             $\hfill \endtemplate 
-l.1063 \end{frame}
+l.1119 \end{frame}
                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2295,7 +2317,7 @@ deleted material, e.g., by typing `I$}'.
 ! Missing \right. inserted.
 <inserted text> 
                 \right .
-l.1063 \end{frame}
+l.1119 \end{frame}
                   
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2306,7 +2328,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.1063 \end{frame}
+l.1119 \end{frame}
                   
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2317,21 +2339,21 @@ my insertion and my current dilemma will both disappear.
 ! Double subscript.
 <argument> ...r1,...,rk}\prod _{j=1}^{k}\phi _{r}_
                                                   {j}\left (X_{r}_{j}\right ...
-l.1063 \end{frame}
+l.1119 \end{frame}
                   
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
 <argument> ..._{j=1}^{k}\phi _{r}_{j}\left (X_{r}_
                                                   {j}\right )+\sum _{s\in V}...
-l.1063 \end{frame}
+l.1119 \end{frame}
                   
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Missing } inserted.
 <inserted text> 
                 }
-l.1063 \end{frame}
+l.1119 \end{frame}
                   
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2342,49 +2364,49 @@ my insertion and my current dilemma will both disappear.
 ! Extra \right.
 <argument> ...B_{s}(X_{S})-\Phi (\theta ) \right )
                                                    \end {split}
-l.1063 \end{frame}
+l.1119 \end{frame}
                   
 I'm ignoring a \right that had no matching \left.
 
 ! Missing { inserted.
 <inserted text> 
                 {
-l.1063 \end{frame}
+l.1119 \end{frame}
                   
 I've put in what seems to be necessary to fix
 the current column of the current alignment.
 Try to go on, since this might almost work.
 
-[65
+[69
 
-] [66
+] [70
 
 ]
 ! Double subscript.
 <argument> \hat {f}_{C_{j}}(x_{C}_
                                   {j})
-l.1100 \end{frame}
+l.1158 \end{frame}
                   
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
 <argument> \hat {f}_{S_{j}}(x_{S}_
                                   {j})
-l.1100 \end{frame}
+l.1158 \end{frame}
                   
 I treat `x_1_2' essentially like `x_1{}_2'.
 
-[67
+[71
 
-] [68
+] [72
 
-] [69
+] [73
 
 ]
 ! Undefined control sequence.
 <argument> ...g \begin {split} I(X;Y)&=\sum \sump 
                                                   (x,y)\log \dfrac {p(x,y)}{...
-l.1147 \end{frame}
+l.1205 \end{frame}
                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2395,7 +2417,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <argument> ...g \begin {split} I(X;Y)&=\sum \sump 
                                                   (x,y)\log \dfrac {p(x,y)}{...
-l.1147 \end{frame}
+l.1205 \end{frame}
                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2403,7 +2425,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[70
+[74
 
 ]
 \tf@nav=\write7
@@ -2429,11 +2451,11 @@ Package logreq Info: Writing requests to 'Presentation.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 31151 strings out of 478681
- 612900 string characters out of 2854493
- 1070890 words of memory out of 3000000
- 48459 multiletter control sequences out of 15000+600000
- 428568 words of font info for 111 fonts, out of 8000000 for 9000
+ 31230 strings out of 478681
+ 614251 string characters out of 2854493
+ 1071455 words of memory out of 3000000
+ 48516 multiletter control sequences out of 15000+600000
+ 429258 words of font info for 113 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,21n,122p,1847b,2240s stack positions out of 5000i,500n,10000p,200000b,80000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/P
@@ -2455,9 +2477,9 @@ e1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
 /amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
 /cm/cmtt10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols
 /msbm10.pfb>
-Output written on Presentation.pdf (70 pages, 2004547 bytes).
+Output written on Presentation.pdf (74 pages, 2013190 bytes).
 PDF statistics:
- 938 PDF objects out of 1000 (max. 8388607)
- 181 named destinations out of 1000 (max. 500000)
+ 967 PDF objects out of 1000 (max. 8388607)
+ 191 named destinations out of 1000 (max. 500000)
  405 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -14,7 +14,7 @@
   \setbeamertemplate{navigation symbols}{}
   \setbeamertemplate{caption}[numbered]
 } 
-
+\usepackage{pifont}
 \usepackage[bookmarks]{hyperref}
 \usepackage[backend=bibtex]{biblatex}
 \usepackage{braket}
@@ -945,45 +945,91 @@ FAMD $\rightarrow$ $max\sum_{k}r^{2}(z,k)+max\sum_{q}\eta^{2}(z,q)$
 \end{frame}
 
 \begin{frame}{Graphical models}
-\begin{equation}
-p(x_{1},x_{2},...,x_{n})
-\end{equation}
+\begin{center}
+\textbf{Problem:} How one can represent in a compact and elegant way the joint distribution $p(\textbf{x}|\boldsymbol{\theta})$ (where $\theta$ are the parameters)
+\end{center}
+\begin{center}
+First one can consider to use the chain rule
+\end{center}
 \begin{equation}
 p(x_{1:V})=p(x_{1})p(x_{2}|x_{1})p(x_{3}|x_{2},x_{1})...p(x_{V}|x_{1:V-1})
 \end{equation}
-\begin{equation}
-X  \perp Y| Z \iff  p(X,Y|Z) = p(X|Z)p(Y|Z)
-\end{equation}
-\begin{equation}
-p(\textbf{x}_{1:V})=p(x_{1})\prod^{V}_{t=1}p(x_{t}|x_{t-1})
-\end{equation}
+\begin{center}
+One can represent $p(x_{2},x_{1})$ as a $\mathcal{O}(K^{2})$ where the elements are $p(x_{2}=j|x_{1}=i)=T_{ij}$ and so on with high order tensors. T is called stochastic matrix
+\end{center}
 \end{frame}
 
 \begin{frame}{Graphical models}
+
+\begin{center}
+In order to reduce the computational cost $\mathcal{O}(K^{2}V^{2})$ one can consider to take in to account the concept of conditional independence
+\end{center}
+\begin{equation}
+X  \perp Y| Z \iff  p(X,Y|Z) = p(X|Z)p(Y|Z)
+\end{equation}
+\begin{center}
+Therefore the distribution can be factorized as:
+\end{center}
+\begin{equation}
+p(\textbf{x}_{1:V})=p(x_{1})\prod^{V}_{t=1}p(x_{t}|x_{t-1})
+\end{equation}
+\begin{center}
+Which is a first order Markov chain
+\end{center}
+\end{frame}
+
+\subsection{Markov random field}
+
+\begin{frame}{}
+\begin{center}
+{\Huge Markov random field}
+\end{center}
+\end{frame}
+
+\begin{frame}{Markov random field}
+\begin{center}
+\textbf{Problem:} differently with respect to Bayesian Network for an undirected graph there is no topological ordering associated to it. Therefore the chain rule cannot be used 
+\end{center}
+\begin{center}
+\textbf{Solution:} One can use the potential function associated with maximal clique $\psi_{c}(\textbf{y}_{c}|\boldsymbol{\theta}_{c})$
+\end{center}
+
+\end{frame}
+
+\begin{frame}{Markov random field}
 \begin{theorem}[Hammersley-Clifford]
 A positive distribution $p(\textbf{y})>0$ satisfies the CI properties of an indirect graph G iif p can be represented as a product of factor, one per maximal clique,  i.e.
 \begin{equation}
-p(\textbf{y}|\theta)= \dfrac{1}{Z(\theta)}\prod_{c \in C }\psi_{c}(\textbf{y}_{c}|\theta_{c})
+p(\textbf{y}|\boldsymbol{\theta})= \dfrac{1}{Z(\boldsymbol{\theta})}\prod_{c \in C }\psi_{c}(\textbf{y}_{c}|\boldsymbol{\theta}_{c})
 \end{equation}
-where C is the set of all the (maximal) cliques of G,  and Z($\theta$) is the partition function given by 
+where C is the set of all the (maximal) cliques of G,  and Z($\boldsymbol{\theta}$) is the partition function given by 
 \begin{equation}
-Z(\theta):= \sum_{y}\prod_{c\in C}\psi_{c}(\textbf{y}_{c}|\theta_{c})
+Z(\boldsymbol{\theta}):= \sum_{y}\prod_{c\in C}\psi_{c}(\textbf{y}_{c}|\boldsymbol{\theta}_{c})
 \end{equation}
 Note that this partition function is what ensures the overall distribution sums to 1
 \end{theorem}
 \end{frame}
 
 
-\begin{frame}{Graphical models}
+\begin{frame}{Markov random field}
+\begin{center}
+Gibbs distribution 
+\end{center}
 \begin{equation}
-p(y|\theta)=\dfrac{1}{Z(\theta)} exp\left(-\sum_{c}E(y_{c}|\theta_{c})\right)
+p(\textbf{y}|\boldsymbol{\theta})=\dfrac{1}{Z(\boldsymbol{\theta})}\exp\left(-\sum_{c}E(\textbf{y}|\boldsymbol{\theta})\right)
 \end{equation}
+\begin{center}
+\begin{center}
+Where $E(\textbf{y})$ is the energy associated with the variables in clique c. Therefore
+\end{center}
+\end{center}
 \begin{equation}
-\psi_{c}(y_{c}|\theta_{c})=exp\left(-E(y_{c}|\theta_{c})\right)
+\psi(\textbf{y}_{c}|\boldsymbol{\theta}_{c})=\exp\left(-E(\textbf{y}_{c}|\boldsymbol{\theta}_{c})\right)
 \end{equation}
+
 \end{frame}
 
-\begin{frame}{Parameters tuning}
+\begin{frame}{Markov random field}
 \begin{equation}
 \frac{\partial\mathcal{L}}{\partial\boldsymbol{\theta}_{c}}=\frac{1}{N}\sum_{i}\left[\phi_{c}(y_{i})-\frac{\partial}{\partial\boldsymbol{\theta}_{c}}\log Z(\boldsymbol{\theta})\right]
 \end{equation}
@@ -1004,7 +1050,7 @@ p(y|\theta)=\dfrac{1}{Z(\theta)} exp\left(-\sum_{c}E(y_{c}|\theta_{c})\right)
 \end{equation}
 \end{frame}
 
-\begin{frame}{Parameters tuning}
+\begin{frame}{Markov random field}
 \begin{equation}
 p\left(\textbf{y}|\boldsymbol{\theta}\right) = \dfrac{1}{Z(\theta)}\exp \left( \sum_{c}\boldsymbol{\theta}^{T}_{c}\phi_{c}\left(\textbf{y}\right)\right)
 \end{equation}
@@ -1014,17 +1060,27 @@ p\left(\textbf{y}|\boldsymbol{\theta}\right) = \dfrac{1}{Z(\theta)}\exp \left( \
 \end{frame}
 
 
+\subsection{Graphical model algorithms}
+
+\begin{frame}{}
+\begin{center}
+{\Huge Graphical model algorithms}
+\end{center}
+\end{frame}
+
 \begin{frame}{Gaussian graphical model}
 \begin{equation}
 f_{Y}(y)=\dfrac{det(K)^{1/2}}{(2\pi)^{d/2}}\exp\left(-\dfrac{1}{2}\textbf{y}^{T}K\textbf{y}\right)
 \end{equation}
-
 \begin{equation}
 K=\Sigma^{-1}
 \end{equation}
+\begin{equation}
+\log L(K,\boldsymbol{\mu})=\frac{n}{2}\log\det(K)-\dfrac{n}{2}tr(KS)-\dfrac{n}{2}\left(\bar{\textbf{y}}-\boldsymbol{\mu}\right)^{T}\left(\bar{\textbf{y}}-\boldsymbol{\mu}\right)
+\end{equation}
+
 
 \end{frame}
-
 
 
 
@@ -1088,7 +1144,9 @@ Decomposable model
 \begin{equation}
 \hat{f}(x)=\prod_{j=1}^{k}\dfrac{\hat{f}_{C_{j}}(x_{C}_{j})}{\hat{f}_{S_{j}}(x_{S}_{j})} 
 \end{equation}
+\begin{center}
 Maximized likehood
+\end{center}
 \begin{equation}
 \hat{\mathcal{L}_{s}}=\sum_{i}n(i)log\left(\dfrac{n(i)}{N}\right)-Nq\dfrac{log(2\pi)}{2}-N\dfrac{log(det(S))}{2}-N\frac{q}{2}
 \end{equation}

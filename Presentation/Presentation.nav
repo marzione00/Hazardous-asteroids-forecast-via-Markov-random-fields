@@ -301,55 +301,79 @@
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {59}{59}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {9}{3}{4}{60/60}{Graphical models}{0}}
+\headcommand {\beamer@subsectionpages {57}{59}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionentry {0}{9}{4}{60}{Markov random field}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {9}{4}{1}{60/60}{Markov random field}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {60}{60}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {9}{3}{5}{61/61}{Graphical models}{0}}
+\headcommand {\slideentry {9}{4}{2}{61/61}{Markov random field}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {61}{61}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {9}{3}{6}{62/62}{Graphical models}{0}}
+\headcommand {\slideentry {9}{4}{3}{62/62}{Markov random field}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {62}{62}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {9}{3}{7}{63/63}{Graphical models}{0}}
+\headcommand {\slideentry {9}{4}{4}{63/63}{Markov random field}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {63}{63}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {9}{3}{8}{64/64}{Graphical models}{0}}
+\headcommand {\slideentry {9}{4}{5}{64/64}{Markov random field}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {64}{64}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {9}{3}{9}{65/65}{Graphical models}{0}}
+\headcommand {\slideentry {9}{4}{6}{65/65}{Markov random field}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {65}{65}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {9}{3}{10}{66/66}{Graphical models}{0}}
+\headcommand {\beamer@subsectionpages {60}{65}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionentry {0}{9}{5}{66}{Graphical model algorithms}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {9}{5}{1}{66/66}{Graphical model algorithms}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {66}{66}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {9}{3}{11}{67/67}{Graphical models}{0}}
+\headcommand {\slideentry {9}{5}{2}{67/67}{Graphical model algorithms}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {67}{67}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionpages {57}{67}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\beamer@subsectionentry {0}{9}{4}{68}{Information theory}}
-\defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {9}{4}{1}{68/68}{Information theory}{0}}
+\headcommand {\slideentry {9}{5}{3}{68/68}{Graphical model algorithms}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {68}{68}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {9}{4}{2}{69/69}{Information theory}{0}}
+\headcommand {\slideentry {9}{5}{4}{69/69}{Graphical model algorithms}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {69}{69}}
 \defcounter {refsection}{0}\relax 
-\headcommand {\slideentry {9}{4}{3}{70/70}{Information theory}{0}}
+\headcommand {\slideentry {9}{5}{5}{70/70}{Graphical model algorithms}{0}}
 \defcounter {refsection}{0}\relax 
 \headcommand {\beamer@framepages {70}{70}}
-\headcommand {\beamer@partpages {1}{70}}
-\headcommand {\beamer@subsectionpages {68}{70}}
-\headcommand {\beamer@sectionpages {51}{70}}
-\headcommand {\beamer@documentpages {70}}
-\headcommand {\gdef \inserttotalframenumber {70}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {9}{5}{6}{71/71}{Graphical model algorithms}{0}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@framepages {71}{71}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionpages {66}{71}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@subsectionentry {0}{9}{6}{72}{Information theory}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {9}{6}{1}{72/72}{Information theory}{0}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@framepages {72}{72}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {9}{6}{2}{73/73}{Information theory}{0}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@framepages {73}{73}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\slideentry {9}{6}{3}{74/74}{Information theory}{0}}
+\defcounter {refsection}{0}\relax 
+\headcommand {\beamer@framepages {74}{74}}
+\headcommand {\beamer@partpages {1}{74}}
+\headcommand {\beamer@subsectionpages {72}{74}}
+\headcommand {\beamer@sectionpages {51}{74}}
+\headcommand {\beamer@documentpages {74}}
+\headcommand {\gdef \inserttotalframenumber {74}}
