@@ -17,6 +17,7 @@
 
 \usepackage[bookmarks]{hyperref}
 \usepackage[backend=bibtex]{biblatex}
+\usepackage{braket}
 \addbibresource{bibliography.bib}
 \newtheorem*{remark}{Remark}
 \usepackage[english]{babel}
@@ -98,10 +99,20 @@ $\textbf{r} \times \ddot{ \textbf{r}}=0  \implies $ $\textbf{r}$  and $\dot{\tex
 \end{center}
 \end{frame}
 
+
 \begin{frame}{Celestial mechanics \cite{murray1999solar}: equations of motion}
 \begin{center}
-With polar coordinates  $\hat{\textbf{r}}$ and $\hat{\boldsymbol{\theta}}$
+Integrating $\textbf{r} \times \ddot{ \textbf{r}}=0$
 \end{center}
+
+\begin{equation}
+\textbf{r} \times \dot{ \textbf{r}}=\textbf{h} 
+\end{equation}
+
+\begin{center}
+Where \textbf{h}  is a constant of Integration. Using the polar coordinates  $\hat{\textbf{r}}$ and $\hat{\boldsymbol{\theta}}$
+\end{center}
+
 \begin{equation}
 \textbf{r}=r\hat{\textbf{r}}
 \end{equation}
@@ -267,17 +278,12 @@ Consider two asteroids of mass $m$ and $m'$ orbiting the Earth $m_{c}$ , with se
 But since $m$,$m'<<m_{c}$
 
 \begin{equation}
-\left(\frac{a}{a'}\right)^{3}\approx \left(\frac{T}{T'}'\right)^{2}
+\left(\frac{a}{a'}\right)^{3}\approx \left(\frac{T}{T'}\right)^{2}
 \end{equation}
 
-And therefore 
-
-\begin{equation}
-T'\approx a'^{3/2}
-\end{equation}
 
 \begin{center}
-\textbf{Remark:} The mass of the asteroid is \textbf{not} involved
+\textbf{Remark:} The mass of the asteroids is \textbf{not} involved
 \end{center}
 
 
@@ -364,7 +370,7 @@ $\Omega$: \textcolor{red}{longitude of the ascending node}
 
 \begin{frame}{Celestial mechanics \cite{murray1999solar}: Magnitude}
 \begin{equation}
-\Phi=\frac{L}{4\pi r^{2}}
+\Phi=\frac{L}{4\pi d^{2}}
 \end{equation}
 \begin{equation}
 m=-2.5\log_{10}\Phi+C
@@ -808,16 +814,7 @@ The formal theory T can be translated into S if and only if S can prove the theo
 \begin{frame}{Interpretability and scientific validation}
 
 \begin{remark}[Scientific method - Einstein definition]
-Science uses the totality of the primary concepts, i.e., concepts directly connected with sense experiences, and propositions connecting them. Such a state of affairs cannot, however, satisfy a spirit which is really scientifically minded; because the totality of concepts and relations obtained in this manner is utterly lacking in logical unity. In order to supplement this deficiency, one invents a system poorer in concepts and relations, a system retaining the primary concepts and relations of the \textit{first layer} as logically derived concepts and relations. This new \textit{secondary system} pays for its higher logical unity by having elementary concepts (concepts of the second layer), which are no longer directly connected with complexes of sense experiences \cite{physics-reality}
-\end{remark}
-
-\end{frame}
-
-
-\begin{frame}{Interpretability and scientific validation}
-
-\begin{remark}[Scientific method - Einstein definition ]
-The essential thing is the aim to represent the multitude of concepts and propositions, close to experience, as propositions, logically deduced from a basis, as narrow as possible, of fundamental concepts and fundamental relations which themselves can be chosen freely (axioms) \cite{physics-reality}
+Science uses the totality of the primary concepts, i.e., concepts directly connected with sense experiences, and propositions connecting them. Such a state of affairs cannot, however, satisfy a spirit which is really scientifically minded;\textbf{ because the totality of concepts and relations obtained in this manner is utterly lacking in logical unity}. In order to supplement this deficiency, one invents a system poorer in concepts and relations, a system retaining the primary concepts and relations of the \textit{first layer} as logically derived concepts and relations. \textbf{This new \textit{secondary system} pays for its higher logical unity by having elementary concepts (concepts of the second layer), which are no longer directly connected with complexes of sense experiences} \cite{physics-reality}
 \end{remark}
 
 \end{frame}
@@ -964,7 +961,7 @@ p(\textbf{x}_{1:V})=p(x_{1})\prod^{V}_{t=1}p(x_{t}|x_{t-1})
 
 \begin{frame}{Graphical models}
 \begin{theorem}[Hammersley-Clifford]
-A positive distribution p(\textbf{y})>0 satisfies the CI properties of an indirect graph G iif p can be represented as a product of factor, one per maximal clique,  i.e.
+A positive distribution $p(\textbf{y})>0$ satisfies the CI properties of an indirect graph G iif p can be represented as a product of factor, one per maximal clique,  i.e.
 \begin{equation}
 p(\textbf{y}|\theta)= \dfrac{1}{Z(\theta)}\prod_{c \in C }\psi_{c}(\textbf{y}_{c}|\theta_{c})
 \end{equation}
@@ -1017,6 +1014,55 @@ p\left(\textbf{y}|\boldsymbol{\theta}\right) = \dfrac{1}{Z(\theta)}\exp \left( \
 \end{frame}
 
 
+\begin{frame}{Gaussian graphical model}
+\begin{equation}
+\ket{i_{1},i_{2},...,i_{n}}=\ket{i_{1}}\otimes\ket{i_{2}}\otimes...\otimes\ket{i_{n}}
+\end{equation}
+\begin{equation}
+\psi_{st}\left(y_{s},y_{t}\right) =
+\begin{pmatrix}
+e^{w_{st}} & e^{-w_{st}} \\
+e^{-w_{st}} & e^{w_{st}} \\
+\end{pmatrix}
+\end{equation}
+\begin{equation}
+\log\tilde{\textbf{p}}(y)= -\sum_{s\sim t}y_{s}w_{st}y_{t}
+\end{equation}
+\begin{equation}
+\log\tilde{\textbf{p}}(y)= -\sum_{s\sim t}y_{s}w_{st}y_{t}+\sum_{s}b_{s}y_{s}
+\end{equation}
+\end{frame}
+
+
+\begin{frame}{Gaussian graphical model}
+\begin{equation}
+P_{\beta}(\textbf{y})=\dfrac{e^{-\beta H\left(\textbf{y}\right)}}{Z_{\beta}}
+\end{equation}
+\begin{equation}
+\tilde{\textbf{p}}(y)\sim exp\left( -\frac{1}{2} (\textbf{y}-\boldsymbol{\mu})^{T} \boldsymbol{\Sigma}^{-1} (\textbf{y}-\boldsymbol{\mu}) + c \right)
+\end{equation}
+\begin{equation}
+p\left(\textbf{y}|\boldsymbol{\theta}\right) \propto \prod_{s\sim t} \psi_{st}\left(y_{s},y_{t}\right)\prod_{t}\psi_{t}\left(y_{t}\right)
+\end{equation}
+
+\begin{equation}
+\psi_{st}\left( y_{s},y_{t} \right)=exp\left( -\dfrac{1}{2} y_{s}\Delta_{st}y_{t}\right)
+\end{equation}
+
+\begin{equation}
+\psi_{t}\left(y_{t}\right)= \exp \left( -\dfrac{1}{2}\Delta_{tt}y^{2}_{t}+\eta_{t}y_{t}\right)
+\end{equation}
+
+\begin{equation}
+p\left(\textbf{y}|\boldsymbol{\theta}\right) \propto \exp \left( \boldsymbol{\eta}^{T} \textbf{y}-\dfrac{1}{2}y^{T}\Delta \textbf{y} \right)
+\end{equation}
+
+
+\end{frame}
+
+
+
+
 \begin{frame}{GLASSO}
 \begin{equation}
 L_{pen}(K,\hat{\mu})=log\det(K)-tr(K\;S)-\rho||K|| 
@@ -1052,6 +1098,10 @@ P(X)= & \exp \left( \sum_{s\in V}\theta_{s}\phi_{s}(X_{s})+\sum_{s\in V}\sum_{r\
 \end{frame}
 
 \begin{frame}{mmod - Homogeneus Mixed Interaction (HMI) models}
+\begin{center}
+N observation, d discrete variables and q continuous variable. The observation has the form $x=(i,y)=(i_{1},...,i_{d},y_{1}...y_{q})$. The probability of discrete variables falling in the cell i is denoted as $p(i)$. The conditional distribution of continous variables to fall in the cell $i$ is given by the multivariate gaussian $\mathcal{N}(\mu(i),\Sigma)$
+\end{center}
+
 \begin{equation}
 f(\textbf{i},\textbf{y})= p(\textbf{i})(2\pi)^{-q/2}det(\Sigma)^{-1/2}\exp\left[-\dfrac{1}{2}\left(\textbf{y}-\mu(\textbf{i})\right)^{T}\Sigma^{-1}\left(\textbf{y}-\mu(\textbf{i})\right)\right]
 \label{gaussMix}
@@ -1073,9 +1123,13 @@ Decomposable model
 \begin{equation}
 \hat{f}(x)=\prod_{j=1}^{k}\dfrac{\hat{f}_{C_{j}}(x_{C}_{j})}{\hat{f}_{S_{j}}(x_{S}_{j})} 
 \end{equation}
-Likehood 
+Maximized likehood
 \begin{equation}
-\hat{\mathcal{L}_{s}}=\sum_{i}n(i)log\left(\dfrac{n(i)}{N}\right)-Nq\dfrac{log(2pi)}{2}-N\dfrac{log(det(S))}{2}-N\frac{q}{2}
+\hat{\mathcal{L}_{s}}=\sum_{i}n(i)log\left(\dfrac{n(i)}{N}\right)-Nq\dfrac{log(2\pi)}{2}-N\dfrac{log(det(S))}{2}-N\frac{q}{2}
+\end{equation}
+
+\begin{equation}
+\hat{p}(\textbf{i})=n(\textbf{i})/N \quad \hat{\mu}(\textbf{i})=\bar{y}(\textbf{i})\quad\hat{\Sigma}=S=\sum_{i}n(i)S_{i}/N
 \end{equation}
 
 \end{frame}

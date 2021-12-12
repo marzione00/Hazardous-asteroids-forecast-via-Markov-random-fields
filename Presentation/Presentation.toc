@@ -15,12 +15,12 @@
 \defcounter {refsection}{0}\relax 
 \beamer@sectionintoc {7}{Conclusions}{42}{0}{7}
 \defcounter {refsection}{0}\relax 
-\beamer@sectionintoc {9}{Supporting Info}{52}{0}{8}
+\beamer@sectionintoc {9}{Supporting Info}{51}{0}{8}
 \defcounter {refsection}{0}\relax 
-\beamer@subsectionintoc {9}{1}{ROC and $\phi $ factor}{52}{0}{8}
+\beamer@subsectionintoc {9}{1}{ROC and $\phi $ factor}{51}{0}{8}
 \defcounter {refsection}{0}\relax 
-\beamer@subsectionintoc {9}{2}{FAMD}{56}{0}{8}
+\beamer@subsectionintoc {9}{2}{FAMD}{55}{0}{8}
 \defcounter {refsection}{0}\relax 
-\beamer@subsectionintoc {9}{3}{Graphical models}{58}{0}{8}
+\beamer@subsectionintoc {9}{3}{Graphical models}{57}{0}{8}
 \defcounter {refsection}{0}\relax 
 \beamer@subsectionintoc {9}{4}{Information theory}{68}{0}{8}
