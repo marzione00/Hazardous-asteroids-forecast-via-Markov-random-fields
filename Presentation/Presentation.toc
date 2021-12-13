@@ -1,30 +1,30 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {english}{}\relax 
 \defcounter {refsection}{0}\relax 
-\beamer@sectionintoc {1}{Intro}{3}{0}{1}
+\beamer@sectionintoc {1}{Intro}{2}{0}{1}
 \defcounter {refsection}{0}\relax 
-\beamer@sectionintoc {2}{Celestial mechanics}{4}{0}{2}
+\beamer@sectionintoc {2}{Celestial mechanics}{3}{0}{2}
 \defcounter {refsection}{0}\relax 
-\beamer@sectionintoc {3}{Dataset}{19}{0}{3}
+\beamer@sectionintoc {3}{Dataset}{17}{0}{3}
 \defcounter {refsection}{0}\relax 
-\beamer@sectionintoc {4}{Prelim. analysis}{23}{0}{4}
+\beamer@sectionintoc {4}{Prelim. analysis}{21}{0}{4}
 \defcounter {refsection}{0}\relax 
-\beamer@sectionintoc {5}{Probabilistic modelling}{28}{0}{5}
+\beamer@sectionintoc {5}{Probabilistic modelling}{26}{0}{5}
 \defcounter {refsection}{0}\relax 
-\beamer@sectionintoc {6}{Other ML algorithms}{35}{0}{6}
+\beamer@sectionintoc {6}{Other ML algorithms}{33}{0}{6}
 \defcounter {refsection}{0}\relax 
-\beamer@sectionintoc {7}{Conclusions}{42}{0}{7}
+\beamer@sectionintoc {7}{Conclusions}{40}{0}{7}
 \defcounter {refsection}{0}\relax 
-\beamer@sectionintoc {9}{Supporting Info}{51}{0}{8}
+\beamer@sectionintoc {9}{Supporting Info}{49}{0}{8}
 \defcounter {refsection}{0}\relax 
-\beamer@subsectionintoc {9}{1}{ROC and $\phi $ factor}{51}{0}{8}
+\beamer@subsectionintoc {9}{1}{ROC and $\phi $ factor}{49}{0}{8}
 \defcounter {refsection}{0}\relax 
-\beamer@subsectionintoc {9}{2}{FAMD}{55}{0}{8}
+\beamer@subsectionintoc {9}{2}{FAMD}{53}{0}{8}
 \defcounter {refsection}{0}\relax 
-\beamer@subsectionintoc {9}{3}{Graphical models}{57}{0}{8}
+\beamer@subsectionintoc {9}{3}{Graphical models}{55}{0}{8}
 \defcounter {refsection}{0}\relax 
-\beamer@subsectionintoc {9}{4}{Markov random field}{60}{0}{8}
+\beamer@subsectionintoc {9}{4}{Markov random field}{58}{0}{8}
 \defcounter {refsection}{0}\relax 
-\beamer@subsectionintoc {9}{5}{Graphical model algorithms}{66}{0}{8}
+\beamer@subsectionintoc {9}{5}{Graphical model algorithms}{64}{0}{8}
 \defcounter {refsection}{0}\relax 
-\beamer@subsectionintoc {9}{6}{Information theory}{72}{0}{8}
+\beamer@subsectionintoc {9}{6}{Information theory}{70}{0}{8}

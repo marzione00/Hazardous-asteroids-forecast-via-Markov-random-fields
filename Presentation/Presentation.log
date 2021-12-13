@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.12.5)  12 DEC 2021 17:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.10) (preloaded format=pdflatex 2021.12.5)  13 DEC 2021 10:12
 entering extended mode
 **./Presentation.tex
 (Presentation.tex
@@ -1240,7 +1240,7 @@ File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 Overfull \vbox (14.516pt too high) detected at line 35
  []
 
-<Pic/Intro.jpg, id=25, 1445.4pt x 813.0375pt>
+<Pic/Intro.jpg, id=85, 1445.4pt x 813.0375pt>
 File: Pic/Intro.jpg Graphic file (type jpg)
 <use Pic/Intro.jpg>
 Package pdftex.def Info: Pic/Intro.jpg  used on input line 35.
@@ -1248,17 +1248,14 @@ Package pdftex.def Info: Pic/Intro.jpg  used on input line 35.
 [1
 
 {C:/Users/Marzio/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./Pic/Intr
-o.jpg>] (Presentation.toc) [2
+o.jpg>] [2
 
 ] [3
-
-] [4
 
 ]
 LaTeX Font Info:    Trying to load font information for U+msa on input line 100
 .
-
-(C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd
+ (C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 100
@@ -1274,7 +1271,7 @@ ut line 100.
 File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/ma
 thkerncmss.
 )
-[5
+[4
 
 ]
 LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <10.95> not available
@@ -1286,20 +1283,20 @@ LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <8> not available
 LaTeX Font Info:    Font shape `OT1/cmss/b/n' in size <6> not available
 (Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 138.
 
- [6
+ [5
 
 ]
-<Pic/Area_dynamics.png, id=98, 708.39656pt x 359.84438pt>
+<Pic/Area_dynamics.png, id=134, 708.39656pt x 359.84438pt>
 File: Pic/Area_dynamics.png Graphic file (type png)
 <use Pic/Area_dynamics.png>
 Package pdftex.def Info: Pic/Area_dynamics.png  used on input line 164.
 (pdftex.def)             Requested size: 102.68962pt x 52.16237pt.
- [7
+ [6
 
- <./Pic/Area_dynamics.png>] [8
+ <./Pic/Area_dynamics.png>] [7
 
 ]
-<Pic/Conics.png, id=119, 595.47469pt x 574.39594pt>
+<Pic/Conics.png, id=155, 595.47469pt x 574.39594pt>
 File: Pic/Conics.png Graphic file (type png)
 <use Pic/Conics.png>
 Package pdftex.def Info: Pic/Conics.png  used on input line 223.
@@ -1309,10 +1306,10 @@ pdfTeX warning (ext4): destination with the same identifier (name{Area_dynamics
 <to be read again> 
                    \relax 
 l.223 \end{frame}
-                  [9
+                  [8
 
  <./Pic/Conics.png>]
-<Pic/Elliptical_orbit.png, id=129, 931.98187pt x 632.3625pt>
+<Pic/Elliptical_orbit.png, id=165, 931.98187pt x 632.3625pt>
 File: Pic/Elliptical_orbit.png Graphic file (type png)
 <use Pic/Elliptical_orbit.png>
 Package pdftex.def Info: Pic/Elliptical_orbit.png  used on input line 266.
@@ -1322,14 +1319,14 @@ pdfTeX warning (ext4): destination with the same identifier (name{Area_dynamics
 <to be read again> 
                    \relax 
 l.266 \end{frame}
-                  [10
+                  [9
 
- <./Pic/Elliptical_orbit.png>] [11
+ <./Pic/Elliptical_orbit.png>] [10
 
-] [12
+] [11
 
 ]
-<Pic/Mean_anomaly.png, id=156, 912.40875pt x 418.56375pt>
+<Pic/Mean_anomaly.png, id=192, 912.40875pt x 418.56375pt>
 File: Pic/Mean_anomaly.png Graphic file (type png)
 <use Pic/Mean_anomaly.png>
 Package pdftex.def Info: Pic/Mean_anomaly.png  used on input line 350.
@@ -1339,10 +1336,10 @@ pdfTeX warning (ext4): destination with the same identifier (name{Area_dynamics
 <to be read again> 
                    \relax 
 l.350 \end{frame}
-                  [13
+                  [12
 
  <./Pic/Mean_anomaly.png>]
-<Pic/Inclination.png, id=167, 835.62187pt x 573.64313pt>
+<Pic/Inclination.png, id=202, 835.62187pt x 573.64313pt>
 File: Pic/Inclination.png Graphic file (type png)
 <use Pic/Inclination.png>
 Package pdftex.def Info: Pic/Inclination.png  used on input line 369.
@@ -1352,51 +1349,49 @@ pdfTeX warning (ext4): destination with the same identifier (name{Area_dynamics
 <to be read again> 
                    \relax 
 l.369 \end{frame}
-                  [14
+                  [13
 
- <./Pic/Inclination.png>] [15
-
-] [16
+ <./Pic/Inclination.png>] [14
 
 ]
-<Pic/neo_orbit_types.jpg, id=191, 824.3598pt x 554.5518pt>
+<Pic/neo_orbit_types.jpg, id=220, 824.3598pt x 554.5518pt>
 File: Pic/neo_orbit_types.jpg Graphic file (type jpg)
 <use Pic/neo_orbit_types.jpg>
-Package pdftex.def Info: Pic/neo_orbit_types.jpg  used on input line 417.
+Package pdftex.def Info: Pic/neo_orbit_types.jpg  used on input line 399.
 (pdftex.def)             Requested size: 342.2953pt x 230.26163pt.
 pdfTeX warning (ext4): destination with the same identifier (name{Area_dynamics
 }) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.417 \end{frame}
+l.399 \end{frame}
                  
-Overfull \vbox (39.29105pt too high) detected at line 417
+Overfull \vbox (39.29105pt too high) detected at line 399
  []
 
-[17
+[15
 
- <./Pic/neo_orbit_types.jpg>] [18
+ <./Pic/neo_orbit_types.jpg>] [16
+
+] [17
+
+] [18
 
 ] [19
-
-] [20
-
-] [21
 
 ]pdfTeX warning (ext4): destination with the same identifier (name{tab_features
 }) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.501 \end{frame}
-                  [22
+l.483 \end{frame}
+                  [20
 
-] [23
+] [21
 
 ]
 ! Missing number, treated as zero.
 <to be read again> 
                    }
-l.533 \end{frame}
+l.515 \end{frame}
                  
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -1405,7 +1400,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    }
-l.533 \end{frame}
+l.515 \end{frame}
                  
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -1414,16 +1409,16 @@ To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
-<Pic/DENSITY_Perihelion_Distance.pdf, id=245, 319.1925pt x 409.53pt>
+<Pic/DENSITY_Perihelion_Distance.pdf, id=274, 319.1925pt x 409.53pt>
 File: Pic/DENSITY_Perihelion_Distance.pdf Graphic file (type pdf)
 <use Pic/DENSITY_Perihelion_Distance.pdf>
 Package pdftex.def Info: Pic/DENSITY_Perihelion_Distance.pdf  used on input lin
-e 533.
+e 515.
 (pdftex.def)             Requested size: 171.14764pt x 219.58691pt.
 ! Undefined control sequence.
 \beamer@doifinframe ..._Distance.pdf} \subcaption 
                                                   { \begin {center} a) Perih...
-l.533 \end{frame}
+l.515 \end{frame}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1434,7 +1429,7 @@ and I'll forget about whatever was undefined.
 ! Missing number, treated as zero.
 <to be read again> 
                    }
-l.533 \end{frame}
+l.515 \end{frame}
                  
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -1443,7 +1438,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    }
-l.533 \end{frame}
+l.515 \end{frame}
                  
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -1452,15 +1447,15 @@ To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
-<Pic/DENSITY_Eccentricity.pdf, id=246, 319.1925pt x 409.53pt>
+<Pic/DENSITY_Eccentricity.pdf, id=275, 319.1925pt x 409.53pt>
 File: Pic/DENSITY_Eccentricity.pdf Graphic file (type pdf)
 <use Pic/DENSITY_Eccentricity.pdf>
-Package pdftex.def Info: Pic/DENSITY_Eccentricity.pdf  used on input line 533.
+Package pdftex.def Info: Pic/DENSITY_Eccentricity.pdf  used on input line 515.
 (pdftex.def)             Requested size: 171.14764pt x 219.58691pt.
 ! Undefined control sequence.
 \beamer@doifinframe ...entricity.pdf} \subcaption 
                                                   { \begin {center} b) Eccen...
-l.533 \end{frame}
+l.515 \end{frame}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1469,16 +1464,16 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Overfull \vbox (54.32043pt too high) detected at line 533
+Overfull \vbox (54.32043pt too high) detected at line 515
  []
 
-[24
+[22
 
  <./Pic/DENSITY_Perihelion_Distance.pdf> <./Pic/DENSITY_Eccentricity.pdf>]
 ! Missing number, treated as zero.
 <to be read again> 
                    }
-l.557 \end{frame}
+l.539 \end{frame}
                  
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -1487,7 +1482,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    }
-l.557 \end{frame}
+l.539 \end{frame}
                  
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -1496,16 +1491,16 @@ To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
-<Pic/DENSITY_Min_orbit_intersection.pdf, id=271, 319.1925pt x 409.53pt>
+<Pic/DENSITY_Min_orbit_intersection.pdf, id=300, 319.1925pt x 409.53pt>
 File: Pic/DENSITY_Min_orbit_intersection.pdf Graphic file (type pdf)
 <use Pic/DENSITY_Min_orbit_intersection.pdf>
 Package pdftex.def Info: Pic/DENSITY_Min_orbit_intersection.pdf  used on input 
-line 557.
+line 539.
 (pdftex.def)             Requested size: 171.14764pt x 219.58691pt.
 ! Undefined control sequence.
 \beamer@doifinframe ...ersection.pdf} \subcaption 
                                                   { \begin {center} c) Min o...
-l.557 \end{frame}
+l.539 \end{frame}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1516,7 +1511,7 @@ and I'll forget about whatever was undefined.
 ! Missing number, treated as zero.
 <to be read again> 
                    }
-l.557 \end{frame}
+l.539 \end{frame}
                  
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -1525,7 +1520,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    }
-l.557 \end{frame}
+l.539 \end{frame}
                  
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -1534,16 +1529,16 @@ To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
-<Pic/DENSITY_Absolute_magnitude.pdf, id=272, 319.1925pt x 409.53pt>
+<Pic/DENSITY_Absolute_magnitude.pdf, id=301, 319.1925pt x 409.53pt>
 File: Pic/DENSITY_Absolute_magnitude.pdf Graphic file (type pdf)
 <use Pic/DENSITY_Absolute_magnitude.pdf>
 Package pdftex.def Info: Pic/DENSITY_Absolute_magnitude.pdf  used on input line
- 557.
+ 539.
 (pdftex.def)             Requested size: 171.14764pt x 219.58691pt.
 ! Undefined control sequence.
 \beamer@doifinframe ...magnitude.pdf} \subcaption 
                                                   { \begin {center} d) Absol...
-l.557 \end{frame}
+l.539 \end{frame}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1552,41 +1547,41 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Overfull \vbox (54.32043pt too high) detected at line 557
+Overfull \vbox (54.32043pt too high) detected at line 539
  []
 
-[25
+[23
 
  <./Pic/DENSITY_Min_orbit_intersection.pdf> <./Pic/DENSITY_Absolute_magnitude.p
 df>]
-<Pic/FAMD.pdf, id=298, 410.53375pt x 413.545pt>
+<Pic/FAMD.pdf, id=326, 410.53375pt x 413.545pt>
 File: Pic/FAMD.pdf Graphic file (type pdf)
 <use Pic/FAMD.pdf>
-Package pdftex.def Info: Pic/FAMD.pdf  used on input line 581.
+Package pdftex.def Info: Pic/FAMD.pdf  used on input line 563.
 (pdftex.def)             Requested size: 171.14764pt x 172.40042pt.
-<Pic/FAMD_Quantitative variables.pdf, id=299, 410.53375pt x 413.545pt>
+<Pic/FAMD_Quantitative variables.pdf, id=327, 410.53375pt x 413.545pt>
 File: Pic/FAMD_Quantitative variables.pdf Graphic file (type pdf)
 <use Pic/FAMD_Quantitative variables.pdf>
 Package pdftex.def Info: Pic/FAMD_Quantitative variables.pdf  used on input lin
-e 581.
+e 563.
 (pdftex.def)             Requested size: 171.14764pt x 172.40042pt.
- [26
+ [24
 
  <./Pic/FAMD.pdf> <./Pic/FAMD_Quantitative variables.pdf>]
-<Pic/Mutual_information.pdf, id=322, 844.15375pt x 597.23125pt>
+<Pic/Mutual_information.pdf, id=350, 844.15375pt x 597.23125pt>
 File: Pic/Mutual_information.pdf Graphic file (type pdf)
 <use Pic/Mutual_information.pdf>
-Package pdftex.def Info: Pic/Mutual_information.pdf  used on input line 593.
+Package pdftex.def Info: Pic/Mutual_information.pdf  used on input line 575.
 (pdftex.def)             Requested size: 273.83728pt x 193.74245pt.
- [27
+ [25
 
- <./Pic/Mutual_information.pdf>] [28
+ <./Pic/Mutual_information.pdf>] [26
 
 ]
 ! Missing number, treated as zero.
 <to be read again> 
                    }
-l.623 \end{frame}
+l.605 \end{frame}
                  
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -1595,7 +1590,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    }
-l.623 \end{frame}
+l.605 \end{frame}
                  
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -1604,15 +1599,15 @@ To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
-<Pic/GLASSO_0.1.pdf, id=344, 409.53pt x 319.1925pt>
+<Pic/GLASSO_0.1.pdf, id=373, 409.53pt x 319.1925pt>
 File: Pic/GLASSO_0.1.pdf Graphic file (type pdf)
 <use Pic/GLASSO_0.1.pdf>
-Package pdftex.def Info: Pic/GLASSO_0.1.pdf  used on input line 623.
+Package pdftex.def Info: Pic/GLASSO_0.1.pdf  used on input line 605.
 (pdftex.def)             Requested size: 171.14764pt x 133.39754pt.
 ! Undefined control sequence.
 \beamer@doifinframe ...LASSO_0.1.pdf} \subcaption 
                                                   {$\rho $=0.1 \begin {cente...
-l.623 \end{frame}
+l.605 \end{frame}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1623,7 +1618,7 @@ and I'll forget about whatever was undefined.
 ! Missing number, treated as zero.
 <to be read again> 
                    }
-l.623 \end{frame}
+l.605 \end{frame}
                  
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -1632,7 +1627,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    }
-l.623 \end{frame}
+l.605 \end{frame}
                  
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -1641,15 +1636,15 @@ To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
-<Pic/GLASSO_0.2.pdf, id=345, 409.53pt x 319.1925pt>
+<Pic/GLASSO_0.2.pdf, id=374, 409.53pt x 319.1925pt>
 File: Pic/GLASSO_0.2.pdf Graphic file (type pdf)
 <use Pic/GLASSO_0.2.pdf>
-Package pdftex.def Info: Pic/GLASSO_0.2.pdf  used on input line 623.
+Package pdftex.def Info: Pic/GLASSO_0.2.pdf  used on input line 605.
 (pdftex.def)             Requested size: 171.14764pt x 133.39754pt.
 ! Undefined control sequence.
 \beamer@doifinframe ...LASSO_0.2.pdf} \subcaption 
                                                   {$\rho $=0.2 \begin {cente...
-l.623 \end{frame}
+l.605 \end{frame}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1657,13 +1652,13 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[29
+[27
 
  <./Pic/GLASSO_0.1.pdf> <./Pic/GLASSO_0.2.pdf>]
 ! Missing number, treated as zero.
 <to be read again> 
                    }
-l.645 \end{frame}
+l.627 \end{frame}
                  
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -1672,7 +1667,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    }
-l.645 \end{frame}
+l.627 \end{frame}
                  
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -1681,15 +1676,15 @@ To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
-<Pic/GLASSO_0.3.pdf, id=364, 409.53pt x 319.1925pt>
+<Pic/GLASSO_0.3.pdf, id=393, 409.53pt x 319.1925pt>
 File: Pic/GLASSO_0.3.pdf Graphic file (type pdf)
 <use Pic/GLASSO_0.3.pdf>
-Package pdftex.def Info: Pic/GLASSO_0.3.pdf  used on input line 645.
+Package pdftex.def Info: Pic/GLASSO_0.3.pdf  used on input line 627.
 (pdftex.def)             Requested size: 171.14764pt x 133.39754pt.
 ! Undefined control sequence.
 \beamer@doifinframe ...LASSO_0.3.pdf} \subcaption 
                                                   {$\rho $=0.3 \begin {cente...
-l.645 \end{frame}
+l.627 \end{frame}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1700,7 +1695,7 @@ and I'll forget about whatever was undefined.
 ! Missing number, treated as zero.
 <to be read again> 
                    }
-l.645 \end{frame}
+l.627 \end{frame}
                  
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -1709,7 +1704,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    }
-l.645 \end{frame}
+l.627 \end{frame}
                  
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -1718,15 +1713,15 @@ To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
-<Pic/GLASSO_0.4.pdf, id=365, 409.53pt x 319.1925pt>
+<Pic/GLASSO_0.4.pdf, id=394, 409.53pt x 319.1925pt>
 File: Pic/GLASSO_0.4.pdf Graphic file (type pdf)
 <use Pic/GLASSO_0.4.pdf>
-Package pdftex.def Info: Pic/GLASSO_0.4.pdf  used on input line 645.
+Package pdftex.def Info: Pic/GLASSO_0.4.pdf  used on input line 627.
 (pdftex.def)             Requested size: 171.14764pt x 133.39754pt.
 ! Undefined control sequence.
 \beamer@doifinframe ...LASSO_0.4.pdf} \subcaption 
                                                   {$\rho $=0.4 \begin {cente...
-l.645 \end{frame}
+l.627 \end{frame}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1734,51 +1729,51 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[30
+[28
 
  <./Pic/GLASSO_0.3.pdf> <./Pic/GLASSO_0.4.pdf>]
-<Pic/mgm.pdf, id=383, 410.53375pt x 413.545pt>
+<Pic/mgm.pdf, id=412, 410.53375pt x 413.545pt>
 File: Pic/mgm.pdf Graphic file (type pdf)
 <use Pic/mgm.pdf>
-Package pdftex.def Info: Pic/mgm.pdf  used on input line 658.
+Package pdftex.def Info: Pic/mgm.pdf  used on input line 640.
 (pdftex.def)             Requested size: 205.37926pt x 206.88556pt.
 
-Overfull \vbox (6.15247pt too high) detected at line 658
+Overfull \vbox (6.15247pt too high) detected at line 640
  []
 
-[31
+[29
 
  <./Pic/mgm.pdf>]
-<Pic/minforest.pdf, id=399, 844.15375pt x 597.23125pt>
+<Pic/minforest.pdf, id=427, 844.15375pt x 597.23125pt>
 File: Pic/minforest.pdf Graphic file (type pdf)
 <use Pic/minforest.pdf>
-Package pdftex.def Info: Pic/minforest.pdf  used on input line 670.
+Package pdftex.def Info: Pic/minforest.pdf  used on input line 652.
 (pdftex.def)             Requested size: 205.37926pt x 145.29771pt.
 pdfTeX warning (ext4): destination with the same identifier (name{mgm}) has bee
 n already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.670 \end{frame}
-                  [32
+l.652 \end{frame}
+                  [30
 
  <./Pic/minforest.pdf>]
-<Pic/mmod.pdf, id=413, 844.15375pt x 597.23125pt>
+<Pic/mmod.pdf, id=441, 844.15375pt x 597.23125pt>
 File: Pic/mmod.pdf Graphic file (type pdf)
 <use Pic/mmod.pdf>
-Package pdftex.def Info: Pic/mmod.pdf  used on input line 682.
+Package pdftex.def Info: Pic/mmod.pdf  used on input line 664.
 (pdftex.def)             Requested size: 205.37926pt x 145.29771pt.
 pdfTeX warning (ext4): destination with the same identifier (name{mgm}) has bee
 n already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.682 \end{frame}
-                  [33
+l.664 \end{frame}
+                  [31
 
  <./Pic/mmod.pdf>]
 ! Missing number, treated as zero.
 <to be read again> 
                    }
-l.696 \end{frame}
+l.678 \end{frame}
                  
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -1787,7 +1782,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    }
-l.696 \end{frame}
+l.678 \end{frame}
                  
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -1796,15 +1791,15 @@ To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
-<Pic/mgm_confusion.pdf, id=427, 410.53375pt x 413.545pt>
+<Pic/mgm_confusion.pdf, id=456, 410.53375pt x 413.545pt>
 File: Pic/mgm_confusion.pdf Graphic file (type pdf)
 <use Pic/mgm_confusion.pdf>
-Package pdftex.def Info: Pic/mgm_confusion.pdf  used on input line 696.
+Package pdftex.def Info: Pic/mgm_confusion.pdf  used on input line 678.
 (pdftex.def)             Requested size: 171.14764pt x 172.40042pt.
 ! Missing number, treated as zero.
 <to be read again> 
                    }
-l.696 \end{frame}
+l.678 \end{frame}
                  
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -1813,7 +1808,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    }
-l.696 \end{frame}
+l.678 \end{frame}
                  
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -1822,20 +1817,20 @@ To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
-<Pic/ROC_mgm.pdf, id=428, 410.53375pt x 413.545pt>
+<Pic/ROC_mgm.pdf, id=457, 410.53375pt x 413.545pt>
 File: Pic/ROC_mgm.pdf Graphic file (type pdf)
 <use Pic/ROC_mgm.pdf>
-Package pdftex.def Info: Pic/ROC_mgm.pdf  used on input line 696.
+Package pdftex.def Info: Pic/ROC_mgm.pdf  used on input line 678.
 (pdftex.def)             Requested size: 171.14764pt x 172.40042pt.
-[34
+[32
 
- <./Pic/mgm_confusion.pdf> <./Pic/ROC_mgm.pdf>] [35
+ <./Pic/mgm_confusion.pdf> <./Pic/ROC_mgm.pdf>] [33
 
 ]
 ! Missing number, treated as zero.
 <to be read again> 
                    }
-l.722 \end{frame}
+l.704 \end{frame}
                  
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -1844,7 +1839,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    }
-l.722 \end{frame}
+l.704 \end{frame}
                  
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -1853,15 +1848,15 @@ To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
-<Pic/RF_confusion.pdf, id=452, 410.53375pt x 413.545pt>
+<Pic/RF_confusion.pdf, id=481, 410.53375pt x 413.545pt>
 File: Pic/RF_confusion.pdf Graphic file (type pdf)
 <use Pic/RF_confusion.pdf>
-Package pdftex.def Info: Pic/RF_confusion.pdf  used on input line 722.
+Package pdftex.def Info: Pic/RF_confusion.pdf  used on input line 704.
 (pdftex.def)             Requested size: 171.14764pt x 172.40042pt.
 ! Missing number, treated as zero.
 <to be read again> 
                    }
-l.722 \end{frame}
+l.704 \end{frame}
                  
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -1870,7 +1865,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    }
-l.722 \end{frame}
+l.704 \end{frame}
                  
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -1879,18 +1874,18 @@ To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
-<Pic/ROC_RF.pdf, id=453, 410.53375pt x 413.545pt>
+<Pic/ROC_RF.pdf, id=482, 410.53375pt x 413.545pt>
 File: Pic/ROC_RF.pdf Graphic file (type pdf)
 <use Pic/ROC_RF.pdf>
-Package pdftex.def Info: Pic/ROC_RF.pdf  used on input line 722.
+Package pdftex.def Info: Pic/ROC_RF.pdf  used on input line 704.
 (pdftex.def)             Requested size: 171.14764pt x 172.40042pt.
-[36
+[34
 
  <./Pic/RF_confusion.pdf> <./Pic/ROC_RF.pdf>]
 ! Missing number, treated as zero.
 <to be read again> 
                    }
-l.728 \end{frame}
+l.710 \end{frame}
                  
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -1899,7 +1894,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    }
-l.728 \end{frame}
+l.710 \end{frame}
                  
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -1908,22 +1903,22 @@ To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
-<Pic/RF_Importance.pdf, id=473, 410.53375pt x 413.545pt>
+<Pic/RF_Importance.pdf, id=502, 410.53375pt x 413.545pt>
 File: Pic/RF_Importance.pdf Graphic file (type pdf)
 <use Pic/RF_Importance.pdf>
-Package pdftex.def Info: Pic/RF_Importance.pdf  used on input line 728.
+Package pdftex.def Info: Pic/RF_Importance.pdf  used on input line 710.
 (pdftex.def)             Requested size: 239.60567pt x 241.35808pt.
 
-Overfull \vbox (20.28749pt too high) detected at line 728
+Overfull \vbox (20.28749pt too high) detected at line 710
  []
 
-[37
+[35
 
  <./Pic/RF_Importance.pdf>]
 ! Missing number, treated as zero.
 <to be read again> 
                    }
-l.744 \end{frame}
+l.726 \end{frame}
                  
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -1932,7 +1927,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    }
-l.744 \end{frame}
+l.726 \end{frame}
                  
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -1941,15 +1936,15 @@ To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
-<Pic/SVM_confusion.pdf, id=486, 410.53375pt x 413.545pt>
+<Pic/SVM_confusion.pdf, id=514, 410.53375pt x 413.545pt>
 File: Pic/SVM_confusion.pdf Graphic file (type pdf)
 <use Pic/SVM_confusion.pdf>
-Package pdftex.def Info: Pic/SVM_confusion.pdf  used on input line 744.
+Package pdftex.def Info: Pic/SVM_confusion.pdf  used on input line 726.
 (pdftex.def)             Requested size: 171.14764pt x 172.40042pt.
 ! Missing number, treated as zero.
 <to be read again> 
                    }
-l.744 \end{frame}
+l.726 \end{frame}
                  
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -1958,7 +1953,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    }
-l.744 \end{frame}
+l.726 \end{frame}
                  
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -1967,18 +1962,18 @@ To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
-<Pic/ROC_SVM.pdf, id=487, 410.53375pt x 413.545pt>
+<Pic/ROC_SVM.pdf, id=515, 410.53375pt x 413.545pt>
 File: Pic/ROC_SVM.pdf Graphic file (type pdf)
 <use Pic/ROC_SVM.pdf>
-Package pdftex.def Info: Pic/ROC_SVM.pdf  used on input line 744.
+Package pdftex.def Info: Pic/ROC_SVM.pdf  used on input line 726.
 (pdftex.def)             Requested size: 171.14764pt x 172.40042pt.
-[38
+[36
 
  <./Pic/SVM_confusion.pdf> <./Pic/ROC_SVM.pdf>]
 ! Missing number, treated as zero.
 <to be read again> 
                    }
-l.760 \end{frame}
+l.742 \end{frame}
                  
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -1987,7 +1982,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    }
-l.760 \end{frame}
+l.742 \end{frame}
                  
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -1996,15 +1991,15 @@ To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
-<Pic/QDA_confusion.pdf, id=507, 410.53375pt x 413.545pt>
+<Pic/QDA_confusion.pdf, id=535, 410.53375pt x 413.545pt>
 File: Pic/QDA_confusion.pdf Graphic file (type pdf)
 <use Pic/QDA_confusion.pdf>
-Package pdftex.def Info: Pic/QDA_confusion.pdf  used on input line 760.
+Package pdftex.def Info: Pic/QDA_confusion.pdf  used on input line 742.
 (pdftex.def)             Requested size: 171.14764pt x 172.40042pt.
 ! Missing number, treated as zero.
 <to be read again> 
                    }
-l.760 \end{frame}
+l.742 \end{frame}
                  
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -2013,7 +2008,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    }
-l.760 \end{frame}
+l.742 \end{frame}
                  
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -2022,18 +2017,18 @@ To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
-<Pic/ROC_QDA.pdf, id=508, 410.53375pt x 413.545pt>
+<Pic/ROC_QDA.pdf, id=536, 410.53375pt x 413.545pt>
 File: Pic/ROC_QDA.pdf Graphic file (type pdf)
 <use Pic/ROC_QDA.pdf>
-Package pdftex.def Info: Pic/ROC_QDA.pdf  used on input line 760.
+Package pdftex.def Info: Pic/ROC_QDA.pdf  used on input line 742.
 (pdftex.def)             Requested size: 171.14764pt x 172.40042pt.
-[39
+[37
 
  <./Pic/QDA_confusion.pdf> <./Pic/ROC_QDA.pdf>]
 ! Missing number, treated as zero.
 <to be read again> 
                    }
-l.776 \end{frame}
+l.758 \end{frame}
                  
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -2042,7 +2037,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    }
-l.776 \end{frame}
+l.758 \end{frame}
                  
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -2051,15 +2046,15 @@ To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
-<Pic/Logisic_confusion.pdf, id=528, 410.53375pt x 413.545pt>
+<Pic/Logisic_confusion.pdf, id=557, 410.53375pt x 413.545pt>
 File: Pic/Logisic_confusion.pdf Graphic file (type pdf)
 <use Pic/Logisic_confusion.pdf>
-Package pdftex.def Info: Pic/Logisic_confusion.pdf  used on input line 776.
+Package pdftex.def Info: Pic/Logisic_confusion.pdf  used on input line 758.
 (pdftex.def)             Requested size: 171.14764pt x 172.40042pt.
 ! Missing number, treated as zero.
 <to be read again> 
                    }
-l.776 \end{frame}
+l.758 \end{frame}
                  
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -2068,7 +2063,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
                    }
-l.776 \end{frame}
+l.758 \end{frame}
                  
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -2077,112 +2072,130 @@ To recover gracefully from this error, it's best to
 delete the erroneous units; e.g., type `2' to delete
 two letters. (See Chapter 27 of The TeXbook.)
 
-<Pic/ROC_Logistic.pdf, id=529, 410.53375pt x 413.545pt>
+<Pic/ROC_Logistic.pdf, id=558, 410.53375pt x 413.545pt>
 File: Pic/ROC_Logistic.pdf Graphic file (type pdf)
 <use Pic/ROC_Logistic.pdf>
-Package pdftex.def Info: Pic/ROC_Logistic.pdf  used on input line 776.
+Package pdftex.def Info: Pic/ROC_Logistic.pdf  used on input line 758.
 (pdftex.def)             Requested size: 171.14764pt x 172.40042pt.
-[40
+[38
 
- <./Pic/Logisic_confusion.pdf> <./Pic/ROC_Logistic.pdf>] [41
+ <./Pic/Logisic_confusion.pdf> <./Pic/ROC_Logistic.pdf>] [39
 
-] [42
+] [40
 
-] [43
+] [41
 
 ]
 
 LaTeX Font Warning: Font shape `OT1/cmss/bx/it' undefined
-(Font)              using `OT1/cmss/b/it' instead on input line 820.
+(Font)              using `OT1/cmss/b/it' instead on input line 802.
 
 
 LaTeX Font Warning: Font shape `OT1/cmss/b/it' undefined
-(Font)              using `OT1/cmss/b/n' instead on input line 820.
+(Font)              using `OT1/cmss/b/n' instead on input line 802.
 
 
 LaTeX Font Warning: Font shape `OT1/cmss/bx/it' undefined
-(Font)              using `OT1/cmss/b/it' instead on input line 820.
+(Font)              using `OT1/cmss/b/it' instead on input line 802.
 
 LaTeX Font Info:    Font shape `OT1/cmss/b/it' in size <10.95> not available
-(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 820.
+(Font)              Font shape `OT1/cmss/bx/n' tried instead on input line 802.
 
-[44
+[42
 
-] [45
+] [43
 
 ] (C:\Program Files\MiKTeX 2.9\tex/latex/ucs\uni-32.def
 File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
-) [46
+) [44
 
 ]
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/sc' in size <10.95> not available
-(Font)              Font shape `OT1/cmr/m/sc' tried instead on input line 843.
+(Font)              Font shape `OT1/cmr/m/sc' tried instead on input line 825.
 
-[47
+[45
+
+] [46
+
+
+] [47
+
 
 ] [48
 
 
-] [49
+]
 
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 830.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\phi' on input line 830.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 830.
+
+[49
 
 ] [50
 
-
-] [51
-
-] [52
-
 ]
-<Pic/ROC/ROC_A.png, id=674, 529.98pt x 229.85875pt>
+<Pic/ROC/ROC_A.png, id=701, 529.98pt x 229.85875pt>
 File: Pic/ROC/ROC_A.png Graphic file (type png)
 <use Pic/ROC/ROC_A.png>
-Package pdftex.def Info: Pic/ROC/ROC_A.png  used on input line 889.
+Package pdftex.def Info: Pic/ROC/ROC_A.png  used on input line 871.
 (pdftex.def)             Requested size: 171.14764pt x 74.2297pt.
-<Pic/ROC/ROC_B.png, id=675, 508.90125pt x 237.88875pt>
+<Pic/ROC/ROC_B.png, id=702, 508.90125pt x 237.88875pt>
 File: Pic/ROC/ROC_B.png Graphic file (type png)
 <use Pic/ROC/ROC_B.png>
-Package pdftex.def Info: Pic/ROC/ROC_B.png  used on input line 889.
+Package pdftex.def Info: Pic/ROC/ROC_B.png  used on input line 871.
 (pdftex.def)             Requested size: 171.14764pt x 80.00266pt.
-<Pic/ROC/ROC_A_R.png, id=676, 324.21124pt x 294.09875pt>
+<Pic/ROC/ROC_A_R.png, id=703, 324.21124pt x 294.09875pt>
 File: Pic/ROC/ROC_A_R.png Graphic file (type png)
 <use Pic/ROC/ROC_A_R.png>
-Package pdftex.def Info: Pic/ROC/ROC_A_R.png  used on input line 889.
+Package pdftex.def Info: Pic/ROC/ROC_A_R.png  used on input line 871.
 (pdftex.def)             Requested size: 85.57382pt x 77.62614pt.
-<Pic/ROC/ROC_B_R.png, id=677, 341.275pt x 310.15875pt>
+<Pic/ROC/ROC_B_R.png, id=704, 341.275pt x 310.15875pt>
 File: Pic/ROC/ROC_B_R.png Graphic file (type png)
 <use Pic/ROC/ROC_B_R.png>
-Package pdftex.def Info: Pic/ROC/ROC_B_R.png  used on input line 889.
+Package pdftex.def Info: Pic/ROC/ROC_B_R.png  used on input line 871.
 (pdftex.def)             Requested size: 85.57382pt x 77.7714pt.
- [53
+ [51
 
  <./Pic/ROC/ROC_A.png (PNG copy)> <./Pic/ROC/ROC_B.png (PNG copy)> <./Pic/ROC/R
 OC_A_R.png (PNG copy)> <./Pic/ROC/ROC_B_R.png (PNG copy)>]
-<Pic/ROC/ROC_C.png, id=685, 431.6125pt x 222.8325pt>
+<Pic/ROC/ROC_C.png, id=712, 431.6125pt x 222.8325pt>
 File: Pic/ROC/ROC_C.png Graphic file (type png)
 <use Pic/ROC/ROC_C.png>
-Package pdftex.def Info: Pic/ROC/ROC_C.png  used on input line 909.
+Package pdftex.def Info: Pic/ROC/ROC_C.png  used on input line 891.
 (pdftex.def)             Requested size: 171.14764pt x 88.35959pt.
-<Pic/ROC/ROC_D.png, id=686, 558.085pt x 216.81pt>
+<Pic/ROC/ROC_D.png, id=713, 558.085pt x 216.81pt>
 File: Pic/ROC/ROC_D.png Graphic file (type png)
 <use Pic/ROC/ROC_D.png>
-Package pdftex.def Info: Pic/ROC/ROC_D.png  used on input line 909.
+Package pdftex.def Info: Pic/ROC/ROC_D.png  used on input line 891.
 (pdftex.def)             Requested size: 171.14764pt x 66.4892pt.
-<Pic/ROC/ROC_C_R.png, id=687, 364.36125pt x 331.2375pt>
+<Pic/ROC/ROC_C_R.png, id=714, 364.36125pt x 331.2375pt>
 File: Pic/ROC/ROC_C_R.png Graphic file (type png)
 <use Pic/ROC/ROC_C_R.png>
-Package pdftex.def Info: Pic/ROC/ROC_C_R.png  used on input line 909.
+Package pdftex.def Info: Pic/ROC/ROC_C_R.png  used on input line 891.
 (pdftex.def)             Requested size: 85.57382pt x 77.79027pt.
-<Pic/ROC/ROC_D_R.png, id=688, 301.125pt x 273.02pt>
+<Pic/ROC/ROC_D_R.png, id=715, 301.125pt x 273.02pt>
 File: Pic/ROC/ROC_D_R.png Graphic file (type png)
 <use Pic/ROC/ROC_D_R.png>
-Package pdftex.def Info: Pic/ROC/ROC_D_R.png  used on input line 909.
+Package pdftex.def Info: Pic/ROC/ROC_D_R.png  used on input line 891.
 (pdftex.def)             Requested size: 85.57382pt x 77.58655pt.
- [54
+
+[52
 
  <./Pic/ROC/ROC_C.png (PNG copy)> <./Pic/ROC/ROC_D.png (PNG copy)> <./Pic/ROC/R
-OC_C_R.png (PNG copy)> <./Pic/ROC/ROC_D_R.png (PNG copy)>]
+OC_C_R.png (PNG copy)> <./Pic/ROC/ROC_D_R.png (PNG copy)>] [53
+
+] [54
+
+]
 [55
 
 ] [56
@@ -2193,28 +2206,28 @@ OC_C_R.png (PNG copy)> <./Pic/ROC/ROC_D_R.png (PNG copy)>]
 
 ] [59
 
-] [60
-
-] [61
-
 ]
 
 LaTeX Font Warning: Font shape `OT1/cmss/bx/it' undefined
-(Font)              using `OT1/cmss/b/it' instead on input line 1011.
+(Font)              using `OT1/cmss/b/it' instead on input line 993.
 
 
 LaTeX Font Warning: Font shape `OT1/cmss/bx/it' undefined
-(Font)              using `OT1/cmss/b/it' instead on input line 1011.
+(Font)              using `OT1/cmss/b/it' instead on input line 993.
 
 
 LaTeX Font Warning: Font shape `OT1/cmss/bx/it' undefined
-(Font)              using `OT1/cmss/b/it' instead on input line 1011.
+(Font)              using `OT1/cmss/b/it' instead on input line 993.
 
 
 LaTeX Font Warning: Font shape `OT1/cmss/bx/it' undefined
-(Font)              using `OT1/cmss/b/it' instead on input line 1011.
+(Font)              using `OT1/cmss/b/it' instead on input line 993.
 
-[62
+[60
+
+] [61
+
+] [62
 
 ] [63
 
@@ -2224,15 +2237,11 @@ LaTeX Font Warning: Font shape `OT1/cmss/bx/it' undefined
 
 ] [66
 
-] [67
-
-] [68
-
 ]
 ! Extra }, or forgotten \right.
 <template> }
             $\hfill \endtemplate 
-l.1119 \end{frame}
+l.1101 \end{frame}
                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2243,7 +2252,7 @@ deleted material, e.g., by typing `I$}'.
 ! Missing \right. inserted.
 <inserted text> 
                 \right .
-l.1119 \end{frame}
+l.1101 \end{frame}
                   
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2254,7 +2263,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.1119 \end{frame}
+l.1101 \end{frame}
                   
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2265,21 +2274,21 @@ my insertion and my current dilemma will both disappear.
 ! Double subscript.
 <argument> ...r1,...,rk}\prod _{j=1}^{k}\phi _{r}_
                                                   {j}\left (X_{r}_{j}\right ...
-l.1119 \end{frame}
+l.1101 \end{frame}
                   
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
 <argument> ..._{j=1}^{k}\phi _{r}_{j}\left (X_{r}_
                                                   {j}\right )+\sum _{s\in V}...
-l.1119 \end{frame}
+l.1101 \end{frame}
                   
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Missing } inserted.
 <inserted text> 
                 }
-l.1119 \end{frame}
+l.1101 \end{frame}
                   
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2290,14 +2299,14 @@ my insertion and my current dilemma will both disappear.
 ! Extra \right.
 <argument> ...B_{s}(X_{S})-\Phi (\theta ) \right )
                                                    \end {split}
-l.1119 \end{frame}
+l.1101 \end{frame}
                   
 I'm ignoring a \right that had no matching \left.
 
 ! Missing { inserted.
 <inserted text> 
                 {
-l.1119 \end{frame}
+l.1101 \end{frame}
                   
 I've put in what seems to be necessary to fix
 the current column of the current alignment.
@@ -2306,7 +2315,7 @@ Try to go on, since this might almost work.
 ! Extra }, or forgotten \right.
 <template> }
             $\hfill \endtemplate 
-l.1119 \end{frame}
+l.1101 \end{frame}
                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2317,7 +2326,7 @@ deleted material, e.g., by typing `I$}'.
 ! Missing \right. inserted.
 <inserted text> 
                 \right .
-l.1119 \end{frame}
+l.1101 \end{frame}
                   
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2328,7 +2337,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.1119 \end{frame}
+l.1101 \end{frame}
                   
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2339,21 +2348,21 @@ my insertion and my current dilemma will both disappear.
 ! Double subscript.
 <argument> ...r1,...,rk}\prod _{j=1}^{k}\phi _{r}_
                                                   {j}\left (X_{r}_{j}\right ...
-l.1119 \end{frame}
+l.1101 \end{frame}
                   
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
 <argument> ..._{j=1}^{k}\phi _{r}_{j}\left (X_{r}_
                                                   {j}\right )+\sum _{s\in V}...
-l.1119 \end{frame}
+l.1101 \end{frame}
                   
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Missing } inserted.
 <inserted text> 
                 }
-l.1119 \end{frame}
+l.1101 \end{frame}
                   
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2364,49 +2373,49 @@ my insertion and my current dilemma will both disappear.
 ! Extra \right.
 <argument> ...B_{s}(X_{S})-\Phi (\theta ) \right )
                                                    \end {split}
-l.1119 \end{frame}
+l.1101 \end{frame}
                   
 I'm ignoring a \right that had no matching \left.
 
 ! Missing { inserted.
 <inserted text> 
                 {
-l.1119 \end{frame}
+l.1101 \end{frame}
                   
 I've put in what seems to be necessary to fix
 the current column of the current alignment.
 Try to go on, since this might almost work.
 
-[69
+[67
 
-] [70
+] [68
 
 ]
 ! Double subscript.
 <argument> \hat {f}_{C_{j}}(x_{C}_
                                   {j})
-l.1158 \end{frame}
+l.1140 \end{frame}
                   
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
 <argument> \hat {f}_{S_{j}}(x_{S}_
                                   {j})
-l.1158 \end{frame}
+l.1140 \end{frame}
                   
 I treat `x_1_2' essentially like `x_1{}_2'.
 
-[71
+[69
 
-] [72
+] [70
 
-] [73
+] [71
 
 ]
 ! Undefined control sequence.
 <argument> ...g \begin {split} I(X;Y)&=\sum \sump 
                                                   (x,y)\log \dfrac {p(x,y)}{...
-l.1205 \end{frame}
+l.1187 \end{frame}
                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2417,7 +2426,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <argument> ...g \begin {split} I(X;Y)&=\sum \sump 
                                                   (x,y)\log \dfrac {p(x,y)}{...
-l.1205 \end{frame}
+l.1187 \end{frame}
                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2425,7 +2434,7 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[74
+[72
 
 ]
 \tf@nav=\write7
@@ -2445,19 +2454,19 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `Presentation.out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+(rerunfilecheck)             Checksum: 465D81D1193256EDE646DD6614A00C16;1901.
 Package logreq Info: Writing requests to 'Presentation.run.xml'.
 \openout1 = `Presentation.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 31230 strings out of 478681
- 614251 string characters out of 2854493
- 1071455 words of memory out of 3000000
- 48516 multiletter control sequences out of 15000+600000
+ 31205 strings out of 478681
+ 613339 string characters out of 2854493
+ 1071470 words of memory out of 3000000
+ 48497 multiletter control sequences out of 15000+600000
  429258 words of font info for 113 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,21n,122p,1847b,2240s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 128i,21n,122p,1847b,1701s stack positions out of 5000i,500n,10000p,200000b,80000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/P
 rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program F
 iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiK
@@ -2477,9 +2486,9 @@ e1/public/amsfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
 /amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
 /cm/cmtt10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols
 /msbm10.pfb>
-Output written on Presentation.pdf (74 pages, 2013190 bytes).
+Output written on Presentation.pdf (72 pages, 2011348 bytes).
 PDF statistics:
- 967 PDF objects out of 1000 (max. 8388607)
- 191 named destinations out of 1000 (max. 500000)
- 405 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 988 PDF objects out of 1000 (max. 8388607)
+ 187 named destinations out of 1000 (max. 500000)
+ 519 words of extra memory for PDF output out of 10000 (max. 10000000)
 
