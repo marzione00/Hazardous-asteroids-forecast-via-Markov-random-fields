@@ -1,0 +1,103 @@
+
+% Commands for ensembles (serve il pacchetto amssymb)
+\newcommand{\numberset}{\mathbb} 
+\newcommand{\N}{\numberset{N}} 
+
+% environment for systems
+\newenvironment{sistema}%
+  {\left\lbrace\begin{array}{@{}l@{}}}%
+  {\end{array}\right.}
+
+% definitions (requires amsthm)
+\theoremstyle{definition} 
+\newtheorem{definizione}{Definizione}
+
+% teoremi, leggi e decreti (serve il pacchetto amsthm)
+\theoremstyle{plain} 
+\newtheorem{theorem}{Theorem}
+\newtheorem{law}{Law}
+%\newtheorem{decreto}[legge]{Decreto}
+%\newtheorem{murphy}{Murphy}[section]
+
+
+%*********************************************************************************
+% Settings chapter title
+%*********************************************************************************
+\titleformat{\chapter}[hang]% "hang" instead of "block"
+    {\normalfont\Large\sffamily}%
+    {{\color{halfgray}\chapterNumber\thechapter%
+    \hspace{10pt}\vline}  }{10pt}%
+    {\spacedallcaps}
+
+\newenvironment{unnumbered}%
+{\setcounter{secnumdepth}{-1}}
+{\setcounter{secnumdepth}{2}}
+
+%*********************************************************************************
+% Settings biblatex
+%*********************************************************************************
+%\defbibheading{bibliography}{%
+%\cleardoublepage
+%\manualmark
+%\phantomsection 
+%\addcontentsline{toc}{chapter}{\tocEntry{\bibname}}
+%\chapter*{\bibname\markboth{\spacedlowsmallcaps{\bibname}}
+%{\spacedlowsmallcaps{\bibname}}}}
+
+
+
+%*********************************************************************************
+% Settings listings
+%*********************************************************************************
+\lstset{language=[LaTeX]Tex,%C++,
+    keywordstyle=\color{RoyalBlue},%\bfseries,
+    basicstyle=\small\ttfamily,
+    %identifierstyle=\color{NavyBlue},
+    commentstyle=\color{Green}\ttfamily,
+    stringstyle=\rmfamily,
+    numbers=none,%left,%
+    numberstyle=\scriptsize,%\tiny
+    stepnumber=5,
+    numbersep=8pt,
+    showstringspaces=false,
+    breaklines=true,
+    frameround=ftff,
+    frame=single
+} 
+
+
+
+%*********************************************************************************
+% Settings hyperref
+%*********************************************************************************
+\hypersetup{%
+    hyperfootnotes=false,pdfpagelabels,
+    %draft,	% = elimina tutti i link (utile per stampe in bianco e nero)
+    colorlinks=true, linktocpage=true, pdfstartpage=1, pdfstartview=FitV,%
+    % decommenta la riga seguente per avere link in nero (per esempio per la stampa in bianco e nero)
+    %colorlinks=false, linktocpage=false, pdfborder={0 0 0}, pdfstartpage=1, pdfstartview=FitV,% 
+    breaklinks=true, pdfpagemode=UseNone, pageanchor=true, pdfpagemode=UseOutlines,%
+    plainpages=false, bookmarksnumbered, bookmarksopen=true, bookmarksopenlevel=1,%
+    hypertexnames=true, pdfhighlight=/O,%nesting=true,%frenchlinks,%
+    urlcolor=webbrown, linkcolor=RoyalBlue, citecolor=webgreen, %pagecolor=RoyalBlue,%
+    %urlcolor=Black, linkcolor=Black, citecolor=Black, %pagecolor=Black,%
+    pdftitle={\myTitle},%
+    pdfauthor={\textcopyright\ \myName, \myUni, \myFaculty},%
+    pdfsubject={},%
+    pdfkeywords={},%
+    pdfcreator={pdfLaTeX},%
+    pdfproducer={LaTeX with hyperref and ClassicThesis}%
+}
+
+%*********************************************************************************
+% Margins settings optimized for  A4 format
+%*********************************************************************************
+\areaset[current]{336pt}{750pt}
+\setlength{\marginparwidth}{7em}
+\setlength{\marginparsep}{2em}%
+
+
+
+
+%\hyphenation{Fortran ma-cro-istru-zio-ne nitro-idrossil-amminico}
+\hyphenation{anisotropies an-i-so-trop-ies}

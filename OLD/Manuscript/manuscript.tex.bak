@@ -1,0 +1,1200 @@
+% !TEX TS-program = pdflatex
+% !TEX root = Tes.tex
+% !TEX spellcheck = en-EN
+
+\documentclass[12pt,%                      % corpo del font principale
+               a4paper,%                   % A4 papers
+               %twoside,openright,%         % twoside with free right side
+               oneside,openany,%           % one side
+               titlepage,%                 % use a titlepage
+               headinclude,footinclude,%  % header and foot header
+               BCOR5mm,%                   % rilegatura di 5 mm
+               cleardoublepage=empty,%     % empty pages with no header and foot
+               tablecaptionabove,%         % table caption above tables
+               floatperchapter,
+               ]{scrreprt}                 % KOMA-Script report class;
+
+
+\usepackage{braket}
+\usepackage{changepage}
+\usepackage[english]{babel}	% latest language is predefined
+\usepackage[T1]{fontenc}		% font coding
+
+
+\usepackage{indentfirst}		% indent first paragraph of each section
+\usepackage{mparhack,fixltx2e,relsize}	% fancy typographies stuff
+
+\usepackage[eulerchapternumbers,%	% chapter font Euler
+            subfig,%			% in subfig objects
+            beramono,%			% Bera Mono as fixed spacing font
+            eulermath,%			% AMS Euler as math font
+            pdfspacing,%		% improves line filling
+            listings,%			% code output
+ %          parts,%			% uncomment for a document divided in parts
+            listsseparated,
+            ]{classicthesis}		% style ClassicThesis
+%\setlength{\cftbeforeloftitleskip}{100pt}
+%\renewcommand{\cftbeforeloftitleskip}{1000pt}
+
+\usepackage{arsclassica}		% modifies some aspects of ClassicThesis package
+\let\marginpar\oldmarginpar		% for margin notes with \todonotes (overwise conflict with the new definition of \marginpar in classic thesis)
+\usepackage[shadow]{todonotes}			% for margin notes and comments
+
+\usepackage{bookmark}			% bookmarks
+
+%*********************************************************************************
+% Bibliography
+%*********************************************************************************
+%%\usepackage[style=authoryear,hyperref,backref,natbib, ,maxcitenames=1, mincitenames = 1, citestyle=authoryear-comp, backend=biber,sortcites,sorting=ynt]{biblatex}
+%\usepackage[style=numeric,hyperref,backref,natbib]{biblatex}
+
+
+
+
+%*********************************************************************************
+% Graphics
+%*********************************************************************************
+\usepackage{graphicx}			% images
+\usepackage{subfigure}
+\usepackage{wrapfig}
+\usepackage{tikz}
+\usetikzlibrary{mindmap,trees}
+\usetikzlibrary{backgrounds}
+\usepackage{verbatim}
+\usepackage[dvipsnames]{xcolor}
+% \usepackage{morefloats}
+%\usepackage{chngcntr}
+\usepackage{pdfpages}
+\usepackage{braket}
+\usepackage{amssymb}
+\def\delequal{\mathrel{\ensurestackMath{\stackon[1pt]{=}{\scriptstyle\Delta}}}}
+\usepackage{lscape}
+
+
+%*********************************************************************************
+% Tables
+%*********************************************************************************
+\usepackage{tabularx}			% table of predefined length
+\usepackage{siunitx}
+\usepackage{pbox}
+\usepackage{colortbl}
+\usepackage{multirow}
+\usepackage{booktabs}
+\usepackage{rotating}
+\usepackage{hhline}
+\setlength\tabcolsep{3pt}
+\usepackage{changepage}
+% \usepackage[showframe=true]{geometry}
+
+%*********************************************************************************
+% Mathematics and symbols
+%*********************************************************************************
+\usepackage{amsmath, amssymb, amsthm}	% mathematics stuff
+\usepackage{mathrsfs}
+\usepackage{calc}
+\usepackage{algorithmic}
+\usepackage[ruled]{algorithm}
+\usepackage{latexsym}
+\usepackage[geometry]{ifsym}
+\usepackage{mathabx}
+\usepackage{pifont}
+
+%*********************************************************************************
+% Personal
+%*********************************************************************************
+\usepackage[font=itshape]{quoting}			% fancy quotation packages. [font=small] old option
+\usepackage[english]{varioref}		% complete reference package
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage[intoc, english, noprefix]{nomencl}	%for list of symbols
+\usepackage[normalem]{ulem}
+\usepackage{chemfig} %for chemical formulas
+\usepackage{eurosym}			% euro symbol
+\usepackage{epigraph}
+\usepackage{calligra}
+\usepackage{soul}
+\usepackage[utf8]{inputenc}
+\usepackage{csquotes}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+
+\setlength{\epigraphwidth}{\textwidth}
+\newcommand{\textgreek}[1]{\begingroup\fontencoding{LGR}\selectfont#1\endgroup}
+\lstset{language=R,
+    basicstyle=\small\ttfamily,
+    stringstyle=\color{DarkGreen},
+    otherkeywords={0,1,2,3,4,5,6,7,8,9},
+    morekeywords={TRUE,FALSE},
+    deletekeywords={data,frame,length,as,character},
+    keywordstyle=\color{blue},
+    commentstyle=\color{DarkGreen},
+}
+
+%*********************************************************************************
+% Calling personal settings and making nomenclature
+%*********************************************************************************
+\input{custom-commands}
+\input{general-settings}  % general custom settings (margins etc)
+
+% \makenomenclature
+% \renewcommand{\nomname}{List of Symbols and Abbreviations}
+
+\bibliographystyle{plain}
+
+\begin{document}
+
+
+
+%----------------------------------------------------------------------------------------
+%	TITLE AND AUTHOR(S)
+%----------------------------------------------------------------------------------------
+
+\title{\normalfont\spacedallcaps{Hazardous asteroids forecast via Markov random fields}} % The article title
+
+\subtitle{Project for the course Probabilistic modelling (DSE)} % Uncomment to display a subtitle
+
+\author{
+  Marzio De Corato
+}
+
+\date{} % An optional date to appear under the author(s)
+
+%----------------------------------------------------------------------------------------
+
+
+%----------------------------------------------------------------------------------------
+%	TABLE OF CONTENTS & LISTS OF FIGURES AND TABLES
+%----------------------------------------------------------------------------------------
+
+\maketitle % Print the title/author/date block
+
+%\setcounter{tocdepth}{2} % Set the depth of the table of contents to show sections and subsections only
+
+
+
+%\listoffigures % Print the list of figures%
+
+%\listoftables % Print the list of tables
+
+\newpage
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=0.6\textwidth]{Figures/vesta_asteroid.jpg}
+\captionsetup{labelformat=empty}
+\caption{A NASA image of asteroid Vesta as taken by the spacecraft Dawn. Vesta is one of the biggest asteroid in the asteroid belt of solar system (its volume is equal to $7,5\cdot10^{7}$ km$^{3}$. Image taken from \cite{vesta_source}}
+\end{center}
+\end{figure}
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=0.6\textwidth]{Figures/Tunguska.png}
+\captionsetup{labelformat=empty}
+\caption{A picture provided by the Soviet Academy of Science in 1927 of Podkamennaya Tunguska. This place was hit, in 1908, by an asteroid of 50-60 m. Such asteroid flattened almost 80 million trees over an area of 2,150 km$^{2}$. The explosion intensity was near to 12 megatons: for reference the modern US nuclear bomb are in the range of 0.3 kilotons to 1.2 megatons. The Hiroshima bomb was nearly to 15 kilotons. Image taken from \cite{Tunguska_source}}
+\end{center}
+\end{figure}
+\newpage
+
+\epigraph{
+\textit{This day may possibly be my last: but the laws of probability, so true in general, so fallacious in particular, still allow about fifteen years. }\\Edward Gibbon (1737-1794)
+}
+
+\epigraph{
+\textit{In its efforts to learn as much as possible about nature, modern physics has found that certain things can never be “known” with certainty. Much of our knowledge must always remain uncertain. The most we can know is in terms of probabilities.}\\Richard P. Feynman (1918-1988)
+}
+
+
+
+\newpage
+
+\section*{Abstract} The machine learning algorithms provide a promising approach to classify and predict natural or social phenomena. Differently to the theoretical approach, in which the laws that describe particular phenomena are derived from general assumptions using a mathematical language (e.g., a symmetry, the principle of energy conservation, the three Newton laws, the second principle of thermodynamics \cite{feynmanlectures}), the machine learning algorithms start from very general assumptions/expressions and then their parameters are optimized with the likehood maximization\cite{russell2010artificial,murphy2012machine}. The first approach allows obtaining interpretable predictions, the second one good forecasts with a reduced effort. However, the toll that has to be paid in this case is the low interpretability \cite{russell2010artificial,murphy2012machine}. Since they provide the list of connections within the features, the graphical methods represent a good compromise between the need for interpretability and the forecasts obtained without developing a general theory. In order to prove the validity of this statement, I considered a dataset for which the theory that interconnects its features was known: in particular, I chose the asteroids hazardousness as provided by CNEOS \cite{cneos+nasa} and published on Kaggle \cite{kaggle_dataset}. The outcomes of the probabilistic methods for predicting the asteroid hazardousness were compared with the ones provided by the theory and with the ones of Random Forest (RF), Support Vector Machines (SVM), and Logistic Regression and Quadric Discriminant analysis (QDA). The results show that the forecast performances of probabilistic methods are better than QDA and almost equal to the logistic regression but lower to RF and SVM. However, since the list of connections correctly reflects the laws of celestial mechanics \cite{murray1999solar}, it can be said that in this case, the probabilistic methods provide an interpretable and correct explanation of their mechanism. Therefore, contrary to other machine learning algorithms, such methods can be fully validated scientifically.
+
+\end{center}}
+
+
+
+
+\newpage
+
+\tableofcontents % Print the table of contents
+
+\newpage % Start the article content on the second page, remove this if you have a longer abstract that goes onto the second page
+
+
+
+\newpage
+%----------------------------------------------------------------------------------------
+%	INTRODUCTION
+%----------------------------------------------------------------------------------------
+
+\chapter{Introduction} The description and the forecast of physical \footnote{Where here physical should be intended as measurable} phenomena can be attacked with two different approaches: starting from a restricted set of principles/axioms, one can formulate theoretical models that provide equations that describe such phenomena. Such approach will be called here \textit{ab-initio}. On the other side, one can start from data and fit them into some general models (with fixed or not fixed number of parameters). These methods will be called here the machine learning (ML) methods. In the ab-initio case, one can fully explain the laws obtained and an overall idea of why nature works in this way. The toll that has to be paid in this case is that, since the phenomena are much more complicated than the starting principles, a consistent part of them may be excluded by the assumption made at the beginning. Furthermore, the calculation of the solution given the dynamical equation can be computationally expensive\footnote{This is the case, for instance, of the Hartree-Fock method or Density Functional Theory: such methods rewrite, with some approximations, the Schroedinger equation into a much more computationally affordable way. However, also, in this case, the solution for solids can be costly \cite{martin_2004}}. On the other side, the ML methods, since they make much more general assumptions and work directly on data, are not limited to a particular class of phenomena. Therefore they do not require the development of a specific theory as the \textit{ab-initio} one: the same model can be applied to exoplanets habitability as well to credit risk evaluation. The drawback of this approach is that the underlying mechanism,  by which a forecast is preferred to another one, may not be interpretable. Such dichotomy between these two methods can be explained with an example taken from astronomy: at the beginning of XX century, astronomers knew that Mercury follows an elliptical orbit that, instead of being fixed, rotates around the Sun as shown in Fig. \ref{Perihelion_precession2} Such phenomenon is called \textit{Precession of the perihelion of Mercury}. The crucial point is that there was no way to explain from the Newton gravity theory such phenomenon. At this point, scholars had two paths: describe its motion with an empirical law (perhaps with an empirical modification of Newton's gravity law) or reformulate the Newton gravity from scratch. The second approach was the one followed by A.Einstein with his general relativity theory (further details are given in the A.Zee textbook \cite{zee2013einstein}). The graphical methods represent a good compromise between these two approaches: they can be used for every physical phenomenon, and, since they provide the connection list, they also give an elegant and intuitive representation of their mechanisms. Therefore, if the theory of the involved process is known, one can use this class of algorithms and compare its finding with the theory. In this way, one can evaluate the quality of the forecasts and the model provided by the graphical methods. The present work aims to perform such analysis for a dataset that contains the features and the hazardousness \footnote{For Earth} of asteroids. For this dataset, indeed, the relationships between the various features are known. This paper is organized as follows: first, a brief introduction about the basic theoretical concepts of the statistical methods here used will be provided, then the dataset will be described, and finally, the principal results here obtained with graphical methods will be presented as compared with other types of machine learning algorithms. Furthermore, a recap of the celestial mechanics will be provided in Appendix A. This theory explains the connections and the meaning of the different features contained in the dataset. Finally, the code used to produce the results here reported if provided in Appendix B.
+
+
+
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=1\textwidth]{Figures/Perihelion_precession2.png}
+\caption{Precession of the perihelion of Mercury. Image taken from \cite{Perihelion_precession}}
+\label{Perihelion_precession2}
+\end{center}
+\end{figure}
+
+ 
+
+
+\chapter{Theoretical Framework}
+
+In this section, I am going to review the theoretical concepts
+that underlie the probabilistic methods here used: these will be
+exposed following the approaches of Murphy \cite{murphy2012machine} , Kolleret al. \cite{koller2009probabilistic}, Højsgaardand et al. \cite{hojsgaard2012graphical} and Russel et al. \cite{russell2010artificial}. Furthermore, a rapid overview of the main concepts of information theory will also be provided following the Cover \cite{cover2006elements}, and MacKay \cite{mackay2003information} approaches. This is because some of its quantities in the preliminary analysis of the dataset were used. Finally, I concluded this chapter with a rapid overview of algorithm interpretability, which, together with the accuracy and the
+confusion matrix, is necessary for the assessment of a ML performances. On the other side, the concepts related to the celestial
+mechanics here used will be described, following the Murray
+approach \cite{murray1999solar} into the Appendix A.
+
+\section{Probabilistic models}
+
+Lets start by supposing that we would represent compactly a joint distribution such as \cite{murphy2012machine}:
+\begin{equation}
+p(x_{1},x_{2},...,x_{n})
+\end{equation}
+that can represent for instance words in a documents or pixels of an image.  Firstly we know that using the chain rule,  we can decompose it, into the following form \cite{murphy2012machine}:
+\begin{equation}
+p(x_{1:V})=p(x_{1})p(x_{2}|x_{1})p(x_{3}|x_{2},x_{1})...p(x_{V}|x_{1:V-1})
+\end{equation}
+Where V is the number of variables and $1:V$ stands for ${1,2,...,V}$.  This decomposition makes explicit the conditional probability tables, or in other terms, the transition probability tensors \cite{wu2017markov}.  As one can point out, the number of parameters is cumbersome as the number of variables grows: indeed, the number of parameter required scales as $\mathcal{O}(K^{V})$.  Such a challenging problem can be attacked by considering the concept of conditional independence. This is defined as\cite{murphy2012machine}:
+
+\begin{equation}
+X  \perp Y| Z \iff  p(X,Y|Z) = p(X|Z)p(Y|Z)
+\end{equation}
+
+A particular case of this definition is the Markov assumption,  by which \textit{the future is independent from the past given the present } or in symbols \cite{murphy2012machine}: 
+
+\begin{equation}
+p(\textbf{x}_{1:V})=p(x_{1})\prod^{V}_{t=1}p(x_{t}|x_{t-1})
+\end{equation}
+
+In this case, a first-order Markov chain is obtained,  where the transition tensor is of second-order \cite{wu2017markov}.  Given this formalism, we are interested in finding an intelligent way to plot such joint distribution intuitively: the graph theory answers this quest.  The nodes can be used to represent the random variables while the presence or the lack of edges can be used to represent the conditional indipendence \cite{murphy2012machine}.  Bayesian networks consider directed edges,  while Markov random fields (MRF) are only undirected.  Consequently,  while the concept of a topological ordering,  by which the parents n nodes are labelled lower to their children,  is well defined for the Bayesian network, MRF is not.  In order to solve this issue, it is helpful to consider the Hammersley-Clifford theorem as stated in \cite{murphy2012machine}:
+
+\begin{theorem}[Hammersley-Clifford]
+A positive distribution p(\textbf{y})>0 satisfies the CI properties of an indirect graph G iif p can be represented as a product of factor, one per maximal clique,  i.e.
+\begin{equation}
+p(\textbf{y}|\theta)= \dfrac{1}{Z(\theta)}\prod_{c \in C }\psi_{c}(\textbf{y}_{c}|\theta_{c})
+\end{equation}
+where C is the set of all the (maximal) cliques of G,  and Z($\theta$) is the partition function given by 
+\begin{equation}
+Z(\theta):= \sum_{y}\prod_{c\in C}\psi_{c}(\textbf{y}_{c}|\theta_{c})
+\end{equation}
+Note that this partition function is what ensures the overall distribution sums to 1
+\end{theorem}
+
+Such theorem allows to represent a probability distribution with potential functions for each maximal clique in the graph.  A particular case of these is the Gibbs distribution \cite{murphy2012machine}: 
+
+\begin{equation}
+p(y|\theta)=\dfrac{1}{Z(\theta)} exp\left(-\sum_{c}E(y_{c}|\theta_{c})\right)
+\end{equation}
+
+where $E(y_{c})>0$ represent the energy associated with the variables in the clique c.  This form can be adapted to a UGM with the following expression \cite{murphy2012machine}:
+
+\begin{equation}
+\psi_{c}(y_{c}|\theta_{c})=exp\left(-E(y_{c}|\theta_{c})\right)
+\end{equation}
+
+Finally, to reduce the computational cost,  one can consider only the pairwise interaction instead of the maximum clique. This is the analogue of what is usually performed in solid-state physics (but not always)  when only the interaction between the first neighbour atoms is considered.  Another example is the  Ising model: here we have a lattice of spins that can be or in $\ket{+}$ or in $\ket{-}$ and their interaction is modelled by\cite{murphy2012machine}:
+
+
+\begin{equation}
+\psi_{st}\left(y_{s},y_{t}\right) =
+\begin{pmatrix}
+e^{w_{st}} & e^{-w_{st}} \\
+e^{-w_{st}} & e^{w_{st}} \\
+\end{pmatrix}
+\end{equation}
+
+Where $w_{st}=J$ represent the coupling strength between two neighbour site.  The collective state is described by \cite{murphy2012machine}:
+
+\begin{equation}
+\ket{i_{1},i_{2},...,i_{n}}=\ket{i_{1}}\otimes\ket{i_{2}}\otimes...\otimes\ket{i_{n}}
+\end{equation}
+
+Where $\otimes$ is the tensor product, if this parameter is associated with a positive finite value, we have an associative Markov network: collectively, all sites with the same configuration are favoured. Thus we will have two collective states: one for which we have all $\ket{+}$ and another in which we have all $\ket{-}$  Such a situation would model,  in principle,  the ferromagnetic materials where the external magnetic field induces into the material a magnetic field with the same direction.  On the other side, if the material's magnetisation is opposite to the external field,  and thus $J<0$,  we have an anti-ferromagnetic system in which frustrated states are present.  Furthermore lets consider the unnormalized log probability of a collective state $\textbf{y}=\ket{i_{1},i_{2},...,i_{n}}$ \cite{murphy2012machine}:
+
+\begin{equation}
+\log\tilde{\textbf{p}}(y)= -\sum_{s\sim t}y_{s}w_{st}y_{t}
+\end{equation}
+
+If we also consider an external field \cite{murphy2012machine}:
+
+\begin{equation}
+\log\tilde{\textbf{p}}(y)= -\sum_{s\sim t}y_{s}w_{st}y_{t}+\sum_{s}b_{s}y_{s}
+\end{equation}
+
+The previous expression is the Hamiltonian of an Ising system. This is not a simple coincidence:  indeed, the Hamiltonian of a system represent,  rudely speaking,  its total energy.  Thus according to the Boltzmann or Gibbs distribution, we have \cite{murphy2012machine}:
+
+\begin{equation}
+P_{\beta}(\textbf{y})=\dfrac{e^{-\beta H(\textbf{y}})}{Z_{\beta}}
+\end{equation}
+
+where $\beta$ is proportional to the inverse of the system temperature.  Coming back the unnormalized probability of a collective state $\textbf{y}$,  if we set $\Sigma^{-1}=\textbf{W}$,  $\boldsymbol{\mu}=\boldsymbol{\Sigma} \textbf{b}$ and $c=\dfrac{1}{2}\mu^{T}\boldsymbol{\Sigma}^{-1}\mu$ we obtain a Gaussian \cite{murphy2012machine}:
+
+\begin{equation}
+\tilde{\textbf{p}}(y)\sim exp\left( -\frac{1}{2} (\textbf{y}-\boldsymbol{\mu})^{T} \boldsymbol{\Sigma}^{-1} (\textbf{y}-\boldsymbol{\mu}) + c \right)
+\end{equation}
+
+In general we refer to Gaussian Markov random fields for a joint distribution that can be decomposed in the following way \cite{murphy2012machine}:
+
+\begin{equation}
+p\left(\textbf{y}|\boldsymbol{\theta}\right) \propto \prod_{s\sim t} \psi_{st}\left(y_{s},y_{t}\right)\prod_{t}\psi_{t}\left(y_{t}\right)
+\end{equation}
+
+\begin{equation}
+\psi_{st}\left( y_{s},y_{t} \right)=exp\left( -\dfrac{1}{2} y_{s}\Delta_{st}y_{t} \right)
+\end{equation}
+
+\begin{equation}
+\psi_{t}\left(y_{t}\right)= \exp \left( -\dfrac{1}{2}\Delta_{tt}y^{2}_{t}+\eta_{t}y_{t}\right)
+\end{equation}
+
+\begin{equation}
+p\left(\textbf{y}|\boldsymbol{\theta}\right) \propto \exp \left( \boldsymbol{\eta}^{T} \textbf{y}-\dfrac{1}{2}y^{T}\Delta \textbf{y} \right)
+\end{equation}
+
+(this last expression can be reconducted to the multivariate Gaussian if one consider $\boldsymbol{\Delta}=\boldsymbol{\Sigma}^{-1}$ and $\boldsymbol{\eta}=\boldsymbol{\Delta}\boldsymbol{\mu}$. Given the network, we would now move on how the parameters can be calculated. Lets start from a Markov random field in log-linear form \cite{murphy2012machine}:
+
+\begin{equation}
+p\left(\textbf{y}|\boldsymbol{\theta}\right) = \dfrac{1}{Z(\theta)}\exp \left( \sum_{c}\boldsymbol{\theta}^{T}_{c}\phi_{c}\left(\textbf{y}\right)\right)
+\end{equation}
+
+thus we can define the log-likehood as \cite{murphy2012machine}:
+
+\begin{equation}
+\mathcal{L}\left(\boldsymbol{\theta}\right):= \frac{1}{N}\sum_{i}\log p\left(\textbf{y}_{i}|\boldsymbol{\theta}\right)=\frac{1}{N}\sum_{i}\left[\sum_{c} \boldsymbol{\theta}^{T}_{c}\phi_{c}(y_{i})-\log Z\left(\boldsymbol{\theta}\right)\right]
+\end{equation}
+
+\begin{equation}
+\frac{\partial\mathcal{L}}{\partial\boldsymbol{\theta}_{c}}=\frac{1}{N}\sum_{i}\left[\phi_{c}(y_{i})-\frac{\partial}{\partial\boldsymbol{\theta}_{c}}\log Z(\boldsymbol{\theta})\right]
+\end{equation}
+
+\begin{equation}
+\frac{\partial \log Z(\boldsymbol{\theta})}{\partial\boldsymbol{\theta}}=\mathbb{E}\left[\phi_{c}(\textbf{y})\right|\theta]=\sum_{\textbf{y}}\phi_{c}(\textbf{y})p(\textbf{y}|\boldsymbol{\theta})}
+\end{equation}
+
+
+\begin{equation}
+\frac{\partial\mathcal{L}}{\partial\boldsymbol{\theta}_{c}}=\left[\frac{1}{N}\sum_{i}\phi_{c}(y_{i})\right]-\mathbb{E}\left[\phi_{c}(\textbf{y})\right]
+\end{equation}
+
+In the first term $\textbf{y}$ is fixed to its observed values while in the second it is free. Such expression can be recast in to a more explicative form \cite{murphy2012machine}:
+
+\begin{equation}
+\frac{\partial\mathcal{L}}{\partial\boldsymbol{\theta}_{c}}=\mathbb{E}_{p_{emp}}\left[\phi_{c}(\textbf{y})\right]-\mathbb{E}_{p_{(\cdot|\boldsymbol{\theta})}}\left[\phi_{c}(\textbf{y})\right]
+\end{equation}
+
+Therefore at the optimum we will have \cite{murphy2012machine}:
+
+\begin{equation}
+\mathbb{E}_{p_{emp}}\left[\phi_{c}(\textbf{y})\right]=\mathbb{E}_{p_{(\cdot|\boldsymbol{\theta})}}\left[\phi_{c}(\textbf{y})\right]
+\end{equation}
+
+From this expression, it is clear why this method is called moment matching; it is worth noting that such computation is largely expensive from a computational point of view: thus, scholars usually consider other techniques or at least the stochastic gradient descent method. A full review can be found in \cite{murphy2012machine} and \cite{koller2009probabilistic}. Finally we consider, as for the dataset in analysed in this work, the case where we have both discrete and continuous variables i.e. $x=\left(i_{1},...,i_{d},y_{1},...,y_{q} \right)$ with d discrete variable and q continuous variables. They are called in the literature Mixed Interaction Models. In this case, the following density has to be considered \cite{hojsgaard2012graphical}:
+
+\begin{equation}
+\begin{split}
+f(i,y)=& p(i)(2\pi)^{-q/2}det(\Sigma)^{-1/2} \\
+& exp\left[-\dfrac{1}{2}\left(y-\mu(i)\right)^{T}\Sigma^{-1}\left(y-\mu(i)\right)\right]
+\end{split}
+\label{gaussMix}
+\end{equation}
+
+Which can be rewritten in the exponential family form \cite{hojsgaard2012graphical}: 
+
+\begin{equation}
+\begin{split}
+f(i,y) & = \exp\left\lbrace g(i)+\sum_{u}h^{u}(i)y_{u}-\dfrac{1}{2}\sum_{uv} y_{u}y_{v}k_{uv}\right\rbrace \\
+&= \exp\left\lbrace g(i)+h(i)^{T}y-\dfrac{1}{2}y^{T}Ky \right\rbrace
+\end{split}
+\end{equation}
+
+where $g(i)$, $h(i)$ and $K$ are the canonical parameters. These are connected with the parameters of expression \ref{gaussMix} by the following identities \cite{hojsgaard2012graphical}: 
+
+\begin{equation}
+\begin{split}
+K=&\Sigma^{-1} \\
+h(i)=&\Sigma^{-1}\mu(i) \\
+g(i)=&\log p(i) -\frac{1}{2}\log det (\Sigma) \\
+&-\dfrac{1}{2}\mu(i)^{T}\Sigma^{-1}\mu(i)-\dfrac{q}{2}\log 2\pi
+\end{split}
+\end{equation}
+
+Moreover, one can further modify the previous form in order to obtain a particular factorial expansion: such models are referred to as homogeneous mixed interaction models \cite{hojsgaard2012graphical}.
+
+\section{Information theory}
+Given an ensemble of random variables, we can quantify the amount of information that one variable contains: such quantity is called mutual information and is a crucial concept within information theory. This approach, which was implemented by Claude Shannon decades before the probabilistic modelling, represents a complementary way by which one can attack the problem of conditional dependence between random variables. Furthermore, as shown in Fig. \ref{Information_theory_connections}, this theory provides a formidable contribution to different scientific fields. Here I would provide some basic concepts of this theory, following the Cover \cite{cover2006elements} and MacKay \cite{mackay2003information} approaches, that allow defining the concept of mutual information properly. The founding concept of information theory is entropy. This quantity expresses the uncertainty of a random variable. Given a random variable $X$ with alphabet (the accessible states) $\cite{cover2006elements}$ and probability mass function $p(x)=Pr\left\lbrace X=x \rbrace\; x \in \chi$ we define the entropy of $X$ as $H(X)=-\sum_{x \in X} p(x)log p(x)$ where the logarithm has to be considered with basis 2. In analogous way the joint entropy of two random variables $(X,Y)$ with a joint distribution p(x,y) is defined as \cite{cover2006elements}:
+\begin{equation}
+H(X,Y)=-\sum_{x\in \chi}\sum_{y\in \mathcal{Y}}p(x,y)\log p(x,y)
+\end{equation}
+Furthermore, we can define also the conditional entropy as \cite{cover2006elements}:
+\begin{equation}
+\begin{split}
+H(X|Y)=& \sum_{x\in \mathcal{X} }p(x)H(Y|X=x)\\
+=& -\sum_{x\in \mathcal{X}}p(x)\sum_{y\in \mathcal{Y}}p(x,y)\log p(y|x) \\
+=& -E\log p(Y|X)
+\end{split}
+\end{equation}
+The joint entropy and the conditional entropy are related by the chain rule \cite{cover2006elements}:
+\begin{equation}
+H(X,Y)=H(X)+H(Y|X)
+\end{equation}
+Such rule can be extended to to the following from \cite{cover2006elements}:
+\begin{equation}
+H(X,Y|Z)=H(X|Z)+H(Y|X,Z)
+\end{equation}
+Given a distribution q and another distribution p, one can quantify how inefficiently the second one describes the first one using the concept of relative entropy or Kullback-Leibler distance \cite{cover2006elements,mackay2003information}:
+\begin{equation}
+D(p||q)=\sum p(x)\log\frac{p(x)}{q(x)}
+\end{equation}
+As stated by the Gibbs inequality \cite{cover2006elements,mackay2003information}:
+\begin{equation}
+D(p||q)\geq 0
+\end{equation}
+this quantity can not be negative: the entropy of a random variable associated with another cannot have a degree of uncertainty lower to the quantity it aims to describe. On these bases, we are now ready to introduce the concept of mutual information. This is defined as  \cite{cover2006elements}:
+\begin{equation}
+\begin{split}
+I(X;Y)&=\sum\sump(x,y)\log\dfrac{p(x,y)}{p(x)p(y)}=\\
+&=D(p(x,y)||p(x)p(y)) \\
+&=H(X)-H(X|Y)=H(Y)-H(Y|X)
+\end{split}
+\end{equation}
+ As for the joint distribution also in this case, we have a chain rule  \cite{cover2006elements}:
+\begin{equation}
+I(X_{1},X_{2},...,X_{n};Y)=\sum^{n}_{i=1}I(X_{i};Y|X_{i-1},X_{i-2},...,X_{1})
+\end{equation}
+The concepts here reviewed, and the relations that interconnect them can be represented as shown in Fig. \ref{Entropy_MI}. Finally, I would report the data process inequality theorem that connects the information theory with the Markov chain: if we have a Markov chain, $X\rightarrow Y \rightarrow Z$  then $I(X;Y)\geq I(X;Z) $. As for the Gibbs inequality, the underlying idea is that no clever manipulation of the data can improve the inference that can be made on them \cite{cover2006elements,mackay2003information}. Otherwise, we would have a clear violation of the second principle of thermodynamics (see for instance, the Maxwell's demon \cite{feynman2018feynman}).
+
+\section{Algorithm interpretability}
+
+Besides the accuracy and other features connected with the confusion matrix, another critical feature is algorithm interpretability. This concept represents how much the algorithm explains its predictions and, in general, its mechanics. In other words, how much the algorithm is not a black box. Apart from all legal problems connected with an algorithm that is a blackbox\footnote{Think for instance the conditions imposed by the GDPR (e.g. right to explanation)}, in the author opinion, results provided by such an algorithm cannot be considered scientific: the scientific method also requires to explain and not simply to provide correct forecast. Following the Tarski et al. \cite{tarski1953undecidable} argument, which is based on mathematical logic, it can be said that the formal theory T can be translated into S if and only if S can prove the theorem of T in its language. On the other side, we would also know that an algorithm, as an explanation, is complete: we expect that it will also be able to make correct forecasts for all available data. However, as shown by \cite{doshi2017towards}, and by \cite{gilpin2018explaining} the interpretability of an algorithm is linked with its incompleteness. This is something that is nested both in formal systems as algorithms or scientific theories. For instance, let us consider the fall of object: at first glance, one can consider only the items on Earth. In this case, the acceleration is constant, and a straightforward theory will be obtained.  As one moves to consider also the interaction within planets and stars, a much more complicate law should be considered (in which the previous case is a particular one). The first one is fully explainable but poorly complete; the second one is more difficult to explain but much more complete.  This is something that was elegantly stated by A.Einstein \cite{physics-reality}:
+\begin{displayquote}
+\textit{Science uses the totality of the primary concepts, i.e., concepts directly connected with sense experiences, and propositions connecting them. In its first stage of development, science does not contain anything else. Our everyday thinking is satisfied on the whole with this level. Such a state of affairs cannot, however, satisfy a spirit which is really scientifically minded; because the totality of concepts and relations obtained in this manner is utterly lacking in logical unity. In order to supplement this deficiency, one invents a system poorer in concepts and relations, a system retaining the primary concepts and relations of the “first layer” as logically derived concepts and relations. This new “secondary system” pays for its higher logical unity by having elementary concepts (concepts of the second layer), which are no longer directly connected with complexes of sense experiences. Further striving for logical unity brings us to a tertiary system, still poorer in concepts and relations, for the deduction of the concepts and relations of the secondary (and so indirectly of the primary) layer. Thus the story goes on until we have arrived at a system of the greatest conceivable unity, and of the greatest poverty of concepts of the logical foundations, which is still compatible with the observations made by our senses. We do not know whether or not this ambition will ever result in a definitive system. If one is asked for his opinion, he is inclined to answer no. While wrestling with the problems, however, one will never give up hope that this greatest of all aims can really be attained to a very high degree [...]The essential thing is the aim to represent the multitude of concepts and propositions, close to experience, as propositions, logically deduced from a basis, as narrow as possible, of fundamental concepts and fundamental relations which themselves can be chosen freely (axioms). The liberty of choice, however, is of a special kind; it is not in any way similar to the liberty of a writer of fiction. Rather, it is similar to that of a man engaged in solving a well-designed word puzzle. He may, it is true, propose any word as the solution; but, there is only one word which really solves the puzzle in all its parts. It is a matter of faith that nature– as she is perceptible to our five senses– takes the character of such a well-formulated puzzle. The successes reaped up to now by science do, it is true, give a certain encouragement for this faith.}
+\end{displayquote}
+Therefore the evaluation of algorithm performances should be considered not only into one dimension, the accuracy but also by considering its interpretability as shown in Fig. \ref{ML_intepretability}
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=1\textwidth]{Figures/Information_theory_connections.jpg}
+\caption{The connections of information theory with different scientific fields. Image taken from \cite{cover2006elements}}
+\label{Information_theory_connections}
+\end{center}
+\end{figure}
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=1\textwidth]{Figures/Entropy_MI.png}
+\caption{The relations between the entropy, conditional entropy and mutual information. Image taken from \cite{cover2006elements}}
+\label{Entropy_MI}
+\end{center}
+\end{figure}
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=1\textwidth]{Figures/ML_intepretability.png}
+\caption{Different ML algorithms classified by their interpretability and by their accuracy. Image taken from \cite{ml_interpretability}}
+\label{ML_intepretability}
+\end{center}
+\end{figure}
+
+
+\chapter{Dataset description}
+
+The asteroid dataset was retrieved from Kaggle \cite{kaggle_dataset}, which reports into a more machine readable form the dataset of The Center for Near-Earth Object Studies (CNEOS) \cite{cneos+nasa}, a NASA research centre. Among the 40 features that were present in the dataset,  the following cases were excluded: the redundant features (e.g. the distance quantity evaluated in miles instead of kilometres), the features connected only to the other name of the asteroid, the features connected to the name of the orbit and the one connected with the orbiting planet ( since for all it was the Earth). Thus the features obtained were therefore reduced to 22. Their description will be postponed to Appendix A since tit cannot be disjoint with celestial mechanics concepts. Their enumeration is provided in Tab. \ref{tab_features}. Since only 16 \% of the asteroids were hazardous, I considered reducing the number of the non-hazardous to improve the portion of the hazardous ones. For this purpose, I constructed a database in which the proportion hazardous/not hazardous was 1:5: thus, all the hazardous ones were included, while the not-hazardous were randomly extracted \footnote{The author is aware that in principle, the proportion should be much less unbalanced, however, the tool that has to be paid for this operation is an overall reduction of the cases in the dataset that lowers the performances of the algorithms here used. The proportion here is used as a trade-off for these two contrasting facts}. Furthermore, concerning the continuous measures, the dataset was standardised and demeaned. 
+
+
+\begin{table}[]
+\caption{The features used for the present analysis. The units of measure are reported in the original dataset \cite{kaggle_dataset}. The explanation of these features is provided in Appendix A. }
+\begin{center}
+\begin{tabular}{c|c}
+\hline
+\textbf{Features}             & \textbf{Type}        \\ \hline
+Neo Reference ID              & not used             \\ \hline
+Absolute Magnitude            & Continuous           \\ \hline
+Est Dia in KM (min)           & Continuous           \\ \hline
+Est Dia in KM (max)           & Continuous           \\ \hline
+Close Approach Date           & Continuous           \\ \hline
+Epoch Date Close Approach     & Continuous           \\ \hline
+Relative\_Velocity            & Continuous           \\ \hline
+Miss\_Dist                    & Continuous           \\ \hline
+Min\_Orbit\_Intersection      & Continuous           \\ \hline
+Jupiter\_Tisserand\_Invariant & Continuous           \\ \hline
+Epoch\_Osculation             & Continuous           \\ \hline
+Eccentricity                  & Continuous           \\ \hline
+Semi Major Axis               & Continuous           \\ \hline
+Inclination                   & Continuous           \\ \hline
+Asc Node Longitude            & Continuous           \\ \hline
+Orbital Period                & Continuous           \\ \hline
+Perihelion Distance           & Continuous           \\ \hline
+Perihelion Arg                & Continuous           \\ \hline
+Perihelion Time               & Continuous           \\ \hline
+Mean\_Anomaly                 & Continuous           \\ \hline
+Mean\_Motion                  & Continuous           \\ \hline
+Hazardous                     & Categorical (Binary)
+\end{tabular}
+\end{center}
+\label{tab_features}
+\end{table}
+
+
+\chapter{Results and discussion}
+
+This chapter is organized in the following way: first, I will report the results concerning the preliminary analysis performed on the dataset. The factor analysis of mixed data and the mutual information analysis of the continuous variables of asteroids vs their hazard will be reported. Then it will follows the analysis of the dataset performed with the probabilistic methods. After a preliminary analysis on the continuous variables, the mixed interaction model and the minforest model obtained for the whole dataset will be presented and discussed. Finally, the probabilistic models previously obtained will be compared with the outputs and the performances of four machine learning algorithms (Random Forest, Support vector machines, Quadratic Discriminant Analysis and Logistic regression).
+
+\section{Preliminary analysis}
+
+The first inspection that was performed on the dataset was related to the density distributions of a selection of continuous features that are known, from the celestial mechanics, to be important for the prediction of the asteroids dangerousness. These are reported in Fig. \ref{Density_relevant}. It can be seen that there is an evident distinction for the min orbit intersection, perihelion distance and eccentricity (note that these three parameters are the different faces of the same medal). On the other side, concerning the Absolute magnitude, the distinction seems not so clear. This result, together with the overlap in the three previous features, is because, according to the CNEOS definition (see Appendix A), a hazardous asteroid should have a min orbit intersection lower than a fixed parameter and an absolute magnitude higher to a certain threshold. The fulfilment of both these conditions makes the asteroid dangerous. Next I moved on a more systematic analysis with FADM and mutual information. In Fig. \ref{FADM},\ref{FAMD_Quantitative variables} and \ref{FAMD_Individuals_(c)} are reported the main achivements of FADM (performed with FactoMineR package \cite{le2008factominer}): in particular from the correlation circle in Fig. \ref{FAMD_Quantitative variables} the different correlations that are given by the celestial mechanics laws can be recognized. For instance, see that there is strong anti-correlation of the mean motion with the semi-major axis. This is due to the Kepler laws discussed in Appendix A. Furthermore we see that that the mean motion is correctly almost independent with respect to the the diameter (max or min) of  the asteroid. As explained in Appendix A this is an another result of Newton gravitation theory for a two body interaction: the mean motion of an asteroid, as long as the the mass of it is much lower with respect to the earth, is independent from its mass. On the other side the fact that relative velocity is correlated with the diameter is a spurious correlation. At this point one can ask why the mean motion and the relative velocity are orthogonal: this outcome will be clarified from a theoretical point of view in appendix A and also with graphical models. Briefly the motion of an object on an ellipse as seen from a focus (the Earth) is not uniform: this is faster as the two bodies approaches. Beside this inspection a further analysis based on the concept of mutual information (summarized in the previous chapter) was performed: its result is reported in Fig. \ref{Mutual_information}. This figure summarize the ranking of the features considered in the dataset for the dangerousness classification of the asteroids according to the following expression \cite{kratzer2018varrank}
+
+\begin{equation}
+g(\alpha,\textbf{C},\textbf{S},f_{i})=MI(f_{i};\textbf{C})-\sum_{f_{s}\in S}\alpha(f_{i},f_{s},\textbf{C},\textbf{S})MI(f_{i};f_{s})
+\end{equation}
+where the first term $MI(f_{i};\textbf{C})$ is called relevance and measures the Mutual Information between the interesting feature set $\textbf{C}$ (only Hazardous in our case) and the analysed one $f_{i}$; the third term $MI(f_{i};f_{s})$ is called redundancy and measures the MI between the analysed feature and a chosen set of them. Finally the $\alpha(f_{i},f_{s},\textbf{C},\textbf{S})$ is a normalization function and in our case was set to \cite{kratzer2018varrank}
+
+\begin{equation}
+\alpha(f_{i},f_{s},\textbf{C},\textbf{S})=\dfrac{1}{|\textbf{S}|}
+\end{equation}
+
+following the Peng. et al approach \cite{peng2005feature}. It can be seen that the first place in the mutual information ranking, looking to the diagonal element, is taken by minimum orbit intersection: this is correct since this is one parameter used by NASA for deciding if an asteroid is hazardous or not (see Appendix A). The second place is occupied by Epoch date close approach. The third place is the eccentricity value: this parameter is entangled with the minimum orbit intersection and thus it is reasonable that it is important. Then two parameters that are related to the dimension of the asteroid are present: the Estimated min diameter and Absolute Magnitude. This fact is meaningful since if the asteroid has a too reduced volume it will be destroyed by the Earth atmosphere. Indeed the Absolute magnitude and the Min orbit intersection are the features used by CNEOS to classify if an asteroid is hazardous or not (see Appendix A). On the other hand the other parameters seems to have a too low MI score for being interesting in this preliminary analysis. 
+
+
+\begin{figure}[ht]
+  \begin{minipage}[b]{0.5\linewidth}
+    \centering
+    \includegraphics[width=.9\linewidth]{Figures/DENSITY_Perihelion_Distance.pdf}
+    \subcaption{ \begin{center}
+    a) Perihelion Distance
+    \end{center}}
+    \vspace{4ex}
+  \end{minipage} 
+  \begin{minipage}[b]{0.5\linewidth}
+    \centering
+    \includegraphics[width=.9\linewidth]{Figures/DENSITY_Eccentricity.pdf}
+    \subcaption{ \begin{center}
+    b) Eccentricity
+    \end{center}}
+    \vspace{4ex}
+  \end{minipage} \\
+    \begin{minipage}[b]{0.5\linewidth}
+    \centering
+    \includegraphics[width=.9\linewidth]{Figures/DENSITY_Min_orbit_intersection.pdf}
+    \subcaption{ \begin{center}
+    c) Min orbit intersection
+    \end{center}}
+    \vspace{4ex}
+  \end{minipage}
+  \begin{minipage}[b]{0.5\linewidth}
+    \centering
+    \includegraphics[width=.9\linewidth]{Figures/DENSITY_Absolute_magnitude.pdf}
+    \subcaption{ \begin{center}
+    d) Absolute magnitude
+    \end{center}}
+    \vspace{4ex}
+  \end{minipage}
+\caption{Comparison between the density distributions of hazardous (red) and non-hazardous (light blue) asteroids for a selected set of features that, according to the theory, are interesting. Plot obtained with the ggplot2 package \cite{ggplot2}}
+\label{Density_relevant}
+\end{figure}
+
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=1\textwidth]{Figures/FAMD.pdf}
+\caption{The FAMD main plot in which the correlation between the continuous and discrete variables is reported. Plot obtained from FactoMineR package \cite{le2008factominer}}
+\label{FADM}
+\end{center}
+\end{figure}
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=1\textwidth]{Figures/FAMD_Quantitative variables.pdf}
+\caption{The FAMD correlation circle for continuos variables as obtained from FactoMineR package \cite{le2008factominer}}
+\label{FAMD_Quantitative variables}
+\end{center}
+\end{figure}
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=1\textwidth]{Figures/FAMD_Individuals_(c).pdf}
+\caption{Graph of individuals, for the qualititative variables, as obtained from FactoMineR package \cite{le2008factominer}}
+\label{FAMD_Individuals_(c)}
+\end{center}
+\end{figure}
+
+\begin{landscape}
+\begin{figure}
+\begin{center}
+\includegraphics[width=1.75\textheight]{Figures/Mutual_information.pdf}
+\caption{Mutual information as obtained with the varrank package \cite{kratzer2018varrank}}
+\label{Mutual_information}
+\end{center}
+\end{figure}
+\end{landscape}
+
+\pagebreak
+
+\section{Probabilistic models} The analysis with the graphical models was started by inspecting the relations between continuous variables in the dataset. Therefore, in this first step, the binary variable \textit{Hazardous} was excluded. For this purpose, among the different methods available, I considered the \textit{Graphical least absolute shrinkage and selection operator} GLASSO as implemented in the \textit{glasso} R package \cite{friedman2008sparse,glasso}. After different tests reported in Fig. \ref{GLASSO_convergence}, I considered as the final result the graph obtained with the value of $\rho$ (the one that penalizes further connections) equal to $0.3$. Such choice is motivated by the fact that the connections stated by the Celestial Mechanics are correctly reproduced with this parameter. For instance, it can be seen that the diameter of the asteroids is not connected to all features related to their motion. Such a result is meaningful since the volume/mass of the asteroids is largely lower than the mass of the earth.  Thus, as explained in Appendix A, there is no way the asteroid orbit can be modified by its mass. In addition, it can be seen that the Close approach Date and the Epoch date are linked to each other but in no way from the other features. This result is correct since the date and epoch are set with an arbitrary scale. Also, as expected, the Perihelion Epoch and Osculation Time are linked, but there is no dependence on the orbit parameters. Furthermore, the mean motion is not connected directly to relative velocity, but correctly, both are connected to the perihelion distance. 
+
+\begin{figure}[ht]
+  \begin{minipage}[b]{0.5\linewidth}
+    \centering
+    \includegraphics[width=.9\linewidth]{Figures/GLASSO_0.1.pdf}
+    \subcaption{$\rho$=0.1}
+    \vspace{4ex}
+  \end{minipage} 
+  \begin{minipage}[b]{0.5\linewidth}
+    \centering
+    \includegraphics[width=.9\linewidth]{Figures/GLASSO_0.2.pdf}
+    \subcaption{$\rho$=0.2}
+    \vspace{4ex}
+  \end{minipage} \\
+  \begin{minipage}[b]{0.5\linewidth}
+    \centering
+    \includegraphics[width=.9\linewidth]{Figures/GLASSO_0.3.pdf}
+    \subcaption{$\rho$=0.3}
+    \vspace{4ex}
+  \end{minipage}%%
+    \begin{minipage}[b]{0.5\linewidth}
+    \centering
+    \includegraphics[width=.9\linewidth]{Figures/GLASSO_0.4.pdf}
+    \subcaption{$\rho$=0.4}
+    \vspace{4ex}
+  \end{minipage}%%
+\caption{GLASSO analysis, performed with the glasso package \cite{friedman2008sparse,glasso}, with different $\rho$ parameter (the one that penalize further connections) for the Asteroid dataset without the discrete variable Hazardous. The plots were obtained with the \textit{igraph} package for R \cite{igraph}}
+\label{GLASSO_convergence}
+\end{figure}
+
+Let us now move on to the mixed interaction model, where the hazardousness feature was also considered.  The first model was calculated with the mgm package  \cite{mgm,haslbeck2015mgm} where the nodewise regression is used \cite{meinshausen2006high}. The $k$ parameter was set equal to two, and a cross-validation (CV) with ten folds was considered. The result is reported in Fig. \ref{mgm}. From this figure, it can be seen that the features that are directly connected to the Hazardous feature are: the absolute magnitude, the min orbit intersection, and the eccentricity.  The theory supports all these connections. The min orbit intersection is the main parameter for the hazardous value. On the other side, the eccentricity can be tough as a parameter that describes how near the celestial body moves at the perihelion (indeed, this parameter is correctly linked with the perihelion distance). The Absolute Magnitude is also a meaningful parameter for the hazard evaluation since, if the asteroid is too small, it will be destroyed by the earth atmosphere.  Furthermore, the parameters related to the diameters are also not connected with the orbital parameters. In addition, the relative velocity is not directly related to the mean motion, but there are the orbital parameters within as expected. Moving to the relation of orbital parameters, it can be seen that there is a negative relation between the eccentricity and perihelion distance: this is meaningful since it comes from the definition of eccentricity. The other side of the coin of this connection is the positive relationships within the semimajor axis and the eccentricity. Finally the connections with the Jupiter Tisserand Invariant comes directly from the definition of this parameter. Such arguments can be much more clear with the equations and plots provided in Appendix A. Thus it can be said that the model produced is almost consistent with the astronomic laws. On this basis, the performances of the model in terms of confusion matrix, ROC (Receiver operating characteristic) curve and $\phi$ coefficient (also known as Matthews correlation coefficient ) were evaluated (for this purpose the Caret R package \cite{kuhn2008building,caret} was used). The confusion matrix obtained is reported in Fig. \ref{mgm_confusion}: the ROC curve is given in Fig. \ref{ROC_mgm} and it corresponds to a $\phi=0.6$. These performances will be commented on in the next section when the performances of other ML algorithms for the same dataset will be reported. Beside the mgm algorithm/package other approaches were also considered for the evaluation of the mixed interaction graphical model: the function \textit{mmod()} of gRim package \cite{hojsgaard2012graphical} and the \textit{minforest()} of gRapHD (which uses the minForest method) \cite{de2009high}. For both cases, a stepwise algorithm was used.  Their result are reported in Fig. \ref{mmod} and \ref{minforest}. It can be seen that in these models, the minimum diameter is linked with the hazardous feature, which is correct, but what is without a physical meaning is that this quantity is also linked to the features connected with the orbital parameters. A weak link with the orbital parameters is meaningful for the magnitude (as the mgm model for the mean anomaly).  The magnitude depends on the distance between the asteroids and the observer.   However, a direct link from the volume parameters (and thus from the mass) with the orbital ones is not acceptable. In principle, one can set these links as forbidden in the algorithm (blacklist), but in the author view, a model where a better\footnote{In terms of consistency with astronomic laws} result is obtained without boundaries should be preferred to those obtained with a large number of constraints. Therefore we reject the mmod and minforest ones favouring the mgm, obtained without constraints (blacklist and/or whitelist) . 
+
+
+
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=1\textwidth]{Figures/mgm.pdf}
+\caption{The graphical model obtained with the mixed interaction model as implemented in the mgm package \cite{mgm,haslbeck2015mgm}. The plot was obtained with the \cite{qgraph} package}
+\label{mgm}
+\end{center}
+\end{figure}
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=1\textwidth]{Figures/mgm_confusion.pdf}
+\caption{The confusion matrix of the graphical model reported in Fig. \ref{mgm} as obtained from the Caret package \cite{kuhn2008building,caret}} 
+\label{mgm_confusion}
+\end{center}
+\end{figure}
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=1\textwidth]{Figures/ROC_mgm.pdf}
+\caption{The ROC (Receiver operating characteristic) curve as obtained from the ROCR package \cite{sing2005rocr} and ggplot2 \cite{ggplot2}. The corresponding $\phi$ value is $0.6$ } 
+\label{ROC_mgm}
+\end{center}
+\end{figure}
+
+\begin{landscape}
+\begin{figure}
+\begin{center}
+\includegraphics[width=1.5\textheight]{Figures/mmod.pdf}
+\caption{The graphical mixed interaction model obtained with the grim package \cite{hojsgaard2012graphical}. The plot was obtained with the igraph package for R \cite{igraph} }
+\label{mmod}
+\end{center}
+\end{figure}
+\end{landscape}
+\\
+\begin{landscape}
+\begin{figure}
+\begin{center}
+\includegraphics[width=1.5\textheight]{Figures/minforest.pdf}
+\caption{The graphical mixed interaction model obtained with the gRapHD package \cite{de2009high} with a stepwise algorithm. The plot was obtained with the qgraph \cite{qgraph} package }
+\label{minforest}
+\end{center}
+\end{figure}
+\end{landscape}
+
+
+\pagebreak
+
+\section{Machine learning algorithms} The performances of mgm model will be now compared with the one obtained from other ML algorithms. These include the random-forest (RF, as implemented in the RandomForest package \cite{rfor}), the support vector machines (SVM, as implemented in the e1071 package \cite{dimitriadou2008misc}), the quadratic discriminant analysis (QDA, as implemented in the MASS package \cite{MASS} and the logistic regression (as implemented in stats package \cite{stats}). Their performances are reported in Fig. \ref{CF_ML} and \ref{ROC_mgm} as well in the Tab. \ref{phi_values}. This comparison shows that the RF and the SVM outperform the mgm graphical method while the logistic one has similar performances. Thus, one can wonder about the advantage of using a graphical method instead of a random forest or an SVM since its performances seem lower. The answer is the interpretability of the model provided: the RF, at least, can provide variable rank importance as reported in Fig. \ref{RF_Importance} (note that apart from the Min Orbit intersection, there is a slight reshuffling in the feature importance to the one estain reverseblished by the MI in fig \ref{Mutual_information}. However, apart from this intepretation, the RF is a black-box as the SVM, the logistic regression and the QDA. Conversely, the probabilistic graphs, providing the list of connections among the random variables, give the user an interpretable model whose properties can also be compared, discussed, and validated with the theory. Thus the model developed in this way allows a more scientific evaluation with respect to the black-box ones. In the author's view, this characteristic compensates for the lack of predictive power regarding the RF or the SVM methods. 
+
+
+
+
+\begin{figure}[ht]
+  \begin{minipage}[b]{0.5\linewidth}
+    \centering
+    \includegraphics[width=.9\linewidth]{Figures/RF_confusion.pdf}
+    \subcaption{Random Forest}
+    \vspace{4ex}
+  \end{minipage} 
+  \begin{minipage}[b]{0.5\linewidth}
+    \centering
+    \includegraphics[width=.9\linewidth]{Figures/SVM_confusion.pdf}
+    \subcaption{SVM}
+    \vspace{4ex}
+  \end{minipage} \\
+  \begin{minipage}[b]{0.5\linewidth}
+    \centering
+    \includegraphics[width=.9\linewidth]{Figures/QDA_confusion.pdf}
+    \subcaption{QDA}
+    \vspace{4ex}
+  \end{minipage}%%
+    \begin{minipage}[b]{0.5\linewidth}
+    \centering
+    \includegraphics[width=.9\linewidth]{Figures/Logisic_confusion.pdf}
+    \subcaption{Logistic}
+    \vspace{4ex}
+  \end{minipage}%%
+\caption{Confusion matrices for a selected set of ML algorithms as obtained from the Caret package \cite{kuhn2008building,caret}}
+\label{CF_ML}
+  \end{figure}
+  
+  
+  \begin{figure}[ht]
+  \begin{minipage}[b]{0.5\linewidth}
+    \centering
+    \includegraphics[width=.9\linewidth]{Figures/ROC_RF.pdf}
+    \subcaption{Random Forest}
+    \vspace{4ex}
+  \end{minipage} 
+  \begin{minipage}[b]{0.5\linewidth}
+    \centering
+    \includegraphics[width=.9\linewidth]{Figures/ROC_SVM.pdf}
+    \subcaption{SVM}
+    \vspace{4ex}
+  \end{minipage} \\
+  \begin{minipage}[b]{0.5\linewidth}
+    \centering
+    \includegraphics[width=.9\linewidth]{Figures/ROC_QDA.pdf}
+    \subcaption{QDA}
+    \vspace{4ex}
+  \end{minipage}%%
+    \begin{minipage}[b]{0.5\linewidth}
+    \centering
+    \includegraphics[width=.9\linewidth]{Figures/ROC_logistic.pdf}
+    \subcaption{Logistic}
+    \vspace{4ex}
+  \end{minipage}%%
+\caption{ROC curves for a selected set of ML algorithms. Plot obtained with the caret and the ggplot2 package \cite{kuhn2008building},ggplot2}}
+\label{ROC_ML}
+  \end{figure}
+
+
+
+\begin{table}[]
+\caption{$\phi$ coefficient (also known as Matthews correlation coefficient ) for a selected set of ML algorithms as compared with the mgm}
+\begin{center}
+\begin{tabular}{c|c}
+Algorithm & $\phi$ \\ \hline
+RF        & 0.9876 \\ \hline
+SVM       & 0.7111 \\ \hline
+logistic  & 0.6173 \\ \hline
+mgm       & 0.5997 \\ \hline
+QDA       & 0.5562 
+\end{tabular}
+\end{center}
+\label{phi_values}
+\end{table}
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=1\textwidth]{Figures/RF_Importance.pdf}
+\caption{Variable importance according to the random forest algorithm as implemented in \cite{rfor} package. Plot obtained with the ggplot2 package \cite{ggplot2}}
+\label{RF_Importance}
+\end{center}
+\end{figure}
+
+
+\chapter{Conclusions and Outlook}
+
+The GLASSO (with a penalizing parameter $\rho=0.3$) and the mgm algorithms provided graphical models that almost correctly reproduce the physical connections of the dataset feature. In particular, for both models, it can be seen that no one of the orbital parameters is conneted to the diameter of the asteroid, as stated by theory. Furthermore, the mgm model can provide forecasts about the hazardousness of the asteroids with almost equal or better performances than the logistic and QDA algorithms.  On the other hand, despite the mgm performances being lower than the RF and SVM, its interpretability is higher.  Such a feature compensates the mgm forecast performances gap. As a future outlook I consider to extend this analysis for physical phenomena for which there is no deterministic theory but only probabilistic one\footnote{Following the I.Prigogine \cite{prigogine2017non,prigogine1997end,nicolis1989exploring,prigogine1978time} argument it must be said that a pure deterministic theory, if exist, cannot be fully applied. Therefore, in principle, all possible theories should be considered probabilistic. This is because the initial conditions can not be known with a infinite precision. Therefore, if one also perfectly knows the equation of motion and can also solve them exactly (and in most of cases it is not possible) a source of error still persist and it propagates with the Lyapunov exponent. However as it was shown by Prigogine it a system is at equilibrium this instability can neglected. In this case a deterministic approach is meaningful }. For instance one can consider Earthquakes and Vulcanos Eruptions \cite{sornette1989self,sparks2003forecasting,sornette2006critical}
+
+\chapter{Appendix A: Concepts of astronomy}
+
+This Appendix is dedicated to reviewing the basic concepts of astronomy needed to understand the dataset's features and how these are interconnected. First, the basic concepts of celestial mechanics will be recapped following the Murray approach \cite{murray1999solar}: these will describe the orbital parameters of the dataset. Then the concepts connected to the observation of the asteroids will be reviewed following the Burbine textboox \cite{burbine2016asteroids}. Finally, using the previous definition, the classification of the asteroids and in particular, the definition of their hazardousness will be provided following the Center for Near-Earth Object Studies (CNEOS) statements \cite{nasa_classification}. 
+
+\section{Celestial mechanics}
+
+Let us start by considering two masses $m_{1}$ and $m_{2}$, which in the present case will be respectively the planet Earth and the asteroid. Their position will be given, respectively, by two vectors $\textbf{r}_{1}$ and $\textbf{r}_{2}$ considering the origin $O$ bounded in to an inertial space. Furthermore we can define also the relative position with the vector $\textbf{r}=\textbf{r}_{2}-\textbf{r}_{1}$. Since we suppose that the masses are not interacting with the electromagnetic force, these will be bounded only by the gravitational interaction, which is given by the Newton law \cite{murray1999solar}:
+
+
+\begin{equation}
+\textbf{F}_{1}=\mathcal{G} \cdot \frac{m_{1}m_{2}}{r^{3}}\textbf{r}=m_{1} \ddot{\textbf{r}}_{1}
+\end{equation}
+
+\begin{equation}
+\textbf{F}_{2}=-\mathcal{G} \cdot \frac{m_{1}m_{2}}{r^{3}}\textbf{r}=m_{1} \ddot{\textbf{r}}_{2}
+\end{equation}
+
+where $\mathcal{G}$ is universal gravitational constant, and the second equivalence is given by the second Newton law $\textbf{F}=m\cdot \textbf{a}$ in which $\textbf{a}$ is the acceleration calculated as the second derivative of the position vector \textbf{r}. Setting $\ddot{\textbf{r}}=\ddot{\textbf{r}}_{2}-\ddot{\textbf{r}}_{1}$ (thus we consider the motion of the second item with respect to the first one) and $\mu=\mathcal{G}(m_{1}+m_{2})$ the following differential equation will be obtained from the previous two ones \cite{murray1999solar}:
+
+\begin{equation}
+\dfrac{d^{2}\textbf{r}}{dt^{2}}+\mu\dfrac{\textbf{r}}{r^{3}}=0
+\end{equation}
+
+
+It can be seen that the $\textbf{r}$ and $\dot{\textbf{r}}$ lies always in the same plane: this is because the product vector $\textbf{r} \times \ddot{ \textbf{r}}=0$, thus if one integrates she will get that the product vector $\textbf{r} \times \textbf{r}=\textbf{h}$ where \textbf{h} is a constant vector. Furthermore the problem can be simplified by using polar coordinates  $\hat{\textbf{r}}$ and $\hat{\boldsymbol{\theta}}$. In this case speed and acceleration have the following form \cite{murray1999solar}:
+
+\begin{equation}
+\textbf{r}=r\hat{\textbf{r}}
+\end{equation}
+
+\begin{equation}
+\dot{\textbf{r}}=\dot{r}\hat{\textbf{r}}+r\dot{\theta}\hat{\boldsymbol{\theta}}
+\label{eq_dyn_nop}
+\end{equation}
+
+\begin{equation}
+\ddot{\textbf{r}}=\left(\ddot{r}-r\dot{\theta}^{2}\right)\hat{\textbf{r}}+\left[\dfrac{1}{r}\frac{d}{dt}\left(r^{2}\dot{\theta}\right)\right]\hat{\boldsymbol{\theta}}
+\end{equation}
+
+Therefore the product vector between the speed and the position will have the following form \cite{murray1999solar}:
+
+\begin{equation}
+\textbf{h}=r^{2}\dot{\theta}\hat{\textbf{z}}
+\end{equation}
+
+where $\textbf{z}$ is a vector perpendicural to the plane, whose module is equal to \cite{murray1999solar}:
+
+\begin{equation}
+h=r^{2}\dot{\theta}
+\end{equation}
+
+If we consider the motion of the body $m_{2}$ in the time interval $\delta t$ we have that the area $\delta A$ illustrated in Fig \ref{Area_dynamics} will be \cite{murray1999solar}:
+
+\begin{equation}
+\delta A \approx \dfrac{1}{2} r(r+dr)\sin(\delta\theta) \approx  \dfrac{1}{2} r^{2}\delta\theta
+\end{equation}
+
+where the Taylor expansion at first order was used. Therfore  \cite{murray1999solar}:
+
+\begin{equation}
+\dfrac{dA}{dt}=\dfrac{1}{2}r^{2}\dfrac{d\theta}{dt}=\dfrac{1}{2}h
+\end{equation}
+
+but we know that $h$ is constant, therefore the first derivative, is constant. This is the $2^{th}$ Kepler law. Lets come back to the Eq. \ref{eq_dyn_nop}, if one recast it in polar coordinates, the following form will be obtained \cite{murray1999solar}:
+
+\begin{equation}
+\ddot{r}-r\dot{\theta}^{2}=-\frac{\mu}{r^{2}}
+\end{equation}
+
+This differential equation can be rewritten as an armonic oscillator with the  substitutions $u=\dfrac{1}{r}$ $h=r^{2}\dot{\theta}$ \cite{murray1999solar}:
+
+\begin{equation}
+\dot{r}=-\frac{1}{u}\dfrac{du}{d\theta}\dot{\theta}=-h\frac{du}{d\theta}
+\end{equation}
+
+\begin{equation}
+\ddot{r}=-h\dfrac{d^{2}u}{d\theta^{2}}\dot{\theta}=-h^{2}u^{2}\frac{d^{2}u}{d\theta^{2}}
+\end{equation}
+
+\begin{equation}
+\dfrac{d^{2}u}{d\theta^{2}}+u=\frac{\mu}{h^{2}}
+\end{equation}
+
+\begin{equation}
+u=\frac{\mu}{h^{2}}\left[1+e\cos(\theta-\phi)\right]
+\end{equation}
+
+where the integration constants e and $\phi$ are respectively the amplitude and the phase. Therefore we have \cite{murray1999solar}:
+
+\begin{equation}
+r=\dfrac{p}{1+e\cos(\theta-\phi)}
+\end{equation}
+
+In this form we can recognize in $e$ the \textcolor{red}{eccentricity} and $p$ is the semilatus rectum \cite{murray1999solar}:
+
+\begin{equation}
+p=\frac{h^{2}}{\mu}
+\end{equation}
+
+Depening on the eccentricity we have four possible conics \cite{murray1999solar}:
+
+\begin{itemize}
+\item circle:  $e=0$ \quad $p=a$
+\item ellipse: $0<e<1$ \quad $p=a$
+\item parabola: $e=1$ \quad $p=2q$
+\item hyperbola: $e>1$ \quad $p=a(e^{2}-1)$
+\end{itemize}
+
+In which $a$ is the semi-major axis of the conic. The shape of these orbits is reported in Fig. \ref{Elliptical_orbit}. All the asteroids considered here have an eccentricity $0<e<1$, they have elliptical orbits in which the Earth lies in one of the two focal points. It is worth noting that this is the first Kepler law.  Looking to Fig. \ref{Elliptical_orbit} we can define the point of the minimum distance between $m_{1}$ and the orbiting body as the pericentre or \textcolor{red}{perihelion}, and the maximum distance as the apocentre or the aphelion. The \textcolor{red}{semi-major axis}, here denoted as $b$ on the other side, is defined as the distance between the pericentre and the apocentre. Using the following identity \cite{murray1999solar}:
+
+\begin{equation}
+b^{2}=a^{2}(1-e^{2})
+\end{equation}
+
+we get \cite{murray1999solar}:
+
+\begin{equation}
+r=\frac{a(1-e^{2}}{1+e\cdot cos(\theta-\phi)}
+\label{eq-mot}
+\end{equation}
+
+Furthermore, the third Kepler law can be quickly obtained considering the area swept in one \textcolor{red}{orbital period} T (the time needed to complete a full round of the orbit) $A=\pi ab$. Since we know that this area is equal to $hT/2$ and $h^{2}=\mu a(1-e^{2})$ \cite{murray1999solar}:
+
+\begin{equation}
+T^{2}=\dfrac{4\pi^{2}}{\mu}a^{3}
+\end{equation}
+
+If we have two bodies, of masses $m$ and $m'$, that orbit around the Earth $m_{c}$, we can use the previous equation to obtain \cite{murray1999solar}:
+
+\begin{equation}
+\frac{m_{c}+m}{m_{c}+m'}=\left(\frac{a}{a'}\right)\left(\frac{T'}{T}\right)^{2}
+\end{equation}
+
+But since $m$,$m'<<m_{c}$ \cite{murray1999solar}:
+
+\begin{equation}
+\frac{m_{c}+m'}{m_{c}+m}\approx\dfrac{m}{m_{c}}=\left(a/a'\right)^{3}\left( T/T'\right)^{2}
+\end{equation}
+
+We see that the two orbital parameters $T'$ and $a'$ are independent to orbiting mass. This statement can be extended to the other orbital parameters by considering the previous approximation $m$,$m'<<m_{c}$. This is why we expect that the mass/volume of the asteroid can not be  dependant on the orbital parameters. It is useful to define also the \textcolor{red}{mean motion} (feature that is also present in the asteroids dataset) as \cite{murray1999solar}:
+
+\begin{equation}
+n=\frac{2\pi}{T}
+\end{equation}
+
+Therefore \cite{murray1999solar}:
+
+\begin{equation}
+\mu=n^{2}a^{3}
+\end{equation}
+
+\begin{equation}
+h=na^{2}\sqrt{1-e^{2}}=\sqrt{\mu a(1-e^{2})}
+\label{eq_h}
+\end{equation}
+
+From which we can see that the angular velocity $\ddot{f}$ is function of the longitude. We are now going more in deep with this statement. Lets come back to the Eq. \ref{eq-mot}, this can be rewritten as \cite{murray1999solar}:
+
+\begin{equation}
+\dot{\textbf{r}}\cdot\ddot{\textbf{r}}+\mu\dfrac{\dot{r}}{r^{2}}=0
+\end{equation}
+
+whose integration gives \cite{murray1999solar}:
+
+\begin{equation}
+\frac{1}{2}v^{2}-\frac{\mu}{r}=C
+\label{energy_cons}
+\end{equation}
+
+In which $v^{2}=\dot{\textbf{r}}\cdot\dot{\textbf{r}}$, and C the integration costant. This expression express the energy conservation: on the left side we have the \textit{vis-viva} term (basically the kinetic energy without the mass), on the right side the potential energy (rescaled with $\mu$). Lets come back to Eq. \ref{eq-mot}, and make the following substitution $f=\theta-\phi$, which is called the true anomaly. If we differentiate it we will obtain \cite{murray1999solar}:
+
+\begin{equation}
+\dot{r}=\frac{r\dot{f}e\sin f}{1+e\cos f}
+\end{equation}
+
+
+Remembering the the definition of $h=r^{2}\ddot{f}$, from Eq. \ref{eq_h} we have  \cite{murray1999solar}:
+
+\begin{equation}
+\dot{r}=\frac{na}{\sqrt{1-e^{2}}}e\sin f
+\end{equation}
+
+\begin{equation}
+r\dot{f}=\frac{na}{\sqrt{1-e^{2}}}\left(1+e\cos f\right)
+\end{equation}
+
+Therefore \cite{murray1999solar}:
+
+
+\begin{equation}
+\begin{split}
+v^{2}&=\dfrac{n^{2}a^{2}}{1-e^{2}}\left(1+2e\cos f +e^{2}\right)= \\
+&=\dfrac{n^{2}a^{2}}{1-e^{2}}\left(\dfrac{2a(1-e^{2})}{r}-(1-e^{2})\right)
+\end{split}
+\end{equation}
+
+\begin{equation}
+v^{2}=\mu\left(\frac{2}{r}-\dfrac{1}{a}\right)
+\end{equation}
+
+
+From which we get that the \textcolor{red}{velocity} \footnote{In the dataset this quanitity is called relative velocity because the it the reference system is Earth} of the asteroid is maximum at the perihelion, and minimum at the aphelion. Their values that are equal respectively to \cite{murray1999solar}:
+
+\begin{equation}
+v_{perihelion}=na\sqrt{\dfrac{1+e}{1-e}}
+\end{equation}
+
+\begin{equation}
+v_{aphelion}=na\sqrt{\dfrac{1-e}{1+e}}
+\end{equation}
+
+Another quantity that is contained in the asteroids dataset, and is useful to describe their orbits is the \textcolor{red}{mean anomaly}. This is defined as \cite{murray1999solar}:
+
+\begin{equation}
+M=n(t-\tau)
+\end{equation}
+
+where $\tau$, the time of pericentre passage, increases linearly with time at a costant rate equal to the mean motion. Furthermore is bounded by the following relations for the perihelion and aphelion \cite{murray1999solar}:
+
+\begin{itemize}
+\item $M=f=0$\quad$t=\tau$\quad Perihelion
+\item $M=f=\pi$\quad$t=\tau+T/2$ \quad Aphelion
+\end{itemize}
+
+Such boundaries should be intended as periodic for multiple of the orbital period T. The geometrical interpretation of the angle associated with the mean anomaly is given in Fig. \ref{Mean_anomaly}. It can be proven (see \cite{murray1999solar}) that the value of this angle, which describes the position of the orbiting item, is given by the following expression, known as Kepler equation \cite{murray1999solar}:
+
+\begin{equation}
+M=E-e\sin E
+\end{equation}
+
+Finally, as one move to space, other two angles are necessary for the description of an orbit: these are shown in Fig. \ref{Inclination} and are the \textcolor{red}{inclination} of the orbit (I) and the \textcolor{red}{longitude of the ascending node} $\Omega$. Given this quantities the Tisserard invariant can be calculated as \cite{murray1999solar}:
+
+\begin{equation}
+T_{P}=\frac{a_{p}}{a}+2\cos I\sqrt{\dfrac{a}{a_{p}}(1-e^{2})}
+\end{equation}
+
+If Jupiter is considered as perturbing body, we have the \textcolor{red}{Juptier Tisserard Invariant}. The underlying reason for this choice is to distinguish the Jupiter family comets ($2<T_{j}<3$) and the asteroids $T_{j}<2$. 
+
+
+\section{Observation}
+
+The luminosity of an asteroid can be quantified with the concepts of magnitude. It is worth pointing out that asteroids have no intrinsic luminosity but instead reflects the radiation, usually not uniformly, since they have no atmosphere of stars or other celestial bodies with intrinsic luminosity. 
+First of all, before defining the concept of magnitude is helpful to provide the concept of radiation flux. In our case, it can be thought of as the number of photons \footnote{One can think, at first approximation, photons as a packet of energy associated with the emitted light. A more formal and complete description can be found in \cite{feynman2018feynman} } that moves across a sphere centred on the light source and with a radius equal to the observer distance \cite{burbine2016asteroids}:
+
+\begin{equation}
+\Phi=\frac{L}{4\pi r^{2}}
+\end{equation}
+
+As one can note, there is a dependence from $1/r^{2}$ which is given by the fact that the electromagnetic radiation, as for gravitational force, is spherically symmetric\footnote{A formal argument of this point can be found in \cite{zee2013einstein}}. On this basis, it is possible to define the relative magnitude as \cite{burbine2016asteroids}:
+
+\begin{equation}
+m=-2.5\log_{10}\Phi+C
+\end{equation}
+
+This definition is useful for the evaluation for the comparison between two light sources (e.g. two stars), since in this case we have \cite{burbine2016asteroids}:
+
+\begin{equation}
+m_{1}-m_{2}=-2.5\log_{10}\frac{\Phi_{1}}{\Phi_{2}}
+\end{equation}
+
+Finally the \textcolor{red}{Absolute magnitude} $M$ can be defined as the magnitude that the item will have if it is put at 1 AU\footnote{Astronomic Units, the distance between Earth and Sun: 1.49\cdot 10^{11} m} or 10 parsec \footnote{$3,08\cdot 10^{16}$ m. The physical meaning of this measure can be found in \cite{burbine2016asteroids}} from the observer. Therefore  \cite{burbine2016asteroids}:
+
+\begin{equation}
+M-m=-2.5\log_{10}\frac{\Phi\cdot d^{2} }{\Phi\cdot 10^{2}}
+\end{equation}
+
+where $d$ is the light source distance in parsec. Rearranging the terms, we have \cite{burbine2016asteroids}:
+
+\begin{equation}
+M-m=-5\log_{10}\frac{ d^{2} }{10}+C
+\end{equation}
+
+\begin{equation}
+M=m+5-5log_{10}d
+\end{equation}
+
+
+
+\section{Classification}
+
+The solar system is composed not only of planets and the Sun but also, as shown in Fig. \ref{Orbit_asteorids}, by a plethora of small bodies\footnote{Small to the size of planets} whose orbit can be near to the Earth \cite{burbine2016asteroids}. In particular, if the orbit of these items is near less than 1.3 AU, such items are called near-Earth objects (NEO). Such items are of three types: comets, meteoroids and asteroids. The first ones are icy bodies that, as they move near the Sun, melt and release gases giving coloured tails. Meteoroids are minor \footnote{To asteroids} rocky/metallic items with a diameter less than 1 meter. Asteroids, on the other side, are items with a diameter larger than 1 m \cite{burbine2016asteroids}. The first two bodies are excluded from the present analysis. The near asteroids, which are mainly located on the sites reported in Fig. \ref{heic1715c}, are classified, as shown in Fig. \ref{neo_orbit_types}, according to their semi-major axis (a), perihelion distance (q), and aphelion distance (Q). Here we report the CNEOS definition \cite{nasa_classification}:
+
+\begin{itemize}
+\item \textbf{Atiras} $a < 1.0$ au $Q < 0.983$ au\quad \textit{NEAs whose orbits are contained entirely with the orbit of the Earth (named after asteroid 163693 Atira)}
+\item \textbf{Atens} $a < 1.0$ au $Q > 0.983$ au \quad \textit{Earth-crossing NEAs with semi-major axes smaller than Earth's (named after asteroid 2062 Aten)}
+\item \textbf{Apollos} $a>1.0$ au $q<1.017$ au \quad  \textit{Earth-crossing NEAs with semi-major axes larger than Earth's (named after asteroid 1862 Apollo) }
+\item \textbf{Amors} $a>1.0$ au $1.017<q<1.3$ au \textit{Earth-approaching NEAs with orbits exterior to Earth's but interior to Mars' (named after asteroid 1221 Amor)}
+\end{itemize}
+
+Besides this classification, there is the one that involve the hazardousness of an asteroid \cite{nasa_classification}:
+
+\begin{itemize}
+\item \textbf{Potentially Hazardous Asteroids}: MOID $\leq 0.05$ au $M \leq22.0$ \textit{NEAs whose Minimum Orbit Intersection Distance (MOID) with the Earth is 0.05 au or less and whose absolute magnitude (M) is 22.0 or brighter}
+\end{itemize}
+
+This is the formal definition by which the asteroids contained in the dataset here analysed are classified as hazardous or not. 
+
+
+
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=1\textwidth]{Figures/Area_dynamics.png}
+\caption{The portion of area $\delta A$ obtained when the position vector moves with an angle $\delta\theta$. Image taken from \cite{murray1999solar}}
+\label{Area_dynamics}
+\end{center}
+\end{figure}
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=1\textwidth]{Figures/Conics.png}
+\caption{The four possible orbits as obtained from a sectionof a cone. Image taken from \cite{murray1999solar}}
+\label{Conics}
+\end{center}
+\end{figure}
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=1\textwidth]{Figures/Elliptical_orbit.png}
+\caption{Main features of an elliptical orbit. Image taken from \cite{murray1999solar}}
+\label{Elliptical_orbit}
+\end{center}
+\end{figure}
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=1\textwidth]{Figures/Mean_anomaly.png}
+\caption{The geometrical interpretation of mean anomaly: on the left panel a) is reported how the circumscribed circle should be draw, while on the right panel b) it is shown how the angle associated with the mean anomaly should be interpreted and its relation with the true anomaly angle f. Image taken from \cite{murray1999solar}}
+\label{Mean_anomaly}
+\end{center}
+\end{figure}
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=1\textwidth]{Figures/Inclination.png}
+\caption{The parameters that are necessary for the description of an orbit in three dimension. Image taken from \cite{murray1999solar}}
+\label{Inclination}
+\end{center}
+\end{figure}
+
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=1\textwidth]{Figures/Orbit_asteorids.png}
+\caption{Orbits of potentially hazardous asteorids. Image taken from \cite{orbits-of-potentially-hazardous}}
+\label{Orbit_asteorids}
+\end{center}
+\end{figure}
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=1\textwidth]{Figures/heic1715c.jpg}
+\caption{Location of the solar system asteroids belt. Image taken from \cite{esahubble}}
+\label{heic1715c}
+\end{center}
+\end{figure}
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=1\textwidth]{Figures/neo_orbit_types.jpg}
+\caption{NASA classification of NEO asteroids accompained by the legend for the parameters a,q and Q. Image taken from \cite{nasa_classification}}
+\label{neo_orbit_types}
+\end{center}
+\end{figure}
+
+\chapter{Appendix B: R code} Here I provide the code which I run to obtain the results previously showed.  For its writing I took in consideration the examples provided in the  packages documentation, the Prof.Nicolussi lectures and the examples provided in the Hojsgaard textbook  \cite{hojsgaard2012graphical}. 
+
+\definecolor{light-gray}{gray}{0.95}
+\lstset{ columns=fullflexible, basicstyle=\ttfamily, backgroundcolor=\color{light-gray},xleftmargin=0.5cm,frame=lr,framesep=8pt,framerule=0pt,frame=single,breaklines=true, postbreak=\mbox{\textcolor{red}{$\hookrightarrow$}\space}}
+\lstinputlisting[language=R]{Script_FINAL.R}
+
+\bibliographystyle{unsrt}
+
+\bibliography{sample.bib} % The file containing the bibliography
+
+\newpage
+
+
+
+%----------------------------------------------------------------------------------------
+
+\end{document}

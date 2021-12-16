@@ -1,0 +1,249 @@
+\begin{thebibliography}{10}
+
+\bibitem{vesta_source}
+\url{https://www.nasa.gov/sites/default/files/images/685735main_pia15678-43_full.jpg}.
+
+\bibitem{Tunguska_source}
+\url{https://commons.wikimedia.org/wiki/File:Tunguska.png}.
+
+\bibitem{feynmanlectures}
+\url{https://www.feynmanlectures.caltech.edu/}.
+
+\bibitem{cneos+nasa}
+\url{https://cneos.jpl.nasa.gov/}.
+
+\bibitem{kaggle_dataset}
+\url{https://www.kaggle.com/shrutimehta/nasa-asteroids-classification}.
+
+\bibitem{Perihelion_precession}
+\url{https://commons.wikimedia.org/wiki/File:Perihelion_precession.svg}.
+
+\bibitem{physics-reality}
+\url{https://www.amacad.org/publication/physics-reality}.
+
+\bibitem{ml_interpretability}
+\url{https://towardsdatascience.com/the-balance-accuracy-vs-interpretability-1b3861408062}.
+
+\bibitem{glasso}
+\url{https://cran.r-project.org/web/packages/glasso/glasso.pdf}.
+
+\bibitem{mgm}
+\url{https://cran.r-project.org/web/packages/mgm/mgm.pdf}.
+
+\bibitem{caret}
+\url{https://cran.r-project.org/web/packages/caret/caret.pdf}.
+
+\bibitem{nasa_classification}
+\url{https://cneos.jpl.nasa.gov/about/neo_groups.html}.
+
+\bibitem{orbits-of-potentially-hazardous}
+\url{https://www.jpl.nasa.gov/images/orbits-of-potentially-hazardous-asteroids-phas}.
+
+\bibitem{esahubble}
+\url{https://esahubble.org/images/heic1715c/}.
+
+\bibitem{burbine2016asteroids}
+Thomas~H Burbine.
+\newblock {\em Asteroids}, volume~17.
+\newblock Cambridge University Press, 2016.
+
+\bibitem{cover2006elements}
+T.M. Cover and J.A. Thomas.
+\newblock {\em Elements of Information Theory}.
+\newblock A Wiley-Interscience publication. Wiley, 2006.
+
+\bibitem{igraph}
+Gabor Csardi and Tamas Nepusz.
+\newblock The igraph software package for complex network research.
+\newblock {\em InterJournal}, Complex Systems:1695, 2006.
+
+\bibitem{de2009high}
+Gabriel~CG de~Abreu, Rodrigo Labouriau, and David Edwards.
+\newblock High-dimensional graphical model search with graphd r package.
+\newblock {\em arXiv preprint arXiv:0909.1234}, 2009.
+
+\bibitem{dimitriadou2008misc}
+Evgenia Dimitriadou, Kurt Hornik, Friedrich Leisch, David Meyer, and Andreas
+  Weingessel.
+\newblock Misc functions of the department of statistics (e1071), tu wien.
+\newblock {\em R package}, 1:5--24, 2008.
+
+\bibitem{doshi2017towards}
+Finale Doshi-Velez and Been Kim.
+\newblock Towards a rigorous science of interpretable machine learning.
+\newblock {\em arXiv preprint arXiv:1702.08608}, 2017.
+
+\bibitem{qgraph}
+Sacha Epskamp, Ang\'elique O.~J. Cramer, Lourens~J. Waldorp, Verena~D.
+  Schmittmann, and Denny Borsboom.
+\newblock {qgraph}: Network visualizations of relationships in psychometric
+  data.
+\newblock {\em Journal of Statistical Software}, 48(4):1--18, 2012.
+
+\bibitem{feynman2018feynman}
+Richard~P Feynman, Tony Hey, and Robin~W Allen.
+\newblock {\em Feynman lectures on computation}.
+\newblock CRC Press, 2018.
+
+\bibitem{friedman2008sparse}
+Jerome Friedman, Trevor Hastie, and Robert Tibshirani.
+\newblock Sparse inverse covariance estimation with the graphical lasso.
+\newblock {\em Biostatistics}, 9(3):432--441, 2008.
+
+\bibitem{gilpin2018explaining}
+Leilani~H Gilpin, David Bau, Ben~Z Yuan, Ayesha Bajwa, Michael Specter, and
+  Lalana Kagal.
+\newblock Explaining explanations: An overview of interpretability of machine
+  learning.
+\newblock In {\em 2018 IEEE 5th International Conference on data science and
+  advanced analytics (DSAA)}, pages 80--89. IEEE, 2018.
+
+\bibitem{haslbeck2015mgm}
+Jonas Haslbeck and Lourens~J Waldorp.
+\newblock mgm: Estimating time-varying mixed graphical models in
+  high-dimensional data.
+\newblock {\em arXiv preprint arXiv:1510.06871}, 2015.
+
+\bibitem{hojsgaard2012graphical}
+S{\o}ren H{\o}jsgaard, David Edwards, and Steffen Lauritzen.
+\newblock {\em Graphical models with R}.
+\newblock Springer Science \& Business Media, 2012.
+
+\bibitem{koller2009probabilistic}
+Daphne Koller and Nir Friedman.
+\newblock {\em Probabilistic graphical models: principles and techniques}.
+\newblock MIT press, 2009.
+
+\bibitem{kratzer2018varrank}
+Gilles Kratzer and Reinhard Furrer.
+\newblock varrank: an r package for variable ranking based on mutual
+  information with applications to observed systemic datasets.
+\newblock {\em arXiv preprint arXiv:1804.07134}, 2018.
+
+\bibitem{kuhn2008building}
+Max Kuhn.
+\newblock Building predictive models in r using the caret package.
+\newblock {\em Journal of statistical software}, 28(1):1--26, 2008.
+
+\bibitem{le2008factominer}
+S{\'e}bastien L{\^e}, Julie Josse, and Fran{\c{c}}ois Husson.
+\newblock Factominer: an r package for multivariate analysis.
+\newblock {\em Journal of statistical software}, 25(1):1--18, 2008.
+
+\bibitem{rfor}
+Andy Liaw and Matthew Wiener.
+\newblock Classification and regression by randomforest.
+\newblock {\em R News}, 2(3):18--22, 2002.
+
+\bibitem{mackay2003information}
+David~JC MacKay.
+\newblock {\em Information theory, inference and learning algorithms}.
+\newblock Cambridge university press, 2003.
+
+\bibitem{martin_2004}
+Richard~M. Martin.
+\newblock {\em Electronic Structure: Basic Theory and Practical Methods}.
+\newblock Cambridge University Press, 2004.
+
+\bibitem{meinshausen2006high}
+Nicolai Meinshausen and Peter B{\"u}hlmann.
+\newblock High-dimensional graphs and variable selection with the lasso.
+\newblock {\em The annals of statistics}, 34(3):1436--1462, 2006.
+
+\bibitem{murphy2012machine}
+Kevin~P Murphy.
+\newblock {\em Machine learning: a probabilistic perspective}.
+\newblock MIT press, 2012.
+
+\bibitem{murray1999solar}
+Carl~D Murray and Stanley~F Dermott.
+\newblock {\em Solar system dynamics}.
+\newblock Cambridge university press, 1999.
+
+\bibitem{nicolis1989exploring}
+Gregoire Nicolis and Ilya Prigogine.
+\newblock Exploring complexity an introduction.
+\newblock 1989.
+
+\bibitem{peng2005feature}
+Hanchuan Peng, Fuhui Long, and Chris Ding.
+\newblock Feature selection based on mutual information criteria of
+  max-dependency, max-relevance, and min-redundancy.
+\newblock {\em IEEE Transactions on pattern analysis and machine intelligence},
+  27(8):1226--1238, 2005.
+
+\bibitem{prigogine1978time}
+Ilya Prigogine.
+\newblock Time, structure, and fluctuations.
+\newblock {\em Science}, 201(4358):777--785, 1978.
+
+\bibitem{prigogine2017non}
+Ilya Prigogine.
+\newblock {\em Non-equilibrium statistical mechanics}.
+\newblock Courier Dover Publications, 2017.
+
+\bibitem{prigogine1997end}
+Ilya Prigogine and Isabelle Stengers.
+\newblock {\em The end of certainty}.
+\newblock Simon and Schuster, 1997.
+
+\bibitem{stats}
+{R Core Team}.
+\newblock {\em R: A Language and Environment for Statistical Computing}.
+\newblock R Foundation for Statistical Computing, Vienna, Austria, 2013.
+\newblock {ISBN} 3-900051-07-0.
+
+\bibitem{russell2010artificial}
+S.~Russell, S.J. Russell, P.~Norvig, and E.~Davis.
+\newblock {\em Artificial Intelligence: A Modern Approach}.
+\newblock Prentice Hall series in artificial intelligence. Prentice Hall, 2010.
+
+\bibitem{sing2005rocr}
+Tobias Sing, Oliver Sander, Niko Beerenwinkel, and Thomas Lengauer.
+\newblock Rocr: visualizing classifier performance in r.
+\newblock {\em Bioinformatics}, 21(20):3940--3941, 2005.
+
+\bibitem{sornette1989self}
+Anne Sornette and Didier Sornette.
+\newblock Self-organized criticality and earthquakes.
+\newblock {\em EPL (Europhysics Letters)}, 9(3):197, 1989.
+
+\bibitem{sornette2006critical}
+Didier Sornette.
+\newblock {\em Critical phenomena in natural sciences: chaos, fractals,
+  selforganization and disorder: concepts and tools}.
+\newblock Springer Science \& Business Media, 2006.
+
+\bibitem{sparks2003forecasting}
+R~Steve~J Sparks.
+\newblock Forecasting volcanic eruptions.
+\newblock {\em Earth and Planetary Science Letters}, 210(1-2):1--15, 2003.
+
+\bibitem{tarski1953undecidable}
+Alfred Tarski, Andrzej Mostowski, and Raphael~Mitchel Robinson.
+\newblock {\em Undecidable theories}, volume~13.
+\newblock Elsevier, 1953.
+
+\bibitem{MASS}
+W.~N. Venables and B.~D. Ripley.
+\newblock {\em Modern Applied Statistics with S}.
+\newblock Springer, New York, fourth edition, 2002.
+\newblock ISBN 0-387-95457-0.
+
+\bibitem{ggplot2}
+Hadley Wickham.
+\newblock {\em ggplot2: Elegant Graphics for Data Analysis}.
+\newblock Springer-Verlag New York, 2016.
+
+\bibitem{wu2017markov}
+Sheng-Jhih Wu and Moody~T Chu.
+\newblock Markov chains with memory, tensor formulation, and the dynamics of
+  power iteration.
+\newblock {\em Applied Mathematics and Computation}, 303:226--239, 2017.
+
+\bibitem{zee2013einstein}
+Anthony Zee.
+\newblock {\em Einstein gravity in a nutshell}, volume~14.
+\newblock Princeton University Press, 2013.
+
+\end{thebibliography}

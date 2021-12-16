@@ -1,0 +1,68 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: manuscript.aux
+Reallocating 'name_of_file' (item size: 1) to 6 items.
+The style file: plain.bst
+Illegal, another \bibstyle command---line 426 of file manuscript.aux
+ : \bibstyle
+ :          {unsrt}
+I'm skipping whatever remains of this command
+Reallocating 'name_of_file' (item size: 1) to 11 items.
+Database file #1: sample.bib
+Warning--to sort, need author or key in vesta_source
+Warning--to sort, need author or key in Tunguska_source
+Warning--to sort, need author or key in feynmanlectures
+Warning--to sort, need author or key in cneos+nasa
+Warning--to sort, need author or key in kaggle_dataset
+Warning--to sort, need author or key in Perihelion_precession
+Warning--to sort, need author or key in physics-reality
+Warning--to sort, need author or key in ml_interpretability
+Warning--to sort, need author or key in glasso
+Warning--to sort, need author or key in mgm
+Warning--to sort, need author or key in caret
+Warning--to sort, need author or key in nasa_classification
+Warning--to sort, need author or key in orbits-of-potentially-hazardous
+Warning--to sort, need author or key in esahubble
+Warning--empty journal in nicolis1989exploring
+You've used 52 entries,
+            2118 wiz_defined-function locations,
+            736 strings with 10408 characters,
+and the built_in function-call counts, 12999 in all, are:
+= -- 1226
+> -- 541
+< -- 4
++ -- 224
+- -- 170
+* -- 768
+:= -- 2101
+add.period$ -- 133
+call.type$ -- 52
+change.case$ -- 210
+chr.to.int$ -- 0
+cite$ -- 67
+duplicate$ -- 536
+empty$ -- 1195
+format.name$ -- 170
+if$ -- 2774
+int.to.chr$ -- 0
+int.to.str$ -- 52
+missing$ -- 54
+newline$ -- 237
+num.names$ -- 76
+pop$ -- 359
+preamble$ -- 1
+purify$ -- 189
+quote$ -- 0
+skip$ -- 397
+stack$ -- 0
+substring$ -- 570
+swap$ -- 63
+text.length$ -- 4
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 174
+warning$ -- 15
+while$ -- 104
+width$ -- 54
+write$ -- 479
+(There was 1 error message)
